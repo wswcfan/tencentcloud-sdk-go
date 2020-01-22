@@ -220,7 +220,11 @@ func (c *Client) GetRegion() string {
 }
 
 func (c *Client) Init(region string) *Client {
-	c.httpClient = &http.Client{}
+	tr := &http.Transport{
+		MaxIdleConnsPerHost: 20,
+		IdleConnTimeout:     30 * time.Second,
+	}
+	c.httpClient = &http.Client{Transport: tr}
 	c.region = region
 	c.signMethod = "TC3-HMAC-SHA256"
 	c.debug = false
