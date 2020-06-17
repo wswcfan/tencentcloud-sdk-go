@@ -15,207 +15,206 @@
 package v20180711
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-07-11"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCreateAppRequest() (request *CreateAppRequest) {
-    request = &CreateAppRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "CreateApp")
-    return
+	request = &CreateAppRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "CreateApp")
+	return
 }
 
 func NewCreateAppResponse() (response *CreateAppResponse) {
-    response = &CreateAppResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateAppResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(CreateApp)用于创建一个GME应用。
 func (c *Client) CreateApp(request *CreateAppRequest) (response *CreateAppResponse, err error) {
-    if request == nil {
-        request = NewCreateAppRequest()
-    }
-    response = NewCreateAppResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateAppRequest()
+	}
+	response = NewCreateAppResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeAppStatisticsRequest() (request *DescribeAppStatisticsRequest) {
-    request = &DescribeAppStatisticsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "DescribeAppStatistics")
-    return
+	request = &DescribeAppStatisticsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "DescribeAppStatistics")
+	return
 }
 
 func NewDescribeAppStatisticsResponse() (response *DescribeAppStatisticsResponse) {
-    response = &DescribeAppStatisticsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeAppStatisticsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(DescribeAppStatistics)用于获取某个GME应用的用量数据。包括实时语音，语音消息及转文本，语音分析等。最长查询周期为最近30天。
 func (c *Client) DescribeAppStatistics(request *DescribeAppStatisticsRequest) (response *DescribeAppStatisticsResponse, err error) {
-    if request == nil {
-        request = NewDescribeAppStatisticsRequest()
-    }
-    response = NewDescribeAppStatisticsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeAppStatisticsRequest()
+	}
+	response = NewDescribeAppStatisticsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeFilterResultRequest() (request *DescribeFilterResultRequest) {
-    request = &DescribeFilterResultRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "DescribeFilterResult")
-    return
+	request = &DescribeFilterResultRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "DescribeFilterResult")
+	return
 }
 
 func NewDescribeFilterResultResponse() (response *DescribeFilterResultResponse) {
-    response = &DescribeFilterResultResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeFilterResultResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 根据应用ID和文件ID查询识别结果
 func (c *Client) DescribeFilterResult(request *DescribeFilterResultRequest) (response *DescribeFilterResultResponse, err error) {
-    if request == nil {
-        request = NewDescribeFilterResultRequest()
-    }
-    response = NewDescribeFilterResultResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeFilterResultRequest()
+	}
+	response = NewDescribeFilterResultResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeFilterResultListRequest() (request *DescribeFilterResultListRequest) {
-    request = &DescribeFilterResultListRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "DescribeFilterResultList")
-    return
+	request = &DescribeFilterResultListRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "DescribeFilterResultList")
+	return
 }
 
 func NewDescribeFilterResultListResponse() (response *DescribeFilterResultListResponse) {
-    response = &DescribeFilterResultListResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeFilterResultListResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 根据日期查询识别结果列表
 func (c *Client) DescribeFilterResultList(request *DescribeFilterResultListRequest) (response *DescribeFilterResultListResponse, err error) {
-    if request == nil {
-        request = NewDescribeFilterResultListRequest()
-    }
-    response = NewDescribeFilterResultListResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeFilterResultListRequest()
+	}
+	response = NewDescribeFilterResultListResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeScanResultListRequest() (request *DescribeScanResultListRequest) {
-    request = &DescribeScanResultListRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "DescribeScanResultList")
-    return
+	request = &DescribeScanResultListRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "DescribeScanResultList")
+	return
 }
 
 func NewDescribeScanResultListResponse() (response *DescribeScanResultListResponse) {
-    response = &DescribeScanResultListResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeScanResultListResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(DescribeScanResultList)用于查询语音检测结果，查询任务列表最多支持100个。
 // <p style="color:red">如果在提交语音检测任务时未设置 Callback 字段，则需要通过本接口获取检测结果</p>
 func (c *Client) DescribeScanResultList(request *DescribeScanResultListRequest) (response *DescribeScanResultListResponse, err error) {
-    if request == nil {
-        request = NewDescribeScanResultListRequest()
-    }
-    response = NewDescribeScanResultListResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeScanResultListRequest()
+	}
+	response = NewDescribeScanResultListResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewModifyAppStatusRequest() (request *ModifyAppStatusRequest) {
-    request = &ModifyAppStatusRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "ModifyAppStatus")
-    return
+	request = &ModifyAppStatusRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "ModifyAppStatus")
+	return
 }
 
 func NewModifyAppStatusResponse() (response *ModifyAppStatusResponse) {
-    response = &ModifyAppStatusResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ModifyAppStatusResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(ModifyAppStatus)用于修改应用总开关状态。
 func (c *Client) ModifyAppStatus(request *ModifyAppStatusRequest) (response *ModifyAppStatusResponse, err error) {
-    if request == nil {
-        request = NewModifyAppStatusRequest()
-    }
-    response = NewModifyAppStatusResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewModifyAppStatusRequest()
+	}
+	response = NewModifyAppStatusResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewScanVoiceRequest() (request *ScanVoiceRequest) {
-    request = &ScanVoiceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "ScanVoice")
-    return
+	request = &ScanVoiceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "ScanVoice")
+	return
 }
 
 func NewScanVoiceResponse() (response *ScanVoiceResponse) {
-    response = &ScanVoiceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ScanVoiceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口(ScanVoice)用于提交语音检测任务，检测任务列表最多支持100个。使用前请您登录[控制台 - 服务配置](https://console.cloud.tencent.com/gamegme/conf)开启语音分析服务。
 // </br></br>
-// 
+//
 // <h4><b>功能试用说明：</b></h4>
 // <li>打开前往<a href="https://console.cloud.tencent.com/gamegme/tryout">控制台 - 产品试用</a>免费试用语音分析服务。</li>
 // </br>
-// 
+//
 // <h4><b>接口功能说明：</b></h4>
 // <li>支持对语音流或语音文件进行检测，判断其中是否包含违规内容。</li>
 // <li>支持设置回调地址 Callback 获取检测结果，同时支持通过接口(查询语音检测结果)主动轮询获取检测结果。</li>
@@ -291,7 +290,7 @@ func NewScanVoiceResponse() (response *ScanVoiceResponse) {
 // 		<li>签名key为应用的 SecretKey，可以通过控制台查看。</li>
 // 	</ul>
 // </ul>
-// 
+//
 // <li>回调示例如下<font color="red">（详细字段说明见结构：
 // <a href="https://cloud.tencent.com/document/api/607/35375#DescribeScanResult" target="_blank">DescribeScanResult</a>）</font>：</li>
 // <pre><code>{
@@ -347,37 +346,37 @@ func NewScanVoiceResponse() (response *ScanVoiceResponse) {
 // }
 // </code></pre>
 func (c *Client) ScanVoice(request *ScanVoiceRequest) (response *ScanVoiceResponse, err error) {
-    if request == nil {
-        request = NewScanVoiceRequest()
-    }
-    response = NewScanVoiceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewScanVoiceRequest()
+	}
+	response = NewScanVoiceResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewVoiceFilterRequest() (request *VoiceFilterRequest) {
-    request = &VoiceFilterRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("gme", APIVersion, "VoiceFilter")
-    return
+	request = &VoiceFilterRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("gme", APIVersion, "VoiceFilter")
+	return
 }
 
 func NewVoiceFilterResponse() (response *VoiceFilterResponse) {
-    response = &VoiceFilterResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &VoiceFilterResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 本接口用于识别涉黄、涉政等违规音频，成功会回调配置在应用的回调地址。回调示例如下：
 // {"BizId":0,"FileId":"test_file_id","FileName":"test_file_name","FileUrl":"test_file_url","OpenId":"test_open_id","TimeStamp":"0000-00-00 00:00:00","Data":[{"Type":1,"Word":"xx"}]}
 // Type表示过滤类型，1：政治，2：色情，3：谩骂
 func (c *Client) VoiceFilter(request *VoiceFilterRequest) (response *VoiceFilterResponse, err error) {
-    if request == nil {
-        request = NewVoiceFilterRequest()
-    }
-    response = NewVoiceFilterResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewVoiceFilterRequest()
+	}
+	response = NewVoiceFilterResponse()
+	err = c.Send(request, response)
+	return
 }

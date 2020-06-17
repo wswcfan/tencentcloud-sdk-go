@@ -15,9 +15,9 @@
 package v20170312
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Activity struct {
@@ -108,12 +108,12 @@ type AttachInstancesRequest struct {
 }
 
 func (r *AttachInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachInstancesResponse struct {
@@ -126,12 +126,12 @@ type AttachInstancesResponse struct {
 }
 
 func (r *AttachInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Authentication struct {
@@ -311,12 +311,12 @@ type CreateComputeEnvRequest struct {
 }
 
 func (r *CreateComputeEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateComputeEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateComputeEnvResponse struct {
@@ -332,12 +332,12 @@ type CreateComputeEnvResponse struct {
 }
 
 func (r *CreateComputeEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateComputeEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCpmComputeEnvRequest struct {
@@ -354,12 +354,12 @@ type CreateCpmComputeEnvRequest struct {
 }
 
 func (r *CreateCpmComputeEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCpmComputeEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCpmComputeEnvResponse struct {
@@ -375,12 +375,12 @@ type CreateCpmComputeEnvResponse struct {
 }
 
 func (r *CreateCpmComputeEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCpmComputeEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskTemplateRequest struct {
@@ -397,12 +397,12 @@ type CreateTaskTemplateRequest struct {
 }
 
 func (r *CreateTaskTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskTemplateResponse struct {
@@ -418,12 +418,12 @@ type CreateTaskTemplateResponse struct {
 }
 
 func (r *CreateTaskTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DataDisk struct {
@@ -466,12 +466,12 @@ type DeleteComputeEnvRequest struct {
 }
 
 func (r *DeleteComputeEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteComputeEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteComputeEnvResponse struct {
@@ -484,12 +484,12 @@ type DeleteComputeEnvResponse struct {
 }
 
 func (r *DeleteComputeEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteComputeEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteJobRequest struct {
@@ -500,12 +500,12 @@ type DeleteJobRequest struct {
 }
 
 func (r *DeleteJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteJobResponse struct {
@@ -518,12 +518,12 @@ type DeleteJobResponse struct {
 }
 
 func (r *DeleteJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTaskTemplatesRequest struct {
@@ -534,12 +534,12 @@ type DeleteTaskTemplatesRequest struct {
 }
 
 func (r *DeleteTaskTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTaskTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTaskTemplatesResponse struct {
@@ -552,12 +552,12 @@ type DeleteTaskTemplatesResponse struct {
 }
 
 func (r *DeleteTaskTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTaskTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Dependence struct {
@@ -579,12 +579,12 @@ type DescribeAvailableCvmInstanceTypesRequest struct {
 }
 
 func (r *DescribeAvailableCvmInstanceTypesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableCvmInstanceTypesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAvailableCvmInstanceTypesResponse struct {
@@ -600,12 +600,12 @@ type DescribeAvailableCvmInstanceTypesResponse struct {
 }
 
 func (r *DescribeAvailableCvmInstanceTypesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableCvmInstanceTypesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvActivitiesRequest struct {
@@ -626,12 +626,12 @@ type DescribeComputeEnvActivitiesRequest struct {
 }
 
 func (r *DescribeComputeEnvActivitiesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvActivitiesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvActivitiesResponse struct {
@@ -650,12 +650,12 @@ type DescribeComputeEnvActivitiesResponse struct {
 }
 
 func (r *DescribeComputeEnvActivitiesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvActivitiesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvCreateInfoRequest struct {
@@ -666,12 +666,12 @@ type DescribeComputeEnvCreateInfoRequest struct {
 }
 
 func (r *DescribeComputeEnvCreateInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvCreateInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvCreateInfoResponse struct {
@@ -685,7 +685,7 @@ type DescribeComputeEnvCreateInfoResponse struct {
 		EnvName *string `json:"EnvName,omitempty" name:"EnvName"`
 
 		// 计算环境描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EnvDescription *string `json:"EnvDescription,omitempty" name:"EnvDescription"`
 
 		// 计算环境类型，仅支持“MANAGED”类型
@@ -715,12 +715,12 @@ type DescribeComputeEnvCreateInfoResponse struct {
 }
 
 func (r *DescribeComputeEnvCreateInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvCreateInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvCreateInfosRequest struct {
@@ -744,12 +744,12 @@ type DescribeComputeEnvCreateInfosRequest struct {
 }
 
 func (r *DescribeComputeEnvCreateInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvCreateInfosRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvCreateInfosResponse struct {
@@ -768,12 +768,12 @@ type DescribeComputeEnvCreateInfosResponse struct {
 }
 
 func (r *DescribeComputeEnvCreateInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvCreateInfosResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvRequest struct {
@@ -784,12 +784,12 @@ type DescribeComputeEnvRequest struct {
 }
 
 func (r *DescribeComputeEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvResponse struct {
@@ -835,12 +835,12 @@ type DescribeComputeEnvResponse struct {
 }
 
 func (r *DescribeComputeEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvsRequest struct {
@@ -865,12 +865,12 @@ type DescribeComputeEnvsRequest struct {
 }
 
 func (r *DescribeComputeEnvsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeComputeEnvsResponse struct {
@@ -889,12 +889,12 @@ type DescribeComputeEnvsResponse struct {
 }
 
 func (r *DescribeComputeEnvsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeComputeEnvsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCpmOsInfoRequest struct {
@@ -905,12 +905,12 @@ type DescribeCpmOsInfoRequest struct {
 }
 
 func (r *DescribeCpmOsInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCpmOsInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCpmOsInfoResponse struct {
@@ -926,12 +926,12 @@ type DescribeCpmOsInfoResponse struct {
 }
 
 func (r *DescribeCpmOsInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCpmOsInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCvmZoneInstanceConfigInfosRequest struct {
@@ -946,12 +946,12 @@ type DescribeCvmZoneInstanceConfigInfosRequest struct {
 }
 
 func (r *DescribeCvmZoneInstanceConfigInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCvmZoneInstanceConfigInfosRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCvmZoneInstanceConfigInfosResponse struct {
@@ -967,12 +967,12 @@ type DescribeCvmZoneInstanceConfigInfosResponse struct {
 }
 
 func (r *DescribeCvmZoneInstanceConfigInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCvmZoneInstanceConfigInfosResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceCategoriesRequest struct {
@@ -980,12 +980,12 @@ type DescribeInstanceCategoriesRequest struct {
 }
 
 func (r *DescribeInstanceCategoriesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceCategoriesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceCategoriesResponse struct {
@@ -1001,12 +1001,12 @@ type DescribeInstanceCategoriesResponse struct {
 }
 
 func (r *DescribeInstanceCategoriesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceCategoriesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobRequest struct {
@@ -1017,12 +1017,12 @@ type DescribeJobRequest struct {
 }
 
 func (r *DescribeJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobResponse struct {
@@ -1071,12 +1071,12 @@ type DescribeJobResponse struct {
 }
 
 func (r *DescribeJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobSubmitInfoRequest struct {
@@ -1087,12 +1087,12 @@ type DescribeJobSubmitInfoRequest struct {
 }
 
 func (r *DescribeJobSubmitInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobSubmitInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobSubmitInfoResponse struct {
@@ -1123,12 +1123,12 @@ type DescribeJobSubmitInfoResponse struct {
 }
 
 func (r *DescribeJobSubmitInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobSubmitInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobsRequest struct {
@@ -1153,12 +1153,12 @@ type DescribeJobsRequest struct {
 }
 
 func (r *DescribeJobsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeJobsResponse struct {
@@ -1177,12 +1177,12 @@ type DescribeJobsResponse struct {
 }
 
 func (r *DescribeJobsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeJobsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskLogsRequest struct {
@@ -1205,12 +1205,12 @@ type DescribeTaskLogsRequest struct {
 }
 
 func (r *DescribeTaskLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskLogsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskLogsResponse struct {
@@ -1229,12 +1229,12 @@ type DescribeTaskLogsResponse struct {
 }
 
 func (r *DescribeTaskLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskLogsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskRequest struct {
@@ -1258,12 +1258,12 @@ type DescribeTaskRequest struct {
 }
 
 func (r *DescribeTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskResponse struct {
@@ -1300,12 +1300,12 @@ type DescribeTaskResponse struct {
 }
 
 func (r *DescribeTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskTemplatesRequest struct {
@@ -1327,12 +1327,12 @@ type DescribeTaskTemplatesRequest struct {
 }
 
 func (r *DescribeTaskTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskTemplatesResponse struct {
@@ -1351,12 +1351,12 @@ type DescribeTaskTemplatesResponse struct {
 }
 
 func (r *DescribeTaskTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachInstancesRequest struct {
@@ -1370,12 +1370,12 @@ type DetachInstancesRequest struct {
 }
 
 func (r *DetachInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachInstancesResponse struct {
@@ -1388,12 +1388,12 @@ type DetachInstancesResponse struct {
 }
 
 func (r *DetachInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Docker struct {
@@ -1880,12 +1880,12 @@ type ModifyComputeEnvRequest struct {
 }
 
 func (r *ModifyComputeEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyComputeEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyComputeEnvResponse struct {
@@ -1898,12 +1898,12 @@ type ModifyComputeEnvResponse struct {
 }
 
 func (r *ModifyComputeEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyComputeEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyTaskTemplateRequest struct {
@@ -1923,12 +1923,12 @@ type ModifyTaskTemplateRequest struct {
 }
 
 func (r *ModifyTaskTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyTaskTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyTaskTemplateResponse struct {
@@ -1941,12 +1941,12 @@ type ModifyTaskTemplateResponse struct {
 }
 
 func (r *ModifyTaskTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyTaskTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MountDataDisk struct {
@@ -2140,12 +2140,12 @@ type RetryJobsRequest struct {
 }
 
 func (r *RetryJobsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RetryJobsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RetryJobsResponse struct {
@@ -2158,12 +2158,12 @@ type RetryJobsResponse struct {
 }
 
 func (r *RetryJobsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RetryJobsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunMonitorServiceEnabled struct {
@@ -2216,12 +2216,12 @@ type SubmitJobRequest struct {
 }
 
 func (r *SubmitJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SubmitJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubmitJobResponse struct {
@@ -2237,12 +2237,12 @@ type SubmitJobResponse struct {
 }
 
 func (r *SubmitJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SubmitJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SystemDisk struct {
@@ -2484,12 +2484,12 @@ type TerminateComputeNodeRequest struct {
 }
 
 func (r *TerminateComputeNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateComputeNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateComputeNodeResponse struct {
@@ -2502,12 +2502,12 @@ type TerminateComputeNodeResponse struct {
 }
 
 func (r *TerminateComputeNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateComputeNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateComputeNodesRequest struct {
@@ -2521,12 +2521,12 @@ type TerminateComputeNodesRequest struct {
 }
 
 func (r *TerminateComputeNodesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateComputeNodesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateComputeNodesResponse struct {
@@ -2539,12 +2539,12 @@ type TerminateComputeNodesResponse struct {
 }
 
 func (r *TerminateComputeNodesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateComputeNodesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateJobRequest struct {
@@ -2555,12 +2555,12 @@ type TerminateJobRequest struct {
 }
 
 func (r *TerminateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateJobResponse struct {
@@ -2573,12 +2573,12 @@ type TerminateJobResponse struct {
 }
 
 func (r *TerminateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateTaskInstanceRequest struct {
@@ -2595,12 +2595,12 @@ type TerminateTaskInstanceRequest struct {
 }
 
 func (r *TerminateTaskInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateTaskInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateTaskInstanceResponse struct {
@@ -2613,12 +2613,12 @@ type TerminateTaskInstanceResponse struct {
 }
 
 func (r *TerminateTaskInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateTaskInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VirtualPrivateCloud struct {

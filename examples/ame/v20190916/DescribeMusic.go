@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/errors"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
-	ame "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/ame/v20190916"
+	ame "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/ame/v20190916"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/errors"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
-func main()  {
+func main() {
 	// 必要步骤：
 	// 实例化一个认证对象，入参需要传入腾讯云账户密钥对secretId，secretKey。
 	// 这里采用的是从环境变量读取的方式，需要在环境变量中先设置这两个值。
@@ -60,7 +60,7 @@ func main()  {
 	}
 	b, _ = json.Marshal(itemRsp.Response)
 	fmt.Printf("%s\n", b)
-	
+
 	// 歌曲ID，这里取一个做示例
 	itemID := itemRsp.Response.Items[0].ItemID
 

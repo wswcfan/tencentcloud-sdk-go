@@ -15,9 +15,9 @@
 package v20190116
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AccessKey struct {
@@ -64,12 +64,12 @@ type AddUserRequest struct {
 }
 
 func (r *AddUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddUserResponse struct {
@@ -100,12 +100,12 @@ type AddUserResponse struct {
 }
 
 func (r *AddUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddUserToGroupRequest struct {
@@ -116,12 +116,12 @@ type AddUserToGroupRequest struct {
 }
 
 func (r *AddUserToGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddUserToGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddUserToGroupResponse struct {
@@ -134,12 +134,12 @@ type AddUserToGroupResponse struct {
 }
 
 func (r *AddUserToGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddUserToGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachEntityOfPolicy struct {
@@ -170,12 +170,12 @@ type AttachGroupPolicyRequest struct {
 }
 
 func (r *AttachGroupPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachGroupPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachGroupPolicyResponse struct {
@@ -188,12 +188,12 @@ type AttachGroupPolicyResponse struct {
 }
 
 func (r *AttachGroupPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachGroupPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachPolicyInfo struct {
@@ -259,12 +259,12 @@ type AttachRolePolicyRequest struct {
 }
 
 func (r *AttachRolePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachRolePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachRolePolicyResponse struct {
@@ -277,12 +277,12 @@ type AttachRolePolicyResponse struct {
 }
 
 func (r *AttachRolePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachRolePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachUserPolicyRequest struct {
@@ -296,12 +296,12 @@ type AttachUserPolicyRequest struct {
 }
 
 func (r *AttachUserPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachUserPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachUserPolicyResponse struct {
@@ -314,12 +314,12 @@ type AttachUserPolicyResponse struct {
 }
 
 func (r *AttachUserPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachUserPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachedPolicyOfRole struct {
@@ -361,12 +361,12 @@ type ConsumeCustomMFATokenRequest struct {
 }
 
 func (r *ConsumeCustomMFATokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ConsumeCustomMFATokenRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ConsumeCustomMFATokenResponse struct {
@@ -379,12 +379,12 @@ type ConsumeCustomMFATokenResponse struct {
 }
 
 func (r *ConsumeCustomMFATokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ConsumeCustomMFATokenResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGroupRequest struct {
@@ -398,12 +398,12 @@ type CreateGroupRequest struct {
 }
 
 func (r *CreateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGroupResponse struct {
@@ -419,12 +419,12 @@ type CreateGroupResponse struct {
 }
 
 func (r *CreateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePolicyRequest struct {
@@ -441,12 +441,12 @@ type CreatePolicyRequest struct {
 }
 
 func (r *CreatePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePolicyResponse struct {
@@ -462,12 +462,12 @@ type CreatePolicyResponse struct {
 }
 
 func (r *CreatePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePolicyVersionRequest struct {
@@ -484,12 +484,12 @@ type CreatePolicyVersionRequest struct {
 }
 
 func (r *CreatePolicyVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePolicyVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePolicyVersionResponse struct {
@@ -497,7 +497,7 @@ type CreatePolicyVersionResponse struct {
 	Response *struct {
 
 		// 策略版本号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VersionId *uint64 `json:"VersionId,omitempty" name:"VersionId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -506,12 +506,12 @@ type CreatePolicyVersionResponse struct {
 }
 
 func (r *CreatePolicyVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePolicyVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRoleRequest struct {
@@ -534,12 +534,12 @@ type CreateRoleRequest struct {
 }
 
 func (r *CreateRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRoleResponse struct {
@@ -547,7 +547,7 @@ type CreateRoleResponse struct {
 	Response *struct {
 
 		// 角色ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RoleId *string `json:"RoleId,omitempty" name:"RoleId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -556,12 +556,12 @@ type CreateRoleResponse struct {
 }
 
 func (r *CreateRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSAMLProviderRequest struct {
@@ -578,12 +578,12 @@ type CreateSAMLProviderRequest struct {
 }
 
 func (r *CreateSAMLProviderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSAMLProviderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSAMLProviderResponse struct {
@@ -599,12 +599,12 @@ type CreateSAMLProviderResponse struct {
 }
 
 func (r *CreateSAMLProviderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSAMLProviderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateServiceLinkedRoleRequest struct {
@@ -621,12 +621,12 @@ type CreateServiceLinkedRoleRequest struct {
 }
 
 func (r *CreateServiceLinkedRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateServiceLinkedRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateServiceLinkedRoleResponse struct {
@@ -642,12 +642,12 @@ type CreateServiceLinkedRoleResponse struct {
 }
 
 func (r *CreateServiceLinkedRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateServiceLinkedRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupRequest struct {
@@ -658,12 +658,12 @@ type DeleteGroupRequest struct {
 }
 
 func (r *DeleteGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupResponse struct {
@@ -676,12 +676,12 @@ type DeleteGroupResponse struct {
 }
 
 func (r *DeleteGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePolicyRequest struct {
@@ -692,12 +692,12 @@ type DeletePolicyRequest struct {
 }
 
 func (r *DeletePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePolicyResponse struct {
@@ -710,12 +710,12 @@ type DeletePolicyResponse struct {
 }
 
 func (r *DeletePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePolicyVersionRequest struct {
@@ -729,12 +729,12 @@ type DeletePolicyVersionRequest struct {
 }
 
 func (r *DeletePolicyVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePolicyVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePolicyVersionResponse struct {
@@ -747,12 +747,12 @@ type DeletePolicyVersionResponse struct {
 }
 
 func (r *DeletePolicyVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePolicyVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteRoleRequest struct {
@@ -766,12 +766,12 @@ type DeleteRoleRequest struct {
 }
 
 func (r *DeleteRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteRoleResponse struct {
@@ -784,12 +784,12 @@ type DeleteRoleResponse struct {
 }
 
 func (r *DeleteRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSAMLProviderRequest struct {
@@ -800,12 +800,12 @@ type DeleteSAMLProviderRequest struct {
 }
 
 func (r *DeleteSAMLProviderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSAMLProviderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSAMLProviderResponse struct {
@@ -818,12 +818,12 @@ type DeleteSAMLProviderResponse struct {
 }
 
 func (r *DeleteSAMLProviderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSAMLProviderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteServiceLinkedRoleRequest struct {
@@ -834,12 +834,12 @@ type DeleteServiceLinkedRoleRequest struct {
 }
 
 func (r *DeleteServiceLinkedRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteServiceLinkedRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteServiceLinkedRoleResponse struct {
@@ -855,12 +855,12 @@ type DeleteServiceLinkedRoleResponse struct {
 }
 
 func (r *DeleteServiceLinkedRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteServiceLinkedRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteUserRequest struct {
@@ -874,12 +874,12 @@ type DeleteUserRequest struct {
 }
 
 func (r *DeleteUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteUserResponse struct {
@@ -892,12 +892,12 @@ type DeleteUserResponse struct {
 }
 
 func (r *DeleteUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRoleListRequest struct {
@@ -911,12 +911,12 @@ type DescribeRoleListRequest struct {
 }
 
 func (r *DescribeRoleListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRoleListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRoleListResponse struct {
@@ -924,7 +924,7 @@ type DescribeRoleListResponse struct {
 	Response *struct {
 
 		// 角色详情列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		List []*RoleInfo `json:"List,omitempty" name:"List" list`
 
 		// 角色总数
@@ -936,12 +936,12 @@ type DescribeRoleListResponse struct {
 }
 
 func (r *DescribeRoleListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRoleListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachGroupPolicyRequest struct {
@@ -955,12 +955,12 @@ type DetachGroupPolicyRequest struct {
 }
 
 func (r *DetachGroupPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachGroupPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachGroupPolicyResponse struct {
@@ -973,12 +973,12 @@ type DetachGroupPolicyResponse struct {
 }
 
 func (r *DetachGroupPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachGroupPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachRolePolicyRequest struct {
@@ -998,12 +998,12 @@ type DetachRolePolicyRequest struct {
 }
 
 func (r *DetachRolePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachRolePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachRolePolicyResponse struct {
@@ -1016,12 +1016,12 @@ type DetachRolePolicyResponse struct {
 }
 
 func (r *DetachRolePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachRolePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachUserPolicyRequest struct {
@@ -1035,12 +1035,12 @@ type DetachUserPolicyRequest struct {
 }
 
 func (r *DetachUserPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachUserPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachUserPolicyResponse struct {
@@ -1053,12 +1053,12 @@ type DetachUserPolicyResponse struct {
 }
 
 func (r *DetachUserPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachUserPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetCustomMFATokenInfoRequest struct {
@@ -1069,12 +1069,12 @@ type GetCustomMFATokenInfoRequest struct {
 }
 
 func (r *GetCustomMFATokenInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetCustomMFATokenInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetCustomMFATokenInfoResponse struct {
@@ -1090,12 +1090,12 @@ type GetCustomMFATokenInfoResponse struct {
 }
 
 func (r *GetCustomMFATokenInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetCustomMFATokenInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupRequest struct {
@@ -1106,12 +1106,12 @@ type GetGroupRequest struct {
 }
 
 func (r *GetGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupResponse struct {
@@ -1142,12 +1142,12 @@ type GetGroupResponse struct {
 }
 
 func (r *GetGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPolicyRequest struct {
@@ -1158,12 +1158,12 @@ type GetPolicyRequest struct {
 }
 
 func (r *GetPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPolicyResponse struct {
@@ -1171,35 +1171,35 @@ type GetPolicyResponse struct {
 	Response *struct {
 
 		// 策略名
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PolicyName *string `json:"PolicyName,omitempty" name:"PolicyName"`
 
 		// 策略描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 1 表示自定义策略，2 表示预设策略
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Type *uint64 `json:"Type,omitempty" name:"Type"`
 
 		// 创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AddTime *string `json:"AddTime,omitempty" name:"AddTime"`
 
 		// 最近更新时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UpdateTime *string `json:"UpdateTime,omitempty" name:"UpdateTime"`
 
 		// 策略文档
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PolicyDocument *string `json:"PolicyDocument,omitempty" name:"PolicyDocument"`
 
 		// 备注
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PresetAlias *string `json:"PresetAlias,omitempty" name:"PresetAlias"`
 
 		// 是否服务相关策略
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsServiceLinkedRolePolicy *uint64 `json:"IsServiceLinkedRolePolicy,omitempty" name:"IsServiceLinkedRolePolicy"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1208,12 +1208,12 @@ type GetPolicyResponse struct {
 }
 
 func (r *GetPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPolicyVersionRequest struct {
@@ -1227,12 +1227,12 @@ type GetPolicyVersionRequest struct {
 }
 
 func (r *GetPolicyVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPolicyVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPolicyVersionResponse struct {
@@ -1240,7 +1240,7 @@ type GetPolicyVersionResponse struct {
 	Response *struct {
 
 		// 策略版本详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PolicyVersion *PolicyVersionDetail `json:"PolicyVersion,omitempty" name:"PolicyVersion"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1249,12 +1249,12 @@ type GetPolicyVersionResponse struct {
 }
 
 func (r *GetPolicyVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPolicyVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetRoleRequest struct {
@@ -1268,12 +1268,12 @@ type GetRoleRequest struct {
 }
 
 func (r *GetRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetRoleResponse struct {
@@ -1289,12 +1289,12 @@ type GetRoleResponse struct {
 }
 
 func (r *GetRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetSAMLProviderRequest struct {
@@ -1305,12 +1305,12 @@ type GetSAMLProviderRequest struct {
 }
 
 func (r *GetSAMLProviderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetSAMLProviderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetSAMLProviderResponse struct {
@@ -1338,12 +1338,12 @@ type GetSAMLProviderResponse struct {
 }
 
 func (r *GetSAMLProviderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetSAMLProviderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetServiceLinkedRoleDeletionStatusRequest struct {
@@ -1354,12 +1354,12 @@ type GetServiceLinkedRoleDeletionStatusRequest struct {
 }
 
 func (r *GetServiceLinkedRoleDeletionStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetServiceLinkedRoleDeletionStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetServiceLinkedRoleDeletionStatusResponse struct {
@@ -1373,11 +1373,11 @@ type GetServiceLinkedRoleDeletionStatusResponse struct {
 		Reason *string `json:"Reason,omitempty" name:"Reason"`
 
 		// 服务类型
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ServiceType *string `json:"ServiceType,omitempty" name:"ServiceType"`
 
 		// 服务名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ServiceName *string `json:"ServiceName,omitempty" name:"ServiceName"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1386,12 +1386,12 @@ type GetServiceLinkedRoleDeletionStatusResponse struct {
 }
 
 func (r *GetServiceLinkedRoleDeletionStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetServiceLinkedRoleDeletionStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetUserRequest struct {
@@ -1402,12 +1402,12 @@ type GetUserRequest struct {
 }
 
 func (r *GetUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetUserResponse struct {
@@ -1444,12 +1444,12 @@ type GetUserResponse struct {
 }
 
 func (r *GetUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GroupIdOfUidInfo struct {
@@ -1520,12 +1520,12 @@ type ListAccessKeysRequest struct {
 }
 
 func (r *ListAccessKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAccessKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAccessKeysResponse struct {
@@ -1533,7 +1533,7 @@ type ListAccessKeysResponse struct {
 	Response *struct {
 
 		// 访问密钥列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AccessKeys []*AccessKey `json:"AccessKeys,omitempty" name:"AccessKeys" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1542,12 +1542,12 @@ type ListAccessKeysResponse struct {
 }
 
 func (r *ListAccessKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAccessKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedGroupPoliciesRequest struct {
@@ -1564,12 +1564,12 @@ type ListAttachedGroupPoliciesRequest struct {
 }
 
 func (r *ListAttachedGroupPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedGroupPoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedGroupPoliciesResponse struct {
@@ -1588,12 +1588,12 @@ type ListAttachedGroupPoliciesResponse struct {
 }
 
 func (r *ListAttachedGroupPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedGroupPoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedRolePoliciesRequest struct {
@@ -1616,12 +1616,12 @@ type ListAttachedRolePoliciesRequest struct {
 }
 
 func (r *ListAttachedRolePoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedRolePoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedRolePoliciesResponse struct {
@@ -1640,12 +1640,12 @@ type ListAttachedRolePoliciesResponse struct {
 }
 
 func (r *ListAttachedRolePoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedRolePoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedUserPoliciesRequest struct {
@@ -1662,12 +1662,12 @@ type ListAttachedUserPoliciesRequest struct {
 }
 
 func (r *ListAttachedUserPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedUserPoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAttachedUserPoliciesResponse struct {
@@ -1686,12 +1686,12 @@ type ListAttachedUserPoliciesResponse struct {
 }
 
 func (r *ListAttachedUserPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAttachedUserPoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListCollaboratorsRequest struct {
@@ -1705,12 +1705,12 @@ type ListCollaboratorsRequest struct {
 }
 
 func (r *ListCollaboratorsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListCollaboratorsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListCollaboratorsResponse struct {
@@ -1729,12 +1729,12 @@ type ListCollaboratorsResponse struct {
 }
 
 func (r *ListCollaboratorsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListCollaboratorsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListEntitiesForPolicyRequest struct {
@@ -1754,12 +1754,12 @@ type ListEntitiesForPolicyRequest struct {
 }
 
 func (r *ListEntitiesForPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListEntitiesForPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListEntitiesForPolicyResponse struct {
@@ -1767,11 +1767,11 @@ type ListEntitiesForPolicyResponse struct {
 	Response *struct {
 
 		// 实体总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *uint64 `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 实体列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		List []*AttachEntityOfPolicy `json:"List,omitempty" name:"List" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1780,12 +1780,12 @@ type ListEntitiesForPolicyResponse struct {
 }
 
 func (r *ListEntitiesForPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListEntitiesForPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListGroupsForUserRequest struct {
@@ -1805,12 +1805,12 @@ type ListGroupsForUserRequest struct {
 }
 
 func (r *ListGroupsForUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListGroupsForUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListGroupsForUserResponse struct {
@@ -1829,12 +1829,12 @@ type ListGroupsForUserResponse struct {
 }
 
 func (r *ListGroupsForUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListGroupsForUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListGroupsRequest struct {
@@ -1851,12 +1851,12 @@ type ListGroupsRequest struct {
 }
 
 func (r *ListGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListGroupsResponse struct {
@@ -1875,12 +1875,12 @@ type ListGroupsResponse struct {
 }
 
 func (r *ListGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListPoliciesRequest struct {
@@ -1900,12 +1900,12 @@ type ListPoliciesRequest struct {
 }
 
 func (r *ListPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListPoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListPoliciesResponse struct {
@@ -1915,20 +1915,20 @@ type ListPoliciesResponse struct {
 		// 策略总数
 		TotalNum *uint64 `json:"TotalNum,omitempty" name:"TotalNum"`
 
-		// 策略数组，数组每个成员包括 policyId、policyName、addTime、type、description、 createMode 字段。其中： 
-	// policyId：策略 id 
-	// policyName：策略名
-	// addTime：策略创建时间
-	// type：1 表示自定义策略，2 表示预设策略 
-	// description：策略描述 
-	// createMode：1 表示按业务权限创建的策略，其他值表示可以查看策略语法和通过策略语法更新策略
-	// Attachments: 关联的用户数
-	// ServiceType: 策略关联的产品
-	// IsAttached: 当需要查询标记实体是否已经关联策略时不为null。0表示未关联策略，1表示已关联策略
+		// 策略数组，数组每个成员包括 policyId、policyName、addTime、type、description、 createMode 字段。其中：
+		// policyId：策略 id
+		// policyName：策略名
+		// addTime：策略创建时间
+		// type：1 表示自定义策略，2 表示预设策略
+		// description：策略描述
+		// createMode：1 表示按业务权限创建的策略，其他值表示可以查看策略语法和通过策略语法更新策略
+		// Attachments: 关联的用户数
+		// ServiceType: 策略关联的产品
+		// IsAttached: 当需要查询标记实体是否已经关联策略时不为null。0表示未关联策略，1表示已关联策略
 		List []*StrategyInfo `json:"List,omitempty" name:"List" list`
 
 		// 保留字段
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ServiceTypeList []*string `json:"ServiceTypeList,omitempty" name:"ServiceTypeList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1937,12 +1937,12 @@ type ListPoliciesResponse struct {
 }
 
 func (r *ListPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListPoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListPolicyVersionsRequest struct {
@@ -1953,12 +1953,12 @@ type ListPolicyVersionsRequest struct {
 }
 
 func (r *ListPolicyVersionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListPolicyVersionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListPolicyVersionsResponse struct {
@@ -1966,7 +1966,7 @@ type ListPolicyVersionsResponse struct {
 	Response *struct {
 
 		// 策略版本列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Versions []*PolicyVersionItem `json:"Versions,omitempty" name:"Versions" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1975,12 +1975,12 @@ type ListPolicyVersionsResponse struct {
 }
 
 func (r *ListPolicyVersionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListPolicyVersionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListSAMLProvidersRequest struct {
@@ -1988,12 +1988,12 @@ type ListSAMLProvidersRequest struct {
 }
 
 func (r *ListSAMLProvidersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListSAMLProvidersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListSAMLProvidersResponse struct {
@@ -2012,12 +2012,12 @@ type ListSAMLProvidersResponse struct {
 }
 
 func (r *ListSAMLProvidersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListSAMLProvidersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListUsersForGroupRequest struct {
@@ -2034,12 +2034,12 @@ type ListUsersForGroupRequest struct {
 }
 
 func (r *ListUsersForGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListUsersForGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListUsersForGroupResponse struct {
@@ -2058,12 +2058,12 @@ type ListUsersForGroupResponse struct {
 }
 
 func (r *ListUsersForGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListUsersForGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListUsersRequest struct {
@@ -2071,12 +2071,12 @@ type ListUsersRequest struct {
 }
 
 func (r *ListUsersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListUsersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListUsersResponse struct {
@@ -2092,12 +2092,12 @@ type ListUsersResponse struct {
 }
 
 func (r *ListUsersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListUsersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LoginActionMfaFlag struct {
@@ -2154,12 +2154,12 @@ type RemoveUserFromGroupRequest struct {
 }
 
 func (r *RemoveUserFromGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveUserFromGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemoveUserFromGroupResponse struct {
@@ -2172,12 +2172,12 @@ type RemoveUserFromGroupResponse struct {
 }
 
 func (r *RemoveUserFromGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveUserFromGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RoleInfo struct {
@@ -2242,12 +2242,12 @@ type SetDefaultPolicyVersionRequest struct {
 }
 
 func (r *SetDefaultPolicyVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetDefaultPolicyVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetDefaultPolicyVersionResponse struct {
@@ -2260,12 +2260,12 @@ type SetDefaultPolicyVersionResponse struct {
 }
 
 func (r *SetDefaultPolicyVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetDefaultPolicyVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetMfaFlagRequest struct {
@@ -2282,12 +2282,12 @@ type SetMfaFlagRequest struct {
 }
 
 func (r *SetMfaFlagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetMfaFlagRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetMfaFlagResponse struct {
@@ -2300,12 +2300,12 @@ type SetMfaFlagResponse struct {
 }
 
 func (r *SetMfaFlagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetMfaFlagResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StrategyInfo struct {
@@ -2395,12 +2395,12 @@ type UpdateAssumeRolePolicyRequest struct {
 }
 
 func (r *UpdateAssumeRolePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAssumeRolePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateAssumeRolePolicyResponse struct {
@@ -2413,12 +2413,12 @@ type UpdateAssumeRolePolicyResponse struct {
 }
 
 func (r *UpdateAssumeRolePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAssumeRolePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateGroupRequest struct {
@@ -2435,12 +2435,12 @@ type UpdateGroupRequest struct {
 }
 
 func (r *UpdateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateGroupResponse struct {
@@ -2453,12 +2453,12 @@ type UpdateGroupResponse struct {
 }
 
 func (r *UpdateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdatePolicyRequest struct {
@@ -2481,12 +2481,12 @@ type UpdatePolicyRequest struct {
 }
 
 func (r *UpdatePolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdatePolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdatePolicyResponse struct {
@@ -2494,7 +2494,7 @@ type UpdatePolicyResponse struct {
 	Response *struct {
 
 		// 策略id
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PolicyId *uint64 `json:"PolicyId,omitempty" name:"PolicyId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2503,12 +2503,12 @@ type UpdatePolicyResponse struct {
 }
 
 func (r *UpdatePolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdatePolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateRoleConsoleLoginRequest struct {
@@ -2525,12 +2525,12 @@ type UpdateRoleConsoleLoginRequest struct {
 }
 
 func (r *UpdateRoleConsoleLoginRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateRoleConsoleLoginRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateRoleConsoleLoginResponse struct {
@@ -2543,12 +2543,12 @@ type UpdateRoleConsoleLoginResponse struct {
 }
 
 func (r *UpdateRoleConsoleLoginResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateRoleConsoleLoginResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateRoleDescriptionRequest struct {
@@ -2565,12 +2565,12 @@ type UpdateRoleDescriptionRequest struct {
 }
 
 func (r *UpdateRoleDescriptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateRoleDescriptionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateRoleDescriptionResponse struct {
@@ -2583,12 +2583,12 @@ type UpdateRoleDescriptionResponse struct {
 }
 
 func (r *UpdateRoleDescriptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateRoleDescriptionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateSAMLProviderRequest struct {
@@ -2605,12 +2605,12 @@ type UpdateSAMLProviderRequest struct {
 }
 
 func (r *UpdateSAMLProviderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateSAMLProviderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateSAMLProviderResponse struct {
@@ -2623,12 +2623,12 @@ type UpdateSAMLProviderResponse struct {
 }
 
 func (r *UpdateSAMLProviderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateSAMLProviderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateUserRequest struct {
@@ -2660,12 +2660,12 @@ type UpdateUserRequest struct {
 }
 
 func (r *UpdateUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateUserResponse struct {
@@ -2678,10 +2678,10 @@ type UpdateUserResponse struct {
 }
 
 func (r *UpdateUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

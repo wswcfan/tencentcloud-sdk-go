@@ -15,80 +15,79 @@
 package v20180808
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-08-08"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCheckDomainRequest() (request *CheckDomainRequest) {
-    request = &CheckDomainRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("domain", APIVersion, "CheckDomain")
-    return
+	request = &CheckDomainRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("domain", APIVersion, "CheckDomain")
+	return
 }
 
 func NewCheckDomainResponse() (response *CheckDomainResponse) {
-    response = &CheckDomainResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CheckDomainResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 检查域名是否可以注册
 func (c *Client) CheckDomain(request *CheckDomainRequest) (response *CheckDomainResponse, err error) {
-    if request == nil {
-        request = NewCheckDomainRequest()
-    }
-    response = NewCheckDomainResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCheckDomainRequest()
+	}
+	response = NewCheckDomainResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeDomainPriceListRequest() (request *DescribeDomainPriceListRequest) {
-    request = &DescribeDomainPriceListRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("domain", APIVersion, "DescribeDomainPriceList")
-    return
+	request = &DescribeDomainPriceListRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("domain", APIVersion, "DescribeDomainPriceList")
+	return
 }
 
 func NewDescribeDomainPriceListResponse() (response *DescribeDomainPriceListResponse) {
-    response = &DescribeDomainPriceListResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeDomainPriceListResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 按照域名后缀获取对应的价格列表
 func (c *Client) DescribeDomainPriceList(request *DescribeDomainPriceListRequest) (response *DescribeDomainPriceListResponse, err error) {
-    if request == nil {
-        request = NewDescribeDomainPriceListRequest()
-    }
-    response = NewDescribeDomainPriceListResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeDomainPriceListRequest()
+	}
+	response = NewDescribeDomainPriceListResponse()
+	err = c.Send(request, response)
+	return
 }

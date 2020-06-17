@@ -15,9 +15,9 @@
 package v20190411
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DescribeEntityRequest struct {
@@ -28,12 +28,12 @@ type DescribeEntityRequest struct {
 }
 
 func (r *DescribeEntityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEntityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEntityResponse struct {
@@ -49,12 +49,12 @@ type DescribeEntityResponse struct {
 }
 
 func (r *DescribeEntityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEntityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRelationRequest struct {
@@ -68,12 +68,12 @@ type DescribeRelationRequest struct {
 }
 
 func (r *DescribeRelationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRelationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRelationResponse struct {
@@ -89,12 +89,12 @@ type DescribeRelationResponse struct {
 }
 
 func (r *DescribeRelationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRelationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTripleRequest struct {
@@ -105,12 +105,12 @@ type DescribeTripleRequest struct {
 }
 
 func (r *DescribeTripleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTripleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTripleResponse struct {
@@ -126,12 +126,12 @@ type DescribeTripleResponse struct {
 }
 
 func (r *DescribeTripleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTripleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EntityRelationContent struct {

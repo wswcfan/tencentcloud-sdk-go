@@ -15,9 +15,9 @@
 package v20191112
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DescribeHSMBySubnetIdRequest struct {
@@ -28,12 +28,12 @@ type DescribeHSMBySubnetIdRequest struct {
 }
 
 func (r *DescribeHSMBySubnetIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHSMBySubnetIdRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHSMBySubnetIdResponse struct {
@@ -52,12 +52,12 @@ type DescribeHSMBySubnetIdResponse struct {
 }
 
 func (r *DescribeHSMBySubnetIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHSMBySubnetIdResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHSMByVpcIdRequest struct {
@@ -68,12 +68,12 @@ type DescribeHSMByVpcIdRequest struct {
 }
 
 func (r *DescribeHSMByVpcIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHSMByVpcIdRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHSMByVpcIdResponse struct {
@@ -92,12 +92,12 @@ type DescribeHSMByVpcIdResponse struct {
 }
 
 func (r *DescribeHSMByVpcIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHSMByVpcIdResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubnetRequest struct {
@@ -117,12 +117,12 @@ type DescribeSubnetRequest struct {
 }
 
 func (r *DescribeSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubnetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubnetResponse struct {
@@ -133,7 +133,7 @@ type DescribeSubnetResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 返回的子网实例列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetList []*Subnet `json:"SubnetList,omitempty" name:"SubnetList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -142,12 +142,12 @@ type DescribeSubnetResponse struct {
 }
 
 func (r *DescribeSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubnetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUsgRequest struct {
@@ -164,12 +164,12 @@ type DescribeUsgRequest struct {
 }
 
 func (r *DescribeUsgRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUsgRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUsgResponse struct {
@@ -177,7 +177,7 @@ type DescribeUsgResponse struct {
 	Response *struct {
 
 		// 用户的安全组列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SgList []*SgUnit `json:"SgList,omitempty" name:"SgList" list`
 
 		// 返回的安全组数量
@@ -189,12 +189,12 @@ type DescribeUsgResponse struct {
 }
 
 func (r *DescribeUsgResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUsgResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUsgRuleRequest struct {
@@ -205,12 +205,12 @@ type DescribeUsgRuleRequest struct {
 }
 
 func (r *DescribeUsgRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUsgRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUsgRuleResponse struct {
@@ -218,11 +218,11 @@ type DescribeUsgRuleResponse struct {
 	Response *struct {
 
 		// 安全组详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SgRules []*UsgRuleDetail `json:"SgRules,omitempty" name:"SgRules" list`
 
 		// 安全组详情数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -231,12 +231,12 @@ type DescribeUsgRuleResponse struct {
 }
 
 func (r *DescribeUsgRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUsgRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVpcRequest struct {
@@ -253,12 +253,12 @@ type DescribeVpcRequest struct {
 }
 
 func (r *DescribeVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVpcRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVpcResponse struct {
@@ -269,7 +269,7 @@ type DescribeVpcResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// Vpc对象列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcList []*Vpc `json:"VpcList,omitempty" name:"VpcList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -278,12 +278,12 @@ type DescribeVpcResponse struct {
 }
 
 func (r *DescribeVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVpcResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVsmAttributesRequest struct {
@@ -294,12 +294,12 @@ type DescribeVsmAttributesRequest struct {
 }
 
 func (r *DescribeVsmAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVsmAttributesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVsmAttributesResponse struct {
@@ -340,39 +340,39 @@ type DescribeVsmAttributesResponse struct {
 		ExpireTime *int64 `json:"ExpireTime,omitempty" name:"ExpireTime"`
 
 		// 安全组详情信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SgList []*UsgRuleDetail `json:"SgList,omitempty" name:"SgList" list`
 
 		// 子网名
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetName *string `json:"SubnetName,omitempty" name:"SubnetName"`
 
 		// 地域名
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RegionName *string `json:"RegionName,omitempty" name:"RegionName"`
 
 		// 区域名
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ZoneName *string `json:"ZoneName,omitempty" name:"ZoneName"`
 
 		// 实例是否已经过期
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Expired *bool `json:"Expired,omitempty" name:"Expired"`
 
 		// 为正数表示实例距离过期时间剩余秒数，为负数表示实例已经过期多少秒
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RemainSeconds *int64 `json:"RemainSeconds,omitempty" name:"RemainSeconds"`
 
 		// 私有虚拟网络名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcName *string `json:"VpcName,omitempty" name:"VpcName"`
 
 		// VPC的IPv4 CIDR
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcCidrBlock *string `json:"VpcCidrBlock,omitempty" name:"VpcCidrBlock"`
 
 		// 子网的CIDR
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetCidrBlock *string `json:"SubnetCidrBlock,omitempty" name:"SubnetCidrBlock"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -381,12 +381,12 @@ type DescribeVsmAttributesResponse struct {
 }
 
 func (r *DescribeVsmAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVsmAttributesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVsmsRequest struct {
@@ -403,12 +403,12 @@ type DescribeVsmsRequest struct {
 }
 
 func (r *DescribeVsmsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVsmsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVsmsResponse struct {
@@ -419,7 +419,7 @@ type DescribeVsmsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 资源信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VsmList []*ResourceInfo `json:"VsmList,omitempty" name:"VsmList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -428,12 +428,12 @@ type DescribeVsmsResponse struct {
 }
 
 func (r *DescribeVsmsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVsmsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceBuyVsmRequest struct {
@@ -459,12 +459,12 @@ type InquiryPriceBuyVsmRequest struct {
 }
 
 func (r *InquiryPriceBuyVsmRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceBuyVsmRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceBuyVsmResponse struct {
@@ -472,23 +472,23 @@ type InquiryPriceBuyVsmResponse struct {
 	Response *struct {
 
 		// 总金额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCost *float64 `json:"TotalCost,omitempty" name:"TotalCost"`
 
 		// 购买的实例数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GoodsNum *int64 `json:"GoodsNum,omitempty" name:"GoodsNum"`
 
 		// 商品的时间大小
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeSpan *string `json:"TimeSpan,omitempty" name:"TimeSpan"`
 
 		// 商品的时间单位
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeUnit *string `json:"TimeUnit,omitempty" name:"TimeUnit"`
 
 		// 原始总金额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OriginalCost *float64 `json:"OriginalCost,omitempty" name:"OriginalCost"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -497,12 +497,12 @@ type InquiryPriceBuyVsmResponse struct {
 }
 
 func (r *InquiryPriceBuyVsmResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceBuyVsmResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyVsmAttributesRequest struct {
@@ -531,12 +531,12 @@ type ModifyVsmAttributesRequest struct {
 }
 
 func (r *ModifyVsmAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyVsmAttributesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyVsmAttributesResponse struct {
@@ -549,12 +549,12 @@ type ModifyVsmAttributesResponse struct {
 }
 
 func (r *ModifyVsmAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyVsmAttributesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResourceInfo struct {

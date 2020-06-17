@@ -15,9 +15,9 @@
 package v20180321
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AgentAuditedClient struct {
@@ -263,12 +263,12 @@ type AgentPayDealsRequest struct {
 }
 
 func (r *AgentPayDealsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AgentPayDealsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AgentPayDealsResponse struct {
@@ -281,12 +281,12 @@ type AgentPayDealsResponse struct {
 }
 
 func (r *AgentPayDealsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AgentPayDealsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AgentSalesmanElem struct {
@@ -315,12 +315,12 @@ type AgentTransferMoneyRequest struct {
 }
 
 func (r *AgentTransferMoneyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AgentTransferMoneyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AgentTransferMoneyResponse struct {
@@ -333,12 +333,12 @@ type AgentTransferMoneyResponse struct {
 }
 
 func (r *AgentTransferMoneyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AgentTransferMoneyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AuditApplyClientRequest struct {
@@ -355,12 +355,12 @@ type AuditApplyClientRequest struct {
 }
 
 func (r *AuditApplyClientRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AuditApplyClientRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AuditApplyClientResponse struct {
@@ -385,12 +385,12 @@ type AuditApplyClientResponse struct {
 }
 
 func (r *AuditApplyClientResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AuditApplyClientResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePayRelationForClientRequest struct {
@@ -401,12 +401,12 @@ type CreatePayRelationForClientRequest struct {
 }
 
 func (r *CreatePayRelationForClientRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePayRelationForClientRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePayRelationForClientResponse struct {
@@ -419,12 +419,12 @@ type CreatePayRelationForClientResponse struct {
 }
 
 func (r *CreatePayRelationForClientResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePayRelationForClientResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DealGoodsPriceElem struct {
@@ -477,12 +477,12 @@ type DescribeAgentAuditedClientsRequest struct {
 }
 
 func (r *DescribeAgentAuditedClientsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentAuditedClientsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentAuditedClientsResponse struct {
@@ -501,12 +501,12 @@ type DescribeAgentAuditedClientsResponse struct {
 }
 
 func (r *DescribeAgentAuditedClientsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentAuditedClientsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentBillsRequest struct {
@@ -535,12 +535,12 @@ type DescribeAgentBillsRequest struct {
 }
 
 func (r *DescribeAgentBillsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentBillsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentBillsResponse struct {
@@ -559,12 +559,12 @@ type DescribeAgentBillsResponse struct {
 }
 
 func (r *DescribeAgentBillsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentBillsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentClientGradeRequest struct {
@@ -575,12 +575,12 @@ type DescribeAgentClientGradeRequest struct {
 }
 
 func (r *DescribeAgentClientGradeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentClientGradeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentClientGradeResponse struct {
@@ -602,12 +602,12 @@ type DescribeAgentClientGradeResponse struct {
 }
 
 func (r *DescribeAgentClientGradeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentClientGradeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentClientsRequest struct {
@@ -639,12 +639,12 @@ type DescribeAgentClientsRequest struct {
 }
 
 func (r *DescribeAgentClientsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentClientsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentClientsResponse struct {
@@ -663,12 +663,12 @@ type DescribeAgentClientsResponse struct {
 }
 
 func (r *DescribeAgentClientsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentClientsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentDealsCacheRequest struct {
@@ -703,12 +703,12 @@ type DescribeAgentDealsCacheRequest struct {
 }
 
 func (r *DescribeAgentDealsCacheRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentDealsCacheRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentDealsCacheResponse struct {
@@ -727,12 +727,12 @@ type DescribeAgentDealsCacheResponse struct {
 }
 
 func (r *DescribeAgentDealsCacheResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentDealsCacheResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentPayDealsRequest struct {
@@ -764,12 +764,12 @@ type DescribeAgentPayDealsRequest struct {
 }
 
 func (r *DescribeAgentPayDealsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentPayDealsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAgentPayDealsResponse struct {
@@ -788,12 +788,12 @@ type DescribeAgentPayDealsResponse struct {
 }
 
 func (r *DescribeAgentPayDealsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAgentPayDealsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClientBalanceRequest struct {
@@ -804,12 +804,12 @@ type DescribeClientBalanceRequest struct {
 }
 
 func (r *DescribeClientBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClientBalanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClientBalanceResponse struct {
@@ -825,12 +825,12 @@ type DescribeClientBalanceResponse struct {
 }
 
 func (r *DescribeClientBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClientBalanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRebateInfosRequest struct {
@@ -847,12 +847,12 @@ type DescribeRebateInfosRequest struct {
 }
 
 func (r *DescribeRebateInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRebateInfosRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRebateInfosResponse struct {
@@ -871,12 +871,12 @@ type DescribeRebateInfosResponse struct {
 }
 
 func (r *DescribeRebateInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRebateInfosResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSalesmansRequest struct {
@@ -899,12 +899,12 @@ type DescribeSalesmansRequest struct {
 }
 
 func (r *DescribeSalesmansRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSalesmansRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSalesmansResponse struct {
@@ -923,12 +923,12 @@ type DescribeSalesmansResponse struct {
 }
 
 func (r *DescribeSalesmansResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSalesmansResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClientRemarkRequest struct {
@@ -942,12 +942,12 @@ type ModifyClientRemarkRequest struct {
 }
 
 func (r *ModifyClientRemarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClientRemarkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClientRemarkResponse struct {
@@ -960,12 +960,12 @@ type ModifyClientRemarkResponse struct {
 }
 
 func (r *ModifyClientRemarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClientRemarkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RebateInfoElem struct {
@@ -997,12 +997,12 @@ type RemovePayRelationForClientRequest struct {
 }
 
 func (r *RemovePayRelationForClientRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemovePayRelationForClientRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemovePayRelationForClientResponse struct {
@@ -1015,10 +1015,10 @@ type RemovePayRelationForClientResponse struct {
 }
 
 func (r *RemovePayRelationForClientResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemovePayRelationForClientResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

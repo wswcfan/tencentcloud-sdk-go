@@ -15,9 +15,9 @@
 package v20190722
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CaptchaOperDataInterceptUnit struct {
@@ -116,12 +116,12 @@ type DescribeCaptchaAppIdInfoRequest struct {
 }
 
 func (r *DescribeCaptchaAppIdInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaAppIdInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaAppIdInfoResponse struct {
@@ -156,7 +156,7 @@ type DescribeCaptchaAppIdInfoResponse struct {
 		DomainLimit *string `json:"DomainLimit,omitempty" name:"DomainLimit"`
 
 		// 邮件告警
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		MailAlarm []*string `json:"MailAlarm,omitempty" name:"MailAlarm" list`
 
 		// 流量控制
@@ -172,7 +172,7 @@ type DescribeCaptchaAppIdInfoResponse struct {
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 返回操作信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -181,12 +181,12 @@ type DescribeCaptchaAppIdInfoResponse struct {
 }
 
 func (r *DescribeCaptchaAppIdInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaAppIdInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaDataRequest struct {
@@ -206,12 +206,12 @@ type DescribeCaptchaDataRequest struct {
 }
 
 func (r *DescribeCaptchaDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaDataResponse struct {
@@ -222,11 +222,11 @@ type DescribeCaptchaDataResponse struct {
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 数据数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*CaptchaQueryData `json:"Data,omitempty" name:"Data" list`
 
 		// 返回信息描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -235,12 +235,12 @@ type DescribeCaptchaDataResponse struct {
 }
 
 func (r *DescribeCaptchaDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaDataSumRequest struct {
@@ -257,12 +257,12 @@ type DescribeCaptchaDataSumRequest struct {
 }
 
 func (r *DescribeCaptchaDataSumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaDataSumRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaDataSumResponse struct {
@@ -282,7 +282,7 @@ type DescribeCaptchaDataSumResponse struct {
 		AttackSum *int64 `json:"AttackSum,omitempty" name:"AttackSum"`
 
 		// 返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 成功返回0  其它失败
@@ -297,12 +297,12 @@ type DescribeCaptchaDataSumResponse struct {
 }
 
 func (r *DescribeCaptchaDataSumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaDataSumResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaOperDataRequest struct {
@@ -319,12 +319,12 @@ type DescribeCaptchaOperDataRequest struct {
 }
 
 func (r *DescribeCaptchaOperDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaOperDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaOperDataResponse struct {
@@ -335,11 +335,11 @@ type DescribeCaptchaOperDataResponse struct {
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 用户操作数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *CaptchaOperDataRes `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -348,12 +348,12 @@ type DescribeCaptchaOperDataResponse struct {
 }
 
 func (r *DescribeCaptchaOperDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaOperDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaResultRequest struct {
@@ -394,12 +394,12 @@ type DescribeCaptchaResultRequest struct {
 }
 
 func (r *DescribeCaptchaResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaResultResponse struct {
@@ -407,39 +407,39 @@ type DescribeCaptchaResultResponse struct {
 	Response *struct {
 
 		// 1	OK	验证通过
-	// 6	user code len error	验证码长度不匹配
-	// 7	captcha no match	验证码答案不匹配/Randstr参数不匹配
-	// 8	verify timeout	验证码签名超时
-	// 9	Sequnce repeat	验证码签名重放
-	// 10	Sequnce invalid	验证码签名序列
-	// 11	Cookie invalid	验证码cooking信息不合法
-	// 12	sig len error	签名长度错误
-	// 13	verify ip no match	ip不匹配
-	// 15	decrypt fail	验证码签名解密失败
-	// 16	appid no match	验证码强校验appid错误
-	// 17	cmd no much	验证码系统命令不匹配
-	// 18	uin no match	号码不匹配
-	// 19	seq redirect	重定向验证
-	// 20	opt no vcode	操作使用pt免验证码校验错误
-	// 21	diff	差别，验证错误
-	// 22	captcha type not match	验证码类型与拉取时不一致
-	// 23	verify type error	验证类型错误
-	// 24	invalid pkg	非法请求包
-	// 25	bad visitor	策略拦截
-	// 26	system busy	系统内部错误
-	// 100	param err	appsecretkey 参数校验错误
+		// 6	user code len error	验证码长度不匹配
+		// 7	captcha no match	验证码答案不匹配/Randstr参数不匹配
+		// 8	verify timeout	验证码签名超时
+		// 9	Sequnce repeat	验证码签名重放
+		// 10	Sequnce invalid	验证码签名序列
+		// 11	Cookie invalid	验证码cooking信息不合法
+		// 12	sig len error	签名长度错误
+		// 13	verify ip no match	ip不匹配
+		// 15	decrypt fail	验证码签名解密失败
+		// 16	appid no match	验证码强校验appid错误
+		// 17	cmd no much	验证码系统命令不匹配
+		// 18	uin no match	号码不匹配
+		// 19	seq redirect	重定向验证
+		// 20	opt no vcode	操作使用pt免验证码校验错误
+		// 21	diff	差别，验证错误
+		// 22	captcha type not match	验证码类型与拉取时不一致
+		// 23	verify type error	验证类型错误
+		// 24	invalid pkg	非法请求包
+		// 25	bad visitor	策略拦截
+		// 26	system busy	系统内部错误
+		// 100	param err	appsecretkey 参数校验错误
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 状态描述及验证错误信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// [0,100]，恶意等级
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EvilLevel *int64 `json:"EvilLevel,omitempty" name:"EvilLevel"`
 
 		// 前端获取验证码时间，时间戳格式
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GetCaptchaTime *int64 `json:"GetCaptchaTime,omitempty" name:"GetCaptchaTime"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -448,12 +448,12 @@ type DescribeCaptchaResultResponse struct {
 }
 
 func (r *DescribeCaptchaResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaUserAllAppIdRequest struct {
@@ -461,12 +461,12 @@ type DescribeCaptchaUserAllAppIdRequest struct {
 }
 
 func (r *DescribeCaptchaUserAllAppIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaUserAllAppIdRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCaptchaUserAllAppIdResponse struct {
@@ -474,14 +474,14 @@ type DescribeCaptchaUserAllAppIdResponse struct {
 	Response *struct {
 
 		// 用户注册的所有Appid和应用名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*CaptchaUserAllAppId `json:"Data,omitempty" name:"Data" list`
 
 		// 成功返回 0  其它失败
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 返回操作信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -490,12 +490,12 @@ type DescribeCaptchaUserAllAppIdResponse struct {
 }
 
 func (r *DescribeCaptchaUserAllAppIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCaptchaUserAllAppIdResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCaptchaAppIdInfoRequest struct {
@@ -542,12 +542,12 @@ type UpdateCaptchaAppIdInfoRequest struct {
 }
 
 func (r *UpdateCaptchaAppIdInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCaptchaAppIdInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCaptchaAppIdInfoResponse struct {
@@ -558,7 +558,7 @@ type UpdateCaptchaAppIdInfoResponse struct {
 		CaptchaCode *int64 `json:"CaptchaCode,omitempty" name:"CaptchaCode"`
 
 		// 返回操作信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CaptchaMsg *string `json:"CaptchaMsg,omitempty" name:"CaptchaMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -567,10 +567,10 @@ type UpdateCaptchaAppIdInfoResponse struct {
 }
 
 func (r *UpdateCaptchaAppIdInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCaptchaAppIdInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

@@ -15,9 +15,9 @@
 package v20181213
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Aspect struct {
@@ -103,12 +103,12 @@ type CorrectMultiImageRequest struct {
 }
 
 func (r *CorrectMultiImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CorrectMultiImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CorrectMultiImageResponse struct {
@@ -124,12 +124,12 @@ type CorrectMultiImageResponse struct {
 }
 
 func (r *CorrectMultiImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CorrectMultiImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskRequest struct {
@@ -143,12 +143,12 @@ type DescribeTaskRequest struct {
 }
 
 func (r *DescribeTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskResponse struct {
@@ -156,11 +156,11 @@ type DescribeTaskResponse struct {
 	Response *struct {
 
 		// 作文识别文本
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Content *string `json:"Content,omitempty" name:"Content"`
 
 		// 整体的批改结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CorrectData *CorrectData `json:"CorrectData,omitempty" name:"CorrectData"`
 
 		// 任务状态，“Progressing”: 处理中（此时无结果返回）、“Finished”: 处理完成
@@ -172,12 +172,12 @@ type DescribeTaskResponse struct {
 }
 
 func (r *DescribeTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ECCRequest struct {
@@ -212,12 +212,12 @@ type ECCRequest struct {
 }
 
 func (r *ECCRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ECCRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ECCResponse struct {
@@ -225,11 +225,11 @@ type ECCResponse struct {
 	Response *struct {
 
 		// 整体的批改结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *CorrectData `json:"Data,omitempty" name:"Data"`
 
 		// 任务 id，用于查询接口
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -238,12 +238,12 @@ type ECCResponse struct {
 }
 
 func (r *ECCResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ECCResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EHOCRRequest struct {
@@ -284,12 +284,12 @@ type EHOCRRequest struct {
 }
 
 func (r *EHOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EHOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EHOCRResponse struct {
@@ -305,12 +305,12 @@ type EHOCRResponse struct {
 }
 
 func (r *EHOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EHOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ErrorCoordinate struct {

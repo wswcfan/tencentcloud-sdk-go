@@ -15,9 +15,9 @@
 package v20180330
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ActivateSubscribeRequest struct {
@@ -43,12 +43,12 @@ type ActivateSubscribeRequest struct {
 }
 
 func (r *ActivateSubscribeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ActivateSubscribeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ActivateSubscribeResponse struct {
@@ -64,12 +64,12 @@ type ActivateSubscribeResponse struct {
 }
 
 func (r *ActivateSubscribeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ActivateSubscribeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CompleteMigrateJobRequest struct {
@@ -80,12 +80,12 @@ type CompleteMigrateJobRequest struct {
 }
 
 func (r *CompleteMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompleteMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CompleteMigrateJobResponse struct {
@@ -98,12 +98,12 @@ type CompleteMigrateJobResponse struct {
 }
 
 func (r *CompleteMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompleteMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ConsistencyParams struct {
@@ -126,12 +126,12 @@ type CreateMigrateCheckJobRequest struct {
 }
 
 func (r *CreateMigrateCheckJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMigrateCheckJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMigrateCheckJobResponse struct {
@@ -144,12 +144,12 @@ type CreateMigrateCheckJobResponse struct {
 }
 
 func (r *CreateMigrateCheckJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMigrateCheckJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMigrateJobRequest struct {
@@ -192,12 +192,12 @@ type CreateMigrateJobRequest struct {
 }
 
 func (r *CreateMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMigrateJobResponse struct {
@@ -213,12 +213,12 @@ type CreateMigrateJobResponse struct {
 }
 
 func (r *CreateMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubscribeRequest struct {
@@ -241,12 +241,12 @@ type CreateSubscribeRequest struct {
 }
 
 func (r *CreateSubscribeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubscribeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubscribeResponse struct {
@@ -254,7 +254,7 @@ type CreateSubscribeResponse struct {
 	Response *struct {
 
 		// 数据订阅实例的ID数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubscribeIds []*string `json:"SubscribeIds,omitempty" name:"SubscribeIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -263,12 +263,12 @@ type CreateSubscribeResponse struct {
 }
 
 func (r *CreateSubscribeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubscribeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSyncCheckJobRequest struct {
@@ -279,12 +279,12 @@ type CreateSyncCheckJobRequest struct {
 }
 
 func (r *CreateSyncCheckJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSyncCheckJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSyncCheckJobResponse struct {
@@ -297,12 +297,12 @@ type CreateSyncCheckJobResponse struct {
 }
 
 func (r *CreateSyncCheckJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSyncCheckJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSyncJobRequest struct {
@@ -339,12 +339,12 @@ type CreateSyncJobRequest struct {
 }
 
 func (r *CreateSyncJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSyncJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSyncJobResponse struct {
@@ -360,12 +360,12 @@ type CreateSyncJobResponse struct {
 }
 
 func (r *CreateSyncJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSyncJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMigrateJobRequest struct {
@@ -376,12 +376,12 @@ type DeleteMigrateJobRequest struct {
 }
 
 func (r *DeleteMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMigrateJobResponse struct {
@@ -394,12 +394,12 @@ type DeleteMigrateJobResponse struct {
 }
 
 func (r *DeleteMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSyncJobRequest struct {
@@ -410,12 +410,12 @@ type DeleteSyncJobRequest struct {
 }
 
 func (r *DeleteSyncJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSyncJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSyncJobResponse struct {
@@ -428,12 +428,12 @@ type DeleteSyncJobResponse struct {
 }
 
 func (r *DeleteSyncJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSyncJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAsyncRequestInfoRequest struct {
@@ -444,12 +444,12 @@ type DescribeAsyncRequestInfoRequest struct {
 }
 
 func (r *DescribeAsyncRequestInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAsyncRequestInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAsyncRequestInfoResponse struct {
@@ -468,12 +468,12 @@ type DescribeAsyncRequestInfoResponse struct {
 }
 
 func (r *DescribeAsyncRequestInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAsyncRequestInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrateCheckJobRequest struct {
@@ -484,12 +484,12 @@ type DescribeMigrateCheckJobRequest struct {
 }
 
 func (r *DescribeMigrateCheckJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrateCheckJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrateCheckJobResponse struct {
@@ -517,12 +517,12 @@ type DescribeMigrateCheckJobResponse struct {
 }
 
 func (r *DescribeMigrateCheckJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrateCheckJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrateJobsRequest struct {
@@ -548,12 +548,12 @@ type DescribeMigrateJobsRequest struct {
 }
 
 func (r *DescribeMigrateJobsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrateJobsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrateJobsResponse struct {
@@ -572,12 +572,12 @@ type DescribeMigrateJobsResponse struct {
 }
 
 func (r *DescribeMigrateJobsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrateJobsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegionConfRequest struct {
@@ -585,12 +585,12 @@ type DescribeRegionConfRequest struct {
 }
 
 func (r *DescribeRegionConfRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegionConfRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegionConfResponse struct {
@@ -609,12 +609,12 @@ type DescribeRegionConfResponse struct {
 }
 
 func (r *DescribeRegionConfResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegionConfResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubscribeConfRequest struct {
@@ -625,12 +625,12 @@ type DescribeSubscribeConfRequest struct {
 }
 
 func (r *DescribeSubscribeConfRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubscribeConfRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubscribeConfResponse struct {
@@ -715,12 +715,12 @@ type DescribeSubscribeConfResponse struct {
 }
 
 func (r *DescribeSubscribeConfResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubscribeConfResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubscribesRequest struct {
@@ -761,12 +761,12 @@ type DescribeSubscribesRequest struct {
 }
 
 func (r *DescribeSubscribesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubscribesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubscribesResponse struct {
@@ -785,12 +785,12 @@ type DescribeSubscribesResponse struct {
 }
 
 func (r *DescribeSubscribesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubscribesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSyncCheckJobRequest struct {
@@ -801,12 +801,12 @@ type DescribeSyncCheckJobRequest struct {
 }
 
 func (r *DescribeSyncCheckJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSyncCheckJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSyncCheckJobResponse struct {
@@ -834,12 +834,12 @@ type DescribeSyncCheckJobResponse struct {
 }
 
 func (r *DescribeSyncCheckJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSyncCheckJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSyncJobsRequest struct {
@@ -865,12 +865,12 @@ type DescribeSyncJobsRequest struct {
 }
 
 func (r *DescribeSyncJobsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSyncJobsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSyncJobsResponse struct {
@@ -889,12 +889,12 @@ type DescribeSyncJobsResponse struct {
 }
 
 func (r *DescribeSyncJobsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSyncJobsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DstInfo struct {
@@ -938,12 +938,12 @@ type IsolateSubscribeRequest struct {
 }
 
 func (r *IsolateSubscribeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IsolateSubscribeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IsolateSubscribeResponse struct {
@@ -956,12 +956,12 @@ type IsolateSubscribeResponse struct {
 }
 
 func (r *IsolateSubscribeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IsolateSubscribeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MigrateDetailInfo struct {
@@ -1059,19 +1059,19 @@ type MigrateOption struct {
 	// 是否用源库Root账户覆盖目标库，值包括：0-不覆盖，1-覆盖，选择库表或者结构迁移时应该为0
 	IsOverrideRoot *int64 `json:"IsOverrideRoot,omitempty" name:"IsOverrideRoot"`
 
-	// 不同数据库用到的额外参数.以JSON格式描述. 
-	// Redis可定义如下的参数: 
-	// { 
-	// 	"ClientOutputBufferHardLimit":512, 	从机缓冲区的硬性容量限制(MB) 
-	// 	"ClientOutputBufferSoftLimit":512, 	从机缓冲区的软性容量限制(MB) 
-	// 	"ClientOutputBufferPersistTime":60, 从机缓冲区的软性限制持续时间(秒) 
-	// 	"ReplBacklogSize":512, 	环形缓冲区容量限制(MB) 
-	// 	"ReplTimeout":120，		复制超时时间(秒) 
-	// }
-	// MongoDB可定义如下的参数: 
+	// 不同数据库用到的额外参数.以JSON格式描述.
+	// Redis可定义如下的参数:
 	// {
-	// 	'SrcAuthDatabase':'admin', 
-	// 	'SrcAuthFlag': "1", 
+	// 	"ClientOutputBufferHardLimit":512, 	从机缓冲区的硬性容量限制(MB)
+	// 	"ClientOutputBufferSoftLimit":512, 	从机缓冲区的软性容量限制(MB)
+	// 	"ClientOutputBufferPersistTime":60, 从机缓冲区的软性限制持续时间(秒)
+	// 	"ReplBacklogSize":512, 	环形缓冲区容量限制(MB)
+	// 	"ReplTimeout":120，		复制超时时间(秒)
+	// }
+	// MongoDB可定义如下的参数:
+	// {
+	// 	'SrcAuthDatabase':'admin',
+	// 	'SrcAuthFlag': "1",
 	// 	'SrcAuthMechanism':"SCRAM-SHA-1"
 	// }
 	// MySQL暂不支持额外参数设置。
@@ -1125,23 +1125,23 @@ type ModifyMigrateJobRequest struct {
 	DstInfo *DstInfo `json:"DstInfo,omitempty" name:"DstInfo"`
 
 	// 当选择'指定库表'迁移的时候, 需要设置待迁移的源数据库表信息,用符合json数组格式的字符串描述, 如下所例。
-	// 
+	//
 	// 对于database-table两级结构的数据库：
 	// [{"Database":"db1","Table":["table1","table2"]},{"Database":"db2"}]
 	// 对于database-schema-table三级结构：
 	// [{"Database":"db1","Schema":"s1","Table":["table1","table2"]},{"Database":"db1","Schema":"s2","Table":["table1","table2"]},{"Database":"db2","Schema":"s1","Table":["table1","table2"]},{"Database":"db3"},{"Database":"db4","Schema":"s1"}]
-	// 
+	//
 	// 如果是'整个实例'的迁移模式,不需设置该字段
 	DatabaseInfo *string `json:"DatabaseInfo,omitempty" name:"DatabaseInfo"`
 }
 
 func (r *ModifyMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMigrateJobResponse struct {
@@ -1154,12 +1154,12 @@ type ModifyMigrateJobResponse struct {
 }
 
 func (r *ModifyMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeConsumeTimeRequest struct {
@@ -1173,12 +1173,12 @@ type ModifySubscribeConsumeTimeRequest struct {
 }
 
 func (r *ModifySubscribeConsumeTimeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeConsumeTimeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeConsumeTimeResponse struct {
@@ -1191,12 +1191,12 @@ type ModifySubscribeConsumeTimeResponse struct {
 }
 
 func (r *ModifySubscribeConsumeTimeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeConsumeTimeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeNameRequest struct {
@@ -1210,12 +1210,12 @@ type ModifySubscribeNameRequest struct {
 }
 
 func (r *ModifySubscribeNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeNameRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeNameResponse struct {
@@ -1228,12 +1228,12 @@ type ModifySubscribeNameResponse struct {
 }
 
 func (r *ModifySubscribeNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeNameResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeObjectsRequest struct {
@@ -1250,12 +1250,12 @@ type ModifySubscribeObjectsRequest struct {
 }
 
 func (r *ModifySubscribeObjectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeObjectsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeObjectsResponse struct {
@@ -1271,12 +1271,12 @@ type ModifySubscribeObjectsResponse struct {
 }
 
 func (r *ModifySubscribeObjectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeObjectsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeVipVportRequest struct {
@@ -1296,12 +1296,12 @@ type ModifySubscribeVipVportRequest struct {
 }
 
 func (r *ModifySubscribeVipVportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeVipVportRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubscribeVipVportResponse struct {
@@ -1314,12 +1314,12 @@ type ModifySubscribeVipVportResponse struct {
 }
 
 func (r *ModifySubscribeVipVportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubscribeVipVportResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySyncJobRequest struct {
@@ -1341,12 +1341,12 @@ type ModifySyncJobRequest struct {
 }
 
 func (r *ModifySyncJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySyncJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySyncJobResponse struct {
@@ -1359,12 +1359,12 @@ type ModifySyncJobResponse struct {
 }
 
 func (r *ModifySyncJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySyncJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OfflineIsolatedSubscribeRequest struct {
@@ -1375,12 +1375,12 @@ type OfflineIsolatedSubscribeRequest struct {
 }
 
 func (r *OfflineIsolatedSubscribeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OfflineIsolatedSubscribeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OfflineIsolatedSubscribeResponse struct {
@@ -1393,12 +1393,12 @@ type OfflineIsolatedSubscribeResponse struct {
 }
 
 func (r *OfflineIsolatedSubscribeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OfflineIsolatedSubscribeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetSubscribeRequest struct {
@@ -1409,12 +1409,12 @@ type ResetSubscribeRequest struct {
 }
 
 func (r *ResetSubscribeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetSubscribeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetSubscribeResponse struct {
@@ -1427,12 +1427,12 @@ type ResetSubscribeResponse struct {
 }
 
 func (r *ResetSubscribeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetSubscribeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SrcInfo struct {
@@ -1495,12 +1495,12 @@ type StartMigrateJobRequest struct {
 }
 
 func (r *StartMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartMigrateJobResponse struct {
@@ -1513,12 +1513,12 @@ type StartMigrateJobResponse struct {
 }
 
 func (r *StartMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartSyncJobRequest struct {
@@ -1529,12 +1529,12 @@ type StartSyncJobRequest struct {
 }
 
 func (r *StartSyncJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartSyncJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartSyncJobResponse struct {
@@ -1547,12 +1547,12 @@ type StartSyncJobResponse struct {
 }
 
 func (r *StartSyncJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartSyncJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopMigrateJobRequest struct {
@@ -1563,12 +1563,12 @@ type StopMigrateJobRequest struct {
 }
 
 func (r *StopMigrateJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopMigrateJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopMigrateJobResponse struct {
@@ -1581,12 +1581,12 @@ type StopMigrateJobResponse struct {
 }
 
 func (r *StopMigrateJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopMigrateJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubscribeInfo struct {
@@ -1704,12 +1704,12 @@ type SwitchDrToMasterRequest struct {
 }
 
 func (r *SwitchDrToMasterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SwitchDrToMasterRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SwitchDrToMasterResponse struct {
@@ -1725,12 +1725,12 @@ type SwitchDrToMasterResponse struct {
 }
 
 func (r *SwitchDrToMasterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SwitchDrToMasterResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SyncCheckStepInfo struct {

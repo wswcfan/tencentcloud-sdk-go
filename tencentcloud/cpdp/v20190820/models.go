@@ -15,9 +15,9 @@
 package v20190820
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Acct struct {
@@ -140,12 +140,12 @@ type ApplyApplicationMaterialRequest struct {
 }
 
 func (r *ApplyApplicationMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyApplicationMaterialRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyApplicationMaterialResponse struct {
@@ -161,12 +161,12 @@ type ApplyApplicationMaterialResponse struct {
 }
 
 func (r *ApplyApplicationMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyApplicationMaterialResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyDeclareData struct {
@@ -279,12 +279,12 @@ type ApplyOutwardOrderRequest struct {
 }
 
 func (r *ApplyOutwardOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyOutwardOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyOutwardOrderResponse struct {
@@ -300,12 +300,12 @@ type ApplyOutwardOrderResponse struct {
 }
 
 func (r *ApplyOutwardOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyOutwardOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyOutwardOrderResult struct {
@@ -352,12 +352,12 @@ type ApplyPayerInfoRequest struct {
 }
 
 func (r *ApplyPayerInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyPayerInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyPayerInfoResponse struct {
@@ -373,12 +373,12 @@ type ApplyPayerInfoResponse struct {
 }
 
 func (r *ApplyPayerInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyPayerInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyPayerinfoData struct {
@@ -433,12 +433,12 @@ type ApplyReWithdrawalRequest struct {
 }
 
 func (r *ApplyReWithdrawalRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyReWithdrawalRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyReWithdrawalResponse struct {
@@ -454,12 +454,12 @@ type ApplyReWithdrawalResponse struct {
 }
 
 func (r *ApplyReWithdrawalResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyReWithdrawalResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyTradeData struct {
@@ -513,7 +513,7 @@ type ApplyTradeRequest struct {
 	// 交易金额
 	TradeAmount *float64 `json:"TradeAmount,omitempty" name:"TradeAmount"`
 
-	// 交易名称 
+	// 交易名称
 	// (TradeType=GOODS时填写物品名称，可填写多个，格式无要求；
 	// TradeType=SERVICE时填写贸易类别，见常见问题-贸易类别)
 	TradeName *string `json:"TradeName,omitempty" name:"TradeName"`
@@ -535,12 +535,12 @@ type ApplyTradeRequest struct {
 }
 
 func (r *ApplyTradeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyTradeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyTradeResponse struct {
@@ -556,12 +556,12 @@ type ApplyTradeResponse struct {
 }
 
 func (r *ApplyTradeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyTradeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyTradeResult struct {
@@ -630,12 +630,12 @@ type ApplyWithdrawalRequest struct {
 }
 
 func (r *ApplyWithdrawalRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyWithdrawalRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyWithdrawalResponse struct {
@@ -648,12 +648,12 @@ type ApplyWithdrawalResponse struct {
 }
 
 func (r *ApplyWithdrawalResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyWithdrawalResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCardItem struct {
@@ -773,12 +773,12 @@ type BindAcctRequest struct {
 }
 
 func (r *BindAcctRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindAcctRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindAcctResponse struct {
@@ -791,12 +791,12 @@ type BindAcctResponse struct {
 }
 
 func (r *BindAcctResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindAcctResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAccReUnionPayRequest struct {
@@ -822,12 +822,12 @@ type BindRelateAccReUnionPayRequest struct {
 }
 
 func (r *BindRelateAccReUnionPayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAccReUnionPayRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAccReUnionPayResponse struct {
@@ -835,11 +835,11 @@ type BindRelateAccReUnionPayResponse struct {
 	Response *struct {
 
 		// STRING(52)，见证系统流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// String(20)，返回码
@@ -857,12 +857,12 @@ type BindRelateAccReUnionPayResponse struct {
 }
 
 func (r *BindRelateAccReUnionPayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAccReUnionPayResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAcctSmallAmountRequest struct {
@@ -909,12 +909,12 @@ type BindRelateAcctSmallAmountRequest struct {
 }
 
 func (r *BindRelateAcctSmallAmountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAcctSmallAmountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAcctSmallAmountResponse struct {
@@ -931,7 +931,7 @@ type BindRelateAcctSmallAmountResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(1027)，保留域（来账鉴权的方式下，此字段的值为客户需往监管账户转入的金额。在同名子账户绑定的场景下，若返回""VERIFIED""则说明无需验证直接绑定成功）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -940,12 +940,12 @@ type BindRelateAcctSmallAmountResponse struct {
 }
 
 func (r *BindRelateAcctSmallAmountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAcctSmallAmountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAcctUnionPayRequest struct {
@@ -992,12 +992,12 @@ type BindRelateAcctUnionPayRequest struct {
 }
 
 func (r *BindRelateAcctUnionPayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAcctUnionPayRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindRelateAcctUnionPayResponse struct {
@@ -1005,7 +1005,7 @@ type BindRelateAcctUnionPayResponse struct {
 	Response *struct {
 
 		// STRING(1027)，保留域（在同名子账户绑定的场景下，若返回"VERIFIED"则说明无需验证直接绑定成功）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// String(20)，返回码
@@ -1023,12 +1023,12 @@ type BindRelateAcctUnionPayResponse struct {
 }
 
 func (r *BindRelateAcctUnionPayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindRelateAcctUnionPayResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckAcctRequest struct {
@@ -1087,12 +1087,12 @@ type CheckAcctRequest struct {
 }
 
 func (r *CheckAcctRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckAcctRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckAcctResponse struct {
@@ -1108,12 +1108,12 @@ type CheckAcctResponse struct {
 }
 
 func (r *CheckAcctResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckAcctResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckAmountRequest struct {
@@ -1142,12 +1142,12 @@ type CheckAmountRequest struct {
 }
 
 func (r *CheckAmountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckAmountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckAmountResponse struct {
@@ -1175,12 +1175,12 @@ type CheckAmountResponse struct {
 }
 
 func (r *CheckAmountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckAmountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ClearItem struct {
@@ -1244,12 +1244,12 @@ type CloseOrderRequest struct {
 }
 
 func (r *CloseOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloseOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CloseOrderResponse struct {
@@ -1262,12 +1262,12 @@ type CloseOrderResponse struct {
 }
 
 func (r *CloseOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloseOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAcctRequest struct {
@@ -1293,7 +1293,7 @@ type CreateAcctRequest struct {
 	// <敏感信息>加密详见《商户端接口敏感信息加密说明》
 	Mobile *string `json:"Mobile,omitempty" name:"Mobile"`
 
-	// 邮箱 
+	// 邮箱
 	// <敏感信息>加密详见《商户端接口敏感信息加密说明》
 	Email *string `json:"Email,omitempty" name:"Email"`
 
@@ -1344,12 +1344,12 @@ type CreateAcctRequest struct {
 }
 
 func (r *CreateAcctRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAcctRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAcctResponse struct {
@@ -1368,12 +1368,12 @@ type CreateAcctResponse struct {
 }
 
 func (r *CreateAcctResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAcctResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAgentTaxPaymentInfosRequest struct {
@@ -1402,12 +1402,12 @@ type CreateAgentTaxPaymentInfosRequest struct {
 }
 
 func (r *CreateAgentTaxPaymentInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAgentTaxPaymentInfosRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAgentTaxPaymentInfosResponse struct {
@@ -1423,12 +1423,12 @@ type CreateAgentTaxPaymentInfosResponse struct {
 }
 
 func (r *CreateAgentTaxPaymentInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAgentTaxPaymentInfosResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCustAcctIdRequest struct {
@@ -1481,12 +1481,12 @@ type CreateCustAcctIdRequest struct {
 }
 
 func (r *CreateCustAcctIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCustAcctIdRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCustAcctIdResponse struct {
@@ -1494,11 +1494,11 @@ type CreateCustAcctIdResponse struct {
 	Response *struct {
 
 		// STRING(50)，见证子账户的账号（平台需要记录下来，后续所有接口交互都会用到）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubAcctNo *string `json:"SubAcctNo,omitempty" name:"SubAcctNo"`
 
 		// STRING(1027)，保留域（需要开通智能收款，此处返回智能收款账号，正常情况下返回空）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// String(20)，返回码
@@ -1516,12 +1516,12 @@ type CreateCustAcctIdResponse struct {
 }
 
 func (r *CreateCustAcctIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCustAcctIdResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateInvoiceItem struct {
@@ -1690,12 +1690,12 @@ type CreateInvoiceRequest struct {
 }
 
 func (r *CreateInvoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateInvoiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateInvoiceResponse struct {
@@ -1711,12 +1711,12 @@ type CreateInvoiceResponse struct {
 }
 
 func (r *CreateInvoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateInvoiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateInvoiceResult struct {
@@ -1816,12 +1816,12 @@ type CreateMerchantRequest struct {
 }
 
 func (r *CreateMerchantRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMerchantRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMerchantResponse struct {
@@ -1837,12 +1837,12 @@ type CreateMerchantResponse struct {
 }
 
 func (r *CreateMerchantResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMerchantResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMerchantResult struct {
@@ -1902,12 +1902,12 @@ type CreateRedInvoiceRequest struct {
 }
 
 func (r *CreateRedInvoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRedInvoiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRedInvoiceResponse struct {
@@ -1923,12 +1923,12 @@ type CreateRedInvoiceResponse struct {
 }
 
 func (r *CreateRedInvoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRedInvoiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRedInvoiceResult struct {
@@ -1970,12 +1970,12 @@ type DeleteAgentTaxPaymentInfoRequest struct {
 }
 
 func (r *DeleteAgentTaxPaymentInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAgentTaxPaymentInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAgentTaxPaymentInfoResponse struct {
@@ -1988,12 +1988,12 @@ type DeleteAgentTaxPaymentInfoResponse struct {
 }
 
 func (r *DeleteAgentTaxPaymentInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAgentTaxPaymentInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAgentTaxPaymentInfosRequest struct {
@@ -2004,12 +2004,12 @@ type DeleteAgentTaxPaymentInfosRequest struct {
 }
 
 func (r *DeleteAgentTaxPaymentInfosRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAgentTaxPaymentInfosRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAgentTaxPaymentInfosResponse struct {
@@ -2022,12 +2022,12 @@ type DeleteAgentTaxPaymentInfosResponse struct {
 }
 
 func (r *DeleteAgentTaxPaymentInfosResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAgentTaxPaymentInfosResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadBillRequest struct {
@@ -2047,12 +2047,12 @@ type DownloadBillRequest struct {
 }
 
 func (r *DownloadBillRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadBillRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadBillResponse struct {
@@ -2074,12 +2074,12 @@ type DownloadBillResponse struct {
 }
 
 func (r *DownloadBillResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadBillResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FileItem struct {
@@ -2142,12 +2142,12 @@ type ModifyAgentTaxPaymentInfoRequest struct {
 }
 
 func (r *ModifyAgentTaxPaymentInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAgentTaxPaymentInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAgentTaxPaymentInfoResponse struct {
@@ -2163,12 +2163,12 @@ type ModifyAgentTaxPaymentInfoResponse struct {
 }
 
 func (r *ModifyAgentTaxPaymentInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAgentTaxPaymentInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMntMbrBindRelateAcctBankCodeRequest struct {
@@ -2200,12 +2200,12 @@ type ModifyMntMbrBindRelateAcctBankCodeRequest struct {
 }
 
 func (r *ModifyMntMbrBindRelateAcctBankCodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMntMbrBindRelateAcctBankCodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMntMbrBindRelateAcctBankCodeResponse struct {
@@ -2222,7 +2222,7 @@ type ModifyMntMbrBindRelateAcctBankCodeResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2231,12 +2231,12 @@ type ModifyMntMbrBindRelateAcctBankCodeResponse struct {
 }
 
 func (r *ModifyMntMbrBindRelateAcctBankCodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMntMbrBindRelateAcctBankCodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctBindingRequest struct {
@@ -2269,12 +2269,12 @@ type QueryAcctBindingRequest struct {
 }
 
 func (r *QueryAcctBindingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctBindingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctBindingResponse struct {
@@ -2293,12 +2293,12 @@ type QueryAcctBindingResponse struct {
 }
 
 func (r *QueryAcctBindingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctBindingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctInfoListRequest struct {
@@ -2337,12 +2337,12 @@ type QueryAcctInfoListRequest struct {
 }
 
 func (r *QueryAcctInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctInfoListResponse struct {
@@ -2364,12 +2364,12 @@ type QueryAcctInfoListResponse struct {
 }
 
 func (r *QueryAcctInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctInfoRequest struct {
@@ -2402,12 +2402,12 @@ type QueryAcctInfoRequest struct {
 }
 
 func (r *QueryAcctInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctInfoResponse struct {
@@ -2421,9 +2421,9 @@ type QueryAcctInfoResponse struct {
 		SubMchName *string `json:"SubMchName,omitempty" name:"SubMchName"`
 
 		// 子商户类型：
-	// 个人: personal
-	// 企业：enterprise
-	// 缺省： enterprise
+		// 个人: personal
+		// 企业：enterprise
+		// 缺省： enterprise
 		SubMchType *string `json:"SubMchType,omitempty" name:"SubMchType"`
 
 		// 不填则默认子商户名称
@@ -2433,15 +2433,15 @@ type QueryAcctInfoResponse struct {
 		Address *string `json:"Address,omitempty" name:"Address"`
 
 		// 子商户联系人子商户联系人
-	// <敏感信息>
+		// <敏感信息>
 		Contact *string `json:"Contact,omitempty" name:"Contact"`
 
 		// 联系人手机号
-	// <敏感信息>
+		// <敏感信息>
 		Mobile *string `json:"Mobile,omitempty" name:"Mobile"`
 
-		// 邮箱 
-	// <敏感信息>
+		// 邮箱
+		// <敏感信息>
 		Email *string `json:"Email,omitempty" name:"Email"`
 
 		// 子商户id
@@ -2451,10 +2451,10 @@ type QueryAcctInfoResponse struct {
 		SubAcctNo *string `json:"SubAcctNo,omitempty" name:"SubAcctNo"`
 
 		// 子商户会员类型：
-	// general:普通子账户
-	// merchant:商户子账户
-	// 缺省： general
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// general:普通子账户
+		// merchant:商户子账户
+		// 缺省： general
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubMerchantMemberType *string `json:"SubMerchantMemberType,omitempty" name:"SubMerchantMemberType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2463,12 +2463,12 @@ type QueryAcctInfoResponse struct {
 }
 
 func (r *QueryAcctInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAcctInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAcctItem struct {
@@ -2505,7 +2505,7 @@ type QueryAcctItem struct {
 	// <敏感信息>
 	Mobile *string `json:"Mobile,omitempty" name:"Mobile"`
 
-	// 邮箱 
+	// 邮箱
 	// <敏感信息>
 	Email *string `json:"Email,omitempty" name:"Email"`
 
@@ -2529,12 +2529,12 @@ type QueryAgentStatementsRequest struct {
 }
 
 func (r *QueryAgentStatementsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAgentStatementsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAgentStatementsResponse struct {
@@ -2542,7 +2542,7 @@ type QueryAgentStatementsResponse struct {
 	Response *struct {
 
 		// 文件下载链接
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FileUrl *string `json:"FileUrl,omitempty" name:"FileUrl"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2551,12 +2551,12 @@ type QueryAgentStatementsResponse struct {
 }
 
 func (r *QueryAgentStatementsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAgentStatementsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAgentTaxPaymentBatchRequest struct {
@@ -2570,12 +2570,12 @@ type QueryAgentTaxPaymentBatchRequest struct {
 }
 
 func (r *QueryAgentTaxPaymentBatchRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAgentTaxPaymentBatchRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryAgentTaxPaymentBatchResponse struct {
@@ -2591,12 +2591,12 @@ type QueryAgentTaxPaymentBatchResponse struct {
 }
 
 func (r *QueryAgentTaxPaymentBatchResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryAgentTaxPaymentBatchResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryApplicationMaterialRequest struct {
@@ -2610,12 +2610,12 @@ type QueryApplicationMaterialRequest struct {
 }
 
 func (r *QueryApplicationMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryApplicationMaterialRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryApplicationMaterialResponse struct {
@@ -2631,12 +2631,12 @@ type QueryApplicationMaterialResponse struct {
 }
 
 func (r *QueryApplicationMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryApplicationMaterialResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBalanceRequest struct {
@@ -2670,12 +2670,12 @@ type QueryBalanceRequest struct {
 }
 
 func (r *QueryBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBalanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBalanceResponse struct {
@@ -2703,12 +2703,12 @@ type QueryBalanceResponse struct {
 }
 
 func (r *QueryBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBalanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankClearRequest struct {
@@ -2737,12 +2737,12 @@ type QueryBankClearRequest struct {
 }
 
 func (r *QueryBankClearRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankClearRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankClearResponse struct {
@@ -2759,27 +2759,27 @@ type QueryBankClearResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING (10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0: 否; 1: 是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING (10)，符合业务查询条件的记录总数（重复次数, 一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*ClearItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2788,12 +2788,12 @@ type QueryBankClearResponse struct {
 }
 
 func (r *QueryBankClearResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankClearResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankTransactionDetailsRequest struct {
@@ -2828,12 +2828,12 @@ type QueryBankTransactionDetailsRequest struct {
 }
 
 func (r *QueryBankTransactionDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankTransactionDetailsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankTransactionDetailsResponse struct {
@@ -2850,27 +2850,27 @@ type QueryBankTransactionDetailsResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0: 否; 1: 是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING(10)，符合业务查询条件的记录总数（重复次数，一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*TransactionItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2879,12 +2879,12 @@ type QueryBankTransactionDetailsResponse struct {
 }
 
 func (r *QueryBankTransactionDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankTransactionDetailsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankWithdrawCashDetailsRequest struct {
@@ -2919,12 +2919,12 @@ type QueryBankWithdrawCashDetailsRequest struct {
 }
 
 func (r *QueryBankWithdrawCashDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankWithdrawCashDetailsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBankWithdrawCashDetailsResponse struct {
@@ -2941,27 +2941,27 @@ type QueryBankWithdrawCashDetailsResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0:否; 1:是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING(10)，符合业务查询条件的记录总数（重复次数，一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*WithdrawItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2970,12 +2970,12 @@ type QueryBankWithdrawCashDetailsResponse struct {
 }
 
 func (r *QueryBankWithdrawCashDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBankWithdrawCashDetailsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryCommonTransferRechargeRequest struct {
@@ -3004,12 +3004,12 @@ type QueryCommonTransferRechargeRequest struct {
 }
 
 func (r *QueryCommonTransferRechargeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryCommonTransferRechargeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryCommonTransferRechargeResponse struct {
@@ -3026,27 +3026,27 @@ type QueryCommonTransferRechargeResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0: 否; 1: 是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING(10)，符合业务查询条件的记录总数（重复次数，一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*TransferItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3055,12 +3055,12 @@ type QueryCommonTransferRechargeResponse struct {
 }
 
 func (r *QueryCommonTransferRechargeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryCommonTransferRechargeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryCustAcctIdBalanceRequest struct {
@@ -3086,12 +3086,12 @@ type QueryCustAcctIdBalanceRequest struct {
 }
 
 func (r *QueryCustAcctIdBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryCustAcctIdBalanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryCustAcctIdBalanceResponse struct {
@@ -3108,27 +3108,27 @@ type QueryCustAcctIdBalanceResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0: 否; 1: 是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING(10)，符合业务查询条件的记录总数（重复次数，一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 账户信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AcctArray []*Acct `json:"AcctArray,omitempty" name:"AcctArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3137,12 +3137,12 @@ type QueryCustAcctIdBalanceResponse struct {
 }
 
 func (r *QueryCustAcctIdBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryCustAcctIdBalanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryDeclareData struct {
@@ -3208,12 +3208,12 @@ type QueryExchangeRateRequest struct {
 }
 
 func (r *QueryExchangeRateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryExchangeRateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryExchangeRateResponse struct {
@@ -3229,12 +3229,12 @@ type QueryExchangeRateResponse struct {
 }
 
 func (r *QueryExchangeRateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryExchangeRateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryExchangerateData struct {
@@ -3286,12 +3286,12 @@ type QueryInvoiceRequest struct {
 }
 
 func (r *QueryInvoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryInvoiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryInvoiceResponse struct {
@@ -3307,12 +3307,12 @@ type QueryInvoiceResponse struct {
 }
 
 func (r *QueryInvoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryInvoiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryInvoiceResult struct {
@@ -3375,10 +3375,10 @@ type QueryItem struct {
 	// 子商户账户
 	SubAcctNo *string `json:"SubAcctNo,omitempty" name:"SubAcctNo"`
 
-	// 子账户属性 
-	// 1：普通会员子账号 
-	// 2：挂账子账号 
-	// 3：手续费子账号 
+	// 子账户属性
+	// 1：普通会员子账号
+	// 2：挂账子账号
+	// 3：手续费子账号
 	// 4：利息子账号
 	// 5：平台担保子账号
 	SubAcctProperty *string `json:"SubAcctProperty,omitempty" name:"SubAcctProperty"`
@@ -3422,12 +3422,12 @@ type QueryMemberBindRequest struct {
 }
 
 func (r *QueryMemberBindRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMemberBindRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMemberBindResponse struct {
@@ -3435,27 +3435,27 @@ type QueryMemberBindResponse struct {
 	Response *struct {
 
 		// STRING (10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// STRING(30)，起始记录号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartRecordNo *string `json:"StartRecordNo,omitempty" name:"StartRecordNo"`
 
 		// STRING(2)，结束标志（0: 否; 1: 是）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EndFlag *string `json:"EndFlag,omitempty" name:"EndFlag"`
 
 		// STRING (10)，符合业务查询条件的记录总数（重复次数，一次最多返回20条记录）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalNum *string `json:"TotalNum,omitempty" name:"TotalNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*TranItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// String(20)，返回码
@@ -3473,12 +3473,12 @@ type QueryMemberBindResponse struct {
 }
 
 func (r *QueryMemberBindResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMemberBindResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMemberTransactionRequest struct {
@@ -3540,12 +3540,12 @@ type QueryMemberTransactionRequest struct {
 }
 
 func (r *QueryMemberTransactionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMemberTransactionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMemberTransactionResponse struct {
@@ -3562,11 +3562,11 @@ type QueryMemberTransactionResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，见证系统流水号（即电商见证宝系统生成的流水号，可关联具体一笔请求）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3575,12 +3575,12 @@ type QueryMemberTransactionResponse struct {
 }
 
 func (r *QueryMemberTransactionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMemberTransactionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMerchantBalanceData struct {
@@ -3606,12 +3606,12 @@ type QueryMerchantBalanceRequest struct {
 }
 
 func (r *QueryMerchantBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMerchantBalanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMerchantBalanceResponse struct {
@@ -3627,12 +3627,12 @@ type QueryMerchantBalanceResponse struct {
 }
 
 func (r *QueryMerchantBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMerchantBalanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMerchantBalanceResult struct {
@@ -3661,12 +3661,12 @@ type QueryMerchantInfoForManagementRequest struct {
 }
 
 func (r *QueryMerchantInfoForManagementRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMerchantInfoForManagementRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryMerchantInfoForManagementResponse struct {
@@ -3674,7 +3674,7 @@ type QueryMerchantInfoForManagementResponse struct {
 	Response *struct {
 
 		// 商户结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result *MerchantManagementResult `json:"Result,omitempty" name:"Result"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3683,12 +3683,12 @@ type QueryMerchantInfoForManagementResponse struct {
 }
 
 func (r *QueryMerchantInfoForManagementResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryMerchantInfoForManagementResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryOrderOutOrderList struct {
@@ -3723,8 +3723,8 @@ type QueryOrderOutOrderList struct {
 	// 高速场景信息
 	SceneInfo *string `json:"SceneInfo,omitempty" name:"SceneInfo"`
 
-	// 当前订单的订单状态 
-	// 0：初始状态，获取聚鑫交易订单成功；  
+	// 当前订单的订单状态
+	// 0：初始状态，获取聚鑫交易订单成功；
 	// 1：拉起聚鑫支付页面成功，用户未 支付；
 	// 2：用户支付成功，正在发货；
 	// 3：用户支付成功，发货失败；
@@ -3848,12 +3848,12 @@ type QueryOrderRequest struct {
 }
 
 func (r *QueryOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryOrderResponse struct {
@@ -3872,12 +3872,12 @@ type QueryOrderResponse struct {
 }
 
 func (r *QueryOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryOutwardOrderData struct {
@@ -3943,12 +3943,12 @@ type QueryOutwardOrderRequest struct {
 }
 
 func (r *QueryOutwardOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryOutwardOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryOutwardOrderResponse struct {
@@ -3964,12 +3964,12 @@ type QueryOutwardOrderResponse struct {
 }
 
 func (r *QueryOutwardOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryOutwardOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryOutwardOrderResult struct {
@@ -3992,12 +3992,12 @@ type QueryPayerInfoRequest struct {
 }
 
 func (r *QueryPayerInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryPayerInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryPayerInfoResponse struct {
@@ -4013,12 +4013,12 @@ type QueryPayerInfoResponse struct {
 }
 
 func (r *QueryPayerInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryPayerInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryPayerinfoData struct {
@@ -4093,12 +4093,12 @@ type QueryReconciliationDocumentRequest struct {
 }
 
 func (r *QueryReconciliationDocumentRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryReconciliationDocumentRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryReconciliationDocumentResponse struct {
@@ -4115,15 +4115,15 @@ type QueryReconciliationDocumentResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，本次交易返回查询结果记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultNum *string `json:"ResultNum,omitempty" name:"ResultNum"`
 
 		// 交易信息数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranItemArray []*FileItem `json:"TranItemArray,omitempty" name:"TranItemArray" list`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4132,12 +4132,12 @@ type QueryReconciliationDocumentResponse struct {
 }
 
 func (r *QueryReconciliationDocumentResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryReconciliationDocumentResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryRefundRequest struct {
@@ -4167,12 +4167,12 @@ type QueryRefundRequest struct {
 }
 
 func (r *QueryRefundRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryRefundRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryRefundResponse struct {
@@ -4188,12 +4188,12 @@ type QueryRefundResponse struct {
 }
 
 func (r *QueryRefundResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryRefundResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuerySingleTransactionStatusRequest struct {
@@ -4222,12 +4222,12 @@ type QuerySingleTransactionStatusRequest struct {
 }
 
 func (r *QuerySingleTransactionStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuerySingleTransactionStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuerySingleTransactionStatusResponse struct {
@@ -4244,39 +4244,39 @@ type QuerySingleTransactionStatusResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(2)，记账标志（记账标志。1: 登记挂账; 2: 支付; 3: 提现; 4: 清分; 5: 下单预支付; 6: 确认并付款; 7: 退款; 8: 支付到平台; N: 其他）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BookingFlag *string `json:"BookingFlag,omitempty" name:"BookingFlag"`
 
 		// STRING(32)，交易状态（0: 成功; 1: 失败; 2: 待确认; 5: 待处理; 6: 处理中。0和1是终态，2、5、6是中间态，其中2是特指提现后待确认提现是否成功，5是银行收到交易等待处理，6是交易正在处理）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranStatus *string `json:"TranStatus,omitempty" name:"TranStatus"`
 
 		// STRING(20)，交易金额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranAmt *string `json:"TranAmt,omitempty" name:"TranAmt"`
 
 		// STRING(8)，交易日期
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranDate *string `json:"TranDate,omitempty" name:"TranDate"`
 
 		// STRING(20)，交易时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TranTime *string `json:"TranTime,omitempty" name:"TranTime"`
 
 		// STRING(50)，转入子账户账号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InSubAcctNo *string `json:"InSubAcctNo,omitempty" name:"InSubAcctNo"`
 
 		// STRING(50)，转出子账户账号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OutSubAcctNo *string `json:"OutSubAcctNo,omitempty" name:"OutSubAcctNo"`
 
 		// STRING(300)，失败信息（当提现失败时，返回交易失败原因）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailMsg *string `json:"FailMsg,omitempty" name:"FailMsg"`
 
 		// STRING(50)，原前置流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OldTranFrontSeqNo *string `json:"OldTranFrontSeqNo,omitempty" name:"OldTranFrontSeqNo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4285,12 +4285,12 @@ type QuerySingleTransactionStatusResponse struct {
 }
 
 func (r *QuerySingleTransactionStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuerySingleTransactionStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuerySmallAmountTransferRequest struct {
@@ -4313,12 +4313,12 @@ type QuerySmallAmountTransferRequest struct {
 }
 
 func (r *QuerySmallAmountTransferRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuerySmallAmountTransferRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuerySmallAmountTransferResponse struct {
@@ -4335,15 +4335,15 @@ type QuerySmallAmountTransferResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(10)，返回状态（0: 成功; 1: 失败; 2: 待确认）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReturnStatus *string `json:"ReturnStatus,omitempty" name:"ReturnStatus"`
 
 		// STRING(512)，返回信息（失败返回具体信息）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReturnMsg *string `json:"ReturnMsg,omitempty" name:"ReturnMsg"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4352,12 +4352,12 @@ type QuerySmallAmountTransferResponse struct {
 }
 
 func (r *QuerySmallAmountTransferResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuerySmallAmountTransferResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryTradeData struct {
@@ -4429,12 +4429,12 @@ type QueryTradeRequest struct {
 }
 
 func (r *QueryTradeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryTradeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryTradeResponse struct {
@@ -4450,12 +4450,12 @@ type QueryTradeResponse struct {
 }
 
 func (r *QueryTradeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryTradeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryTradeResult struct {
@@ -4520,12 +4520,12 @@ type RechargeMemberThirdPayRequest struct {
 }
 
 func (r *RechargeMemberThirdPayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RechargeMemberThirdPayRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RechargeMemberThirdPayResponse struct {
@@ -4542,19 +4542,19 @@ type RechargeMemberThirdPayResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，前置流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(20)，会员子账户交易前可用余额
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		MemberSubAcctPreAvailBal *string `json:"MemberSubAcctPreAvailBal,omitempty" name:"MemberSubAcctPreAvailBal"`
 
 		// STRING(300)，保留域1
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsgOne *string `json:"ReservedMsgOne,omitempty" name:"ReservedMsgOne"`
 
 		// STRING(300)，保留域2
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsgTwo *string `json:"ReservedMsgTwo,omitempty" name:"ReservedMsgTwo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4563,12 +4563,12 @@ type RechargeMemberThirdPayResponse struct {
 }
 
 func (r *RechargeMemberThirdPayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RechargeMemberThirdPayResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RefundOutSubOrderRefundList struct {
@@ -4634,12 +4634,12 @@ type RefundRequest struct {
 }
 
 func (r *RefundRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RefundRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RefundResponse struct {
@@ -4652,12 +4652,12 @@ type RefundResponse struct {
 }
 
 func (r *RefundResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RefundResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterBillRequest struct {
@@ -4719,12 +4719,12 @@ type RegisterBillRequest struct {
 }
 
 func (r *RegisterBillRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterBillRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterBillResponse struct {
@@ -4746,12 +4746,12 @@ type RegisterBillResponse struct {
 }
 
 func (r *RegisterBillResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterBillResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterBillSupportWithdrawRequest struct {
@@ -4789,12 +4789,12 @@ type RegisterBillSupportWithdrawRequest struct {
 }
 
 func (r *RegisterBillSupportWithdrawRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterBillSupportWithdrawRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterBillSupportWithdrawResponse struct {
@@ -4808,15 +4808,15 @@ type RegisterBillSupportWithdrawResponse struct {
 		TxnReturnMsg *string `json:"TxnReturnMsg,omitempty" name:"TxnReturnMsg"`
 
 		// STRING(52)，见证系统流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// String(22)，交易流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4825,12 +4825,12 @@ type RegisterBillSupportWithdrawResponse struct {
 }
 
 func (r *RegisterBillSupportWithdrawResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterBillSupportWithdrawResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevRegisterBillSupportWithdrawRequest struct {
@@ -4865,12 +4865,12 @@ type RevRegisterBillSupportWithdrawRequest struct {
 }
 
 func (r *RevRegisterBillSupportWithdrawRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevRegisterBillSupportWithdrawRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevRegisterBillSupportWithdrawResponse struct {
@@ -4887,11 +4887,11 @@ type RevRegisterBillSupportWithdrawResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，见证系统流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4900,12 +4900,12 @@ type RevRegisterBillSupportWithdrawResponse struct {
 }
 
 func (r *RevRegisterBillSupportWithdrawResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevRegisterBillSupportWithdrawResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevResigterBillSupportWithdrawRequest struct {
@@ -4943,12 +4943,12 @@ type RevResigterBillSupportWithdrawRequest struct {
 }
 
 func (r *RevResigterBillSupportWithdrawRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevResigterBillSupportWithdrawRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevResigterBillSupportWithdrawResponse struct {
@@ -4965,11 +4965,11 @@ type RevResigterBillSupportWithdrawResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，见证系统流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -4978,12 +4978,12 @@ type RevResigterBillSupportWithdrawResponse struct {
 }
 
 func (r *RevResigterBillSupportWithdrawResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevResigterBillSupportWithdrawResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReviseMbrPropertyRequest struct {
@@ -5006,12 +5006,12 @@ type ReviseMbrPropertyRequest struct {
 }
 
 func (r *ReviseMbrPropertyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReviseMbrPropertyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReviseMbrPropertyResponse struct {
@@ -5028,7 +5028,7 @@ type ReviseMbrPropertyResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -5037,12 +5037,12 @@ type ReviseMbrPropertyResponse struct {
 }
 
 func (r *ReviseMbrPropertyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReviseMbrPropertyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevokeMemberRechargeThirdPayRequest struct {
@@ -5086,12 +5086,12 @@ type RevokeMemberRechargeThirdPayRequest struct {
 }
 
 func (r *RevokeMemberRechargeThirdPayRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevokeMemberRechargeThirdPayRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RevokeMemberRechargeThirdPayResponse struct {
@@ -5108,15 +5108,15 @@ type RevokeMemberRechargeThirdPayResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，前置流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(300)，保留域1
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsgOne *string `json:"ReservedMsgOne,omitempty" name:"ReservedMsgOne"`
 
 		// STRING(300)，保留域2
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsgTwo *string `json:"ReservedMsgTwo,omitempty" name:"ReservedMsgTwo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -5125,12 +5125,12 @@ type RevokeMemberRechargeThirdPayResponse struct {
 }
 
 func (r *RevokeMemberRechargeThirdPayResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RevokeMemberRechargeThirdPayResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TranItem struct {
@@ -5308,12 +5308,12 @@ type UnBindAcctRequest struct {
 }
 
 func (r *UnBindAcctRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnBindAcctRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnBindAcctResponse struct {
@@ -5326,12 +5326,12 @@ type UnBindAcctResponse struct {
 }
 
 func (r *UnBindAcctResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnBindAcctResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnbindRelateAcctRequest struct {
@@ -5357,12 +5357,12 @@ type UnbindRelateAcctRequest struct {
 }
 
 func (r *UnbindRelateAcctRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnbindRelateAcctRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnbindRelateAcctResponse struct {
@@ -5379,11 +5379,11 @@ type UnbindRelateAcctResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，见证系统流水号（即电商见证宝系统生成的流水号，可关联具体一笔请求）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -5392,12 +5392,12 @@ type UnbindRelateAcctResponse struct {
 }
 
 func (r *UnbindRelateAcctResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnbindRelateAcctResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnifiedOrderInSubOrderList struct {
@@ -5472,7 +5472,7 @@ type UnifiedOrderRequest struct {
 	// Web端回调地址
 	CallbackUrl *string `json:"CallbackUrl,omitempty" name:"CallbackUrl"`
 
-	// 指定支付渠道：  wechat：微信支付  qqwallet：QQ钱包 
+	// 指定支付渠道：  wechat：微信支付  qqwallet：QQ钱包
 	//  bank：网银支付  只有一个渠道时需要指定
 	Channel *string `json:"Channel,omitempty" name:"Channel"`
 
@@ -5510,12 +5510,12 @@ type UnifiedOrderRequest struct {
 }
 
 func (r *UnifiedOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnifiedOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnifiedOrderResponse struct {
@@ -5540,12 +5540,12 @@ type UnifiedOrderResponse struct {
 }
 
 func (r *UnifiedOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnifiedOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WithdrawBill struct {
@@ -5622,12 +5622,12 @@ type WithdrawCashMembershipRequest struct {
 }
 
 func (r *WithdrawCashMembershipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WithdrawCashMembershipRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WithdrawCashMembershipResponse struct {
@@ -5644,15 +5644,15 @@ type WithdrawCashMembershipResponse struct {
 		CnsmrSeqNo *string `json:"CnsmrSeqNo,omitempty" name:"CnsmrSeqNo"`
 
 		// STRING(52)，见证系统流水号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontSeqNo *string `json:"FrontSeqNo,omitempty" name:"FrontSeqNo"`
 
 		// STRING(20)，转账手续费（固定返回0.00）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TransferFee *string `json:"TransferFee,omitempty" name:"TransferFee"`
 
 		// STRING(1027)，保留域
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReservedMsg *string `json:"ReservedMsg,omitempty" name:"ReservedMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -5661,12 +5661,12 @@ type WithdrawCashMembershipResponse struct {
 }
 
 func (r *WithdrawCashMembershipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WithdrawCashMembershipResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WithdrawItem struct {

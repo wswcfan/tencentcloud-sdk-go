@@ -15,9 +15,9 @@
 package v20180410
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AcceptDirectConnectTunnelRequest struct {
@@ -28,12 +28,12 @@ type AcceptDirectConnectTunnelRequest struct {
 }
 
 func (r *AcceptDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AcceptDirectConnectTunnelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AcceptDirectConnectTunnelResponse struct {
@@ -46,12 +46,12 @@ type AcceptDirectConnectTunnelResponse struct {
 }
 
 func (r *AcceptDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AcceptDirectConnectTunnelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AccessPoint struct {
@@ -138,12 +138,12 @@ type CreateDirectConnectRequest struct {
 }
 
 func (r *CreateDirectConnectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDirectConnectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDirectConnectResponse struct {
@@ -159,12 +159,12 @@ type CreateDirectConnectResponse struct {
 }
 
 func (r *CreateDirectConnectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDirectConnectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDirectConnectTunnelRequest struct {
@@ -226,12 +226,12 @@ type CreateDirectConnectTunnelRequest struct {
 }
 
 func (r *CreateDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDirectConnectTunnelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDirectConnectTunnelResponse struct {
@@ -247,12 +247,12 @@ type CreateDirectConnectTunnelResponse struct {
 }
 
 func (r *CreateDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDirectConnectTunnelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDirectConnectRequest struct {
@@ -263,12 +263,12 @@ type DeleteDirectConnectRequest struct {
 }
 
 func (r *DeleteDirectConnectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDirectConnectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDirectConnectResponse struct {
@@ -281,12 +281,12 @@ type DeleteDirectConnectResponse struct {
 }
 
 func (r *DeleteDirectConnectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDirectConnectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDirectConnectTunnelRequest struct {
@@ -297,12 +297,12 @@ type DeleteDirectConnectTunnelRequest struct {
 }
 
 func (r *DeleteDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDirectConnectTunnelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDirectConnectTunnelResponse struct {
@@ -315,19 +315,19 @@ type DeleteDirectConnectTunnelResponse struct {
 }
 
 func (r *DeleteDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDirectConnectTunnelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessPointsRequest struct {
 	*tchttp.BaseRequest
 
 	// 接入点所在的地域。使用DescribeRegions查询
-	// 
+	//
 	// 您可以通过调用 DescribeRegions接口获取地域ID。
 	RegionId *string `json:"RegionId,omitempty" name:"RegionId"`
 
@@ -339,12 +339,12 @@ type DescribeAccessPointsRequest struct {
 }
 
 func (r *DescribeAccessPointsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessPointsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessPointsResponse struct {
@@ -363,12 +363,12 @@ type DescribeAccessPointsResponse struct {
 }
 
 func (r *DescribeAccessPointsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessPointsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDirectConnectTunnelsRequest struct {
@@ -392,12 +392,12 @@ type DescribeDirectConnectTunnelsRequest struct {
 }
 
 func (r *DescribeDirectConnectTunnelsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDirectConnectTunnelsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDirectConnectTunnelsResponse struct {
@@ -416,12 +416,12 @@ type DescribeDirectConnectTunnelsResponse struct {
 }
 
 func (r *DescribeDirectConnectTunnelsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDirectConnectTunnelsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDirectConnectsRequest struct {
@@ -441,12 +441,12 @@ type DescribeDirectConnectsRequest struct {
 }
 
 func (r *DescribeDirectConnectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDirectConnectsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDirectConnectsResponse struct {
@@ -465,12 +465,12 @@ type DescribeDirectConnectsResponse struct {
 }
 
 func (r *DescribeDirectConnectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDirectConnectsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DirectConnect struct {
@@ -485,12 +485,12 @@ type DirectConnect struct {
 	AccessPointId *string `json:"AccessPointId,omitempty" name:"AccessPointId"`
 
 	// 物理专线的状态。
-	// 申请中：PENDING 
-	// 申请驳回：REJECTED   
-	// 待付款：TOPAY 
-	// 已付款：PAID 
-	// 建设中：ALLOCATED   
-	// 已开通：AVAILABLE  
+	// 申请中：PENDING
+	// 申请驳回：REJECTED
+	// 待付款：TOPAY
+	// 已付款：PAID
+	// 建设中：ALLOCATED
+	// 已开通：AVAILABLE
 	// 删除中 ：DELETING
 	// 已删除：DELETED 。
 	State *string `json:"State,omitempty" name:"State"`
@@ -733,12 +733,12 @@ type ModifyDirectConnectAttributeRequest struct {
 }
 
 func (r *ModifyDirectConnectAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDirectConnectAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDirectConnectAttributeResponse struct {
@@ -751,12 +751,12 @@ type ModifyDirectConnectAttributeResponse struct {
 }
 
 func (r *ModifyDirectConnectAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDirectConnectAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDirectConnectTunnelAttributeRequest struct {
@@ -788,12 +788,12 @@ type ModifyDirectConnectTunnelAttributeRequest struct {
 }
 
 func (r *ModifyDirectConnectTunnelAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDirectConnectTunnelAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDirectConnectTunnelAttributeResponse struct {
@@ -806,12 +806,12 @@ type ModifyDirectConnectTunnelAttributeResponse struct {
 }
 
 func (r *ModifyDirectConnectTunnelAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDirectConnectTunnelAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RejectDirectConnectTunnelRequest struct {
@@ -822,12 +822,12 @@ type RejectDirectConnectTunnelRequest struct {
 }
 
 func (r *RejectDirectConnectTunnelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RejectDirectConnectTunnelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RejectDirectConnectTunnelResponse struct {
@@ -840,12 +840,12 @@ type RejectDirectConnectTunnelResponse struct {
 }
 
 func (r *RejectDirectConnectTunnelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RejectDirectConnectTunnelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RouteFilterPrefix struct {

@@ -15,180 +15,179 @@
 package v20200210
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-02-10"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewDetectFraudKOLRequest() (request *DetectFraudKOLRequest) {
-    request = &DetectFraudKOLRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "DetectFraudKOL")
-    return
+	request = &DetectFraudKOLRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "DetectFraudKOL")
+	return
 }
 
 func NewDetectFraudKOLResponse() (response *DetectFraudKOLResponse) {
-    response = &DetectFraudKOLResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DetectFraudKOLResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // DetectFraudKOL
 func (c *Client) DetectFraudKOL(request *DetectFraudKOLRequest) (response *DetectFraudKOLResponse, err error) {
-    if request == nil {
-        request = NewDetectFraudKOLRequest()
-    }
-    response = NewDetectFraudKOLResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDetectFraudKOLRequest()
+	}
+	response = NewDetectFraudKOLResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewEnhanceTaDegreeRequest() (request *EnhanceTaDegreeRequest) {
-    request = &EnhanceTaDegreeRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "EnhanceTaDegree")
-    return
+	request = &EnhanceTaDegreeRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "EnhanceTaDegree")
+	return
 }
 
 func NewEnhanceTaDegreeResponse() (response *EnhanceTaDegreeResponse) {
-    response = &EnhanceTaDegreeResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &EnhanceTaDegreeResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // EnhanceTaDegree
 func (c *Client) EnhanceTaDegree(request *EnhanceTaDegreeRequest) (response *EnhanceTaDegreeResponse, err error) {
-    if request == nil {
-        request = NewEnhanceTaDegreeRequest()
-    }
-    response = NewEnhanceTaDegreeResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewEnhanceTaDegreeRequest()
+	}
+	response = NewEnhanceTaDegreeResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewRecognizeCustomizedAudienceRequest() (request *RecognizeCustomizedAudienceRequest) {
-    request = &RecognizeCustomizedAudienceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "RecognizeCustomizedAudience")
-    return
+	request = &RecognizeCustomizedAudienceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "RecognizeCustomizedAudience")
+	return
 }
 
 func NewRecognizeCustomizedAudienceResponse() (response *RecognizeCustomizedAudienceResponse) {
-    response = &RecognizeCustomizedAudienceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &RecognizeCustomizedAudienceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 流量反欺诈-流量验准定制版
 func (c *Client) RecognizeCustomizedAudience(request *RecognizeCustomizedAudienceRequest) (response *RecognizeCustomizedAudienceResponse, err error) {
-    if request == nil {
-        request = NewRecognizeCustomizedAudienceRequest()
-    }
-    response = NewRecognizeCustomizedAudienceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewRecognizeCustomizedAudienceRequest()
+	}
+	response = NewRecognizeCustomizedAudienceResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewRecognizePreciseTargetAudienceRequest() (request *RecognizePreciseTargetAudienceRequest) {
-    request = &RecognizePreciseTargetAudienceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "RecognizePreciseTargetAudience")
-    return
+	request = &RecognizePreciseTargetAudienceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "RecognizePreciseTargetAudience")
+	return
 }
 
 func NewRecognizePreciseTargetAudienceResponse() (response *RecognizePreciseTargetAudienceResponse) {
-    response = &RecognizePreciseTargetAudienceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &RecognizePreciseTargetAudienceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // RecognizePreciseTargetAudience
 func (c *Client) RecognizePreciseTargetAudience(request *RecognizePreciseTargetAudienceRequest) (response *RecognizePreciseTargetAudienceResponse, err error) {
-    if request == nil {
-        request = NewRecognizePreciseTargetAudienceRequest()
-    }
-    response = NewRecognizePreciseTargetAudienceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewRecognizePreciseTargetAudienceRequest()
+	}
+	response = NewRecognizePreciseTargetAudienceResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewRecognizeTargetAudienceRequest() (request *RecognizeTargetAudienceRequest) {
-    request = &RecognizeTargetAudienceRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "RecognizeTargetAudience")
-    return
+	request = &RecognizeTargetAudienceRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "RecognizeTargetAudience")
+	return
 }
 
 func NewRecognizeTargetAudienceResponse() (response *RecognizeTargetAudienceResponse) {
-    response = &RecognizeTargetAudienceResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &RecognizeTargetAudienceResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 流量反欺诈-流量验准
 func (c *Client) RecognizeTargetAudience(request *RecognizeTargetAudienceRequest) (response *RecognizeTargetAudienceResponse, err error) {
-    if request == nil {
-        request = NewRecognizeTargetAudienceRequest()
-    }
-    response = NewRecognizeTargetAudienceResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewRecognizeTargetAudienceRequest()
+	}
+	response = NewRecognizeTargetAudienceResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewSendTrafficSecuritySmsMessageRequest() (request *SendTrafficSecuritySmsMessageRequest) {
-    request = &SendTrafficSecuritySmsMessageRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("taf", APIVersion, "SendTrafficSecuritySmsMessage")
-    return
+	request = &SendTrafficSecuritySmsMessageRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("taf", APIVersion, "SendTrafficSecuritySmsMessage")
+	return
 }
 
 func NewSendTrafficSecuritySmsMessageResponse() (response *SendTrafficSecuritySmsMessageResponse) {
-    response = &SendTrafficSecuritySmsMessageResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &SendTrafficSecuritySmsMessageResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // SendTrafficSecuritySmsMessage
 func (c *Client) SendTrafficSecuritySmsMessage(request *SendTrafficSecuritySmsMessageRequest) (response *SendTrafficSecuritySmsMessageResponse, err error) {
-    if request == nil {
-        request = NewSendTrafficSecuritySmsMessageRequest()
-    }
-    response = NewSendTrafficSecuritySmsMessageResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewSendTrafficSecuritySmsMessageRequest()
+	}
+	response = NewSendTrafficSecuritySmsMessageResponse()
+	err = c.Send(request, response)
+	return
 }

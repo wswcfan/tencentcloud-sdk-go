@@ -15,9 +15,9 @@
 package v20190313
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CreateSessionRequest struct {
@@ -46,12 +46,12 @@ type CreateSessionRequest struct {
 }
 
 func (r *CreateSessionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSessionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSessionResponse struct {
@@ -67,12 +67,12 @@ type CreateSessionResponse struct {
 }
 
 func (r *CreateSessionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSessionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DayStreamPlayInfo struct {
@@ -113,12 +113,12 @@ type DescribeStreamPlayInfoListRequest struct {
 }
 
 func (r *DescribeStreamPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamPlayInfoListResponse struct {
@@ -134,12 +134,12 @@ type DescribeStreamPlayInfoListResponse struct {
 }
 
 func (r *DescribeStreamPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWorkersRequest struct {
@@ -147,12 +147,12 @@ type DescribeWorkersRequest struct {
 }
 
 func (r *DescribeWorkersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWorkersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWorkersResponse struct {
@@ -174,12 +174,12 @@ type DescribeWorkersResponse struct {
 }
 
 func (r *DescribeWorkersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWorkersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveStreamRequest struct {
@@ -200,12 +200,12 @@ type ForbidLiveStreamRequest struct {
 }
 
 func (r *ForbidLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveStreamResponse struct {
@@ -218,12 +218,12 @@ type ForbidLiveStreamResponse struct {
 }
 
 func (r *ForbidLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterIMRequest struct {
@@ -243,12 +243,12 @@ type RegisterIMRequest struct {
 }
 
 func (r *RegisterIMRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterIMRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterIMResponse struct {
@@ -264,12 +264,12 @@ type RegisterIMResponse struct {
 }
 
 func (r *RegisterIMResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterIMResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopGameRequest struct {
@@ -280,12 +280,12 @@ type StopGameRequest struct {
 }
 
 func (r *StopGameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopGameRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopGameResponse struct {
@@ -298,12 +298,12 @@ type StopGameResponse struct {
 }
 
 func (r *StopGameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopGameResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WorkerRegionInfo struct {

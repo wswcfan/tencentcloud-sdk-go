@@ -15,180 +15,179 @@
 package v20190916
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-09-16"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewDescribeItemByIdRequest() (request *DescribeItemByIdRequest) {
-    request = &DescribeItemByIdRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "DescribeItemById")
-    return
+	request = &DescribeItemByIdRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "DescribeItemById")
+	return
 }
 
 func NewDescribeItemByIdResponse() (response *DescribeItemByIdResponse) {
-    response = &DescribeItemByIdResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeItemByIdResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 根据歌曲ID查询歌曲信息
 func (c *Client) DescribeItemById(request *DescribeItemByIdRequest) (response *DescribeItemByIdResponse, err error) {
-    if request == nil {
-        request = NewDescribeItemByIdRequest()
-    }
-    response = NewDescribeItemByIdResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeItemByIdRequest()
+	}
+	response = NewDescribeItemByIdResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeItemsRequest() (request *DescribeItemsRequest) {
-    request = &DescribeItemsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "DescribeItems")
-    return
+	request = &DescribeItemsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "DescribeItems")
+	return
 }
 
 func NewDescribeItemsResponse() (response *DescribeItemsResponse) {
-    response = &DescribeItemsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeItemsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 分类内容下歌曲列表获取，根据CategoryID或CategoryCode
 func (c *Client) DescribeItems(request *DescribeItemsRequest) (response *DescribeItemsResponse, err error) {
-    if request == nil {
-        request = NewDescribeItemsRequest()
-    }
-    response = NewDescribeItemsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeItemsRequest()
+	}
+	response = NewDescribeItemsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeLyricRequest() (request *DescribeLyricRequest) {
-    request = &DescribeLyricRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "DescribeLyric")
-    return
+	request = &DescribeLyricRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "DescribeLyric")
+	return
 }
 
 func NewDescribeLyricResponse() (response *DescribeLyricResponse) {
-    response = &DescribeLyricResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeLyricResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 根据接口的模式及歌曲ID来取得歌词信息。
 func (c *Client) DescribeLyric(request *DescribeLyricRequest) (response *DescribeLyricResponse, err error) {
-    if request == nil {
-        request = NewDescribeLyricRequest()
-    }
-    response = NewDescribeLyricResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeLyricRequest()
+	}
+	response = NewDescribeLyricResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeMusicRequest() (request *DescribeMusicRequest) {
-    request = &DescribeMusicRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "DescribeMusic")
-    return
+	request = &DescribeMusicRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "DescribeMusic")
+	return
 }
 
 func NewDescribeMusicResponse() (response *DescribeMusicResponse) {
-    response = &DescribeMusicResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeMusicResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 根据接口的模式及歌曲ID来取得对应权限的歌曲播放地址等信息。
 func (c *Client) DescribeMusic(request *DescribeMusicRequest) (response *DescribeMusicResponse, err error) {
-    if request == nil {
-        request = NewDescribeMusicRequest()
-    }
-    response = NewDescribeMusicResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeMusicRequest()
+	}
+	response = NewDescribeMusicResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeStationsRequest() (request *DescribeStationsRequest) {
-    request = &DescribeStationsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "DescribeStations")
-    return
+	request = &DescribeStationsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "DescribeStations")
+	return
 }
 
 func NewDescribeStationsResponse() (response *DescribeStationsResponse) {
-    response = &DescribeStationsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeStationsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取素材库列表时使用
 func (c *Client) DescribeStations(request *DescribeStationsRequest) (response *DescribeStationsResponse, err error) {
-    if request == nil {
-        request = NewDescribeStationsRequest()
-    }
-    response = NewDescribeStationsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeStationsRequest()
+	}
+	response = NewDescribeStationsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewReportDataRequest() (request *ReportDataRequest) {
-    request = &ReportDataRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ame", APIVersion, "ReportData")
-    return
+	request = &ReportDataRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ame", APIVersion, "ReportData")
+	return
 }
 
 func NewReportDataResponse() (response *ReportDataResponse) {
-    response = &ReportDataResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ReportDataResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 客户上报用户数据功能，为了更好的为用户提供优质服务
 func (c *Client) ReportData(request *ReportDataRequest) (response *ReportDataResponse, err error) {
-    if request == nil {
-        request = NewReportDataRequest()
-    }
-    response = NewReportDataResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewReportDataRequest()
+	}
+	response = NewReportDataResponse()
+	err = c.Send(request, response)
+	return
 }

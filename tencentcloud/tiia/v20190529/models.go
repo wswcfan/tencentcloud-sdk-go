@@ -15,21 +15,21 @@
 package v20190529
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AssessQualityRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -39,12 +39,12 @@ type AssessQualityRequest struct {
 }
 
 func (r *AssessQualityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssessQualityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssessQualityResponse struct {
@@ -78,12 +78,12 @@ type AssessQualityResponse struct {
 }
 
 func (r *AssessQualityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssessQualityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CarTagItem struct {
@@ -132,13 +132,13 @@ type CropImageRequest struct {
 	// Width : Height建议取值在[1, 2.5]之间，超过这个范围可能会影响效果；
 	Height *int64 `json:"Height,omitempty" name:"Height"`
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -148,12 +148,12 @@ type CropImageRequest struct {
 }
 
 func (r *CropImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CropImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CropImageResponse struct {
@@ -179,14 +179,14 @@ type CropImageResponse struct {
 		OriginalHeight *int64 `json:"OriginalHeight,omitempty" name:"OriginalHeight"`
 
 		// 0：抠图正常；
-	// 1：原图过长，指原图的高度是宽度的1.8倍以上；
-	// 2：原图过宽，指原图的宽度是高度的1.8倍以上；
-	// 3：抠图区域过长，指抠图的高度是主体备选框高度的1.6倍以上；
-	// 4：抠图区域过宽，指当没有检测到人脸时，抠图区域宽度是检测出的原图主体区域宽度的1.6倍以上；
-	// 5：纯色图，指裁剪区域视觉较为单一、缺乏主体部分 ；
-	// 6：宽高比异常，指Width : Height取值超出[1, 2.5]的范围；
-	// 
-	// 以上是辅助决策的参考建议，可以根据业务需求选择采纳或忽视。
+		// 1：原图过长，指原图的高度是宽度的1.8倍以上；
+		// 2：原图过宽，指原图的宽度是高度的1.8倍以上；
+		// 3：抠图区域过长，指抠图的高度是主体备选框高度的1.6倍以上；
+		// 4：抠图区域过宽，指当没有检测到人脸时，抠图区域宽度是检测出的原图主体区域宽度的1.6倍以上；
+		// 5：纯色图，指裁剪区域视觉较为单一、缺乏主体部分 ；
+		// 6：宽高比异常，指Width : Height取值超出[1, 2.5]的范围；
+		//
+		// 以上是辅助决策的参考建议，可以根据业务需求选择采纳或忽视。
 		CropResult *int64 `json:"CropResult,omitempty" name:"CropResult"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -195,24 +195,24 @@ type CropImageResponse struct {
 }
 
 func (r *CropImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CropImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectCelebrityRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -222,12 +222,12 @@ type DetectCelebrityRequest struct {
 }
 
 func (r *DetectCelebrityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectCelebrityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectCelebrityResponse struct {
@@ -237,11 +237,11 @@ type DetectCelebrityResponse struct {
 		// 公众人物识别结果数组。如果检测不到人脸，返回为空；最多可以返回10个人脸识别结果。
 		Faces []*Face `json:"Faces,omitempty" name:"Faces" list`
 
-		// 本服务在不同误识率水平下（将图片中的人物识别错误的比例）的推荐阈值，可以用于控制识别结果的精度。 
-	// FalseRate1Percent, FalseRate5Permil, FalseRate1Permil分别代表误识率在百分之一、千分之五、千分之一情况下的推荐阈值。 
-	// 因为阈值会存在变动，请勿将此处输出的固定值处理，而是每次取值与confidence对比，来判断本次的识别结果是否可信。
-	//  例如，如果您业务中可以接受的误识率是1%，则可以将所有confidence>=FalseRate1Percent的结论认为是正确的。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 本服务在不同误识率水平下（将图片中的人物识别错误的比例）的推荐阈值，可以用于控制识别结果的精度。
+		// FalseRate1Percent, FalseRate5Permil, FalseRate1Permil分别代表误识率在百分之一、千分之五、千分之一情况下的推荐阈值。
+		// 因为阈值会存在变动，请勿将此处输出的固定值处理，而是每次取值与confidence对比，来判断本次的识别结果是否可信。
+		//  例如，如果您业务中可以接受的误识率是1%，则可以将所有confidence>=FalseRate1Percent的结论认为是正确的。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Threshold *Threshold `json:"Threshold,omitempty" name:"Threshold"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -250,24 +250,24 @@ type DetectCelebrityResponse struct {
 }
 
 func (r *DetectCelebrityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectCelebrityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectDisgustRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -277,12 +277,12 @@ type DetectDisgustRequest struct {
 }
 
 func (r *DetectDisgustRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectDisgustRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectDisgustResponse struct {
@@ -301,12 +301,12 @@ type DetectDisgustResponse struct {
 }
 
 func (r *DetectDisgustResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectDisgustResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectLabelItem struct {
@@ -327,13 +327,13 @@ type DetectLabelItem struct {
 type DetectLabelRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -347,18 +347,18 @@ type DetectLabelRequest struct {
 	// ALBUM，针对手机相册、网盘产品优化;
 	// NEWS，针对新闻、资讯、广电等行业优化；
 	// 如果不传此参数，则默认为WEB。
-	// 
+	//
 	// 支持多场景（Scenes）一起检测。例如，使用 Scenes=["WEB", "CAMERA"]，即对一张图片使用两个模型同时检测，输出两套识别结果。
 	Scenes []*string `json:"Scenes,omitempty" name:"Scenes" list`
 }
 
 func (r *DetectLabelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectLabelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectLabelResponse struct {
@@ -366,20 +366,20 @@ type DetectLabelResponse struct {
 	Response *struct {
 
 		// Web网络版标签结果数组。如未选择WEB场景，则为空。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Labels []*DetectLabelItem `json:"Labels,omitempty" name:"Labels" list`
 
 		// Camera摄像头版标签结果数组。如未选择CAMERA场景，则为空。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CameraLabels []*DetectLabelItem `json:"CameraLabels,omitempty" name:"CameraLabels" list`
 
 		// Album相册版标签结果数组。如未选择ALBUM场景，则为空。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AlbumLabels []*DetectLabelItem `json:"AlbumLabels,omitempty" name:"AlbumLabels" list`
 
 		// News新闻版标签结果数组。如未选择NEWS场景，则为空。
-	// 新闻版目前为测试阶段，暂不提供每个标签的一级、二级分类信息的输出。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 新闻版目前为测试阶段，暂不提供每个标签的一级、二级分类信息的输出。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NewsLabels []*DetectLabelItem `json:"NewsLabels,omitempty" name:"NewsLabels" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -388,24 +388,24 @@ type DetectLabelResponse struct {
 }
 
 func (r *DetectLabelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectLabelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectMisbehaviorRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -415,12 +415,12 @@ type DetectMisbehaviorRequest struct {
 }
 
 func (r *DetectMisbehaviorRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectMisbehaviorRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectMisbehaviorResponse struct {
@@ -439,46 +439,46 @@ type DetectMisbehaviorResponse struct {
 }
 
 func (r *DetectMisbehaviorResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectMisbehaviorResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectProductBetaRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片限制：内测版仅支持jpg、jpeg，图片大小不超过1M，分辨率在25万到100万之间。 
+	// 图片限制：内测版仅支持jpg、jpeg，图片大小不超过1M，分辨率在25万到100万之间。
 	// 建议先对图片进行压缩，以便提升处理速度。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
-	// 图片经过base64编码的内容。最大不超过1M，分辨率在25万到100万之间。 
+	// 图片经过base64编码的内容。最大不超过1M，分辨率在25万到100万之间。
 	// 与ImageUrl同时存在时优先使用ImageUrl字段。
 	ImageBase64 *string `json:"ImageBase64,omitempty" name:"ImageBase64"`
 }
 
 func (r *DetectProductBetaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectProductBetaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectProductBetaResponse struct {
 	*tchttp.BaseResponse
 	Response *struct {
 
-		// 检测到的图片中的商品位置和品类预测。 
-	// 当图片中存在多个商品时，输出多组坐标，按照__显著性__排序（综合考虑面积、是否在中心、检测算法置信度）。 
-	// 最多可以输出__3组__检测结果。
+		// 检测到的图片中的商品位置和品类预测。
+		// 当图片中存在多个商品时，输出多组坐标，按照__显著性__排序（综合考虑面积、是否在中心、检测算法置信度）。
+		// 最多可以输出__3组__检测结果。
 		RegionDetected []*RegionDetected `json:"RegionDetected,omitempty" name:"RegionDetected" list`
 
-		// 图像识别出的商品的详细信息。 
-	// 当图像中检测到多个物品时，会对显著性最高的进行识别。
+		// 图像识别出的商品的详细信息。
+		// 当图像中检测到多个物品时，会对显著性最高的进行识别。
 		ProductInfo *ProductInfo `json:"ProductInfo,omitempty" name:"ProductInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -487,24 +487,24 @@ type DetectProductBetaResponse struct {
 }
 
 func (r *DetectProductBetaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectProductBetaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectProductRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -514,12 +514,12 @@ type DetectProductRequest struct {
 }
 
 func (r *DetectProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectProductResponse struct {
@@ -535,24 +535,24 @@ type DetectProductResponse struct {
 }
 
 func (r *DetectProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhanceImageRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -562,12 +562,12 @@ type EnhanceImageRequest struct {
 }
 
 func (r *EnhanceImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnhanceImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhanceImageResponse struct {
@@ -583,12 +583,12 @@ type EnhanceImageResponse struct {
 }
 
 func (r *EnhanceImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnhanceImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Face struct {
@@ -674,8 +674,8 @@ type Product struct {
 
 type ProductInfo struct {
 
-	// 1表示找到同款商品，以下字段为同款商品信息； 
-	// 0表示未找到同款商品， 具体商品信息为空（参考价格、名称、品牌等），仅提供商品类目。  
+	// 1表示找到同款商品，以下字段为同款商品信息；
+	// 0表示未找到同款商品， 具体商品信息为空（参考价格、名称、品牌等），仅提供商品类目。
 	// 是否找到同款的判断依据为Score分值，分值越大则同款的可能性越大。
 	FindSKU *int64 `json:"FindSKU,omitempty" name:"FindSKU"`
 
@@ -691,8 +691,8 @@ type ProductInfo struct {
 	// 参考价格，综合多个信息源，仅供参考。
 	Price *string `json:"Price,omitempty" name:"Price"`
 
-	// 识别结果的商品类目。 
-	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。 
+	// 识别结果的商品类目。
+	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。
 	// 当类别为“非商品”时，除Location、Score和本字段之外的商品信息为空。
 	ProductCategory *string `json:"ProductCategory,omitempty" name:"ProductCategory"`
 
@@ -706,13 +706,13 @@ type ProductInfo struct {
 type RecognizeCarRequest struct {
 	*tchttp.BaseRequest
 
-	// 图片URL地址。 
-	// 图片限制： 
-	// • 图片格式：PNG、JPG、JPEG。 
-	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。 
+	// 图片URL地址。
+	// 图片限制：
+	// • 图片格式：PNG、JPG、JPEG。
+	// • 图片大小：所下载图片经Base64编码后不超过4M。图片下载时间不超过3秒。
 	// 建议：
-	// • 图片像素：大于50*50像素，否则影响识别效果； 
-	// • 长宽比：长边：短边<5； 
+	// • 图片像素：大于50*50像素，否则影响识别效果；
+	// • 长宽比：长边：短边<5；
 	// 接口响应时间会受到图片下载时间的影响，建议使用更可靠的存储服务，推荐将图片存储在腾讯云COS。
 	ImageUrl *string `json:"ImageUrl,omitempty" name:"ImageUrl"`
 
@@ -723,12 +723,12 @@ type RecognizeCarRequest struct {
 }
 
 func (r *RecognizeCarRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeCarRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizeCarResponse struct {
@@ -747,17 +747,17 @@ type RecognizeCarResponse struct {
 }
 
 func (r *RecognizeCarResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeCarResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegionDetected struct {
 
-	// 商品的品类预测结果。 
+	// 商品的品类预测结果。
 	// 包含：鞋、图书音像、箱包、美妆个护、服饰、家电数码、玩具乐器、食品饮料、珠宝、家居家装、药品、酒水、绿植园艺、其他商品、非商品等。
 	Category *string `json:"Category,omitempty" name:"Category"`
 

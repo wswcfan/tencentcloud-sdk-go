@@ -15,9 +15,9 @@
 package v20180319
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DeregisterMigrationTaskRequest struct {
@@ -28,12 +28,12 @@ type DeregisterMigrationTaskRequest struct {
 }
 
 func (r *DeregisterMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeregisterMigrationTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeregisterMigrationTaskResponse struct {
@@ -46,12 +46,12 @@ type DeregisterMigrationTaskResponse struct {
 }
 
 func (r *DeregisterMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeregisterMigrationTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrationTaskRequest struct {
@@ -62,12 +62,12 @@ type DescribeMigrationTaskRequest struct {
 }
 
 func (r *DescribeMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrationTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMigrationTaskResponse struct {
@@ -83,12 +83,12 @@ type DescribeMigrationTaskResponse struct {
 }
 
 func (r *DescribeMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMigrationTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DstInfo struct {
@@ -117,12 +117,12 @@ type ListMigrationProjectRequest struct {
 }
 
 func (r *ListMigrationProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListMigrationProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListMigrationProjectResponse struct {
@@ -141,12 +141,12 @@ type ListMigrationProjectResponse struct {
 }
 
 func (r *ListMigrationProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListMigrationProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListMigrationTaskRequest struct {
@@ -163,12 +163,12 @@ type ListMigrationTaskRequest struct {
 }
 
 func (r *ListMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListMigrationTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListMigrationTaskResponse struct {
@@ -187,12 +187,12 @@ type ListMigrationTaskResponse struct {
 }
 
 func (r *ListMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListMigrationTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMigrationTaskBelongToProjectRequest struct {
@@ -206,12 +206,12 @@ type ModifyMigrationTaskBelongToProjectRequest struct {
 }
 
 func (r *ModifyMigrationTaskBelongToProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrationTaskBelongToProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMigrationTaskBelongToProjectResponse struct {
@@ -224,12 +224,12 @@ type ModifyMigrationTaskBelongToProjectResponse struct {
 }
 
 func (r *ModifyMigrationTaskBelongToProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrationTaskBelongToProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMigrationTaskStatusRequest struct {
@@ -243,12 +243,12 @@ type ModifyMigrationTaskStatusRequest struct {
 }
 
 func (r *ModifyMigrationTaskStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrationTaskStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMigrationTaskStatusResponse struct {
@@ -261,12 +261,12 @@ type ModifyMigrationTaskStatusResponse struct {
 }
 
 func (r *ModifyMigrationTaskStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMigrationTaskStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Project struct {
@@ -319,12 +319,12 @@ type RegisterMigrationTaskRequest struct {
 }
 
 func (r *RegisterMigrationTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterMigrationTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegisterMigrationTaskResponse struct {
@@ -340,12 +340,12 @@ type RegisterMigrationTaskResponse struct {
 }
 
 func (r *RegisterMigrationTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RegisterMigrationTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SrcInfo struct {

@@ -15,9 +15,9 @@
 package v20180724
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type InitOralProcessRequest struct {
@@ -61,12 +61,12 @@ type InitOralProcessRequest struct {
 }
 
 func (r *InitOralProcessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InitOralProcessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InitOralProcessResponse struct {
@@ -82,12 +82,12 @@ type InitOralProcessResponse struct {
 }
 
 func (r *InitOralProcessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InitOralProcessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Keyword struct {
@@ -140,12 +140,12 @@ type KeywordEvaluateRequest struct {
 }
 
 func (r *KeywordEvaluateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *KeywordEvaluateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type KeywordEvaluateResponse struct {
@@ -164,12 +164,12 @@ type KeywordEvaluateResponse struct {
 }
 
 func (r *KeywordEvaluateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *KeywordEvaluateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type KeywordScore struct {
@@ -274,12 +274,12 @@ type TransmitOralProcessRequest struct {
 }
 
 func (r *TransmitOralProcessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TransmitOralProcessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TransmitOralProcessResponse struct {
@@ -319,12 +319,12 @@ type TransmitOralProcessResponse struct {
 }
 
 func (r *TransmitOralProcessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TransmitOralProcessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TransmitOralProcessWithInitRequest struct {
@@ -383,12 +383,12 @@ type TransmitOralProcessWithInitRequest struct {
 }
 
 func (r *TransmitOralProcessWithInitRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TransmitOralProcessWithInitRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TransmitOralProcessWithInitResponse struct {
@@ -428,12 +428,12 @@ type TransmitOralProcessWithInitResponse struct {
 }
 
 func (r *TransmitOralProcessWithInitResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TransmitOralProcessWithInitResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WordRsp struct {

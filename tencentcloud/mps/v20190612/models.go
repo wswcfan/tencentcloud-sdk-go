@@ -15,9 +15,9 @@
 package v20190612
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AIAnalysisTemplateItem struct {
@@ -325,7 +325,7 @@ type AiRecognitionResult struct {
 	// <li>OcrFullTextRecognition：文本全文识别。</li>
 	Type *string `json:"Type,omitempty" name:"Type"`
 
-	// 人脸识别结果，当 Type 为 
+	// 人脸识别结果，当 Type 为
 	//  FaceRecognition 时有效。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	FaceTask *AiRecognitionTaskFaceResult `json:"FaceTask,omitempty" name:"FaceTask"`
@@ -1498,12 +1498,12 @@ type CreateAIAnalysisTemplateRequest struct {
 }
 
 func (r *CreateAIAnalysisTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAIAnalysisTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAIAnalysisTemplateResponse struct {
@@ -1519,12 +1519,12 @@ type CreateAIAnalysisTemplateResponse struct {
 }
 
 func (r *CreateAIAnalysisTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAIAnalysisTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAIRecognitionTemplateRequest struct {
@@ -1553,12 +1553,12 @@ type CreateAIRecognitionTemplateRequest struct {
 }
 
 func (r *CreateAIRecognitionTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAIRecognitionTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAIRecognitionTemplateResponse struct {
@@ -1574,12 +1574,12 @@ type CreateAIRecognitionTemplateResponse struct {
 }
 
 func (r *CreateAIRecognitionTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAIRecognitionTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAnimatedGraphicsTemplateRequest struct {
@@ -1624,12 +1624,12 @@ type CreateAnimatedGraphicsTemplateRequest struct {
 }
 
 func (r *CreateAnimatedGraphicsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAnimatedGraphicsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAnimatedGraphicsTemplateResponse struct {
@@ -1645,12 +1645,12 @@ type CreateAnimatedGraphicsTemplateResponse struct {
 }
 
 func (r *CreateAnimatedGraphicsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAnimatedGraphicsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateContentReviewTemplateRequest struct {
@@ -1682,12 +1682,12 @@ type CreateContentReviewTemplateRequest struct {
 }
 
 func (r *CreateContentReviewTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateContentReviewTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateContentReviewTemplateResponse struct {
@@ -1703,12 +1703,12 @@ type CreateContentReviewTemplateResponse struct {
 }
 
 func (r *CreateContentReviewTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateContentReviewTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateImageSpriteTemplateRequest struct {
@@ -1766,12 +1766,12 @@ type CreateImageSpriteTemplateRequest struct {
 }
 
 func (r *CreateImageSpriteTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateImageSpriteTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateImageSpriteTemplateResponse struct {
@@ -1787,12 +1787,12 @@ type CreateImageSpriteTemplateResponse struct {
 }
 
 func (r *CreateImageSpriteTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateImageSpriteTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonSampleRequest struct {
@@ -1821,12 +1821,12 @@ type CreatePersonSampleRequest struct {
 }
 
 func (r *CreatePersonSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonSampleResponse struct {
@@ -1845,12 +1845,12 @@ type CreatePersonSampleResponse struct {
 }
 
 func (r *CreatePersonSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSampleSnapshotTemplateRequest struct {
@@ -1907,12 +1907,12 @@ type CreateSampleSnapshotTemplateRequest struct {
 }
 
 func (r *CreateSampleSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSampleSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSampleSnapshotTemplateResponse struct {
@@ -1928,12 +1928,12 @@ type CreateSampleSnapshotTemplateResponse struct {
 }
 
 func (r *CreateSampleSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSampleSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSnapshotByTimeOffsetTemplateRequest struct {
@@ -1980,12 +1980,12 @@ type CreateSnapshotByTimeOffsetTemplateRequest struct {
 }
 
 func (r *CreateSnapshotByTimeOffsetTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSnapshotByTimeOffsetTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSnapshotByTimeOffsetTemplateResponse struct {
@@ -2001,12 +2001,12 @@ type CreateSnapshotByTimeOffsetTemplateResponse struct {
 }
 
 func (r *CreateSnapshotByTimeOffsetTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSnapshotByTimeOffsetTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTranscodeTemplateRequest struct {
@@ -2044,12 +2044,12 @@ type CreateTranscodeTemplateRequest struct {
 }
 
 func (r *CreateTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTranscodeTemplateResponse struct {
@@ -2065,12 +2065,12 @@ type CreateTranscodeTemplateResponse struct {
 }
 
 func (r *CreateTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWatermarkTemplateRequest struct {
@@ -2119,12 +2119,12 @@ type CreateWatermarkTemplateRequest struct {
 }
 
 func (r *CreateWatermarkTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWatermarkTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWatermarkTemplateResponse struct {
@@ -2143,12 +2143,12 @@ type CreateWatermarkTemplateResponse struct {
 }
 
 func (r *CreateWatermarkTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWatermarkTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWordSamplesRequest struct {
@@ -2170,12 +2170,12 @@ type CreateWordSamplesRequest struct {
 }
 
 func (r *CreateWordSamplesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWordSamplesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWordSamplesResponse struct {
@@ -2188,12 +2188,12 @@ type CreateWordSamplesResponse struct {
 }
 
 func (r *CreateWordSamplesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWordSamplesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWorkflowRequest struct {
@@ -2231,12 +2231,12 @@ type CreateWorkflowRequest struct {
 }
 
 func (r *CreateWorkflowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWorkflowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWorkflowResponse struct {
@@ -2252,12 +2252,12 @@ type CreateWorkflowResponse struct {
 }
 
 func (r *CreateWorkflowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWorkflowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAIAnalysisTemplateRequest struct {
@@ -2268,12 +2268,12 @@ type DeleteAIAnalysisTemplateRequest struct {
 }
 
 func (r *DeleteAIAnalysisTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAIAnalysisTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAIAnalysisTemplateResponse struct {
@@ -2286,12 +2286,12 @@ type DeleteAIAnalysisTemplateResponse struct {
 }
 
 func (r *DeleteAIAnalysisTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAIAnalysisTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAIRecognitionTemplateRequest struct {
@@ -2302,12 +2302,12 @@ type DeleteAIRecognitionTemplateRequest struct {
 }
 
 func (r *DeleteAIRecognitionTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAIRecognitionTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAIRecognitionTemplateResponse struct {
@@ -2320,12 +2320,12 @@ type DeleteAIRecognitionTemplateResponse struct {
 }
 
 func (r *DeleteAIRecognitionTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAIRecognitionTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAnimatedGraphicsTemplateRequest struct {
@@ -2336,12 +2336,12 @@ type DeleteAnimatedGraphicsTemplateRequest struct {
 }
 
 func (r *DeleteAnimatedGraphicsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAnimatedGraphicsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAnimatedGraphicsTemplateResponse struct {
@@ -2354,12 +2354,12 @@ type DeleteAnimatedGraphicsTemplateResponse struct {
 }
 
 func (r *DeleteAnimatedGraphicsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAnimatedGraphicsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteContentReviewTemplateRequest struct {
@@ -2370,12 +2370,12 @@ type DeleteContentReviewTemplateRequest struct {
 }
 
 func (r *DeleteContentReviewTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteContentReviewTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteContentReviewTemplateResponse struct {
@@ -2388,12 +2388,12 @@ type DeleteContentReviewTemplateResponse struct {
 }
 
 func (r *DeleteContentReviewTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteContentReviewTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImageSpriteTemplateRequest struct {
@@ -2404,12 +2404,12 @@ type DeleteImageSpriteTemplateRequest struct {
 }
 
 func (r *DeleteImageSpriteTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImageSpriteTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImageSpriteTemplateResponse struct {
@@ -2422,12 +2422,12 @@ type DeleteImageSpriteTemplateResponse struct {
 }
 
 func (r *DeleteImageSpriteTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImageSpriteTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonSampleRequest struct {
@@ -2438,12 +2438,12 @@ type DeletePersonSampleRequest struct {
 }
 
 func (r *DeletePersonSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonSampleResponse struct {
@@ -2456,12 +2456,12 @@ type DeletePersonSampleResponse struct {
 }
 
 func (r *DeletePersonSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSampleSnapshotTemplateRequest struct {
@@ -2472,12 +2472,12 @@ type DeleteSampleSnapshotTemplateRequest struct {
 }
 
 func (r *DeleteSampleSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSampleSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSampleSnapshotTemplateResponse struct {
@@ -2490,12 +2490,12 @@ type DeleteSampleSnapshotTemplateResponse struct {
 }
 
 func (r *DeleteSampleSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSampleSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSnapshotByTimeOffsetTemplateRequest struct {
@@ -2506,12 +2506,12 @@ type DeleteSnapshotByTimeOffsetTemplateRequest struct {
 }
 
 func (r *DeleteSnapshotByTimeOffsetTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSnapshotByTimeOffsetTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSnapshotByTimeOffsetTemplateResponse struct {
@@ -2524,12 +2524,12 @@ type DeleteSnapshotByTimeOffsetTemplateResponse struct {
 }
 
 func (r *DeleteSnapshotByTimeOffsetTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSnapshotByTimeOffsetTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTranscodeTemplateRequest struct {
@@ -2540,12 +2540,12 @@ type DeleteTranscodeTemplateRequest struct {
 }
 
 func (r *DeleteTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTranscodeTemplateResponse struct {
@@ -2558,12 +2558,12 @@ type DeleteTranscodeTemplateResponse struct {
 }
 
 func (r *DeleteTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWatermarkTemplateRequest struct {
@@ -2574,12 +2574,12 @@ type DeleteWatermarkTemplateRequest struct {
 }
 
 func (r *DeleteWatermarkTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWatermarkTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWatermarkTemplateResponse struct {
@@ -2592,12 +2592,12 @@ type DeleteWatermarkTemplateResponse struct {
 }
 
 func (r *DeleteWatermarkTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWatermarkTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWordSamplesRequest struct {
@@ -2608,12 +2608,12 @@ type DeleteWordSamplesRequest struct {
 }
 
 func (r *DeleteWordSamplesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWordSamplesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWordSamplesResponse struct {
@@ -2626,12 +2626,12 @@ type DeleteWordSamplesResponse struct {
 }
 
 func (r *DeleteWordSamplesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWordSamplesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWorkflowRequest struct {
@@ -2642,12 +2642,12 @@ type DeleteWorkflowRequest struct {
 }
 
 func (r *DeleteWorkflowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWorkflowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWorkflowResponse struct {
@@ -2660,12 +2660,12 @@ type DeleteWorkflowResponse struct {
 }
 
 func (r *DeleteWorkflowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWorkflowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAIAnalysisTemplatesRequest struct {
@@ -2682,12 +2682,12 @@ type DescribeAIAnalysisTemplatesRequest struct {
 }
 
 func (r *DescribeAIAnalysisTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAIAnalysisTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAIAnalysisTemplatesResponse struct {
@@ -2706,12 +2706,12 @@ type DescribeAIAnalysisTemplatesResponse struct {
 }
 
 func (r *DescribeAIAnalysisTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAIAnalysisTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAIRecognitionTemplatesRequest struct {
@@ -2728,12 +2728,12 @@ type DescribeAIRecognitionTemplatesRequest struct {
 }
 
 func (r *DescribeAIRecognitionTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAIRecognitionTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAIRecognitionTemplatesResponse struct {
@@ -2752,12 +2752,12 @@ type DescribeAIRecognitionTemplatesResponse struct {
 }
 
 func (r *DescribeAIRecognitionTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAIRecognitionTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAnimatedGraphicsTemplatesRequest struct {
@@ -2779,12 +2779,12 @@ type DescribeAnimatedGraphicsTemplatesRequest struct {
 }
 
 func (r *DescribeAnimatedGraphicsTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAnimatedGraphicsTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAnimatedGraphicsTemplatesResponse struct {
@@ -2803,12 +2803,12 @@ type DescribeAnimatedGraphicsTemplatesResponse struct {
 }
 
 func (r *DescribeAnimatedGraphicsTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAnimatedGraphicsTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContentReviewTemplatesRequest struct {
@@ -2825,12 +2825,12 @@ type DescribeContentReviewTemplatesRequest struct {
 }
 
 func (r *DescribeContentReviewTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContentReviewTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContentReviewTemplatesResponse struct {
@@ -2849,12 +2849,12 @@ type DescribeContentReviewTemplatesResponse struct {
 }
 
 func (r *DescribeContentReviewTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContentReviewTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImageSpriteTemplatesRequest struct {
@@ -2876,12 +2876,12 @@ type DescribeImageSpriteTemplatesRequest struct {
 }
 
 func (r *DescribeImageSpriteTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImageSpriteTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImageSpriteTemplatesResponse struct {
@@ -2900,12 +2900,12 @@ type DescribeImageSpriteTemplatesResponse struct {
 }
 
 func (r *DescribeImageSpriteTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImageSpriteTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMediaMetaDataRequest struct {
@@ -2916,12 +2916,12 @@ type DescribeMediaMetaDataRequest struct {
 }
 
 func (r *DescribeMediaMetaDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMediaMetaDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMediaMetaDataResponse struct {
@@ -2937,12 +2937,12 @@ type DescribeMediaMetaDataResponse struct {
 }
 
 func (r *DescribeMediaMetaDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMediaMetaDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePersonSamplesRequest struct {
@@ -2951,7 +2951,7 @@ type DescribePersonSamplesRequest struct {
 	// 拉取的人物类型，可选值：
 	// <li>UserDefine：用户自定义人物库；</li>
 	// <li>Default：系统默认人物库。</li>
-	// 
+	//
 	// 默认值：UserDefine，拉取用户自定义人物库人物。
 	// 说明：如果是拉取系统默认人物库，只能使用人物名字或者人物 ID + 人物名字的方式进行拉取，且人脸图片只返回一张。
 	Type *string `json:"Type,omitempty" name:"Type"`
@@ -2973,12 +2973,12 @@ type DescribePersonSamplesRequest struct {
 }
 
 func (r *DescribePersonSamplesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePersonSamplesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePersonSamplesResponse struct {
@@ -2997,12 +2997,12 @@ type DescribePersonSamplesResponse struct {
 }
 
 func (r *DescribePersonSamplesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePersonSamplesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSampleSnapshotTemplatesRequest struct {
@@ -3024,12 +3024,12 @@ type DescribeSampleSnapshotTemplatesRequest struct {
 }
 
 func (r *DescribeSampleSnapshotTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSampleSnapshotTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSampleSnapshotTemplatesResponse struct {
@@ -3048,12 +3048,12 @@ type DescribeSampleSnapshotTemplatesResponse struct {
 }
 
 func (r *DescribeSampleSnapshotTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSampleSnapshotTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSnapshotByTimeOffsetTemplatesRequest struct {
@@ -3075,12 +3075,12 @@ type DescribeSnapshotByTimeOffsetTemplatesRequest struct {
 }
 
 func (r *DescribeSnapshotByTimeOffsetTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSnapshotByTimeOffsetTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSnapshotByTimeOffsetTemplatesResponse struct {
@@ -3099,12 +3099,12 @@ type DescribeSnapshotByTimeOffsetTemplatesResponse struct {
 }
 
 func (r *DescribeSnapshotByTimeOffsetTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSnapshotByTimeOffsetTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskDetailRequest struct {
@@ -3115,12 +3115,12 @@ type DescribeTaskDetailRequest struct {
 }
 
 func (r *DescribeTaskDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskDetailResponse struct {
@@ -3128,15 +3128,15 @@ type DescribeTaskDetailResponse struct {
 	Response *struct {
 
 		// 任务类型，目前取值有：
-	// <li>WorkflowTask：视频工作流处理任务。</li>
-	// <li>EditMediaTask：视频编辑任务。</li>
-	// <li>LiveStreamProcessTask：直播流处理任务。</li>
+		// <li>WorkflowTask：视频工作流处理任务。</li>
+		// <li>EditMediaTask：视频编辑任务。</li>
+		// <li>LiveStreamProcessTask：直播流处理任务。</li>
 		TaskType *string `json:"TaskType,omitempty" name:"TaskType"`
 
 		// 任务状态，取值：
-	// <li>WAITING：等待中；</li>
-	// <li>PROCESSING：处理中；</li>
-	// <li>FINISH：已完成。</li>
+		// <li>WAITING：等待中；</li>
+		// <li>PROCESSING：处理中；</li>
+		// <li>FINISH：已完成。</li>
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 任务的创建时间，采用 [ISO 日期格式](https://cloud.tencent.com/document/product/862/37710#52)。
@@ -3149,19 +3149,19 @@ type DescribeTaskDetailResponse struct {
 		FinishTime *string `json:"FinishTime,omitempty" name:"FinishTime"`
 
 		// 视频处理任务信息，仅当 TaskType 为 WorkflowTask，该字段有值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WorkflowTask *WorkflowTask `json:"WorkflowTask,omitempty" name:"WorkflowTask"`
 
 		// 视频编辑任务信息，仅当 TaskType 为 EditMediaTask，该字段有值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EditMediaTask *EditMediaTask `json:"EditMediaTask,omitempty" name:"EditMediaTask"`
 
 		// 直播流处理任务信息，仅当 TaskType 为 LiveStreamProcessTask，该字段有值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LiveStreamProcessTask *LiveStreamProcessTask `json:"LiveStreamProcessTask,omitempty" name:"LiveStreamProcessTask"`
 
 		// 任务的事件通知信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskNotifyConfig *TaskNotifyConfig `json:"TaskNotifyConfig,omitempty" name:"TaskNotifyConfig"`
 
 		// 任务流的优先级，取值范围为 [-10, 10]。
@@ -3179,12 +3179,12 @@ type DescribeTaskDetailResponse struct {
 }
 
 func (r *DescribeTaskDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTasksRequest struct {
@@ -3201,12 +3201,12 @@ type DescribeTasksRequest struct {
 }
 
 func (r *DescribeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTasksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTasksResponse struct {
@@ -3225,12 +3225,12 @@ type DescribeTasksResponse struct {
 }
 
 func (r *DescribeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTasksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeTemplatesRequest struct {
@@ -3262,12 +3262,12 @@ type DescribeTranscodeTemplatesRequest struct {
 }
 
 func (r *DescribeTranscodeTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeTemplatesResponse struct {
@@ -3286,12 +3286,12 @@ type DescribeTranscodeTemplatesResponse struct {
 }
 
 func (r *DescribeTranscodeTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWatermarkTemplatesRequest struct {
@@ -3315,12 +3315,12 @@ type DescribeWatermarkTemplatesRequest struct {
 }
 
 func (r *DescribeWatermarkTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWatermarkTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWatermarkTemplatesResponse struct {
@@ -3339,12 +3339,12 @@ type DescribeWatermarkTemplatesResponse struct {
 }
 
 func (r *DescribeWatermarkTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWatermarkTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWordSamplesRequest struct {
@@ -3375,12 +3375,12 @@ type DescribeWordSamplesRequest struct {
 }
 
 func (r *DescribeWordSamplesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWordSamplesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWordSamplesResponse struct {
@@ -3388,11 +3388,11 @@ type DescribeWordSamplesResponse struct {
 	Response *struct {
 
 		// 符合条件的记录总数。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 关键词信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WordSet []*AiSampleWord `json:"WordSet,omitempty" name:"WordSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3401,12 +3401,12 @@ type DescribeWordSamplesResponse struct {
 }
 
 func (r *DescribeWordSamplesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWordSamplesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWorkflowsRequest struct {
@@ -3429,12 +3429,12 @@ type DescribeWorkflowsRequest struct {
 }
 
 func (r *DescribeWorkflowsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWorkflowsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWorkflowsResponse struct {
@@ -3453,12 +3453,12 @@ type DescribeWorkflowsResponse struct {
 }
 
 func (r *DescribeWorkflowsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWorkflowsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWorkflowRequest struct {
@@ -3469,12 +3469,12 @@ type DisableWorkflowRequest struct {
 }
 
 func (r *DisableWorkflowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWorkflowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWorkflowResponse struct {
@@ -3487,12 +3487,12 @@ type DisableWorkflowResponse struct {
 }
 
 func (r *DisableWorkflowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWorkflowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EditMediaFileInfo struct {
@@ -3533,12 +3533,12 @@ type EditMediaRequest struct {
 }
 
 func (r *EditMediaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EditMediaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EditMediaResponse struct {
@@ -3554,12 +3554,12 @@ type EditMediaResponse struct {
 }
 
 func (r *EditMediaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EditMediaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EditMediaTask struct {
@@ -3611,12 +3611,12 @@ type EnableWorkflowRequest struct {
 }
 
 func (r *EnableWorkflowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWorkflowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableWorkflowResponse struct {
@@ -3629,12 +3629,12 @@ type EnableWorkflowResponse struct {
 }
 
 func (r *EnableWorkflowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWorkflowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceConfigureInfo struct {
@@ -4183,12 +4183,12 @@ type ManageTaskRequest struct {
 }
 
 func (r *ManageTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ManageTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ManageTaskResponse struct {
@@ -4201,12 +4201,12 @@ type ManageTaskResponse struct {
 }
 
 func (r *ManageTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ManageTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MediaAiAnalysisClassificationItem struct {
@@ -4781,12 +4781,12 @@ type ModifyAIAnalysisTemplateRequest struct {
 }
 
 func (r *ModifyAIAnalysisTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAIAnalysisTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAIAnalysisTemplateResponse struct {
@@ -4799,12 +4799,12 @@ type ModifyAIAnalysisTemplateResponse struct {
 }
 
 func (r *ModifyAIAnalysisTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAIAnalysisTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAIRecognitionTemplateRequest struct {
@@ -4836,12 +4836,12 @@ type ModifyAIRecognitionTemplateRequest struct {
 }
 
 func (r *ModifyAIRecognitionTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAIRecognitionTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAIRecognitionTemplateResponse struct {
@@ -4854,12 +4854,12 @@ type ModifyAIRecognitionTemplateResponse struct {
 }
 
 func (r *ModifyAIRecognitionTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAIRecognitionTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAnimatedGraphicsTemplateRequest struct {
@@ -4907,12 +4907,12 @@ type ModifyAnimatedGraphicsTemplateRequest struct {
 }
 
 func (r *ModifyAnimatedGraphicsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAnimatedGraphicsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAnimatedGraphicsTemplateResponse struct {
@@ -4925,12 +4925,12 @@ type ModifyAnimatedGraphicsTemplateResponse struct {
 }
 
 func (r *ModifyAnimatedGraphicsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAnimatedGraphicsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyContentReviewTemplateRequest struct {
@@ -4965,12 +4965,12 @@ type ModifyContentReviewTemplateRequest struct {
 }
 
 func (r *ModifyContentReviewTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyContentReviewTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyContentReviewTemplateResponse struct {
@@ -4983,12 +4983,12 @@ type ModifyContentReviewTemplateResponse struct {
 }
 
 func (r *ModifyContentReviewTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyContentReviewTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyImageSpriteTemplateRequest struct {
@@ -5049,12 +5049,12 @@ type ModifyImageSpriteTemplateRequest struct {
 }
 
 func (r *ModifyImageSpriteTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyImageSpriteTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyImageSpriteTemplateResponse struct {
@@ -5067,12 +5067,12 @@ type ModifyImageSpriteTemplateResponse struct {
 }
 
 func (r *ModifyImageSpriteTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyImageSpriteTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonSampleRequest struct {
@@ -5101,12 +5101,12 @@ type ModifyPersonSampleRequest struct {
 }
 
 func (r *ModifyPersonSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonSampleResponse struct {
@@ -5117,7 +5117,7 @@ type ModifyPersonSampleResponse struct {
 		Person *AiSamplePerson `json:"Person,omitempty" name:"Person"`
 
 		// 处理失败的人脸信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailFaceInfoSet []*AiSampleFailFaceInfo `json:"FailFaceInfoSet,omitempty" name:"FailFaceInfoSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -5126,12 +5126,12 @@ type ModifyPersonSampleResponse struct {
 }
 
 func (r *ModifyPersonSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySampleSnapshotTemplateRequest struct {
@@ -5191,12 +5191,12 @@ type ModifySampleSnapshotTemplateRequest struct {
 }
 
 func (r *ModifySampleSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySampleSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySampleSnapshotTemplateResponse struct {
@@ -5209,12 +5209,12 @@ type ModifySampleSnapshotTemplateResponse struct {
 }
 
 func (r *ModifySampleSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySampleSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySnapshotByTimeOffsetTemplateRequest struct {
@@ -5264,12 +5264,12 @@ type ModifySnapshotByTimeOffsetTemplateRequest struct {
 }
 
 func (r *ModifySnapshotByTimeOffsetTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySnapshotByTimeOffsetTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySnapshotByTimeOffsetTemplateResponse struct {
@@ -5282,12 +5282,12 @@ type ModifySnapshotByTimeOffsetTemplateResponse struct {
 }
 
 func (r *ModifySnapshotByTimeOffsetTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySnapshotByTimeOffsetTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyTranscodeTemplateRequest struct {
@@ -5326,12 +5326,12 @@ type ModifyTranscodeTemplateRequest struct {
 }
 
 func (r *ModifyTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyTranscodeTemplateResponse struct {
@@ -5344,12 +5344,12 @@ type ModifyTranscodeTemplateResponse struct {
 }
 
 func (r *ModifyTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyWatermarkTemplateRequest struct {
@@ -5392,12 +5392,12 @@ type ModifyWatermarkTemplateRequest struct {
 }
 
 func (r *ModifyWatermarkTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyWatermarkTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyWatermarkTemplateResponse struct {
@@ -5413,12 +5413,12 @@ type ModifyWatermarkTemplateResponse struct {
 }
 
 func (r *ModifyWatermarkTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyWatermarkTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyWordSampleRequest struct {
@@ -5443,12 +5443,12 @@ type ModifyWordSampleRequest struct {
 }
 
 func (r *ModifyWordSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyWordSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyWordSampleResponse struct {
@@ -5461,12 +5461,12 @@ type ModifyWordSampleResponse struct {
 }
 
 func (r *ModifyWordSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyWordSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MosaicInput struct {
@@ -5576,12 +5576,12 @@ type ParseLiveStreamProcessNotificationRequest struct {
 }
 
 func (r *ParseLiveStreamProcessNotificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ParseLiveStreamProcessNotificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ParseLiveStreamProcessNotificationResponse struct {
@@ -5589,24 +5589,24 @@ type ParseLiveStreamProcessNotificationResponse struct {
 	Response *struct {
 
 		// 直播流处理结果类型，包含：
-	// <li>AiReviewResult：内容审核结果；</li>
-	// <li>AiRecognitionResult：内容识别结果；</li>
-	// <li>ProcessEof：直播流处理结束。</li>
+		// <li>AiReviewResult：内容审核结果；</li>
+		// <li>AiRecognitionResult：内容识别结果；</li>
+		// <li>ProcessEof：直播流处理结束。</li>
 		NotificationType *string `json:"NotificationType,omitempty" name:"NotificationType"`
 
 		// 视频处理任务 ID。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 直播流处理错误信息，当 NotificationType 为 ProcessEof 时有效。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProcessEofInfo *LiveStreamProcessErrorInfo `json:"ProcessEofInfo,omitempty" name:"ProcessEofInfo"`
 
 		// 内容审核结果，当 NotificationType 为 AiReviewResult 时有效。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AiReviewResultInfo *LiveStreamAiReviewResultInfo `json:"AiReviewResultInfo,omitempty" name:"AiReviewResultInfo"`
 
 		// 内容识别结果，当 NotificationType 为 AiRecognitionResult 时有效。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AiRecognitionResultInfo *LiveStreamAiRecognitionResultInfo `json:"AiRecognitionResultInfo,omitempty" name:"AiRecognitionResultInfo"`
 
 		// 用于去重的识别码，如果七天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长50个字符，不带或者带空字符串表示不做去重。
@@ -5621,12 +5621,12 @@ type ParseLiveStreamProcessNotificationResponse struct {
 }
 
 func (r *ParseLiveStreamProcessNotificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ParseLiveStreamProcessNotificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ParseNotificationRequest struct {
@@ -5637,12 +5637,12 @@ type ParseNotificationRequest struct {
 }
 
 func (r *ParseNotificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ParseNotificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ParseNotificationResponse struct {
@@ -5650,16 +5650,16 @@ type ParseNotificationResponse struct {
 	Response *struct {
 
 		// 支持事件类型，目前取值有：
-	// <li>WorkflowTask：视频工作流处理任务。</li>
-	// <li>EditMediaTask：视频编辑任务。</li>
+		// <li>WorkflowTask：视频工作流处理任务。</li>
+		// <li>EditMediaTask：视频编辑任务。</li>
 		EventType *string `json:"EventType,omitempty" name:"EventType"`
 
 		// 视频处理任务信息，仅当 TaskType 为 WorkflowTask，该字段有值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WorkflowTaskEvent *WorkflowTask `json:"WorkflowTaskEvent,omitempty" name:"WorkflowTaskEvent"`
 
 		// 视频编辑任务信息，仅当 TaskType 为 EditMediaTask，该字段有值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EditMediaTaskEvent *EditMediaTask `json:"EditMediaTaskEvent,omitempty" name:"EditMediaTaskEvent"`
 
 		// 用于去重的识别码，如果七天内曾有过相同的识别码的请求，则本次的请求会返回错误。最长50个字符，不带或者带空字符串表示不做去重。
@@ -5674,12 +5674,12 @@ type ParseNotificationResponse struct {
 }
 
 func (r *ParseNotificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ParseNotificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PoliticalAsrReviewTemplateInfo struct {
@@ -5955,12 +5955,12 @@ type ProcessLiveStreamRequest struct {
 }
 
 func (r *ProcessLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ProcessLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProcessLiveStreamResponse struct {
@@ -5976,12 +5976,12 @@ type ProcessLiveStreamResponse struct {
 }
 
 func (r *ProcessLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ProcessLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProcessMediaRequest struct {
@@ -6022,12 +6022,12 @@ type ProcessMediaRequest struct {
 }
 
 func (r *ProcessMediaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ProcessMediaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProcessMediaResponse struct {
@@ -6043,12 +6043,12 @@ type ProcessMediaResponse struct {
 }
 
 func (r *ProcessMediaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ProcessMediaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProhibitedAsrReviewTemplateInfo struct {
@@ -6237,12 +6237,12 @@ type ResetWorkflowRequest struct {
 }
 
 func (r *ResetWorkflowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetWorkflowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetWorkflowResponse struct {
@@ -6255,12 +6255,12 @@ type ResetWorkflowResponse struct {
 }
 
 func (r *ResetWorkflowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetWorkflowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SampleSnapshotTaskInput struct {

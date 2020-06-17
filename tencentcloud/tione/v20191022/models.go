@@ -15,9 +15,9 @@
 package v20191022
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AlgorithmSpecification struct {
@@ -102,12 +102,12 @@ type CreateCodeRepositoryRequest struct {
 }
 
 func (r *CreateCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCodeRepositoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCodeRepositoryResponse struct {
@@ -123,12 +123,12 @@ type CreateCodeRepositoryResponse struct {
 }
 
 func (r *CreateCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCodeRepositoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotebookInstanceRequest struct {
@@ -187,12 +187,12 @@ type CreateNotebookInstanceRequest struct {
 }
 
 func (r *CreateNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotebookInstanceResponse struct {
@@ -208,12 +208,12 @@ type CreateNotebookInstanceResponse struct {
 }
 
 func (r *CreateNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotebookLifecycleScriptRequest struct {
@@ -232,12 +232,12 @@ type CreateNotebookLifecycleScriptRequest struct {
 }
 
 func (r *CreateNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotebookLifecycleScriptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotebookLifecycleScriptResponse struct {
@@ -253,12 +253,12 @@ type CreateNotebookLifecycleScriptResponse struct {
 }
 
 func (r *CreateNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotebookLifecycleScriptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePresignedNotebookInstanceUrlRequest struct {
@@ -273,12 +273,12 @@ type CreatePresignedNotebookInstanceUrlRequest struct {
 }
 
 func (r *CreatePresignedNotebookInstanceUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePresignedNotebookInstanceUrlRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePresignedNotebookInstanceUrlResponse struct {
@@ -294,12 +294,12 @@ type CreatePresignedNotebookInstanceUrlResponse struct {
 }
 
 func (r *CreatePresignedNotebookInstanceUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePresignedNotebookInstanceUrlResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTrainingJobRequest struct {
@@ -337,12 +337,12 @@ type CreateTrainingJobRequest struct {
 }
 
 func (r *CreateTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTrainingJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTrainingJobResponse struct {
@@ -358,12 +358,12 @@ type CreateTrainingJobResponse struct {
 }
 
 func (r *CreateTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTrainingJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DataSource struct {
@@ -385,12 +385,12 @@ type DeleteCodeRepositoryRequest struct {
 }
 
 func (r *DeleteCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCodeRepositoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCodeRepositoryResponse struct {
@@ -406,12 +406,12 @@ type DeleteCodeRepositoryResponse struct {
 }
 
 func (r *DeleteCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCodeRepositoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotebookInstanceRequest struct {
@@ -422,12 +422,12 @@ type DeleteNotebookInstanceRequest struct {
 }
 
 func (r *DeleteNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotebookInstanceResponse struct {
@@ -440,12 +440,12 @@ type DeleteNotebookInstanceResponse struct {
 }
 
 func (r *DeleteNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotebookLifecycleScriptRequest struct {
@@ -459,12 +459,12 @@ type DeleteNotebookLifecycleScriptRequest struct {
 }
 
 func (r *DeleteNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotebookLifecycleScriptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotebookLifecycleScriptResponse struct {
@@ -477,12 +477,12 @@ type DeleteNotebookLifecycleScriptResponse struct {
 }
 
 func (r *DeleteNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotebookLifecycleScriptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCodeRepositoriesRequest struct {
@@ -506,12 +506,12 @@ type DescribeCodeRepositoriesRequest struct {
 }
 
 func (r *DescribeCodeRepositoriesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCodeRepositoriesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCodeRepositoriesResponse struct {
@@ -522,7 +522,7 @@ type DescribeCodeRepositoriesResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 存储库列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeRepoSet []*CodeRepoSummary `json:"CodeRepoSet,omitempty" name:"CodeRepoSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -531,12 +531,12 @@ type DescribeCodeRepositoriesResponse struct {
 }
 
 func (r *DescribeCodeRepositoriesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCodeRepositoriesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCodeRepositoryRequest struct {
@@ -547,12 +547,12 @@ type DescribeCodeRepositoryRequest struct {
 }
 
 func (r *DescribeCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCodeRepositoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCodeRepositoryResponse struct {
@@ -580,12 +580,12 @@ type DescribeCodeRepositoryResponse struct {
 }
 
 func (r *DescribeCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCodeRepositoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookInstanceRequest struct {
@@ -597,12 +597,12 @@ type DescribeNotebookInstanceRequest struct {
 }
 
 func (r *DescribeNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookInstanceResponse struct {
@@ -613,87 +613,87 @@ type DescribeNotebookInstanceResponse struct {
 		NotebookInstanceName *string `json:"NotebookInstanceName,omitempty" name:"NotebookInstanceName"`
 
 		// Notebook算力资源类型
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceType *string `json:"InstanceType,omitempty" name:"InstanceType"`
 
 		// 角色的资源描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RoleArn *string `json:"RoleArn,omitempty" name:"RoleArn"`
 
 		// 外网访问权限
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DirectInternetAccess *string `json:"DirectInternetAccess,omitempty" name:"DirectInternetAccess"`
 
 		// Root用户权限
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RootAccess *string `json:"RootAccess,omitempty" name:"RootAccess"`
 
 		// 子网ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetId *string `json:"SubnetId,omitempty" name:"SubnetId"`
 
 		// 数据卷大小(GB)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VolumeSizeInGB *uint64 `json:"VolumeSizeInGB,omitempty" name:"VolumeSizeInGB"`
 
 		// 创建失败原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureReason *string `json:"FailureReason,omitempty" name:"FailureReason"`
 
 		// Notebook实例创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreationTime *string `json:"CreationTime,omitempty" name:"CreationTime"`
 
 		// Notebook实例最近修改时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LastModifiedTime *string `json:"LastModifiedTime,omitempty" name:"LastModifiedTime"`
 
 		// Notebook实例日志链接
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogUrl *string `json:"LogUrl,omitempty" name:"LogUrl"`
 
 		// Notebook实例状态
-	// 
-	// Pending: 创建中
-	// Inservice: 运行中
-	// Stopping: 停止中
-	// Stopped: 已停止
-	// Failed: 失败
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		//
+		// Pending: 创建中
+		// Inservice: 运行中
+		// Stopping: 停止中
+		// Stopped: 已停止
+		// Failed: 失败
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NotebookInstanceStatus *string `json:"NotebookInstanceStatus,omitempty" name:"NotebookInstanceStatus"`
 
 		// Notebook实例ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
 		// notebook生命周期脚本名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LifecycleScriptsName *string `json:"LifecycleScriptsName,omitempty" name:"LifecycleScriptsName"`
 
 		// 默认存储库名称
-	// 可以是已创建的存储库名称或者已https://开头的公共git库
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 可以是已创建的存储库名称或者已https://开头的公共git库
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DefaultCodeRepository *string `json:"DefaultCodeRepository,omitempty" name:"DefaultCodeRepository"`
 
 		// 其他存储库列表
-	// 每个元素可以是已创建的存储库名称或者已https://开头的公共git库
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 每个元素可以是已创建的存储库名称或者已https://开头的公共git库
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AdditionalCodeRepositories []*string `json:"AdditionalCodeRepositories,omitempty" name:"AdditionalCodeRepositories" list`
 
 		// 是否开启CLS日志服务
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClsAccess *string `json:"ClsAccess,omitempty" name:"ClsAccess"`
 
 		// 是否预付费实例
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Prepay *bool `json:"Prepay,omitempty" name:"Prepay"`
 
 		// 实例运行截止时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Deadline *string `json:"Deadline,omitempty" name:"Deadline"`
 
 		// 自动停止配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StoppingCondition *StoppingCondition `json:"StoppingCondition,omitempty" name:"StoppingCondition"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -702,12 +702,12 @@ type DescribeNotebookInstanceResponse struct {
 }
 
 func (r *DescribeNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookInstancesRequest struct {
@@ -740,12 +740,12 @@ type DescribeNotebookInstancesRequest struct {
 }
 
 func (r *DescribeNotebookInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookInstancesResponse struct {
@@ -764,12 +764,12 @@ type DescribeNotebookInstancesResponse struct {
 }
 
 func (r *DescribeNotebookInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookLifecycleScriptRequest struct {
@@ -780,12 +780,12 @@ type DescribeNotebookLifecycleScriptRequest struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookLifecycleScriptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookLifecycleScriptResponse struct {
@@ -796,11 +796,11 @@ type DescribeNotebookLifecycleScriptResponse struct {
 		NotebookLifecycleScriptsName *string `json:"NotebookLifecycleScriptsName,omitempty" name:"NotebookLifecycleScriptsName"`
 
 		// 创建脚本
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateScript *string `json:"CreateScript,omitempty" name:"CreateScript"`
 
 		// 启动脚本
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StartScript *string `json:"StartScript,omitempty" name:"StartScript"`
 
 		// 创建时间
@@ -815,12 +815,12 @@ type DescribeNotebookLifecycleScriptResponse struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookLifecycleScriptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookLifecycleScriptsRequest struct {
@@ -844,12 +844,12 @@ type DescribeNotebookLifecycleScriptsRequest struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookLifecycleScriptsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookLifecycleScriptsResponse struct {
@@ -868,12 +868,12 @@ type DescribeNotebookLifecycleScriptsResponse struct {
 }
 
 func (r *DescribeNotebookLifecycleScriptsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookLifecycleScriptsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookSummaryRequest struct {
@@ -881,12 +881,12 @@ type DescribeNotebookSummaryRequest struct {
 }
 
 func (r *DescribeNotebookSummaryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookSummaryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotebookSummaryResponse struct {
@@ -911,12 +911,12 @@ type DescribeNotebookSummaryResponse struct {
 }
 
 func (r *DescribeNotebookSummaryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotebookSummaryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTrainingJobRequest struct {
@@ -927,12 +927,12 @@ type DescribeTrainingJobRequest struct {
 }
 
 func (r *DescribeTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTrainingJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTrainingJobResponse struct {
@@ -946,7 +946,7 @@ type DescribeTrainingJobResponse struct {
 		TrainingJobName *string `json:"TrainingJobName,omitempty" name:"TrainingJobName"`
 
 		// 算法超级参数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		HyperParameters *string `json:"HyperParameters,omitempty" name:"HyperParameters"`
 
 		// 输入数据配置
@@ -956,61 +956,61 @@ type DescribeTrainingJobResponse struct {
 		OutputDataConfig *OutputDataConfig `json:"OutputDataConfig,omitempty" name:"OutputDataConfig"`
 
 		// 中止条件
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StoppingCondition *StoppingCondition `json:"StoppingCondition,omitempty" name:"StoppingCondition"`
 
 		// 计算实例配置
 		ResourceConfig *ResourceConfig `json:"ResourceConfig,omitempty" name:"ResourceConfig"`
 
 		// 私有网络配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcConfig *VpcConfig `json:"VpcConfig,omitempty" name:"VpcConfig"`
 
 		// 失败原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailureReason *string `json:"FailureReason,omitempty" name:"FailureReason"`
 
 		// 最近修改时间
 		LastModifiedTime *string `json:"LastModifiedTime,omitempty" name:"LastModifiedTime"`
 
 		// 任务开始时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TrainingStartTime *string `json:"TrainingStartTime,omitempty" name:"TrainingStartTime"`
 
 		// 任务完成时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TrainingEndTime *string `json:"TrainingEndTime,omitempty" name:"TrainingEndTime"`
 
 		// 模型输出配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ModelArtifacts *ModelArtifacts `json:"ModelArtifacts,omitempty" name:"ModelArtifacts"`
 
 		// 详细状态，取值范围
-	// Starting：启动中
-	// Downloading: 准备训练数据
-	// Training: 正在训练
-	// Uploading: 上传训练结果
-	// Completed：已完成
-	// Failed: 失败
-	// MaxRuntimeExceeded: 任务超过最大运行时间
-	// Stopping: 停止中
-	// Stopped：已停止
+		// Starting：启动中
+		// Downloading: 准备训练数据
+		// Training: 正在训练
+		// Uploading: 上传训练结果
+		// Completed：已完成
+		// Failed: 失败
+		// MaxRuntimeExceeded: 任务超过最大运行时间
+		// Stopping: 停止中
+		// Stopped：已停止
 		SecondaryStatus *string `json:"SecondaryStatus,omitempty" name:"SecondaryStatus"`
 
 		// 详细状态事件记录
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SecondaryStatusTransitions []*SecondaryStatusTransition `json:"SecondaryStatusTransitions,omitempty" name:"SecondaryStatusTransitions" list`
 
 		// 角色名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RoleName *string `json:"RoleName,omitempty" name:"RoleName"`
 
 		// 训练任务状态，取值范围
-	// InProgress：运行中
-	// Completed: 已完成
-	// Failed: 失败
-	// Stopping: 停止中
-	// Stopped：已停止
+		// InProgress：运行中
+		// Completed: 已完成
+		// Failed: 失败
+		// Stopping: 停止中
+		// Stopped：已停止
 		TrainingJobStatus *string `json:"TrainingJobStatus,omitempty" name:"TrainingJobStatus"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1019,12 +1019,12 @@ type DescribeTrainingJobResponse struct {
 }
 
 func (r *DescribeTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTrainingJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnvConfig struct {
@@ -1245,12 +1245,12 @@ type StartNotebookInstanceRequest struct {
 }
 
 func (r *StartNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartNotebookInstanceResponse struct {
@@ -1263,12 +1263,12 @@ type StartNotebookInstanceResponse struct {
 }
 
 func (r *StartNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopNotebookInstanceRequest struct {
@@ -1279,12 +1279,12 @@ type StopNotebookInstanceRequest struct {
 }
 
 func (r *StopNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopNotebookInstanceResponse struct {
@@ -1297,12 +1297,12 @@ type StopNotebookInstanceResponse struct {
 }
 
 func (r *StopNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopTrainingJobRequest struct {
@@ -1313,12 +1313,12 @@ type StopTrainingJobRequest struct {
 }
 
 func (r *StopTrainingJobRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopTrainingJobRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopTrainingJobResponse struct {
@@ -1331,12 +1331,12 @@ type StopTrainingJobResponse struct {
 }
 
 func (r *StopTrainingJobResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopTrainingJobResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StoppingCondition struct {
@@ -1357,12 +1357,12 @@ type UpdateCodeRepositoryRequest struct {
 }
 
 func (r *UpdateCodeRepositoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCodeRepositoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCodeRepositoryResponse struct {
@@ -1378,12 +1378,12 @@ type UpdateCodeRepositoryResponse struct {
 }
 
 func (r *UpdateCodeRepositoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCodeRepositoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateNotebookInstanceRequest struct {
@@ -1441,12 +1441,12 @@ type UpdateNotebookInstanceRequest struct {
 }
 
 func (r *UpdateNotebookInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateNotebookInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateNotebookInstanceResponse struct {
@@ -1459,12 +1459,12 @@ type UpdateNotebookInstanceResponse struct {
 }
 
 func (r *UpdateNotebookInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateNotebookInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateNotebookLifecycleScriptRequest struct {
@@ -1483,12 +1483,12 @@ type UpdateNotebookLifecycleScriptRequest struct {
 }
 
 func (r *UpdateNotebookLifecycleScriptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateNotebookLifecycleScriptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateNotebookLifecycleScriptResponse struct {
@@ -1501,12 +1501,12 @@ type UpdateNotebookLifecycleScriptResponse struct {
 }
 
 func (r *UpdateNotebookLifecycleScriptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateNotebookLifecycleScriptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VpcConfig struct {

@@ -15,9 +15,9 @@
 package v20191126
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type BindDevInfo struct {
@@ -53,12 +53,12 @@ type CreateAppUsrRequest struct {
 }
 
 func (r *CreateAppUsrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAppUsrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAppUsrResponse struct {
@@ -80,12 +80,12 @@ type CreateAppUsrResponse struct {
 }
 
 func (r *CreateAppUsrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAppUsrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateBindingRequest struct {
@@ -105,12 +105,12 @@ type CreateBindingRequest struct {
 }
 
 func (r *CreateBindingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBindingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateBindingResponse struct {
@@ -126,12 +126,12 @@ type CreateBindingResponse struct {
 }
 
 func (r *CreateBindingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBindingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDevTokenRequest struct {
@@ -148,12 +148,12 @@ type CreateDevTokenRequest struct {
 }
 
 func (r *CreateDevTokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDevTokenRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDevTokenResponse struct {
@@ -161,7 +161,7 @@ type CreateDevTokenResponse struct {
 	Response *struct {
 
 		// 返回的用户token列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*DevTokenInfo `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -170,12 +170,12 @@ type CreateDevTokenResponse struct {
 }
 
 func (r *CreateDevTokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDevTokenResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDevicesRequest struct {
@@ -195,12 +195,12 @@ type CreateDevicesRequest struct {
 }
 
 func (r *CreateDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDevicesResponse struct {
@@ -216,12 +216,12 @@ type CreateDevicesResponse struct {
 }
 
 func (r *CreateDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGencodeRequest struct {
@@ -235,12 +235,12 @@ type CreateGencodeRequest struct {
 }
 
 func (r *CreateGencodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGencodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGencodeResponse struct {
@@ -248,7 +248,7 @@ type CreateGencodeResponse struct {
 	Response *struct {
 
 		// 生成的源代码(zip压缩后的base64编码)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ZipCode *string `json:"ZipCode,omitempty" name:"ZipCode"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -257,12 +257,12 @@ type CreateGencodeResponse struct {
 }
 
 func (r *CreateGencodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGencodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateIotDataTypeRequest struct {
@@ -273,12 +273,12 @@ type CreateIotDataTypeRequest struct {
 }
 
 func (r *CreateIotDataTypeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateIotDataTypeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateIotDataTypeResponse struct {
@@ -291,12 +291,12 @@ type CreateIotDataTypeResponse struct {
 }
 
 func (r *CreateIotDataTypeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateIotDataTypeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateIotModelRequest struct {
@@ -310,12 +310,12 @@ type CreateIotModelRequest struct {
 }
 
 func (r *CreateIotModelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateIotModelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateIotModelResponse struct {
@@ -328,12 +328,12 @@ type CreateIotModelResponse struct {
 }
 
 func (r *CreateIotModelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateIotModelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProductRequest struct {
@@ -361,12 +361,12 @@ type CreateProductRequest struct {
 }
 
 func (r *CreateProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProductResponse struct {
@@ -382,12 +382,12 @@ type CreateProductResponse struct {
 }
 
 func (r *CreateProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStorageRequest struct {
@@ -404,12 +404,12 @@ type CreateStorageRequest struct {
 }
 
 func (r *CreateStorageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStorageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStorageResponse struct {
@@ -422,12 +422,12 @@ type CreateStorageResponse struct {
 }
 
 func (r *CreateStorageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStorageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTraceIdsRequest struct {
@@ -438,12 +438,12 @@ type CreateTraceIdsRequest struct {
 }
 
 func (r *CreateTraceIdsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTraceIdsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTraceIdsResponse struct {
@@ -456,12 +456,12 @@ type CreateTraceIdsResponse struct {
 }
 
 func (r *CreateTraceIdsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTraceIdsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateUploadPathRequest struct {
@@ -475,12 +475,12 @@ type CreateUploadPathRequest struct {
 }
 
 func (r *CreateUploadPathRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateUploadPathRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateUploadPathResponse struct {
@@ -488,7 +488,7 @@ type CreateUploadPathResponse struct {
 	Response *struct {
 
 		// 固件上传地址URL，用户可将本地的固件文件通过该URL以PUT的请求方式上传。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -497,12 +497,12 @@ type CreateUploadPathResponse struct {
 }
 
 func (r *CreateUploadPathResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateUploadPathResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateUsrTokenRequest struct {
@@ -519,12 +519,12 @@ type CreateUsrTokenRequest struct {
 }
 
 func (r *CreateUsrTokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateUsrTokenRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateUsrTokenResponse struct {
@@ -549,12 +549,12 @@ type CreateUsrTokenResponse struct {
 }
 
 func (r *CreateUsrTokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateUsrTokenResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAppUsrRequest struct {
@@ -565,12 +565,12 @@ type DeleteAppUsrRequest struct {
 }
 
 func (r *DeleteAppUsrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAppUsrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAppUsrResponse struct {
@@ -583,12 +583,12 @@ type DeleteAppUsrResponse struct {
 }
 
 func (r *DeleteAppUsrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAppUsrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteBindingRequest struct {
@@ -605,12 +605,12 @@ type DeleteBindingRequest struct {
 }
 
 func (r *DeleteBindingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteBindingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteBindingResponse struct {
@@ -623,12 +623,12 @@ type DeleteBindingResponse struct {
 }
 
 func (r *DeleteBindingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteBindingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceRequest struct {
@@ -639,12 +639,12 @@ type DeleteDeviceRequest struct {
 }
 
 func (r *DeleteDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceResponse struct {
@@ -657,12 +657,12 @@ type DeleteDeviceResponse struct {
 }
 
 func (r *DeleteDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteIotDataTypeRequest struct {
@@ -673,12 +673,12 @@ type DeleteIotDataTypeRequest struct {
 }
 
 func (r *DeleteIotDataTypeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteIotDataTypeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteIotDataTypeResponse struct {
@@ -691,12 +691,12 @@ type DeleteIotDataTypeResponse struct {
 }
 
 func (r *DeleteIotDataTypeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteIotDataTypeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMessageQueueRequest struct {
@@ -707,12 +707,12 @@ type DeleteMessageQueueRequest struct {
 }
 
 func (r *DeleteMessageQueueRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMessageQueueRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMessageQueueResponse struct {
@@ -725,12 +725,12 @@ type DeleteMessageQueueResponse struct {
 }
 
 func (r *DeleteMessageQueueResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMessageQueueResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOtaVersionRequest struct {
@@ -747,12 +747,12 @@ type DeleteOtaVersionRequest struct {
 }
 
 func (r *DeleteOtaVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOtaVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOtaVersionResponse struct {
@@ -765,12 +765,12 @@ type DeleteOtaVersionResponse struct {
 }
 
 func (r *DeleteOtaVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOtaVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProductRequest struct {
@@ -781,12 +781,12 @@ type DeleteProductRequest struct {
 }
 
 func (r *DeleteProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProductResponse struct {
@@ -799,12 +799,12 @@ type DeleteProductResponse struct {
 }
 
 func (r *DeleteProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTraceIdsRequest struct {
@@ -815,12 +815,12 @@ type DeleteTraceIdsRequest struct {
 }
 
 func (r *DeleteTraceIdsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTraceIdsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTraceIdsResponse struct {
@@ -833,12 +833,12 @@ type DeleteTraceIdsResponse struct {
 }
 
 func (r *DeleteTraceIdsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTraceIdsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBindDevRequest struct {
@@ -849,12 +849,12 @@ type DescribeBindDevRequest struct {
 }
 
 func (r *DescribeBindDevRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBindDevRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBindDevResponse struct {
@@ -862,7 +862,7 @@ type DescribeBindDevResponse struct {
 	Response *struct {
 
 		// 绑定的设备列表信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*BindDevInfo `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -871,12 +871,12 @@ type DescribeBindDevResponse struct {
 }
 
 func (r *DescribeBindDevResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBindDevResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBindUsrRequest struct {
@@ -890,12 +890,12 @@ type DescribeBindUsrRequest struct {
 }
 
 func (r *DescribeBindUsrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBindUsrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBindUsrResponse struct {
@@ -903,7 +903,7 @@ type DescribeBindUsrResponse struct {
 	Response *struct {
 
 		// 具有绑定关系的终端用户信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*BindUsrInfo `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -912,12 +912,12 @@ type DescribeBindUsrResponse struct {
 }
 
 func (r *DescribeBindUsrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBindUsrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceModelRequest struct {
@@ -931,12 +931,12 @@ type DescribeDeviceModelRequest struct {
 }
 
 func (r *DescribeDeviceModelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceModelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceModelResponse struct {
@@ -944,7 +944,7 @@ type DescribeDeviceModelResponse struct {
 	Response *struct {
 
 		// 设备物模型信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *DeviceModelData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -953,12 +953,12 @@ type DescribeDeviceModelResponse struct {
 }
 
 func (r *DescribeDeviceModelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceModelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceRequest struct {
@@ -969,12 +969,12 @@ type DescribeDeviceRequest struct {
 }
 
 func (r *DescribeDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceResponse struct {
@@ -982,7 +982,7 @@ type DescribeDeviceResponse struct {
 	Response *struct {
 
 		// 设备信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *DeviceData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -991,12 +991,12 @@ type DescribeDeviceResponse struct {
 }
 
 func (r *DescribeDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDevicesRequest struct {
@@ -1023,12 +1023,12 @@ type DescribeDevicesRequest struct {
 }
 
 func (r *DescribeDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDevicesResponse struct {
@@ -1036,7 +1036,7 @@ type DescribeDevicesResponse struct {
 	Response *struct {
 
 		// 设备信息 列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*DevicesData `json:"Data,omitempty" name:"Data" list`
 
 		// 设备总数
@@ -1048,12 +1048,12 @@ type DescribeDevicesResponse struct {
 }
 
 func (r *DescribeDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotDataTypeRequest struct {
@@ -1064,12 +1064,12 @@ type DescribeIotDataTypeRequest struct {
 }
 
 func (r *DescribeIotDataTypeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotDataTypeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotDataTypeResponse struct {
@@ -1077,7 +1077,7 @@ type DescribeIotDataTypeResponse struct {
 	Response *struct {
 
 		// 自定义数据类型，json格式的字符串
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*string `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1086,12 +1086,12 @@ type DescribeIotDataTypeResponse struct {
 }
 
 func (r *DescribeIotDataTypeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotDataTypeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotModelRequest struct {
@@ -1105,12 +1105,12 @@ type DescribeIotModelRequest struct {
 }
 
 func (r *DescribeIotModelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotModelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotModelResponse struct {
@@ -1118,7 +1118,7 @@ type DescribeIotModelResponse struct {
 	Response *struct {
 
 		// 物模型定义，json格式的字符串
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1127,12 +1127,12 @@ type DescribeIotModelResponse struct {
 }
 
 func (r *DescribeIotModelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotModelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotModelsRequest struct {
@@ -1143,12 +1143,12 @@ type DescribeIotModelsRequest struct {
 }
 
 func (r *DescribeIotModelsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotModelsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIotModelsResponse struct {
@@ -1156,7 +1156,7 @@ type DescribeIotModelsResponse struct {
 	Response *struct {
 
 		// 历史版本列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*IotModelData `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1165,12 +1165,12 @@ type DescribeIotModelsResponse struct {
 }
 
 func (r *DescribeIotModelsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIotModelsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLogsRequest struct {
@@ -1199,12 +1199,12 @@ type DescribeLogsRequest struct {
 }
 
 func (r *DescribeLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLogsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLogsResponse struct {
@@ -1212,7 +1212,7 @@ type DescribeLogsResponse struct {
 	Response *struct {
 
 		// 设备日志信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*LogData `json:"Data,omitempty" name:"Data" list`
 
 		// Data数组所包含的信息条数
@@ -1224,12 +1224,12 @@ type DescribeLogsResponse struct {
 }
 
 func (r *DescribeLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLogsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMessageQueueRequest struct {
@@ -1240,12 +1240,12 @@ type DescribeMessageQueueRequest struct {
 }
 
 func (r *DescribeMessageQueueRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMessageQueueRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMessageQueueResponse struct {
@@ -1253,7 +1253,7 @@ type DescribeMessageQueueResponse struct {
 	Response *struct {
 
 		// 消息队列配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *MsgQueueData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1262,12 +1262,12 @@ type DescribeMessageQueueResponse struct {
 }
 
 func (r *DescribeMessageQueueResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMessageQueueResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModelDataRetRequest struct {
@@ -1278,12 +1278,12 @@ type DescribeModelDataRetRequest struct {
 }
 
 func (r *DescribeModelDataRetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModelDataRetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModelDataRetResponse struct {
@@ -1291,7 +1291,7 @@ type DescribeModelDataRetResponse struct {
 	Response *struct {
 
 		// 设备响应结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1300,12 +1300,12 @@ type DescribeModelDataRetResponse struct {
 }
 
 func (r *DescribeModelDataRetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModelDataRetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOtaVersionsRequest struct {
@@ -1328,12 +1328,12 @@ type DescribeOtaVersionsRequest struct {
 }
 
 func (r *DescribeOtaVersionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOtaVersionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOtaVersionsResponse struct {
@@ -1344,7 +1344,7 @@ type DescribeOtaVersionsResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 版本详细信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*VersionData `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1353,12 +1353,12 @@ type DescribeOtaVersionsResponse struct {
 }
 
 func (r *DescribeOtaVersionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOtaVersionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductRequest struct {
@@ -1369,12 +1369,12 @@ type DescribeProductRequest struct {
 }
 
 func (r *DescribeProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductResponse struct {
@@ -1382,7 +1382,7 @@ type DescribeProductResponse struct {
 	Response *struct {
 
 		// 产品详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *ProductData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1391,12 +1391,12 @@ type DescribeProductResponse struct {
 }
 
 func (r *DescribeProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductsRequest struct {
@@ -1419,12 +1419,12 @@ type DescribeProductsRequest struct {
 }
 
 func (r *DescribeProductsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductsResponse struct {
@@ -1432,7 +1432,7 @@ type DescribeProductsResponse struct {
 	Response *struct {
 
 		// 产品详细信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*ProductData `json:"Data,omitempty" name:"Data" list`
 
 		// 产品总数
@@ -1444,12 +1444,12 @@ type DescribeProductsResponse struct {
 }
 
 func (r *DescribeProductsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePubVersionsRequest struct {
@@ -1460,12 +1460,12 @@ type DescribePubVersionsRequest struct {
 }
 
 func (r *DescribePubVersionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePubVersionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePubVersionsResponse struct {
@@ -1473,7 +1473,7 @@ type DescribePubVersionsResponse struct {
 	Response *struct {
 
 		// 历史发布的版本列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*OtaPubHistory `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1482,12 +1482,12 @@ type DescribePubVersionsResponse struct {
 }
 
 func (r *DescribePubVersionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePubVersionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegistrationStatusRequest struct {
@@ -1498,12 +1498,12 @@ type DescribeRegistrationStatusRequest struct {
 }
 
 func (r *DescribeRegistrationStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegistrationStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegistrationStatusResponse struct {
@@ -1519,12 +1519,12 @@ type DescribeRegistrationStatusResponse struct {
 }
 
 func (r *DescribeRegistrationStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegistrationStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRunLogRequest struct {
@@ -1535,12 +1535,12 @@ type DescribeRunLogRequest struct {
 }
 
 func (r *DescribeRunLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRunLogRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRunLogResponse struct {
@@ -1548,7 +1548,7 @@ type DescribeRunLogResponse struct {
 	Response *struct {
 
 		// 设备运行日志文本信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1557,12 +1557,12 @@ type DescribeRunLogResponse struct {
 }
 
 func (r *DescribeRunLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRunLogResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTraceIdsRequest struct {
@@ -1570,12 +1570,12 @@ type DescribeTraceIdsRequest struct {
 }
 
 func (r *DescribeTraceIdsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTraceIdsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTraceIdsResponse struct {
@@ -1583,7 +1583,7 @@ type DescribeTraceIdsResponse struct {
 	Response *struct {
 
 		// 设备TID列表，列表元素之间以“,”分隔
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1592,12 +1592,12 @@ type DescribeTraceIdsResponse struct {
 }
 
 func (r *DescribeTraceIdsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTraceIdsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTraceStatusRequest struct {
@@ -1608,12 +1608,12 @@ type DescribeTraceStatusRequest struct {
 }
 
 func (r *DescribeTraceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTraceStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTraceStatusResponse struct {
@@ -1621,7 +1621,7 @@ type DescribeTraceStatusResponse struct {
 	Response *struct {
 
 		// 设备追踪状态列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*TraceStatus `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1630,12 +1630,12 @@ type DescribeTraceStatusResponse struct {
 }
 
 func (r *DescribeTraceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTraceStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DevTokenInfo struct {
@@ -1771,12 +1771,12 @@ type DisableDeviceRequest struct {
 }
 
 func (r *DisableDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableDeviceResponse struct {
@@ -1789,12 +1789,12 @@ type DisableDeviceResponse struct {
 }
 
 func (r *DisableDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableDeviceStreamRequest struct {
@@ -1805,12 +1805,12 @@ type DisableDeviceStreamRequest struct {
 }
 
 func (r *DisableDeviceStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableDeviceStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableDeviceStreamResponse struct {
@@ -1823,12 +1823,12 @@ type DisableDeviceStreamResponse struct {
 }
 
 func (r *DisableDeviceStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableDeviceStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableOtaVersionRequest struct {
@@ -1845,12 +1845,12 @@ type DisableOtaVersionRequest struct {
 }
 
 func (r *DisableOtaVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableOtaVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableOtaVersionResponse struct {
@@ -1863,12 +1863,12 @@ type DisableOtaVersionResponse struct {
 }
 
 func (r *DisableOtaVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableOtaVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IotModelData struct {
@@ -1921,12 +1921,12 @@ type ModifyDeviceActionRequest struct {
 }
 
 func (r *ModifyDeviceActionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDeviceActionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDeviceActionResponse struct {
@@ -1934,12 +1934,12 @@ type ModifyDeviceActionResponse struct {
 	Response *struct {
 
 		// 设备端的响应结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 任务ID
-	// 若设备端未能及时响应时，会返回此字段，用户可以通过DescribeModelDataRet获取设备的最终响应结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 若设备端未能及时响应时，会返回此字段，用户可以通过DescribeModelDataRet获取设备的最终响应结果。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1948,12 +1948,12 @@ type ModifyDeviceActionResponse struct {
 }
 
 func (r *ModifyDeviceActionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDeviceActionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDevicePropertyRequest struct {
@@ -1976,12 +1976,12 @@ type ModifyDevicePropertyRequest struct {
 }
 
 func (r *ModifyDevicePropertyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDevicePropertyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDevicePropertyResponse struct {
@@ -1994,12 +1994,12 @@ type ModifyDevicePropertyResponse struct {
 }
 
 func (r *ModifyDevicePropertyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDevicePropertyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyProductRequest struct {
@@ -2022,12 +2022,12 @@ type ModifyProductRequest struct {
 }
 
 func (r *ModifyProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyProductResponse struct {
@@ -2040,12 +2040,12 @@ type ModifyProductResponse struct {
 }
 
 func (r *ModifyProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MsgQueueData struct {
@@ -2159,12 +2159,12 @@ type RunDeviceRequest struct {
 }
 
 func (r *RunDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunDeviceResponse struct {
@@ -2177,12 +2177,12 @@ type RunDeviceResponse struct {
 }
 
 func (r *RunDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunDeviceStreamRequest struct {
@@ -2193,12 +2193,12 @@ type RunDeviceStreamRequest struct {
 }
 
 func (r *RunDeviceStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunDeviceStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunDeviceStreamResponse struct {
@@ -2211,12 +2211,12 @@ type RunDeviceStreamResponse struct {
 }
 
 func (r *RunDeviceStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunDeviceStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunIotModelRequest struct {
@@ -2230,12 +2230,12 @@ type RunIotModelRequest struct {
 }
 
 func (r *RunIotModelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunIotModelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunIotModelResponse struct {
@@ -2248,12 +2248,12 @@ type RunIotModelResponse struct {
 }
 
 func (r *RunIotModelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunIotModelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunOtaVersionRequest struct {
@@ -2276,12 +2276,12 @@ type RunOtaVersionRequest struct {
 }
 
 func (r *RunOtaVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunOtaVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunOtaVersionResponse struct {
@@ -2294,12 +2294,12 @@ type RunOtaVersionResponse struct {
 }
 
 func (r *RunOtaVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunOtaVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunTestOtaVersionRequest struct {
@@ -2319,12 +2319,12 @@ type RunTestOtaVersionRequest struct {
 }
 
 func (r *RunTestOtaVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunTestOtaVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunTestOtaVersionResponse struct {
@@ -2337,12 +2337,12 @@ type RunTestOtaVersionResponse struct {
 }
 
 func (r *RunTestOtaVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunTestOtaVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendOnlineMsgRequest struct {
@@ -2368,12 +2368,12 @@ type SendOnlineMsgRequest struct {
 }
 
 func (r *SendOnlineMsgRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendOnlineMsgRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendOnlineMsgResponse struct {
@@ -2392,12 +2392,12 @@ type SendOnlineMsgResponse struct {
 }
 
 func (r *SendOnlineMsgResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendOnlineMsgResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetMessageQueueRequest struct {
@@ -2429,12 +2429,12 @@ type SetMessageQueueRequest struct {
 }
 
 func (r *SetMessageQueueRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetMessageQueueRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetMessageQueueResponse struct {
@@ -2447,12 +2447,12 @@ type SetMessageQueueResponse struct {
 }
 
 func (r *SetMessageQueueResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetMessageQueueResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TraceStatus struct {
@@ -2478,12 +2478,12 @@ type UpgradeDeviceRequest struct {
 }
 
 func (r *UpgradeDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpgradeDeviceResponse struct {
@@ -2491,7 +2491,7 @@ type UpgradeDeviceResponse struct {
 	Response *struct {
 
 		// 设备端返回的数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2500,12 +2500,12 @@ type UpgradeDeviceResponse struct {
 }
 
 func (r *UpgradeDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadOtaVersionRequest struct {
@@ -2531,12 +2531,12 @@ type UploadOtaVersionRequest struct {
 }
 
 func (r *UploadOtaVersionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadOtaVersionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadOtaVersionResponse struct {
@@ -2549,12 +2549,12 @@ type UploadOtaVersionResponse struct {
 }
 
 func (r *UploadOtaVersionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadOtaVersionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VersionData struct {

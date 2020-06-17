@@ -15,9 +15,9 @@
 package v20190719
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Address struct {
@@ -91,12 +91,12 @@ type AllocateAddressesRequest struct {
 }
 
 func (r *AllocateAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AllocateAddressesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AllocateAddressesResponse struct {
@@ -104,7 +104,7 @@ type AllocateAddressesResponse struct {
 	Response *struct {
 
 		// 申请到的 EIP 的唯一 ID 列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AddressSet []*string `json:"AddressSet,omitempty" name:"AddressSet" list`
 
 		// 异步任务TaskId。可以使用DescribeTaskResult接口查询任务状态。
@@ -116,12 +116,12 @@ type AllocateAddressesResponse struct {
 }
 
 func (r *AllocateAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AllocateAddressesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Area struct {
@@ -150,12 +150,12 @@ type AssignPrivateIpAddressesRequest struct {
 }
 
 func (r *AssignPrivateIpAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssignPrivateIpAddressesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssignPrivateIpAddressesResponse struct {
@@ -163,7 +163,7 @@ type AssignPrivateIpAddressesResponse struct {
 	Response *struct {
 
 		// 内网IP详细信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PrivateIpAddressSet []*PrivateIpAddressSpecification `json:"PrivateIpAddressSet,omitempty" name:"PrivateIpAddressSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -172,12 +172,12 @@ type AssignPrivateIpAddressesResponse struct {
 }
 
 func (r *AssignPrivateIpAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssignPrivateIpAddressesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssistantCidr struct {
@@ -217,12 +217,12 @@ type AssociateAddressRequest struct {
 }
 
 func (r *AssociateAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssociateAddressRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssociateAddressResponse struct {
@@ -238,12 +238,12 @@ type AssociateAddressResponse struct {
 }
 
 func (r *AssociateAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssociateAddressResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachNetworkInterfaceRequest struct {
@@ -260,12 +260,12 @@ type AttachNetworkInterfaceRequest struct {
 }
 
 func (r *AttachNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachNetworkInterfaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachNetworkInterfaceResponse struct {
@@ -278,12 +278,12 @@ type AttachNetworkInterfaceResponse struct {
 }
 
 func (r *AttachNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachNetworkInterfaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type City struct {
@@ -327,12 +327,12 @@ type CreateModuleRequest struct {
 }
 
 func (r *CreateModuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateModuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateModuleResponse struct {
@@ -348,12 +348,12 @@ type CreateModuleResponse struct {
 }
 
 func (r *CreateModuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateModuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNetworkInterfaceRequest struct {
@@ -388,12 +388,12 @@ type CreateNetworkInterfaceRequest struct {
 }
 
 func (r *CreateNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNetworkInterfaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNetworkInterfaceResponse struct {
@@ -409,12 +409,12 @@ type CreateNetworkInterfaceResponse struct {
 }
 
 func (r *CreateNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNetworkInterfaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSecurityGroupRequest struct {
@@ -431,12 +431,12 @@ type CreateSecurityGroupRequest struct {
 }
 
 func (r *CreateSecurityGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSecurityGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSecurityGroupResponse struct {
@@ -452,12 +452,12 @@ type CreateSecurityGroupResponse struct {
 }
 
 func (r *CreateSecurityGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSecurityGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubnetRequest struct {
@@ -483,12 +483,12 @@ type CreateSubnetRequest struct {
 }
 
 func (r *CreateSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubnetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubnetResponse struct {
@@ -504,12 +504,12 @@ type CreateSubnetResponse struct {
 }
 
 func (r *CreateSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubnetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateVpcRequest struct {
@@ -538,12 +538,12 @@ type CreateVpcRequest struct {
 }
 
 func (r *CreateVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateVpcRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateVpcResponse struct {
@@ -559,12 +559,12 @@ type CreateVpcResponse struct {
 }
 
 func (r *CreateVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateVpcResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImageRequest struct {
@@ -575,12 +575,12 @@ type DeleteImageRequest struct {
 }
 
 func (r *DeleteImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImageResponse struct {
@@ -593,12 +593,12 @@ type DeleteImageResponse struct {
 }
 
 func (r *DeleteImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteModuleRequest struct {
@@ -609,12 +609,12 @@ type DeleteModuleRequest struct {
 }
 
 func (r *DeleteModuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteModuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteModuleResponse struct {
@@ -627,12 +627,12 @@ type DeleteModuleResponse struct {
 }
 
 func (r *DeleteModuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteModuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNetworkInterfaceRequest struct {
@@ -646,12 +646,12 @@ type DeleteNetworkInterfaceRequest struct {
 }
 
 func (r *DeleteNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNetworkInterfaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNetworkInterfaceResponse struct {
@@ -664,12 +664,12 @@ type DeleteNetworkInterfaceResponse struct {
 }
 
 func (r *DeleteNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNetworkInterfaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSubnetRequest struct {
@@ -683,12 +683,12 @@ type DeleteSubnetRequest struct {
 }
 
 func (r *DeleteSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSubnetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSubnetResponse struct {
@@ -701,12 +701,12 @@ type DeleteSubnetResponse struct {
 }
 
 func (r *DeleteSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSubnetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteVpcRequest struct {
@@ -720,12 +720,12 @@ type DeleteVpcRequest struct {
 }
 
 func (r *DeleteVpcRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteVpcRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteVpcResponse struct {
@@ -738,12 +738,12 @@ type DeleteVpcResponse struct {
 }
 
 func (r *DeleteVpcResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteVpcResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAddressQuotaRequest struct {
@@ -754,12 +754,12 @@ type DescribeAddressQuotaRequest struct {
 }
 
 func (r *DescribeAddressQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAddressQuotaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAddressQuotaResponse struct {
@@ -775,12 +775,12 @@ type DescribeAddressQuotaResponse struct {
 }
 
 func (r *DescribeAddressQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAddressQuotaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAddressesRequest struct {
@@ -811,12 +811,12 @@ type DescribeAddressesRequest struct {
 }
 
 func (r *DescribeAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAddressesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAddressesResponse struct {
@@ -835,12 +835,12 @@ type DescribeAddressesResponse struct {
 }
 
 func (r *DescribeAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAddressesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBaseOverviewRequest struct {
@@ -848,12 +848,12 @@ type DescribeBaseOverviewRequest struct {
 }
 
 func (r *DescribeBaseOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBaseOverviewRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBaseOverviewResponse struct {
@@ -899,12 +899,12 @@ type DescribeBaseOverviewResponse struct {
 }
 
 func (r *DescribeBaseOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBaseOverviewResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeConfigRequest struct {
@@ -912,12 +912,12 @@ type DescribeConfigRequest struct {
 }
 
 func (r *DescribeConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeConfigResponse struct {
@@ -928,7 +928,7 @@ type DescribeConfigResponse struct {
 		NetworkStorageRange *NetworkStorageRange `json:"NetworkStorageRange,omitempty" name:"NetworkStorageRange"`
 
 		// 镜像操作系统白名单
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ImageWhiteSet []*string `json:"ImageWhiteSet,omitempty" name:"ImageWhiteSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -937,12 +937,12 @@ type DescribeConfigResponse struct {
 }
 
 func (r *DescribeConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDefaultSubnetRequest struct {
@@ -956,12 +956,12 @@ type DescribeDefaultSubnetRequest struct {
 }
 
 func (r *DescribeDefaultSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDefaultSubnetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDefaultSubnetResponse struct {
@@ -977,12 +977,12 @@ type DescribeDefaultSubnetResponse struct {
 }
 
 func (r *DescribeDefaultSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDefaultSubnetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImageRequest struct {
@@ -991,7 +991,7 @@ type DescribeImageRequest struct {
 	// 过滤条件，每次请求的Filters的上限为10，详细的过滤条件如下：
 	// image-id - String - 是否必填： 否 - （过滤条件）按照镜像ID进行过滤
 	// image-type - String - 是否必填： 否 - （过滤条件）按照镜像类型进行过滤。取值范围：
-	// PRIVATE_IMAGE: 私有镜像 (本帐户创建的镜像) 
+	// PRIVATE_IMAGE: 私有镜像 (本帐户创建的镜像)
 	// PUBLIC_IMAGE: 公共镜像 (腾讯云官方镜像)
 	Filters []*Filter `json:"Filters,omitempty" name:"Filters" list`
 
@@ -1003,12 +1003,12 @@ type DescribeImageRequest struct {
 }
 
 func (r *DescribeImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImageResponse struct {
@@ -1016,11 +1016,11 @@ type DescribeImageResponse struct {
 	Response *struct {
 
 		// 镜像总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 镜像数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ImageSet []*Image `json:"ImageSet,omitempty" name:"ImageSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1029,12 +1029,12 @@ type DescribeImageResponse struct {
 }
 
 func (r *DescribeImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceTypeConfigRequest struct {
@@ -1042,12 +1042,12 @@ type DescribeInstanceTypeConfigRequest struct {
 }
 
 func (r *DescribeInstanceTypeConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceTypeConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceTypeConfigResponse struct {
@@ -1058,7 +1058,7 @@ type DescribeInstanceTypeConfigResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 机型配置信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceTypeConfigSet []*InstanceTypeConfig `json:"InstanceTypeConfigSet,omitempty" name:"InstanceTypeConfigSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1067,12 +1067,12 @@ type DescribeInstanceTypeConfigResponse struct {
 }
 
 func (r *DescribeInstanceTypeConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceTypeConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceVncUrlRequest struct {
@@ -1083,12 +1083,12 @@ type DescribeInstanceVncUrlRequest struct {
 }
 
 func (r *DescribeInstanceVncUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceVncUrlRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstanceVncUrlResponse struct {
@@ -1104,12 +1104,12 @@ type DescribeInstanceVncUrlResponse struct {
 }
 
 func (r *DescribeInstanceVncUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstanceVncUrlResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesDeniedActionsRequest struct {
@@ -1120,12 +1120,12 @@ type DescribeInstancesDeniedActionsRequest struct {
 }
 
 func (r *DescribeInstancesDeniedActionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesDeniedActionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesDeniedActionsResponse struct {
@@ -1141,12 +1141,12 @@ type DescribeInstancesDeniedActionsResponse struct {
 }
 
 func (r *DescribeInstancesDeniedActionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesDeniedActionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesRequest struct {
@@ -1167,7 +1167,7 @@ type DescribeInstancesRequest struct {
 	// instance-family      String      是否必填：否      （过滤条件）按照机型family过滤。
 	// module-name      String      是否必填：否      （过滤条件）按照模块名称过滤,支持模糊匹配。
 	// image-id      String      是否必填：否      （过滤条件）按照实例的镜像ID过滤。
-	// 
+	//
 	// 若不传Filters参数则表示查询所有相关的实例信息。
 	// 单次请求的Filter.Values的上限为5。
 	Filters []*Filter `json:"Filters,omitempty" name:"Filters" list`
@@ -1189,12 +1189,12 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesResponse struct {
@@ -1205,7 +1205,7 @@ type DescribeInstancesResponse struct {
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 返回的实例相关信息列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceSet []*Instance `json:"InstanceSet,omitempty" name:"InstanceSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1214,12 +1214,12 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModuleDetailRequest struct {
@@ -1230,12 +1230,12 @@ type DescribeModuleDetailRequest struct {
 }
 
 func (r *DescribeModuleDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModuleDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModuleDetailResponse struct {
@@ -1243,11 +1243,11 @@ type DescribeModuleDetailResponse struct {
 	Response *struct {
 
 		// 模块的详细信息，详细见数据结构中的ModuleInfo。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Module *Module `json:"Module,omitempty" name:"Module"`
 
 		// 模块的统计信息，详细见数据结构中的ModuleCounterInfo。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ModuleCounter *ModuleCounter `json:"ModuleCounter,omitempty" name:"ModuleCounter"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1256,12 +1256,12 @@ type DescribeModuleDetailResponse struct {
 }
 
 func (r *DescribeModuleDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModuleDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModuleRequest struct {
@@ -1272,7 +1272,7 @@ type DescribeModuleRequest struct {
 	// module-id - string - 是否必填：否 - （过滤条件）按照模块ID过滤。
 	// image-id      String      是否必填：否      （过滤条件）按照镜像ID过滤。
 	// instance-family      String      是否必填：否      （过滤条件）按照机型family过滤。
-	// 
+	//
 	// 每次请求的Filters的上限为10，Filter.Values的上限为5。
 	Filters []*Filter `json:"Filters,omitempty" name:"Filters" list`
 
@@ -1294,12 +1294,12 @@ type DescribeModuleRequest struct {
 }
 
 func (r *DescribeModuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModuleResponse struct {
@@ -1307,11 +1307,11 @@ type DescribeModuleResponse struct {
 	Response *struct {
 
 		// 符合条件的模块数量。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 模块详情信息的列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ModuleItemSet []*ModuleItem `json:"ModuleItemSet,omitempty" name:"ModuleItemSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1320,12 +1320,12 @@ type DescribeModuleResponse struct {
 }
 
 func (r *DescribeModuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNetworkInterfacesRequest struct {
@@ -1359,12 +1359,12 @@ type DescribeNetworkInterfacesRequest struct {
 }
 
 func (r *DescribeNetworkInterfacesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNetworkInterfacesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNetworkInterfacesResponse struct {
@@ -1375,7 +1375,7 @@ type DescribeNetworkInterfacesResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 实例详细信息列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NetworkInterfaceSet []*NetworkInterface `json:"NetworkInterfaceSet,omitempty" name:"NetworkInterfaceSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1384,12 +1384,12 @@ type DescribeNetworkInterfacesResponse struct {
 }
 
 func (r *DescribeNetworkInterfacesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNetworkInterfacesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNodeRequest struct {
@@ -1397,12 +1397,12 @@ type DescribeNodeRequest struct {
 }
 
 func (r *DescribeNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNodeResponse struct {
@@ -1410,7 +1410,7 @@ type DescribeNodeResponse struct {
 	Response *struct {
 
 		// 节点详细信息的列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NodeSet []*Node `json:"NodeSet,omitempty" name:"NodeSet" list`
 
 		// 所有的节点数量。
@@ -1422,12 +1422,12 @@ type DescribeNodeResponse struct {
 }
 
 func (r *DescribeNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePeakBaseOverviewRequest struct {
@@ -1441,12 +1441,12 @@ type DescribePeakBaseOverviewRequest struct {
 }
 
 func (r *DescribePeakBaseOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePeakBaseOverviewRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePeakBaseOverviewResponse struct {
@@ -1454,7 +1454,7 @@ type DescribePeakBaseOverviewResponse struct {
 	Response *struct {
 
 		// 基础峰值列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PeakFamilyInfoSet []*PeakFamilyInfo `json:"PeakFamilyInfoSet,omitempty" name:"PeakFamilyInfoSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1463,12 +1463,12 @@ type DescribePeakBaseOverviewResponse struct {
 }
 
 func (r *DescribePeakBaseOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePeakBaseOverviewResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePeakNetworkOverviewRequest struct {
@@ -1486,12 +1486,12 @@ type DescribePeakNetworkOverviewRequest struct {
 }
 
 func (r *DescribePeakNetworkOverviewRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePeakNetworkOverviewRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePeakNetworkOverviewResponse struct {
@@ -1499,7 +1499,7 @@ type DescribePeakNetworkOverviewResponse struct {
 	Response *struct {
 
 		// 网络峰值数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PeakNetworkRegionSet []*PeakNetworkRegionInfo `json:"PeakNetworkRegionSet,omitempty" name:"PeakNetworkRegionSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1508,12 +1508,12 @@ type DescribePeakNetworkOverviewResponse struct {
 }
 
 func (r *DescribePeakNetworkOverviewResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePeakNetworkOverviewResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubnetsRequest struct {
@@ -1545,12 +1545,12 @@ type DescribeSubnetsRequest struct {
 }
 
 func (r *DescribeSubnetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubnetsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubnetsResponse struct {
@@ -1561,7 +1561,7 @@ type DescribeSubnetsResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 子网对象。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubnetSet []*Subnet `json:"SubnetSet,omitempty" name:"SubnetSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1570,12 +1570,12 @@ type DescribeSubnetsResponse struct {
 }
 
 func (r *DescribeSubnetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubnetsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskResultRequest struct {
@@ -1589,12 +1589,12 @@ type DescribeTaskResultRequest struct {
 }
 
 func (r *DescribeTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskResultResponse struct {
@@ -1613,12 +1613,12 @@ type DescribeTaskResultResponse struct {
 }
 
 func (r *DescribeTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVpcsRequest struct {
@@ -1647,12 +1647,12 @@ type DescribeVpcsRequest struct {
 }
 
 func (r *DescribeVpcsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVpcsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVpcsResponse struct {
@@ -1663,7 +1663,7 @@ type DescribeVpcsResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 私有网络对象。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VpcSet []*VpcInfo `json:"VpcSet,omitempty" name:"VpcSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1672,12 +1672,12 @@ type DescribeVpcsResponse struct {
 }
 
 func (r *DescribeVpcsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVpcsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachNetworkInterfaceRequest struct {
@@ -1694,12 +1694,12 @@ type DetachNetworkInterfaceRequest struct {
 }
 
 func (r *DetachNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachNetworkInterfaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachNetworkInterfaceResponse struct {
@@ -1712,12 +1712,12 @@ type DetachNetworkInterfaceResponse struct {
 }
 
 func (r *DetachNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachNetworkInterfaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisassociateAddressRequest struct {
@@ -1733,7 +1733,7 @@ type DisassociateAddressRequest struct {
 	// TRUE：表示解绑 EIP 之后分配普通公网 IP。
 	// FALSE：表示解绑 EIP 之后不分配普通公网 IP。
 	// 默认取值：FALSE。
-	// 
+	//
 	// 只有满足以下条件时才能指定该参数：
 	// 只有在解绑主网卡的主内网 IP 上的 EIP 时才能指定该参数。
 	// 解绑 EIP 后重新分配普通公网 IP 操作一个账号每天最多操作 10 次；详情可通过 DescribeAddressQuota 接口获取。
@@ -1741,12 +1741,12 @@ type DisassociateAddressRequest struct {
 }
 
 func (r *DisassociateAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisassociateAddressRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisassociateAddressResponse struct {
@@ -1762,12 +1762,12 @@ type DisassociateAddressResponse struct {
 }
 
 func (r *DisassociateAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisassociateAddressResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DiskInfo struct {
@@ -1898,12 +1898,12 @@ type ImportImageRequest struct {
 }
 
 func (r *ImportImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImportImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImportImageResponse struct {
@@ -1916,12 +1916,12 @@ type ImportImageResponse struct {
 }
 
 func (r *ImportImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImportImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Instance struct {
@@ -2153,12 +2153,12 @@ type MigrateNetworkInterfaceRequest struct {
 }
 
 func (r *MigrateNetworkInterfaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MigrateNetworkInterfaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MigrateNetworkInterfaceResponse struct {
@@ -2171,12 +2171,12 @@ type MigrateNetworkInterfaceResponse struct {
 }
 
 func (r *MigrateNetworkInterfaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MigrateNetworkInterfaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MigratePrivateIpAddressRequest struct {
@@ -2196,12 +2196,12 @@ type MigratePrivateIpAddressRequest struct {
 }
 
 func (r *MigratePrivateIpAddressRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MigratePrivateIpAddressRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MigratePrivateIpAddressResponse struct {
@@ -2214,12 +2214,12 @@ type MigratePrivateIpAddressResponse struct {
 }
 
 func (r *MigratePrivateIpAddressResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MigratePrivateIpAddressResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAddressAttributeRequest struct {
@@ -2239,12 +2239,12 @@ type ModifyAddressAttributeRequest struct {
 }
 
 func (r *ModifyAddressAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAddressAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAddressAttributeResponse struct {
@@ -2257,12 +2257,12 @@ type ModifyAddressAttributeResponse struct {
 }
 
 func (r *ModifyAddressAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAddressAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAddressesBandwidthRequest struct {
@@ -2279,12 +2279,12 @@ type ModifyAddressesBandwidthRequest struct {
 }
 
 func (r *ModifyAddressesBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAddressesBandwidthRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAddressesBandwidthResponse struct {
@@ -2300,12 +2300,12 @@ type ModifyAddressesBandwidthResponse struct {
 }
 
 func (r *ModifyAddressesBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAddressesBandwidthResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDefaultSubnetRequest struct {
@@ -2325,12 +2325,12 @@ type ModifyDefaultSubnetRequest struct {
 }
 
 func (r *ModifyDefaultSubnetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDefaultSubnetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDefaultSubnetResponse struct {
@@ -2343,12 +2343,12 @@ type ModifyDefaultSubnetResponse struct {
 }
 
 func (r *ModifyDefaultSubnetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDefaultSubnetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyInstancesAttributeRequest struct {
@@ -2362,12 +2362,12 @@ type ModifyInstancesAttributeRequest struct {
 }
 
 func (r *ModifyInstancesAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyInstancesAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyInstancesAttributeResponse struct {
@@ -2380,12 +2380,12 @@ type ModifyInstancesAttributeResponse struct {
 }
 
 func (r *ModifyInstancesAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyInstancesAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleImageRequest struct {
@@ -2399,12 +2399,12 @@ type ModifyModuleImageRequest struct {
 }
 
 func (r *ModifyModuleImageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleImageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleImageResponse struct {
@@ -2417,12 +2417,12 @@ type ModifyModuleImageResponse struct {
 }
 
 func (r *ModifyModuleImageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleImageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleNameRequest struct {
@@ -2436,12 +2436,12 @@ type ModifyModuleNameRequest struct {
 }
 
 func (r *ModifyModuleNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleNameRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleNameResponse struct {
@@ -2454,12 +2454,12 @@ type ModifyModuleNameResponse struct {
 }
 
 func (r *ModifyModuleNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleNameResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleNetworkRequest struct {
@@ -2473,12 +2473,12 @@ type ModifyModuleNetworkRequest struct {
 }
 
 func (r *ModifyModuleNetworkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleNetworkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModuleNetworkResponse struct {
@@ -2491,12 +2491,12 @@ type ModifyModuleNetworkResponse struct {
 }
 
 func (r *ModifyModuleNetworkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModuleNetworkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubnetAttributeRequest struct {
@@ -2516,12 +2516,12 @@ type ModifySubnetAttributeRequest struct {
 }
 
 func (r *ModifySubnetAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubnetAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySubnetAttributeResponse struct {
@@ -2534,12 +2534,12 @@ type ModifySubnetAttributeResponse struct {
 }
 
 func (r *ModifySubnetAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySubnetAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyVpcAttributeRequest struct {
@@ -2556,12 +2556,12 @@ type ModifyVpcAttributeRequest struct {
 }
 
 func (r *ModifyVpcAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyVpcAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyVpcAttributeResponse struct {
@@ -2574,12 +2574,12 @@ type ModifyVpcAttributeResponse struct {
 }
 
 func (r *ModifyVpcAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyVpcAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Module struct {
@@ -2592,7 +2592,7 @@ type Module struct {
 
 	// 模块状态：
 	// NORMAL：正常
-	// DELETING：删除中 
+	// DELETING：删除中
 	// DELETEFAILED：删除失败
 	ModuleState *string `json:"ModuleState,omitempty" name:"ModuleState"`
 
@@ -2961,18 +2961,18 @@ type RebootInstancesRequest struct {
 	// SOFT：表示软关机
 	// HARD：表示硬关机
 	// SOFT_FIRST：表示优先软关机，失败再执行硬关机
-	// 
+	//
 	// 默认取值：SOFT。
 	StopType *string `json:"StopType,omitempty" name:"StopType"`
 }
 
 func (r *RebootInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RebootInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RebootInstancesResponse struct {
@@ -2985,12 +2985,12 @@ type RebootInstancesResponse struct {
 }
 
 func (r *RebootInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RebootInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegionInfo struct {
@@ -3016,12 +3016,12 @@ type ReleaseAddressesRequest struct {
 }
 
 func (r *ReleaseAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReleaseAddressesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReleaseAddressesResponse struct {
@@ -3037,12 +3037,12 @@ type ReleaseAddressesResponse struct {
 }
 
 func (r *ReleaseAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReleaseAddressesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemovePrivateIpAddressesRequest struct {
@@ -3059,12 +3059,12 @@ type RemovePrivateIpAddressesRequest struct {
 }
 
 func (r *RemovePrivateIpAddressesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemovePrivateIpAddressesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemovePrivateIpAddressesResponse struct {
@@ -3077,12 +3077,12 @@ type RemovePrivateIpAddressesResponse struct {
 }
 
 func (r *RemovePrivateIpAddressesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemovePrivateIpAddressesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesMaxBandwidthRequest struct {
@@ -3096,12 +3096,12 @@ type ResetInstancesMaxBandwidthRequest struct {
 }
 
 func (r *ResetInstancesMaxBandwidthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesMaxBandwidthRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesMaxBandwidthResponse struct {
@@ -3114,12 +3114,12 @@ type ResetInstancesMaxBandwidthResponse struct {
 }
 
 func (r *ResetInstancesMaxBandwidthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesMaxBandwidthResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesPasswordRequest struct {
@@ -3141,12 +3141,12 @@ type ResetInstancesPasswordRequest struct {
 }
 
 func (r *ResetInstancesPasswordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesPasswordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesPasswordResponse struct {
@@ -3159,12 +3159,12 @@ type ResetInstancesPasswordResponse struct {
 }
 
 func (r *ResetInstancesPasswordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesPasswordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesRequest struct {
@@ -3187,12 +3187,12 @@ type ResetInstancesRequest struct {
 }
 
 func (r *ResetInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetInstancesResponse struct {
@@ -3205,12 +3205,12 @@ type ResetInstancesResponse struct {
 }
 
 func (r *ResetInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunInstancesRequest struct {
@@ -3270,12 +3270,12 @@ type RunInstancesRequest struct {
 }
 
 func (r *RunInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunInstancesResponse struct {
@@ -3283,7 +3283,7 @@ type RunInstancesResponse struct {
 	Response *struct {
 
 		// 创建中的实例ID列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceIdSet []*string `json:"InstanceIdSet,omitempty" name:"InstanceIdSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3292,12 +3292,12 @@ type RunInstancesResponse struct {
 }
 
 func (r *RunInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RunInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunMonitorServiceEnabled struct {
@@ -3377,12 +3377,12 @@ type StartInstancesRequest struct {
 }
 
 func (r *StartInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartInstancesResponse struct {
@@ -3395,12 +3395,12 @@ type StartInstancesResponse struct {
 }
 
 func (r *StartInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopInstancesRequest struct {
@@ -3421,12 +3421,12 @@ type StopInstancesRequest struct {
 }
 
 func (r *StopInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopInstancesResponse struct {
@@ -3439,12 +3439,12 @@ type StopInstancesResponse struct {
 }
 
 func (r *StopInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Subnet struct {
@@ -3527,12 +3527,12 @@ type TerminateInstancesRequest struct {
 }
 
 func (r *TerminateInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateInstancesResponse struct {
@@ -3545,12 +3545,12 @@ type TerminateInstancesResponse struct {
 }
 
 func (r *TerminateInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VpcInfo struct {

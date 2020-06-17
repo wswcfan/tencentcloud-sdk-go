@@ -15,9 +15,9 @@
 package v20180808
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CheckDomainRequest struct {
@@ -31,12 +31,12 @@ type CheckDomainRequest struct {
 }
 
 func (r *CheckDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckDomainResponse struct {
@@ -62,19 +62,19 @@ type CheckDomainResponse struct {
 		BlackWord *bool `json:"BlackWord,omitempty" name:"BlackWord"`
 
 		// 溢价词描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Describe *string `json:"Describe,omitempty" name:"Describe"`
 
 		// 溢价词的续费价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FeeRenew *uint64 `json:"FeeRenew,omitempty" name:"FeeRenew"`
 
 		// 域名真实价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RealPrice *uint64 `json:"RealPrice,omitempty" name:"RealPrice"`
 
 		// 溢价词的转入价格
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FeeTransfer *uint64 `json:"FeeTransfer,omitempty" name:"FeeTransfer"`
 
 		// 溢价词的赎回价格
@@ -89,12 +89,12 @@ type CheckDomainResponse struct {
 }
 
 func (r *CheckDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainPriceListRequest struct {
@@ -111,12 +111,12 @@ type DescribeDomainPriceListRequest struct {
 }
 
 func (r *DescribeDomainPriceListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainPriceListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainPriceListResponse struct {
@@ -132,12 +132,12 @@ type DescribeDomainPriceListResponse struct {
 }
 
 func (r *DescribeDomainPriceListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainPriceListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PriceInfo struct {

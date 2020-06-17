@@ -15,9 +15,9 @@
 package v20191016
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DescribeDBDiagEventRequest struct {
@@ -31,12 +31,12 @@ type DescribeDBDiagEventRequest struct {
 }
 
 func (r *DescribeDBDiagEventRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBDiagEventRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBDiagEventResponse struct {
@@ -71,7 +71,7 @@ type DescribeDBDiagEventResponse struct {
 		Suggestions *string `json:"Suggestions,omitempty" name:"Suggestions"`
 
 		// 保留字段。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Metric *string `json:"Metric,omitempty" name:"Metric"`
 
 		// 结束时间。
@@ -83,12 +83,12 @@ type DescribeDBDiagEventResponse struct {
 }
 
 func (r *DescribeDBDiagEventResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBDiagEventResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBDiagHistoryRequest struct {
@@ -105,12 +105,12 @@ type DescribeDBDiagHistoryRequest struct {
 }
 
 func (r *DescribeDBDiagHistoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBDiagHistoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBDiagHistoryResponse struct {
@@ -126,12 +126,12 @@ type DescribeDBDiagHistoryResponse struct {
 }
 
 func (r *DescribeDBDiagHistoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBDiagHistoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSlowLogTimeSeriesStatsRequest struct {
@@ -148,12 +148,12 @@ type DescribeSlowLogTimeSeriesStatsRequest struct {
 }
 
 func (r *DescribeSlowLogTimeSeriesStatsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSlowLogTimeSeriesStatsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSlowLogTimeSeriesStatsResponse struct {
@@ -175,12 +175,12 @@ type DescribeSlowLogTimeSeriesStatsResponse struct {
 }
 
 func (r *DescribeSlowLogTimeSeriesStatsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSlowLogTimeSeriesStatsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSlowLogTopSqlsRequest struct {
@@ -209,12 +209,12 @@ type DescribeSlowLogTopSqlsRequest struct {
 }
 
 func (r *DescribeSlowLogTopSqlsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSlowLogTopSqlsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSlowLogTopSqlsResponse struct {
@@ -233,12 +233,12 @@ type DescribeSlowLogTopSqlsResponse struct {
 }
 
 func (r *DescribeSlowLogTopSqlsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSlowLogTopSqlsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DiagHistoryEventItem struct {

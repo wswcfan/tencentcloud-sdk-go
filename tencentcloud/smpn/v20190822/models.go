@@ -15,9 +15,9 @@
 package v20190822
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CHPRequest struct {
@@ -54,12 +54,12 @@ type CreateSmpnEpaRequest struct {
 }
 
 func (r *CreateSmpnEpaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSmpnEpaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSmpnEpaResponse struct {
@@ -75,12 +75,12 @@ type CreateSmpnEpaResponse struct {
 }
 
 func (r *CreateSmpnEpaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSmpnEpaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnChpRequest struct {
@@ -94,12 +94,12 @@ type DescribeSmpnChpRequest struct {
 }
 
 func (r *DescribeSmpnChpRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnChpRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnChpResponse struct {
@@ -115,12 +115,12 @@ type DescribeSmpnChpResponse struct {
 }
 
 func (r *DescribeSmpnChpResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnChpResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnFnrRequest struct {
@@ -134,12 +134,12 @@ type DescribeSmpnFnrRequest struct {
 }
 
 func (r *DescribeSmpnFnrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnFnrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnFnrResponse struct {
@@ -155,12 +155,12 @@ type DescribeSmpnFnrResponse struct {
 }
 
 func (r *DescribeSmpnFnrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnFnrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnMhmRequest struct {
@@ -174,12 +174,12 @@ type DescribeSmpnMhmRequest struct {
 }
 
 func (r *DescribeSmpnMhmRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnMhmRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnMhmResponse struct {
@@ -195,12 +195,12 @@ type DescribeSmpnMhmResponse struct {
 }
 
 func (r *DescribeSmpnMhmResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnMhmResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnMrlRequest struct {
@@ -214,12 +214,12 @@ type DescribeSmpnMrlRequest struct {
 }
 
 func (r *DescribeSmpnMrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnMrlRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmpnMrlResponse struct {
@@ -235,12 +235,12 @@ type DescribeSmpnMrlResponse struct {
 }
 
 func (r *DescribeSmpnMrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmpnMrlResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EPARequest struct {

@@ -15,9 +15,9 @@
 package v20200304
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AgeInfo struct {
@@ -25,7 +25,7 @@ type AgeInfo struct {
 	// 变化到的人脸年龄 [10,80]。
 	Age *int64 `json:"Age,omitempty" name:"Age"`
 
-	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。  
+	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。
 	// 您可以通过 [人脸检测与分析](https://cloud.tencent.com/document/api/867/32800)  接口获取人脸框位置信息。
 	FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 }
@@ -33,29 +33,29 @@ type AgeInfo struct {
 type ChangeAgePicRequest struct {
 	*tchttp.BaseRequest
 
-	// 人脸变老变年轻信息。 
+	// 人脸变老变年轻信息。
 	// 您可以输入最多3个 AgeInfo 来实现给一张图中的最多3张人脸变老变年轻。
 	AgeInfos []*AgeInfo `json:"AgeInfos,omitempty" name:"AgeInfos" list`
 
-	// 图片 base64 数据，base64 编码后大小不可超过5M。 
+	// 图片 base64 数据，base64 编码后大小不可超过5M。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
-	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。 
-	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
+	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 }
 
 func (r *ChangeAgePicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ChangeAgePicRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ChangeAgePicResponse struct {
@@ -71,12 +71,12 @@ type ChangeAgePicResponse struct {
 }
 
 func (r *ChangeAgePicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ChangeAgePicResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceRect struct {
@@ -99,7 +99,7 @@ type GenderInfo struct {
 	// 选择转换方向，0：男变女，1：女变男。
 	Gender *int64 `json:"Gender,omitempty" name:"Gender"`
 
-	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。  
+	// 人脸框位置。若不输入则选择 Image 或 Url 中面积最大的人脸。
 	// 您可以通过 [人脸检测与分析](https://cloud.tencent.com/document/api/867/32800)  接口获取人脸框位置信息。
 	FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 }
@@ -107,29 +107,29 @@ type GenderInfo struct {
 type SwapGenderPicRequest struct {
 	*tchttp.BaseRequest
 
-	// 人脸转化性别信息。 
+	// 人脸转化性别信息。
 	// 您可以输入最多3个 GenderInfo 来实现给一张图中的最多3张人脸转换性别。
 	GenderInfos []*GenderInfo `json:"GenderInfos,omitempty" name:"GenderInfos" list`
 
-	// 图片 base64 数据，base64 编码后大小不可超过5M。 
+	// 图片 base64 数据，base64 编码后大小不可超过5M。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
-	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。 
-	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
+	// 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的 Url 可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 }
 
 func (r *SwapGenderPicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SwapGenderPicRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SwapGenderPicResponse struct {
@@ -145,10 +145,10 @@ type SwapGenderPicResponse struct {
 }
 
 func (r *SwapGenderPicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SwapGenderPicResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

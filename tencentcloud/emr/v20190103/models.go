@@ -15,9 +15,9 @@
 package v20190103
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type COSSettings struct {
@@ -351,12 +351,12 @@ type CreateInstanceRequest struct {
 }
 
 func (r *CreateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateInstanceResponse struct {
@@ -369,12 +369,12 @@ type CreateInstanceResponse struct {
 }
 
 func (r *CreateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CustomMetaInfo struct {
@@ -416,12 +416,12 @@ type DescribeClusterNodesRequest struct {
 }
 
 func (r *DescribeClusterNodesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterNodesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterNodesResponse struct {
@@ -432,11 +432,11 @@ type DescribeClusterNodesResponse struct {
 		TotalCnt *int64 `json:"TotalCnt,omitempty" name:"TotalCnt"`
 
 		// 节点详细信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NodeList []*NodeHardwareInfo `json:"NodeList,omitempty" name:"NodeList" list`
 
 		// 用户所有的标签键列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagKeys []*string `json:"TagKeys,omitempty" name:"TagKeys" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -445,12 +445,12 @@ type DescribeClusterNodesResponse struct {
 }
 
 func (r *DescribeClusterNodesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterNodesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesRequest struct {
@@ -489,12 +489,12 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesResponse struct {
@@ -505,11 +505,11 @@ type DescribeInstancesResponse struct {
 		TotalCnt *int64 `json:"TotalCnt,omitempty" name:"TotalCnt"`
 
 		// EMR实例详细信息列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClusterList []*ClusterInstancesInfo `json:"ClusterList,omitempty" name:"ClusterList" list`
 
 		// 实例关联的标签键列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagKeys []*string `json:"TagKeys,omitempty" name:"TagKeys" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -518,12 +518,12 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EmrProductConfigOutter struct {
@@ -657,12 +657,12 @@ type InquiryPriceCreateInstanceRequest struct {
 }
 
 func (r *InquiryPriceCreateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceCreateInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceCreateInstanceResponse struct {
@@ -670,21 +670,21 @@ type InquiryPriceCreateInstanceResponse struct {
 	Response *struct {
 
 		// 原价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OriginalCost *float64 `json:"OriginalCost,omitempty" name:"OriginalCost"`
 
 		// 折扣价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DiscountCost *float64 `json:"DiscountCost,omitempty" name:"DiscountCost"`
 
 		// 购买实例的时间单位。取值范围：
-	// <li>s：表示秒。</li>
-	// <li>m：表示月份。</li>
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// <li>s：表示秒。</li>
+		// <li>m：表示月份。</li>
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeUnit *string `json:"TimeUnit,omitempty" name:"TimeUnit"`
 
 		// 购买实例的时长。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeSpan *int64 `json:"TimeSpan,omitempty" name:"TimeSpan"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -693,12 +693,12 @@ type InquiryPriceCreateInstanceResponse struct {
 }
 
 func (r *InquiryPriceCreateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceCreateInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceRenewInstanceRequest struct {
@@ -726,12 +726,12 @@ type InquiryPriceRenewInstanceRequest struct {
 }
 
 func (r *InquiryPriceRenewInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceRenewInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceRenewInstanceResponse struct {
@@ -739,20 +739,20 @@ type InquiryPriceRenewInstanceResponse struct {
 	Response *struct {
 
 		// 原价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OriginalCost *float64 `json:"OriginalCost,omitempty" name:"OriginalCost"`
 
 		// 折扣价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DiscountCost *float64 `json:"DiscountCost,omitempty" name:"DiscountCost"`
 
 		// 实例续费的时间单位。取值范围：
-	// <li>m：表示月份。</li>
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// <li>m：表示月份。</li>
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeUnit *string `json:"TimeUnit,omitempty" name:"TimeUnit"`
 
 		// 实例续费的时长。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeSpan *int64 `json:"TimeSpan,omitempty" name:"TimeSpan"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -761,12 +761,12 @@ type InquiryPriceRenewInstanceResponse struct {
 }
 
 func (r *InquiryPriceRenewInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceRenewInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceScaleOutInstanceRequest struct {
@@ -808,12 +808,12 @@ type InquiryPriceScaleOutInstanceRequest struct {
 }
 
 func (r *InquiryPriceScaleOutInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceScaleOutInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceScaleOutInstanceResponse struct {
@@ -821,21 +821,21 @@ type InquiryPriceScaleOutInstanceResponse struct {
 	Response *struct {
 
 		// 原价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OriginalCost *string `json:"OriginalCost,omitempty" name:"OriginalCost"`
 
 		// 折扣价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DiscountCost *string `json:"DiscountCost,omitempty" name:"DiscountCost"`
 
 		// 扩容的时间单位。取值范围：
-	// <li>s：表示秒。</li>
-	// <li>m：表示月份。</li>
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// <li>s：表示秒。</li>
+		// <li>m：表示月份。</li>
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Unit *string `json:"Unit,omitempty" name:"Unit"`
 
 		// 询价的节点规格。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PriceSpec *PriceResource `json:"PriceSpec,omitempty" name:"PriceSpec"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -844,12 +844,12 @@ type InquiryPriceScaleOutInstanceResponse struct {
 }
 
 func (r *InquiryPriceScaleOutInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceScaleOutInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceUpdateInstanceRequest struct {
@@ -882,12 +882,12 @@ type InquiryPriceUpdateInstanceRequest struct {
 }
 
 func (r *InquiryPriceUpdateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceUpdateInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceUpdateInstanceResponse struct {
@@ -895,21 +895,21 @@ type InquiryPriceUpdateInstanceResponse struct {
 	Response *struct {
 
 		// 原价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OriginalCost *float64 `json:"OriginalCost,omitempty" name:"OriginalCost"`
 
 		// 折扣价，单位为元。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DiscountCost *float64 `json:"DiscountCost,omitempty" name:"DiscountCost"`
 
 		// 变配的时间单位。取值范围：
-	// <li>s：表示秒。</li>
-	// <li>m：表示月份。</li>
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// <li>s：表示秒。</li>
+		// <li>m：表示月份。</li>
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeUnit *string `json:"TimeUnit,omitempty" name:"TimeUnit"`
 
 		// 变配的时长。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeSpan *int64 `json:"TimeSpan,omitempty" name:"TimeSpan"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -918,12 +918,12 @@ type InquiryPriceUpdateInstanceResponse struct {
 }
 
 func (r *InquiryPriceUpdateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceUpdateInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LoginSettings struct {
@@ -1384,12 +1384,12 @@ type ScaleOutInstanceRequest struct {
 }
 
 func (r *ScaleOutInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScaleOutInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScaleOutInstanceResponse struct {
@@ -1400,19 +1400,19 @@ type ScaleOutInstanceResponse struct {
 		InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
 		// 订单号。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DealNames []*string `json:"DealNames,omitempty" name:"DealNames" list`
 
 		// 客户端Token。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClientToken *string `json:"ClientToken,omitempty" name:"ClientToken"`
 
 		// 扩容流程ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FlowId *int64 `json:"FlowId,omitempty" name:"FlowId"`
 
 		// 大订单号。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BillId *string `json:"BillId,omitempty" name:"BillId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1421,12 +1421,12 @@ type ScaleOutInstanceResponse struct {
 }
 
 func (r *ScaleOutInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScaleOutInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Tag struct {
@@ -1449,12 +1449,12 @@ type TerminateInstanceRequest struct {
 }
 
 func (r *TerminateInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateInstanceResponse struct {
@@ -1467,12 +1467,12 @@ type TerminateInstanceResponse struct {
 }
 
 func (r *TerminateInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateTasksRequest struct {
@@ -1486,12 +1486,12 @@ type TerminateTasksRequest struct {
 }
 
 func (r *TerminateTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateTasksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TerminateTasksResponse struct {
@@ -1504,12 +1504,12 @@ type TerminateTasksResponse struct {
 }
 
 func (r *TerminateTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TerminateTasksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateInstanceSettings struct {

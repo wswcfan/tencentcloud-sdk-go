@@ -15,9 +15,9 @@
 package v20190722
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CreateTroubleInfoRequest struct {
@@ -57,12 +57,12 @@ type CreateTroubleInfoRequest struct {
 }
 
 func (r *CreateTroubleInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTroubleInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTroubleInfoResponse struct {
@@ -75,12 +75,12 @@ type CreateTroubleInfoResponse struct {
 }
 
 func (r *CreateTroubleInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTroubleInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallDetailRequest struct {
@@ -119,12 +119,12 @@ type DescribeCallDetailRequest struct {
 }
 
 func (r *DescribeCallDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallDetailResponse struct {
@@ -135,11 +135,11 @@ type DescribeCallDetailResponse struct {
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 用户信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UserList []*UserInformation `json:"UserList,omitempty" name:"UserList" list`
 
 		// 质量数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*QualityData `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -148,12 +148,12 @@ type DescribeCallDetailResponse struct {
 }
 
 func (r *DescribeCallDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDetailEventRequest struct {
@@ -176,12 +176,12 @@ type DescribeDetailEventRequest struct {
 }
 
 func (r *DescribeDetailEventRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDetailEventRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDetailEventResponse struct {
@@ -197,12 +197,12 @@ type DescribeDetailEventResponse struct {
 }
 
 func (r *DescribeDetailEventResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDetailEventResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHistoryScaleRequest struct {
@@ -219,12 +219,12 @@ type DescribeHistoryScaleRequest struct {
 }
 
 func (r *DescribeHistoryScaleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHistoryScaleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHistoryScaleResponse struct {
@@ -235,7 +235,7 @@ type DescribeHistoryScaleResponse struct {
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 返回的数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ScaleList []*ScaleInfomation `json:"ScaleList,omitempty" name:"ScaleList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -244,12 +244,12 @@ type DescribeHistoryScaleResponse struct {
 }
 
 func (r *DescribeHistoryScaleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHistoryScaleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeNetworkRequest struct {
@@ -271,12 +271,12 @@ type DescribeRealtimeNetworkRequest struct {
 }
 
 func (r *DescribeRealtimeNetworkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeNetworkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeNetworkResponse struct {
@@ -292,12 +292,12 @@ type DescribeRealtimeNetworkResponse struct {
 }
 
 func (r *DescribeRealtimeNetworkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeNetworkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeQualityRequest struct {
@@ -321,12 +321,12 @@ type DescribeRealtimeQualityRequest struct {
 }
 
 func (r *DescribeRealtimeQualityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeQualityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeQualityResponse struct {
@@ -342,12 +342,12 @@ type DescribeRealtimeQualityResponse struct {
 }
 
 func (r *DescribeRealtimeQualityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeQualityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeScaleRequest struct {
@@ -369,12 +369,12 @@ type DescribeRealtimeScaleRequest struct {
 }
 
 func (r *DescribeRealtimeScaleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeScaleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRealtimeScaleResponse struct {
@@ -390,12 +390,12 @@ type DescribeRealtimeScaleResponse struct {
 }
 
 func (r *DescribeRealtimeScaleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRealtimeScaleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRoomInformationRequest struct {
@@ -421,12 +421,12 @@ type DescribeRoomInformationRequest struct {
 }
 
 func (r *DescribeRoomInformationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRoomInformationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRoomInformationResponse struct {
@@ -445,12 +445,12 @@ type DescribeRoomInformationResponse struct {
 }
 
 func (r *DescribeRoomInformationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRoomInformationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DismissRoomRequest struct {
@@ -464,12 +464,12 @@ type DismissRoomRequest struct {
 }
 
 func (r *DismissRoomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DismissRoomRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DismissRoomResponse struct {
@@ -482,12 +482,12 @@ type DismissRoomResponse struct {
 }
 
 func (r *DismissRoomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DismissRoomResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EncodeParams struct {
@@ -618,12 +618,12 @@ type RemoveUserRequest struct {
 }
 
 func (r *RemoveUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemoveUserResponse struct {
@@ -636,12 +636,12 @@ type RemoveUserResponse struct {
 }
 
 func (r *RemoveUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RoomState struct {
@@ -703,12 +703,12 @@ type StartMCUMixTranscodeRequest struct {
 }
 
 func (r *StartMCUMixTranscodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartMCUMixTranscodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartMCUMixTranscodeResponse struct {
@@ -721,12 +721,12 @@ type StartMCUMixTranscodeResponse struct {
 }
 
 func (r *StartMCUMixTranscodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartMCUMixTranscodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopMCUMixTranscodeRequest struct {
@@ -740,12 +740,12 @@ type StopMCUMixTranscodeRequest struct {
 }
 
 func (r *StopMCUMixTranscodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopMCUMixTranscodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopMCUMixTranscodeResponse struct {
@@ -758,12 +758,12 @@ type StopMCUMixTranscodeResponse struct {
 }
 
 func (r *StopMCUMixTranscodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopMCUMixTranscodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TimeValue struct {

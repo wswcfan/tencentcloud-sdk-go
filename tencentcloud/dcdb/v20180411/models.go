@@ -15,9 +15,9 @@
 package v20180411
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddShardConfig struct {
@@ -55,12 +55,12 @@ type CloneAccountRequest struct {
 }
 
 func (r *CloneAccountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloneAccountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CloneAccountResponse struct {
@@ -76,12 +76,12 @@ type CloneAccountResponse struct {
 }
 
 func (r *CloneAccountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloneAccountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CloseDBExtranetAccessRequest struct {
@@ -92,12 +92,12 @@ type CloseDBExtranetAccessRequest struct {
 }
 
 func (r *CloseDBExtranetAccessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloseDBExtranetAccessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CloseDBExtranetAccessResponse struct {
@@ -113,12 +113,12 @@ type CloseDBExtranetAccessResponse struct {
 }
 
 func (r *CloseDBExtranetAccessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CloseDBExtranetAccessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ConstraintRange struct {
@@ -156,12 +156,12 @@ type CopyAccountPrivilegesRequest struct {
 }
 
 func (r *CopyAccountPrivilegesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyAccountPrivilegesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CopyAccountPrivilegesResponse struct {
@@ -174,12 +174,12 @@ type CopyAccountPrivilegesResponse struct {
 }
 
 func (r *CopyAccountPrivilegesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyAccountPrivilegesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAccountRequest struct {
@@ -209,12 +209,12 @@ type CreateAccountRequest struct {
 }
 
 func (r *CreateAccountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAccountResponse struct {
@@ -239,12 +239,12 @@ type CreateAccountResponse struct {
 }
 
 func (r *CreateAccountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDCDBInstanceRequest struct {
@@ -305,12 +305,12 @@ type CreateDCDBInstanceRequest struct {
 }
 
 func (r *CreateDCDBInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDCDBInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDCDBInstanceResponse struct {
@@ -318,11 +318,11 @@ type CreateDCDBInstanceResponse struct {
 	Response *struct {
 
 		// 长订单号。可以据此调用 DescribeOrders
-	//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
+		//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
 		DealName *string `json:"DealName,omitempty" name:"DealName"`
 
 		// 订单对应的实例 ID 列表，如果此处没有返回实例 ID，可以通过订单查询接口获取。还可通过实例查询接口查询实例是否创建完成。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InstanceIds []*string `json:"InstanceIds,omitempty" name:"InstanceIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -331,12 +331,12 @@ type CreateDCDBInstanceResponse struct {
 }
 
 func (r *CreateDCDBInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDCDBInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DBAccount struct {
@@ -638,12 +638,12 @@ type DeleteAccountRequest struct {
 }
 
 func (r *DeleteAccountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAccountResponse struct {
@@ -656,12 +656,12 @@ type DeleteAccountResponse struct {
 }
 
 func (r *DeleteAccountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountPrivilegesRequest struct {
@@ -690,12 +690,12 @@ type DescribeAccountPrivilegesRequest struct {
 }
 
 func (r *DescribeAccountPrivilegesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountPrivilegesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountPrivilegesResponse struct {
@@ -720,12 +720,12 @@ type DescribeAccountPrivilegesResponse struct {
 }
 
 func (r *DescribeAccountPrivilegesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountPrivilegesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountsRequest struct {
@@ -736,12 +736,12 @@ type DescribeAccountsRequest struct {
 }
 
 func (r *DescribeAccountsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountsResponse struct {
@@ -752,7 +752,7 @@ type DescribeAccountsResponse struct {
 		InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
 		// 实例用户列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Users []*DBAccount `json:"Users,omitempty" name:"Users" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -761,12 +761,12 @@ type DescribeAccountsResponse struct {
 }
 
 func (r *DescribeAccountsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBLogFilesRequest struct {
@@ -783,12 +783,12 @@ type DescribeDBLogFilesRequest struct {
 }
 
 func (r *DescribeDBLogFilesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBLogFilesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBLogFilesResponse struct {
@@ -822,12 +822,12 @@ type DescribeDBLogFilesResponse struct {
 }
 
 func (r *DescribeDBLogFilesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBLogFilesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBParametersRequest struct {
@@ -838,12 +838,12 @@ type DescribeDBParametersRequest struct {
 }
 
 func (r *DescribeDBParametersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBParametersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBParametersResponse struct {
@@ -862,12 +862,12 @@ type DescribeDBParametersResponse struct {
 }
 
 func (r *DescribeDBParametersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBParametersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBSyncModeRequest struct {
@@ -878,12 +878,12 @@ type DescribeDBSyncModeRequest struct {
 }
 
 func (r *DescribeDBSyncModeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBSyncModeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDBSyncModeResponse struct {
@@ -902,12 +902,12 @@ type DescribeDBSyncModeResponse struct {
 }
 
 func (r *DescribeDBSyncModeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDBSyncModeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBInstancesRequest struct {
@@ -957,12 +957,12 @@ type DescribeDCDBInstancesRequest struct {
 }
 
 func (r *DescribeDCDBInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBInstancesResponse struct {
@@ -981,12 +981,12 @@ type DescribeDCDBInstancesResponse struct {
 }
 
 func (r *DescribeDCDBInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBPriceRequest struct {
@@ -1021,12 +1021,12 @@ type DescribeDCDBPriceRequest struct {
 }
 
 func (r *DescribeDCDBPriceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBPriceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBPriceResponse struct {
@@ -1045,12 +1045,12 @@ type DescribeDCDBPriceResponse struct {
 }
 
 func (r *DescribeDCDBPriceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBPriceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBRenewalPriceRequest struct {
@@ -1064,12 +1064,12 @@ type DescribeDCDBRenewalPriceRequest struct {
 }
 
 func (r *DescribeDCDBRenewalPriceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBRenewalPriceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBRenewalPriceResponse struct {
@@ -1088,12 +1088,12 @@ type DescribeDCDBRenewalPriceResponse struct {
 }
 
 func (r *DescribeDCDBRenewalPriceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBRenewalPriceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBSaleInfoRequest struct {
@@ -1101,12 +1101,12 @@ type DescribeDCDBSaleInfoRequest struct {
 }
 
 func (r *DescribeDCDBSaleInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBSaleInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBSaleInfoResponse struct {
@@ -1122,12 +1122,12 @@ type DescribeDCDBSaleInfoResponse struct {
 }
 
 func (r *DescribeDCDBSaleInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBSaleInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBShardsRequest struct {
@@ -1153,12 +1153,12 @@ type DescribeDCDBShardsRequest struct {
 }
 
 func (r *DescribeDCDBShardsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBShardsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBShardsResponse struct {
@@ -1177,12 +1177,12 @@ type DescribeDCDBShardsResponse struct {
 }
 
 func (r *DescribeDCDBShardsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBShardsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBUpgradePriceRequest struct {
@@ -1191,9 +1191,9 @@ type DescribeDCDBUpgradePriceRequest struct {
 	// 待升级的实例ID。形如：dcdbt-ow728lmc，可以通过 DescribeDCDBInstances 查询实例详情获得。
 	InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
-	// 升级类型，取值范围: 
-	// <li> ADD: 新增分片 </li> 
-	//  <li> EXPAND: 升级实例中的已有分片 </li> 
+	// 升级类型，取值范围:
+	// <li> ADD: 新增分片 </li>
+	//  <li> EXPAND: 升级实例中的已有分片 </li>
 	//  <li> SPLIT: 将已有分片中的数据切分到新增分片上</li>
 	UpgradeType *string `json:"UpgradeType,omitempty" name:"UpgradeType"`
 
@@ -1208,12 +1208,12 @@ type DescribeDCDBUpgradePriceRequest struct {
 }
 
 func (r *DescribeDCDBUpgradePriceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBUpgradePriceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDCDBUpgradePriceResponse struct {
@@ -1232,12 +1232,12 @@ type DescribeDCDBUpgradePriceResponse struct {
 }
 
 func (r *DescribeDCDBUpgradePriceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDCDBUpgradePriceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseObjectsRequest struct {
@@ -1251,12 +1251,12 @@ type DescribeDatabaseObjectsRequest struct {
 }
 
 func (r *DescribeDatabaseObjectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseObjectsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseObjectsResponse struct {
@@ -1287,12 +1287,12 @@ type DescribeDatabaseObjectsResponse struct {
 }
 
 func (r *DescribeDatabaseObjectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseObjectsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseTableRequest struct {
@@ -1309,12 +1309,12 @@ type DescribeDatabaseTableRequest struct {
 }
 
 func (r *DescribeDatabaseTableRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseTableRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseTableResponse struct {
@@ -1339,12 +1339,12 @@ type DescribeDatabaseTableResponse struct {
 }
 
 func (r *DescribeDatabaseTableResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseTableResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabasesRequest struct {
@@ -1355,12 +1355,12 @@ type DescribeDatabasesRequest struct {
 }
 
 func (r *DescribeDatabasesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabasesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabasesResponse struct {
@@ -1379,12 +1379,12 @@ type DescribeDatabasesResponse struct {
 }
 
 func (r *DescribeDatabasesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabasesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOrdersRequest struct {
@@ -1395,12 +1395,12 @@ type DescribeOrdersRequest struct {
 }
 
 func (r *DescribeOrdersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOrdersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOrdersResponse struct {
@@ -1419,12 +1419,12 @@ type DescribeOrdersResponse struct {
 }
 
 func (r *DescribeOrdersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOrdersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectsRequest struct {
@@ -1432,12 +1432,12 @@ type DescribeProjectsRequest struct {
 }
 
 func (r *DescribeProjectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectsResponse struct {
@@ -1453,12 +1453,12 @@ type DescribeProjectsResponse struct {
 }
 
 func (r *DescribeProjectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShardSpecRequest struct {
@@ -1466,12 +1466,12 @@ type DescribeShardSpecRequest struct {
 }
 
 func (r *DescribeShardSpecRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShardSpecRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShardSpecResponse struct {
@@ -1487,12 +1487,12 @@ type DescribeShardSpecResponse struct {
 }
 
 func (r *DescribeShardSpecResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShardSpecResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSqlLogsRequest struct {
@@ -1509,12 +1509,12 @@ type DescribeSqlLogsRequest struct {
 }
 
 func (r *DescribeSqlLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSqlLogsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSqlLogsResponse struct {
@@ -1545,12 +1545,12 @@ type DescribeSqlLogsResponse struct {
 }
 
 func (r *DescribeSqlLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSqlLogsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ExpandShardConfig struct {
@@ -1580,10 +1580,10 @@ type GrantAccountPrivilegesRequest struct {
 	// 数据库名。如果为 \*，表示查询全局权限（即 \*.\*），此时忽略 Type 和 Object 参数
 	DbName *string `json:"DbName,omitempty" name:"DbName"`
 
-	// 全局权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE TEMPORARY TABLES，LOCK TABLES，EXECUTE，CREATE VIEW，SHOW VIEW，CREATE ROUTINE，ALTER ROUTINE，EVENT，TRIGGER，SHOW DATABASES 
-	// 库权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE TEMPORARY TABLES，LOCK TABLES，EXECUTE，CREATE VIEW，SHOW VIEW，CREATE ROUTINE，ALTER ROUTINE，EVENT，TRIGGER 
-	// 表/视图权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE VIEW，SHOW VIEW，TRIGGER 
-	// 存储过程/函数权限： ALTER ROUTINE，EXECUTE 
+	// 全局权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE TEMPORARY TABLES，LOCK TABLES，EXECUTE，CREATE VIEW，SHOW VIEW，CREATE ROUTINE，ALTER ROUTINE，EVENT，TRIGGER，SHOW DATABASES
+	// 库权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE TEMPORARY TABLES，LOCK TABLES，EXECUTE，CREATE VIEW，SHOW VIEW，CREATE ROUTINE，ALTER ROUTINE，EVENT，TRIGGER
+	// 表/视图权限： SELECT，INSERT，UPDATE，DELETE，CREATE，DROP，REFERENCES，INDEX，ALTER，CREATE VIEW，SHOW VIEW，TRIGGER
+	// 存储过程/函数权限： ALTER ROUTINE，EXECUTE
 	// 字段权限： INSERT，REFERENCES，SELECT，UPDATE
 	Privileges []*string `json:"Privileges,omitempty" name:"Privileges" list`
 
@@ -1598,12 +1598,12 @@ type GrantAccountPrivilegesRequest struct {
 }
 
 func (r *GrantAccountPrivilegesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GrantAccountPrivilegesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GrantAccountPrivilegesResponse struct {
@@ -1616,12 +1616,12 @@ type GrantAccountPrivilegesResponse struct {
 }
 
 func (r *GrantAccountPrivilegesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GrantAccountPrivilegesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InitDCDBInstancesRequest struct {
@@ -1635,12 +1635,12 @@ type InitDCDBInstancesRequest struct {
 }
 
 func (r *InitDCDBInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InitDCDBInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InitDCDBInstancesResponse struct {
@@ -1659,12 +1659,12 @@ type InitDCDBInstancesResponse struct {
 }
 
 func (r *InitDCDBInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InitDCDBInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LogFileInfo struct {
@@ -1699,12 +1699,12 @@ type ModifyAccountDescriptionRequest struct {
 }
 
 func (r *ModifyAccountDescriptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccountDescriptionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAccountDescriptionResponse struct {
@@ -1717,12 +1717,12 @@ type ModifyAccountDescriptionResponse struct {
 }
 
 func (r *ModifyAccountDescriptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccountDescriptionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBInstancesProjectRequest struct {
@@ -1736,12 +1736,12 @@ type ModifyDBInstancesProjectRequest struct {
 }
 
 func (r *ModifyDBInstancesProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBInstancesProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBInstancesProjectResponse struct {
@@ -1754,12 +1754,12 @@ type ModifyDBInstancesProjectResponse struct {
 }
 
 func (r *ModifyDBInstancesProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBInstancesProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBParametersRequest struct {
@@ -1773,12 +1773,12 @@ type ModifyDBParametersRequest struct {
 }
 
 func (r *ModifyDBParametersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBParametersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBParametersResponse struct {
@@ -1797,12 +1797,12 @@ type ModifyDBParametersResponse struct {
 }
 
 func (r *ModifyDBParametersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBParametersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBSyncModeRequest struct {
@@ -1816,12 +1816,12 @@ type ModifyDBSyncModeRequest struct {
 }
 
 func (r *ModifyDBSyncModeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBSyncModeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDBSyncModeResponse struct {
@@ -1837,12 +1837,12 @@ type ModifyDBSyncModeResponse struct {
 }
 
 func (r *ModifyDBSyncModeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDBSyncModeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OpenDBExtranetAccessRequest struct {
@@ -1853,12 +1853,12 @@ type OpenDBExtranetAccessRequest struct {
 }
 
 func (r *OpenDBExtranetAccessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OpenDBExtranetAccessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OpenDBExtranetAccessResponse struct {
@@ -1874,12 +1874,12 @@ type OpenDBExtranetAccessResponse struct {
 }
 
 func (r *OpenDBExtranetAccessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OpenDBExtranetAccessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ParamConstraint struct {
@@ -2000,12 +2000,12 @@ type RenewDCDBInstanceRequest struct {
 }
 
 func (r *RenewDCDBInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RenewDCDBInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RenewDCDBInstanceResponse struct {
@@ -2013,7 +2013,7 @@ type RenewDCDBInstanceResponse struct {
 	Response *struct {
 
 		// 长订单号。可以据此调用 DescribeOrders
-	//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
+		//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
 		DealName *string `json:"DealName,omitempty" name:"DealName"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2022,12 +2022,12 @@ type RenewDCDBInstanceResponse struct {
 }
 
 func (r *RenewDCDBInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RenewDCDBInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetAccountPasswordRequest struct {
@@ -2047,12 +2047,12 @@ type ResetAccountPasswordRequest struct {
 }
 
 func (r *ResetAccountPasswordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetAccountPasswordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetAccountPasswordResponse struct {
@@ -2065,12 +2065,12 @@ type ResetAccountPasswordResponse struct {
 }
 
 func (r *ResetAccountPasswordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetAccountPasswordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ShardInfo struct {
@@ -2214,9 +2214,9 @@ type UpgradeDCDBInstanceRequest struct {
 	// 待升级的实例ID。形如：dcdbt-ow728lmc，可以通过 DescribeDCDBInstances 查询实例详情获得。
 	InstanceId *string `json:"InstanceId,omitempty" name:"InstanceId"`
 
-	// 升级类型，取值范围: 
-	// <li> ADD: 新增分片 </li> 
-	//  <li> EXPAND: 升级实例中的已有分片 </li> 
+	// 升级类型，取值范围:
+	// <li> ADD: 新增分片 </li>
+	//  <li> EXPAND: 升级实例中的已有分片 </li>
 	//  <li> SPLIT: 将已有分片中的数据切分到新增分片上</li>
 	UpgradeType *string `json:"UpgradeType,omitempty" name:"UpgradeType"`
 
@@ -2237,12 +2237,12 @@ type UpgradeDCDBInstanceRequest struct {
 }
 
 func (r *UpgradeDCDBInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeDCDBInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpgradeDCDBInstanceResponse struct {
@@ -2250,7 +2250,7 @@ type UpgradeDCDBInstanceResponse struct {
 	Response *struct {
 
 		// 长订单号。可以据此调用 DescribeOrders
-	//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
+		//  查询订单详细信息，或在支付失败时调用用户账号相关接口进行支付。
 		DealName *string `json:"DealName,omitempty" name:"DealName"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2259,12 +2259,12 @@ type UpgradeDCDBInstanceResponse struct {
 }
 
 func (r *UpgradeDCDBInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeDCDBInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ZonesInfo struct {

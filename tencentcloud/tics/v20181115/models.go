@@ -15,9 +15,9 @@
 package v20181115
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DescribeDomainInfoRequest struct {
@@ -31,12 +31,12 @@ type DescribeDomainInfoRequest struct {
 }
 
 func (r *DescribeDomainInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainInfoResponse struct {
@@ -53,22 +53,22 @@ type DescribeDomainInfoResponse struct {
 		Confidence *uint64 `json:"Confidence,omitempty" name:"Confidence"`
 
 		// 威胁类型。
-	// botnet = 僵尸网络
-	// trojan = 木马
-	// ransomware = 勒索软件
-	// worm = 蠕虫
-	// dga = 域名生成算法
-	// c2 = c&c
-	// compromised = 失陷主机
-	// dynamicIP = 动态IP
-	// proxy = 代理
-	// idc = idc 机房
-	// whitelist = 白名单
-	// tor = 暗网
-	// miner = 挖矿
-	// maleware site = 恶意站点
-	// malware IP = 恶意IP
-	// 等等
+		// botnet = 僵尸网络
+		// trojan = 木马
+		// ransomware = 勒索软件
+		// worm = 蠕虫
+		// dga = 域名生成算法
+		// c2 = c&c
+		// compromised = 失陷主机
+		// dynamicIP = 动态IP
+		// proxy = 代理
+		// idc = idc 机房
+		// whitelist = 白名单
+		// tor = 暗网
+		// miner = 挖矿
+		// maleware site = 恶意站点
+		// malware IP = 恶意IP
+		// 等等
 		ThreatTypes []*string `json:"ThreatTypes,omitempty" name:"ThreatTypes" list`
 
 		// 恶意标签，对应的团伙，家族等信息。
@@ -86,12 +86,12 @@ type DescribeDomainInfoResponse struct {
 }
 
 func (r *DescribeDomainInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileInfoRequest struct {
@@ -105,12 +105,12 @@ type DescribeFileInfoRequest struct {
 }
 
 func (r *DescribeFileInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileInfoResponse struct {
@@ -127,8 +127,8 @@ type DescribeFileInfoResponse struct {
 		Confidence *uint64 `json:"Confidence,omitempty" name:"Confidence"`
 
 		// 文件类型，文件hash
-	// （md5,sha1,sha256）,文件大小等等文件
-	// 基础信息
+		// （md5,sha1,sha256）,文件大小等等文件
+		// 基础信息
 		FileInfo []*FileInfoType `json:"FileInfo,omitempty" name:"FileInfo" list`
 
 		// 恶意标签，对应的团伙，家族等信息。
@@ -146,12 +146,12 @@ type DescribeFileInfoResponse struct {
 }
 
 func (r *DescribeFileInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIpInfoRequest struct {
@@ -165,12 +165,12 @@ type DescribeIpInfoRequest struct {
 }
 
 func (r *DescribeIpInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIpInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIpInfoResponse struct {
@@ -187,22 +187,22 @@ type DescribeIpInfoResponse struct {
 		Confidence *uint64 `json:"Confidence,omitempty" name:"Confidence"`
 
 		// 威胁类型。
-	// botnet = 僵尸网络
-	// trojan = 木马
-	// ransomware = 勒索软件
-	// worm = 蠕虫
-	// dga = 域名生成算法
-	// c2 = c&c
-	// compromised = 失陷主机
-	// dynamicIP = 动态IP
-	// proxy = 代理
-	// idc = idc 机房
-	// whitelist = 白名单
-	// tor = 暗网
-	// miner = 挖矿
-	// maleware site = 恶意站点
-	// malware IP = 恶意IP
-	// 等等
+		// botnet = 僵尸网络
+		// trojan = 木马
+		// ransomware = 勒索软件
+		// worm = 蠕虫
+		// dga = 域名生成算法
+		// c2 = c&c
+		// compromised = 失陷主机
+		// dynamicIP = 动态IP
+		// proxy = 代理
+		// idc = idc 机房
+		// whitelist = 白名单
+		// tor = 暗网
+		// miner = 挖矿
+		// maleware site = 恶意站点
+		// malware IP = 恶意IP
+		// 等等
 		ThreatTypes []*string `json:"ThreatTypes,omitempty" name:"ThreatTypes" list`
 
 		// 恶意标签，对应的团伙，家族等信息。
@@ -220,12 +220,12 @@ type DescribeIpInfoResponse struct {
 }
 
 func (r *DescribeIpInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIpInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeThreatInfoRequest struct {
@@ -242,12 +242,12 @@ type DescribeThreatInfoRequest struct {
 }
 
 func (r *DescribeThreatInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeThreatInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeThreatInfoResponse struct {
@@ -264,37 +264,37 @@ type DescribeThreatInfoResponse struct {
 		Confidence *uint64 `json:"Confidence,omitempty" name:"Confidence"`
 
 		// 威胁类型。
-	// botnet = 僵尸网络
-	// trojan = 木马
-	// ransomware = 勒索软件
-	// worm = 蠕虫
-	// dga = 域名生成算法
-	// c2 = c&c
-	// compromised = 失陷主机
-	// dynamicIP = 动态IP
-	// proxy = 代理
-	// idc = idc 机房
-	// whitelist = 白名单
-	// tor = 暗网
-	// miner = 挖矿
-	// maleware site = 恶意站点
-	// malware IP = 恶意IP
-	// 等等
+		// botnet = 僵尸网络
+		// trojan = 木马
+		// ransomware = 勒索软件
+		// worm = 蠕虫
+		// dga = 域名生成算法
+		// c2 = c&c
+		// compromised = 失陷主机
+		// dynamicIP = 动态IP
+		// proxy = 代理
+		// idc = idc 机房
+		// whitelist = 白名单
+		// tor = 暗网
+		// miner = 挖矿
+		// maleware site = 恶意站点
+		// malware IP = 恶意IP
+		// 等等
 		ThreatTypes []*string `json:"ThreatTypes,omitempty" name:"ThreatTypes" list`
 
 		// 恶意标签，对应的团伙，家族等信息。
 		Tags []*string `json:"Tags,omitempty" name:"Tags" list`
 
 		// 当前状态
-	// active = 活跃
-	// sinkholed = sinkholed
-	// inactive = 不活跃
-	// unknown = 未知
-	// expired = 过期
+		// active = 活跃
+		// sinkholed = sinkholed
+		// inactive = 不活跃
+		// unknown = 未知
+		// expired = 过期
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 情报相关的上下文，参数option=1 的时候提供
-	// 每个数据默认为3 条
+		// 每个数据默认为3 条
 		Context *string `json:"Context,omitempty" name:"Context"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -303,12 +303,12 @@ type DescribeThreatInfoResponse struct {
 }
 
 func (r *DescribeThreatInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeThreatInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FileInfoType struct {

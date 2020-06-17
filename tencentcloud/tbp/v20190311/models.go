@@ -15,9 +15,9 @@
 package v20190311
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CreateBotRequest struct {
@@ -31,12 +31,12 @@ type CreateBotRequest struct {
 }
 
 func (r *CreateBotRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBotRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateBotResponse struct {
@@ -55,12 +55,12 @@ type CreateBotResponse struct {
 }
 
 func (r *CreateBotResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBotResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetRequest struct {
@@ -80,12 +80,12 @@ type ResetRequest struct {
 }
 
 func (r *ResetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetResponse struct {
@@ -93,38 +93,38 @@ type ResetResponse struct {
 	Response *struct {
 
 		// 当前会话状态。取值:"start"/"continue"/"complete"
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DialogStatus *string `json:"DialogStatus,omitempty" name:"DialogStatus"`
 
 		// 匹配到的机器人名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BotName *string `json:"BotName,omitempty" name:"BotName"`
 
 		// 匹配到的意图名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IntentName *string `json:"IntentName,omitempty" name:"IntentName"`
 
 		// 机器人回答
 		ResponseText *string `json:"ResponseText,omitempty" name:"ResponseText"`
 
 		// 语义解析的槽位结果列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SlotInfoList []*SlotInfo `json:"SlotInfoList,omitempty" name:"SlotInfoList" list`
 
 		// 透传字段
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionAttributes *string `json:"SessionAttributes,omitempty" name:"SessionAttributes"`
 
 		// 用户说法。该说法是用户原生说法或ASR识别结果，未经过语义优化
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Question *string `json:"Question,omitempty" name:"Question"`
 
 		// tts合成pcm音频存储链接。仅当请求参数NeedTts=true时返回
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WaveUrl *string `json:"WaveUrl,omitempty" name:"WaveUrl"`
 
 		// tts合成的pcm音频。二进制数组经过base64编码(暂时不返回)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WaveData *string `json:"WaveData,omitempty" name:"WaveData"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -133,12 +133,12 @@ type ResetResponse struct {
 }
 
 func (r *ResetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SlotInfo struct {
@@ -172,12 +172,12 @@ type TextProcessRequest struct {
 }
 
 func (r *TextProcessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextProcessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextProcessResponse struct {
@@ -185,31 +185,31 @@ type TextProcessResponse struct {
 	Response *struct {
 
 		// 当前会话状态{会话开始: START; 会话中: COUTINUE; 会话结束: COMPLETE}。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DialogStatus *string `json:"DialogStatus,omitempty" name:"DialogStatus"`
 
 		// 匹配到的机器人名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BotName *string `json:"BotName,omitempty" name:"BotName"`
 
 		// 匹配到的意图名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IntentName *string `json:"IntentName,omitempty" name:"IntentName"`
 
 		// 槽位信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SlotInfoList []*SlotInfo `json:"SlotInfoList,omitempty" name:"SlotInfoList" list`
 
 		// 原始的用户说法。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InputText *string `json:"InputText,omitempty" name:"InputText"`
 
 		// 透传字段，由用户自定义的WebService服务返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionAttributes *string `json:"SessionAttributes,omitempty" name:"SessionAttributes"`
 
 		// 机器人对话的应答文本。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResponseText *string `json:"ResponseText,omitempty" name:"ResponseText"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -218,12 +218,12 @@ type TextProcessResponse struct {
 }
 
 func (r *TextProcessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextProcessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextResetRequest struct {
@@ -240,12 +240,12 @@ type TextResetRequest struct {
 }
 
 func (r *TextResetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextResetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextResetResponse struct {
@@ -253,31 +253,31 @@ type TextResetResponse struct {
 	Response *struct {
 
 		// 当前会话状态，取值："START"/"COUTINUE"/"COMPLETE"。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DialogStatus *string `json:"DialogStatus,omitempty" name:"DialogStatus"`
 
 		// 匹配到的机器人名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BotName *string `json:"BotName,omitempty" name:"BotName"`
 
 		// 匹配到的意图名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IntentName *string `json:"IntentName,omitempty" name:"IntentName"`
 
 		// 槽位信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SlotInfoList []*SlotInfo `json:"SlotInfoList,omitempty" name:"SlotInfoList" list`
 
 		// 原始的用户说法。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InputText *string `json:"InputText,omitempty" name:"InputText"`
 
 		// 透传字段，由用户自定义的WebService服务返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionAttributes *string `json:"SessionAttributes,omitempty" name:"SessionAttributes"`
 
 		// 机器人对话的应答文本。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResponseText *string `json:"ResponseText,omitempty" name:"ResponseText"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -286,10 +286,10 @@ type TextResetResponse struct {
 }
 
 func (r *TextResetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextResetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

@@ -15,9 +15,9 @@
 package v20190711
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddSignStatus struct {
@@ -79,12 +79,12 @@ type AddSmsSignRequest struct {
 }
 
 func (r *AddSmsSignRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddSmsSignRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddSmsSignResponse struct {
@@ -100,12 +100,12 @@ type AddSmsSignResponse struct {
 }
 
 func (r *AddSmsSignResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddSmsSignResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddSmsTemplateRequest struct {
@@ -130,12 +130,12 @@ type AddSmsTemplateRequest struct {
 }
 
 func (r *AddSmsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddSmsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddSmsTemplateResponse struct {
@@ -151,12 +151,12 @@ type AddSmsTemplateResponse struct {
 }
 
 func (r *AddSmsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddSmsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddTemplateStatus struct {
@@ -218,12 +218,12 @@ type CallbackStatusStatisticsRequest struct {
 }
 
 func (r *CallbackStatusStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallbackStatusStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CallbackStatusStatisticsResponse struct {
@@ -239,12 +239,12 @@ type CallbackStatusStatisticsResponse struct {
 }
 
 func (r *CallbackStatusStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallbackStatusStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSignStatus struct {
@@ -264,12 +264,12 @@ type DeleteSmsSignRequest struct {
 }
 
 func (r *DeleteSmsSignRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSmsSignRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSmsSignResponse struct {
@@ -285,12 +285,12 @@ type DeleteSmsSignResponse struct {
 }
 
 func (r *DeleteSmsSignResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSmsSignResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSmsTemplateRequest struct {
@@ -301,12 +301,12 @@ type DeleteSmsTemplateRequest struct {
 }
 
 func (r *DeleteSmsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSmsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteSmsTemplateResponse struct {
@@ -322,12 +322,12 @@ type DeleteSmsTemplateResponse struct {
 }
 
 func (r *DeleteSmsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteSmsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTemplateStatus struct {
@@ -378,12 +378,12 @@ type DescribeSmsSignListRequest struct {
 }
 
 func (r *DescribeSmsSignListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmsSignListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmsSignListResponse struct {
@@ -399,12 +399,12 @@ type DescribeSmsSignListResponse struct {
 }
 
 func (r *DescribeSmsSignListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmsSignListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmsTemplateListRequest struct {
@@ -420,12 +420,12 @@ type DescribeSmsTemplateListRequest struct {
 }
 
 func (r *DescribeSmsTemplateListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmsTemplateListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSmsTemplateListResponse struct {
@@ -441,12 +441,12 @@ type DescribeSmsTemplateListResponse struct {
 }
 
 func (r *DescribeSmsTemplateListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSmsTemplateListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTemplateListStatus struct {
@@ -537,12 +537,12 @@ type ModifySmsSignRequest struct {
 }
 
 func (r *ModifySmsSignRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySmsSignRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySmsSignResponse struct {
@@ -558,12 +558,12 @@ type ModifySmsSignResponse struct {
 }
 
 func (r *ModifySmsSignResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySmsSignResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySmsTemplateRequest struct {
@@ -591,12 +591,12 @@ type ModifySmsTemplateRequest struct {
 }
 
 func (r *ModifySmsTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySmsTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifySmsTemplateResponse struct {
@@ -612,12 +612,12 @@ type ModifySmsTemplateResponse struct {
 }
 
 func (r *ModifySmsTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifySmsTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyTemplateStatus struct {
@@ -675,12 +675,12 @@ type PullSmsReplyStatusByPhoneNumberRequest struct {
 }
 
 func (r *PullSmsReplyStatusByPhoneNumberRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsReplyStatusByPhoneNumberRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsReplyStatusByPhoneNumberResponse struct {
@@ -696,12 +696,12 @@ type PullSmsReplyStatusByPhoneNumberResponse struct {
 }
 
 func (r *PullSmsReplyStatusByPhoneNumberResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsReplyStatusByPhoneNumberResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsReplyStatusRequest struct {
@@ -715,12 +715,12 @@ type PullSmsReplyStatusRequest struct {
 }
 
 func (r *PullSmsReplyStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsReplyStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsReplyStatusResponse struct {
@@ -736,12 +736,12 @@ type PullSmsReplyStatusResponse struct {
 }
 
 func (r *PullSmsReplyStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsReplyStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsSendStatus struct {
@@ -796,12 +796,12 @@ type PullSmsSendStatusByPhoneNumberRequest struct {
 }
 
 func (r *PullSmsSendStatusByPhoneNumberRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsSendStatusByPhoneNumberRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsSendStatusByPhoneNumberResponse struct {
@@ -817,12 +817,12 @@ type PullSmsSendStatusByPhoneNumberResponse struct {
 }
 
 func (r *PullSmsSendStatusByPhoneNumberResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsSendStatusByPhoneNumberResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsSendStatusRequest struct {
@@ -836,12 +836,12 @@ type PullSmsSendStatusRequest struct {
 }
 
 func (r *PullSmsSendStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsSendStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PullSmsSendStatusResponse struct {
@@ -857,12 +857,12 @@ type PullSmsSendStatusResponse struct {
 }
 
 func (r *PullSmsSendStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PullSmsSendStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendSmsRequest struct {
@@ -895,12 +895,12 @@ type SendSmsRequest struct {
 }
 
 func (r *SendSmsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendSmsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendSmsResponse struct {
@@ -916,12 +916,12 @@ type SendSmsResponse struct {
 }
 
 func (r *SendSmsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendSmsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendStatus struct {
@@ -980,12 +980,12 @@ type SendStatusStatisticsRequest struct {
 }
 
 func (r *SendStatusStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendStatusStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendStatusStatisticsResponse struct {
@@ -1001,12 +1001,12 @@ type SendStatusStatisticsResponse struct {
 }
 
 func (r *SendStatusStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendStatusStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SmsPackagesStatistics struct {
@@ -1057,12 +1057,12 @@ type SmsPackagesStatisticsRequest struct {
 }
 
 func (r *SmsPackagesStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SmsPackagesStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SmsPackagesStatisticsResponse struct {
@@ -1078,10 +1078,10 @@ type SmsPackagesStatisticsResponse struct {
 }
 
 func (r *SmsPackagesStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SmsPackagesStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

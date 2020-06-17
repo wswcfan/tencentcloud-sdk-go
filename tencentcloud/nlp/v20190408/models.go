@@ -15,9 +15,9 @@
 package v20190408
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AutoSummarizationRequest struct {
@@ -32,12 +32,12 @@ type AutoSummarizationRequest struct {
 }
 
 func (r *AutoSummarizationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AutoSummarizationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AutoSummarizationResponse struct {
@@ -53,12 +53,12 @@ type AutoSummarizationResponse struct {
 }
 
 func (r *AutoSummarizationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AutoSummarizationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CCIToken struct {
@@ -87,12 +87,12 @@ type ChatBotRequest struct {
 }
 
 func (r *ChatBotRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ChatBotRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ChatBotResponse struct {
@@ -111,12 +111,12 @@ type ChatBotResponse struct {
 }
 
 func (r *ChatBotResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ChatBotResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ClassificationResult struct {
@@ -142,12 +142,12 @@ type DependencyParsingRequest struct {
 }
 
 func (r *DependencyParsingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DependencyParsingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DependencyParsingResponse struct {
@@ -155,21 +155,21 @@ type DependencyParsingResponse struct {
 	Response *struct {
 
 		// 句法依存分析结果，其中句法依存关系的类型包括：
-	// <li>主谓关系，eg: 我送她一束花 (我 <-- 送)
-	// <li>动宾关系，eg: 我送她一束花 (送 --> 花)
-	// <li>间宾关系，eg: 我送她一束花 (送 --> 她)
-	// <li>前置宾语，eg: 他什么书都读 (书 <-- 读)
-	// <li>兼语，eg: 他请我吃饭 (请 --> 我)
-	// <li>定中关系，eg: 红苹果 (红 <-- 苹果)
-	// <li>状中结构，eg: 非常美丽 (非常 <-- 美丽)
-	// <li>动补结构，eg: 做完了作业 (做 --> 完)
-	// <li>并列关系，eg: 大山和大海 (大山 --> 大海)
-	// <li>介宾关系，eg: 在贸易区内 (在 --> 内)
-	// <li>左附加关系，eg: 大山和大海 (和 <-- 大海)
-	// <li>右附加关系，eg: 孩子们 (孩子 --> 们)
-	// <li>独立结构，eg: 两个单句在结构上彼此独立
-	// <li>标点符号，eg: 。
-	// <li>核心关系，eg: 整个句子的核心
+		// <li>主谓关系，eg: 我送她一束花 (我 <-- 送)
+		// <li>动宾关系，eg: 我送她一束花 (送 --> 花)
+		// <li>间宾关系，eg: 我送她一束花 (送 --> 她)
+		// <li>前置宾语，eg: 他什么书都读 (书 <-- 读)
+		// <li>兼语，eg: 他请我吃饭 (请 --> 我)
+		// <li>定中关系，eg: 红苹果 (红 <-- 苹果)
+		// <li>状中结构，eg: 非常美丽 (非常 <-- 美丽)
+		// <li>动补结构，eg: 做完了作业 (做 --> 完)
+		// <li>并列关系，eg: 大山和大海 (大山 --> 大海)
+		// <li>介宾关系，eg: 在贸易区内 (在 --> 内)
+		// <li>左附加关系，eg: 大山和大海 (和 <-- 大海)
+		// <li>右附加关系，eg: 孩子们 (孩子 --> 们)
+		// <li>独立结构，eg: 两个单句在结构上彼此独立
+		// <li>标点符号，eg: 。
+		// <li>核心关系，eg: 整个句子的核心
 		DpTokens []*DpToken `json:"DpTokens,omitempty" name:"DpTokens" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -178,12 +178,12 @@ type DependencyParsingResponse struct {
 }
 
 func (r *DependencyParsingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DependencyParsingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEntityRequest struct {
@@ -194,12 +194,12 @@ type DescribeEntityRequest struct {
 }
 
 func (r *DescribeEntityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEntityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEntityResponse struct {
@@ -215,12 +215,12 @@ type DescribeEntityResponse struct {
 }
 
 func (r *DescribeEntityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEntityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRelationRequest struct {
@@ -234,12 +234,12 @@ type DescribeRelationRequest struct {
 }
 
 func (r *DescribeRelationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRelationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRelationResponse struct {
@@ -255,12 +255,12 @@ type DescribeRelationResponse struct {
 }
 
 func (r *DescribeRelationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRelationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTripleRequest struct {
@@ -271,12 +271,12 @@ type DescribeTripleRequest struct {
 }
 
 func (r *DescribeTripleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTripleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTripleResponse struct {
@@ -292,12 +292,12 @@ type DescribeTripleResponse struct {
 }
 
 func (r *DescribeTripleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTripleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DpToken struct {
@@ -371,12 +371,12 @@ type KeywordsExtractionRequest struct {
 }
 
 func (r *KeywordsExtractionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *KeywordsExtractionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type KeywordsExtractionResponse struct {
@@ -392,12 +392,12 @@ type KeywordsExtractionResponse struct {
 }
 
 func (r *KeywordsExtractionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *KeywordsExtractionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LexicalAnalysisRequest struct {
@@ -416,12 +416,12 @@ type LexicalAnalysisRequest struct {
 }
 
 func (r *LexicalAnalysisRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LexicalAnalysisRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LexicalAnalysisResponse struct {
@@ -429,9 +429,9 @@ type LexicalAnalysisResponse struct {
 	Response *struct {
 
 		// 命名实体识别结果。取值范围：
-	// <li>PER：表示人名</li>
-	// <li>LOC：表示地名</li>
-	// <li>ORG：表示机构团体名</li>
+		// <li>PER：表示人名</li>
+		// <li>LOC：表示地名</li>
+		// <li>ORG：表示机构团体名</li>
 		NerTokens []*NerToken `json:"NerTokens,omitempty" name:"NerTokens" list`
 
 		// 分词&词性标注结果（词性表请参见附录）
@@ -443,12 +443,12 @@ type LexicalAnalysisResponse struct {
 }
 
 func (r *LexicalAnalysisResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LexicalAnalysisResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type NerToken struct {
@@ -489,12 +489,12 @@ type SentenceEmbeddingRequest struct {
 }
 
 func (r *SentenceEmbeddingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceEmbeddingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentenceEmbeddingResponse struct {
@@ -513,12 +513,12 @@ type SentenceEmbeddingResponse struct {
 }
 
 func (r *SentenceEmbeddingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceEmbeddingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentenceSimilarityRequest struct {
@@ -532,12 +532,12 @@ type SentenceSimilarityRequest struct {
 }
 
 func (r *SentenceSimilarityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceSimilarityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentenceSimilarityResponse struct {
@@ -553,12 +553,12 @@ type SentenceSimilarityResponse struct {
 }
 
 func (r *SentenceSimilarityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceSimilarityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentimentAnalysisRequest struct {
@@ -581,12 +581,12 @@ type SentimentAnalysisRequest struct {
 }
 
 func (r *SentimentAnalysisRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentimentAnalysisRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentimentAnalysisResponse struct {
@@ -603,9 +603,9 @@ type SentimentAnalysisResponse struct {
 		Positive *float64 `json:"Positive,omitempty" name:"Positive"`
 
 		// 情感分类结果：
-	// 1、positive，表示正面情感
-	// 2、negative，表示负面情感
-	// 3、neutral，表示中性、无情感
+		// 1、positive，表示正面情感
+		// 2、negative，表示负面情感
+		// 3、neutral，表示中性、无情感
 		Sentiment *string `json:"Sentiment,omitempty" name:"Sentiment"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -614,12 +614,12 @@ type SentimentAnalysisResponse struct {
 }
 
 func (r *SentimentAnalysisResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentimentAnalysisResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SimilarWordsRequest struct {
@@ -633,12 +633,12 @@ type SimilarWordsRequest struct {
 }
 
 func (r *SimilarWordsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SimilarWordsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SimilarWordsResponse struct {
@@ -654,12 +654,12 @@ type SimilarWordsResponse struct {
 }
 
 func (r *SimilarWordsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SimilarWordsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Similarity struct {
@@ -684,12 +684,12 @@ type TextClassificationRequest struct {
 }
 
 func (r *TextClassificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextClassificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextClassificationResponse struct {
@@ -705,12 +705,12 @@ type TextClassificationResponse struct {
 }
 
 func (r *TextClassificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextClassificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextCorrectionRequest struct {
@@ -721,12 +721,12 @@ type TextCorrectionRequest struct {
 }
 
 func (r *TextCorrectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextCorrectionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextCorrectionResponse struct {
@@ -745,12 +745,12 @@ type TextCorrectionResponse struct {
 }
 
 func (r *TextCorrectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextCorrectionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextSimilarityRequest struct {
@@ -765,12 +765,12 @@ type TextSimilarityRequest struct {
 }
 
 func (r *TextSimilarityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextSimilarityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextSimilarityResponse struct {
@@ -786,12 +786,12 @@ type TextSimilarityResponse struct {
 }
 
 func (r *TextSimilarityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextSimilarityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TripleContent struct {
@@ -817,12 +817,12 @@ type WordEmbeddingRequest struct {
 }
 
 func (r *WordEmbeddingRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WordEmbeddingRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WordEmbeddingResponse struct {
@@ -841,12 +841,12 @@ type WordEmbeddingResponse struct {
 }
 
 func (r *WordEmbeddingResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WordEmbeddingResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WordSimilarityRequest struct {
@@ -860,12 +860,12 @@ type WordSimilarityRequest struct {
 }
 
 func (r *WordSimilarityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WordSimilarityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WordSimilarityResponse struct {
@@ -881,10 +881,10 @@ type WordSimilarityResponse struct {
 }
 
 func (r *WordSimilarityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WordSimilarityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

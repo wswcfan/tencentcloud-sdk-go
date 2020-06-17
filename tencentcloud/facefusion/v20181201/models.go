@@ -15,9 +15,9 @@
 package v20181201
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DescribeMaterialListRequest struct {
@@ -37,12 +37,12 @@ type DescribeMaterialListRequest struct {
 }
 
 func (r *DescribeMaterialListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMaterialListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMaterialListResponse struct {
@@ -61,12 +61,12 @@ type DescribeMaterialListResponse struct {
 }
 
 func (r *DescribeMaterialListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMaterialListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceFusionRequest struct {
@@ -93,12 +93,12 @@ type FaceFusionRequest struct {
 }
 
 func (r *FaceFusionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FaceFusionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceFusionResponse struct {
@@ -117,12 +117,12 @@ type FaceFusionResponse struct {
 }
 
 func (r *FaceFusionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FaceFusionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceInfo struct {
@@ -170,11 +170,11 @@ type FuseFaceRequest struct {
 	// 用户人脸图片、素材模板图的人脸位置信息。
 	MergeInfos []*MergeInfo `json:"MergeInfos,omitempty" name:"MergeInfos" list`
 
-	// 脸型融合比例，数值越高，融合后的脸型越像素材人物。取值范围[0,100] 
+	// 脸型融合比例，数值越高，融合后的脸型越像素材人物。取值范围[0,100]
 	// 若此参数不填写，则使用人脸融合控制台中脸型参数数值。（换脸版算法暂不支持此参数调整）
 	FuseProfileDegree *int64 `json:"FuseProfileDegree,omitempty" name:"FuseProfileDegree"`
 
-	// 五官融合比例，数值越高，融合后的五官越像素材人物。取值范围[0,100] 
+	// 五官融合比例，数值越高，融合后的五官越像素材人物。取值范围[0,100]
 	// 若此参数不填写，则使用人脸融合控制台中五官参数数值。（换脸版算法暂不支持此参数调整）
 	FuseFaceDegree *int64 `json:"FuseFaceDegree,omitempty" name:"FuseFaceDegree"`
 
@@ -184,12 +184,12 @@ type FuseFaceRequest struct {
 }
 
 func (r *FuseFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FuseFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FuseFaceResponse struct {
@@ -200,7 +200,7 @@ type FuseFaceResponse struct {
 		FusedImage *string `json:"FusedImage,omitempty" name:"FusedImage"`
 
 		// 鉴政结果。该数组的顺序和请求中mergeinfo的顺序一致，一一对应
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ReviewResultSet []*FuseFaceReviewResult `json:"ReviewResultSet,omitempty" name:"ReviewResultSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -209,12 +209,12 @@ type FuseFaceResponse struct {
 }
 
 func (r *FuseFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FuseFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FuseFaceReviewDetail struct {
@@ -225,15 +225,15 @@ type FuseFaceReviewDetail struct {
 	// 人员名称
 	Label *string `json:"Label,omitempty" name:"Label"`
 
-	// 对应识别label的置信度，分数越高意味涉政可能性越大。 
-	// 0到70，Suggestion建议为PASS； 
-	// 70到80，Suggestion建议为REVIEW； 
+	// 对应识别label的置信度，分数越高意味涉政可能性越大。
+	// 0到70，Suggestion建议为PASS；
+	// 70到80，Suggestion建议为REVIEW；
 	// 80到100，Suggestion建议为BLOCK。
 	Confidence *float64 `json:"Confidence,omitempty" name:"Confidence"`
 
-	// 识别场景的审核结论：  
-	// PASS：正常 
-	// REVIEW：疑似  
+	// 识别场景的审核结论：
+	// PASS：正常
+	// REVIEW：疑似
 	// BLOCK：违规
 	Suggestion *string `json:"Suggestion,omitempty" name:"Suggestion"`
 }

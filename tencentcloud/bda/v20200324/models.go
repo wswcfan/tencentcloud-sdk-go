@@ -15,15 +15,15 @@
 package v20200324
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type BodyDetectResult struct {
 
-	// 检测出的人体置信度。 
-	// 误识率百分之十对应的阈值是0.14；误识率百分之五对应的阈值是0.32；误识率百分之二对应的阈值是0.62；误识率百分之一对应的阈值是0.81。 
+	// 检测出的人体置信度。
+	// 误识率百分之十对应的阈值是0.14；误识率百分之五对应的阈值是0.32；误识率百分之二对应的阈值是0.62；误识率百分之一对应的阈值是0.81。
 	// 通常情况建议使用阈值0.32，可适用大多数情况。
 	Confidence *float64 `json:"Confidence,omitempty" name:"Confidence"`
 
@@ -54,11 +54,11 @@ type Candidate struct {
 	// 人体轨迹ID。
 	TraceId *string `json:"TraceId,omitempty" name:"TraceId"`
 
-	// 候选者的匹配得分。 
+	// 候选者的匹配得分。
 	// 十万人体库下，误识率百分之五对应的分数为70分；误识率百分之二对应的分数为80分；误识率百分之一对应的分数为90分。
-	//  
+	//
 	// 二十万人体库下，误识率百分之五对应的分数为80分；误识率百分之二对应的分数为90分；误识率百分之一对应的分数为95分。
-	//  
+	//
 	// 通常情况建议使用分数80分（保召回）。若希望获得较高精度，建议使用分数90分（保准确）。
 	Score *float64 `json:"Score,omitempty" name:"Score"`
 }
@@ -75,19 +75,19 @@ type CreateGroupRequest struct {
 	// 人体库信息备注，[0，40]个字符。
 	Tag *string `json:"Tag,omitempty" name:"Tag"`
 
-	// 人体识别所用的算法模型版本。 
-	// 目前入参仅支持 “1.0”1个输入。 默认为"1.0"。  
+	// 人体识别所用的算法模型版本。
+	// 目前入参仅支持 “1.0”1个输入。 默认为"1.0"。
 	// 不同算法模型版本对应的人体识别算法不同，新版本的整体效果会优于旧版本，后续我们将推出更新版本。
 	BodyModelVersion *string `json:"BodyModelVersion,omitempty" name:"BodyModelVersion"`
 }
 
 func (r *CreateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGroupResponse struct {
@@ -100,12 +100,12 @@ type CreateGroupResponse struct {
 }
 
 func (r *CreateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonRequest struct {
@@ -117,7 +117,7 @@ type CreatePersonRequest struct {
 	// 人员名称。[1，60]个字符，可修改，可重复。
 	PersonName *string `json:"PersonName,omitempty" name:"PersonName"`
 
-	// 人员ID，单个腾讯云账号下不可修改，不可重复。 
+	// 人员ID，单个腾讯云账号下不可修改，不可重复。
 	// 支持英文、数字、-%@#&_，，长度限制64B。
 	PersonId *string `json:"PersonId,omitempty" name:"PersonId"`
 
@@ -126,12 +126,12 @@ type CreatePersonRequest struct {
 }
 
 func (r *CreatePersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonResponse struct {
@@ -145,13 +145,13 @@ type CreatePersonResponse struct {
 		BodyModelVersion *string `json:"BodyModelVersion,omitempty" name:"BodyModelVersion"`
 
 		// 输入的人体轨迹图片中的合法性校验结果。
-	// 只有为0时结果才有意义。
-	// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
+		// 只有为0时结果才有意义。
+		// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
 		InputRetCode *int64 `json:"InputRetCode,omitempty" name:"InputRetCode"`
 
-		// 输入的人体轨迹图片中的合法性校验结果详情。 
-	// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
-	// RetCode 的顺序和入参中Images 或 Urls 的顺序一致。
+		// 输入的人体轨迹图片中的合法性校验结果详情。
+		// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
+		// RetCode 的顺序和入参中Images 或 Urls 的顺序一致。
 		InputRetCodeDetails []*int64 `json:"InputRetCodeDetails,omitempty" name:"InputRetCodeDetails" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -160,12 +160,12 @@ type CreatePersonResponse struct {
 }
 
 func (r *CreatePersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTraceRequest struct {
@@ -179,12 +179,12 @@ type CreateTraceRequest struct {
 }
 
 func (r *CreateTraceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTraceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTraceResponse struct {
@@ -198,12 +198,12 @@ type CreateTraceResponse struct {
 		BodyModelVersion *string `json:"BodyModelVersion,omitempty" name:"BodyModelVersion"`
 
 		// 输入的人体轨迹图片中的合法性校验结果。
-	// 只有为0时结果才有意义。
-	// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
+		// 只有为0时结果才有意义。
+		// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
 		InputRetCode *int64 `json:"InputRetCode,omitempty" name:"InputRetCode"`
 
-		// 输入的人体轨迹图片中的合法性校验结果详情。 
-	// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
+		// 输入的人体轨迹图片中的合法性校验结果详情。
+		// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
 		InputRetCodeDetails []*int64 `json:"InputRetCodeDetails,omitempty" name:"InputRetCodeDetails" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -212,12 +212,12 @@ type CreateTraceResponse struct {
 }
 
 func (r *CreateTraceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTraceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupRequest struct {
@@ -228,12 +228,12 @@ type DeleteGroupRequest struct {
 }
 
 func (r *DeleteGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupResponse struct {
@@ -246,12 +246,12 @@ type DeleteGroupResponse struct {
 }
 
 func (r *DeleteGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonRequest struct {
@@ -262,12 +262,12 @@ type DeletePersonRequest struct {
 }
 
 func (r *DeletePersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonResponse struct {
@@ -280,12 +280,12 @@ type DeletePersonResponse struct {
 }
 
 func (r *DeletePersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectBodyRequest struct {
@@ -299,10 +299,10 @@ type DetectBodyRequest struct {
 
 	// 人体图片 Url 。
 	// Url、Image必须提供一个，如果都提供，只使用 Url。
-	// 图片 base64 编码后大小不可超过5M。 
+	// 图片 base64 编码后大小不可超过5M。
 	// 图片分辨率不得超过 2048*2048。
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
@@ -311,12 +311,12 @@ type DetectBodyRequest struct {
 }
 
 func (r *DetectBodyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectBodyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectBodyResponse struct {
@@ -335,12 +335,12 @@ type DetectBodyResponse struct {
 }
 
 func (r *DetectBodyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectBodyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupListRequest struct {
@@ -354,12 +354,12 @@ type GetGroupListRequest struct {
 }
 
 func (r *GetGroupListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupListResponse struct {
@@ -378,12 +378,12 @@ type GetGroupListResponse struct {
 }
 
 func (r *GetGroupListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListRequest struct {
@@ -400,12 +400,12 @@ type GetPersonListRequest struct {
 }
 
 func (r *GetPersonListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListResponse struct {
@@ -427,12 +427,12 @@ type GetPersonListResponse struct {
 }
 
 func (r *GetPersonListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GroupInfo struct {
@@ -449,7 +449,7 @@ type GroupInfo struct {
 	// 人体识别所用的算法模型版本。
 	BodyModelVersion *string `json:"BodyModelVersion,omitempty" name:"BodyModelVersion"`
 
-	// Group的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。  
+	// Group的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。
 	// Unix 纪元时间是 1970 年 1 月 1 日星期四，协调世界时 (UTC) 。
 	CreationTimestamp *uint64 `json:"CreationTimestamp,omitempty" name:"CreationTimestamp"`
 }
@@ -468,12 +468,12 @@ type ModifyGroupRequest struct {
 }
 
 func (r *ModifyGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyGroupResponse struct {
@@ -486,12 +486,12 @@ type ModifyGroupResponse struct {
 }
 
 func (r *ModifyGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonInfoRequest struct {
@@ -505,12 +505,12 @@ type ModifyPersonInfoRequest struct {
 }
 
 func (r *ModifyPersonInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonInfoResponse struct {
@@ -523,12 +523,12 @@ type ModifyPersonInfoResponse struct {
 }
 
 func (r *ModifyPersonInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PersonInfo struct {
@@ -563,12 +563,12 @@ type SearchTraceRequest struct {
 }
 
 func (r *SearchTraceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchTraceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchTraceResponse struct {
@@ -579,12 +579,12 @@ type SearchTraceResponse struct {
 		Candidates []*Candidate `json:"Candidates,omitempty" name:"Candidates" list`
 
 		// 输入的人体轨迹图片中的合法性校验结果。
-	// 只有为0时结果才有意义。
-	// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
+		// 只有为0时结果才有意义。
+		// -1001: 输入图片不合法。-1002: 输入图片不能构成轨迹。
 		InputRetCode *int64 `json:"InputRetCode,omitempty" name:"InputRetCode"`
 
-		// 输入的人体轨迹图片中的合法性校验结果详情。 
-	// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
+		// 输入的人体轨迹图片中的合法性校验结果详情。
+		// -1101:图片无效，-1102:url不合法。-1103:图片过大。-1104:图片下载失败。-1105:图片解码失败。-1109:图片分辨率过高。-2023:轨迹中有非同人图片。-2024: 轨迹提取失败。-2025: 人体检测失败。
 		InputRetCodeDetails []*int64 `json:"InputRetCodeDetails,omitempty" name:"InputRetCodeDetails" list`
 
 		// 人体识别所用的算法模型版本。
@@ -596,38 +596,38 @@ type SearchTraceResponse struct {
 }
 
 func (r *SearchTraceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchTraceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SegmentPortraitPicRequest struct {
 	*tchttp.BaseRequest
 
 	// 图片 base64 数据，base64 编码后大小不可超过5M。
-	// 图片分辨率须小于2000*2000。 
+	// 图片分辨率须小于2000*2000。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。
 	// Url、Image必须提供一个，如果都提供，只使用 Url。
-	// 图片分辨率须小于2000*2000 ，图片 base64 编码后大小不可超过5M。 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。  
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 图片分辨率须小于2000*2000 ，图片 base64 编码后大小不可超过5M。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 }
 
 func (r *SegmentPortraitPicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SegmentPortraitPicRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SegmentPortraitPicResponse struct {
@@ -646,34 +646,34 @@ type SegmentPortraitPicResponse struct {
 }
 
 func (r *SegmentPortraitPicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SegmentPortraitPicResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Trace struct {
 
-	// 人体轨迹图片 Base64 数组。 
-	// 数组长度最小为1最大为5。 
-	// 单个图片 base64 编码后大小不可超过2M。 
+	// 人体轨迹图片 Base64 数组。
+	// 数组长度最小为1最大为5。
+	// 单个图片 base64 编码后大小不可超过2M。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Images []*string `json:"Images,omitempty" name:"Images" list`
 
-	// 人体轨迹图片 Url 数组。 
-	// 数组长度最小为1最大为5。 
-	// 单个图片 base64 编码后大小不可超过2M。 
-	// Urls、Images必须提供一个，如果都提供，只使用 Urls。 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
-	// 非腾讯云存储的Url速度和稳定性可能受一定影响。 
+	// 人体轨迹图片 Url 数组。
+	// 数组长度最小为1最大为5。
+	// 单个图片 base64 编码后大小不可超过2M。
+	// Urls、Images必须提供一个，如果都提供，只使用 Urls。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
+	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Urls []*string `json:"Urls,omitempty" name:"Urls" list`
 
-	// 若输入的Images 和 Urls 是已经裁剪后的人体小图，则可以忽略本参数。 
-	// 若否，或图片中包含多个人体，则需要通过本参数来指定图片中的人体框。 
-	// 顺序对应 Images 或 Urls 中的顺序。  
+	// 若输入的Images 和 Urls 是已经裁剪后的人体小图，则可以忽略本参数。
+	// 若否，或图片中包含多个人体，则需要通过本参数来指定图片中的人体框。
+	// 顺序对应 Images 或 Urls 中的顺序。
 	// 当不输入本参数时，我们将认为输入图片已是经过裁剪后的人体小图，不会进行人体检测而直接进行特征提取处理。
 	BodyRects []*BodyRect `json:"BodyRects,omitempty" name:"BodyRects" list`
 }

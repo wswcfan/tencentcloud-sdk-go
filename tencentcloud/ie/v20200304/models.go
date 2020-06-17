@@ -15,9 +15,9 @@
 package v20200304
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CallbackInfo struct {
@@ -37,11 +37,11 @@ type ClassificationEditingInfo struct {
 
 type ClassificationTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -64,9 +64,9 @@ type ClassificationTaskResultItem struct {
 
 type CosAuthMode struct {
 
-	// 授权类型，可选值： 
-	// 0：bucket授权，需要将对应bucket授权给本服务帐号（3020447271），否则会读写cos失败； 
-	// 1：key托管，把cos的账号id和key托管于本服务，本服务会提供一个托管id； 
+	// 授权类型，可选值：
+	// 0：bucket授权，需要将对应bucket授权给本服务帐号（3020447271），否则会读写cos失败；
+	// 1：key托管，把cos的账号id和key托管于本服务，本服务会提供一个托管id；
 	// 3：临时key授权。
 	// 注意：目前智能编辑还不支持临时key授权。
 	Type *int64 `json:"Type,omitempty" name:"Type"`
@@ -92,8 +92,8 @@ type CosInfo struct {
 	// cos 存储桶，格式为BuketName-AppId。例如：test-123456。
 	Bucket *string `json:"Bucket,omitempty" name:"Bucket"`
 
-	// cos 路径。 
-	// 对于写表示目录，例如：/test； 
+	// cos 路径。
+	// 对于写表示目录，例如：/test；
 	// 对于读表示文件路径，例如：/test/test.mp4。
 	Path *string `json:"Path,omitempty" name:"Path"`
 
@@ -112,11 +112,11 @@ type CoverEditingInfo struct {
 
 type CoverTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -154,12 +154,12 @@ type CreateEditingTaskRequest struct {
 }
 
 func (r *CreateEditingTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateEditingTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateEditingTaskResponse struct {
@@ -175,12 +175,12 @@ type CreateEditingTaskResponse struct {
 }
 
 func (r *CreateEditingTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateEditingTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEditingTaskResultRequest struct {
@@ -191,12 +191,12 @@ type DescribeEditingTaskResultRequest struct {
 }
 
 func (r *DescribeEditingTaskResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEditingTaskResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEditingTaskResultResponse struct {
@@ -212,18 +212,18 @@ type DescribeEditingTaskResultResponse struct {
 }
 
 func (r *DescribeEditingTaskResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEditingTaskResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownInfo struct {
 
-	// 下载类型，可选值： 
-	// 0：UrlInfo； 
+	// 下载类型，可选值：
+	// 0：UrlInfo；
 	// 1：CosInfo。
 	Type *int64 `json:"Type,omitempty" name:"Type"`
 
@@ -260,7 +260,7 @@ type EditingTaskResult struct {
 	// 编辑任务 ID。
 	TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：已完成。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
@@ -300,11 +300,11 @@ type HighlightsEditingInfo struct {
 
 type HighlightsTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -357,11 +357,11 @@ type OpeningEndingEditingInfo struct {
 
 type OpeningEndingTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -390,7 +390,7 @@ type OpeningEndingTaskResultItem struct {
 
 type SaveInfo struct {
 
-	// 存储类型，可选值： 
+	// 存储类型，可选值：
 	// 1：CosInfo。
 	Type *int64 `json:"Type,omitempty" name:"Type"`
 
@@ -409,11 +409,11 @@ type StripEditingInfo struct {
 
 type StripTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -454,11 +454,11 @@ type TagEditingInfo struct {
 
 type TagTaskResult struct {
 
-	// 编辑任务状态。 
+	// 编辑任务状态。
 	// 1：执行中；2：成功；3：失败。
 	Status *int64 `json:"Status,omitempty" name:"Status"`
 
-	// 编辑任务失败错误码。 
+	// 编辑任务失败错误码。
 	// 0：成功；其他值：失败。
 	ErrCode *int64 `json:"ErrCode,omitempty" name:"ErrCode"`
 
@@ -485,9 +485,9 @@ type UrlInfo struct {
 	// 注意：目前智能编辑还不支持直播流场景。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 视频地址格式，可选值： 
+	// 视频地址格式，可选值：
 	// 0：音视频 ;
-	// 1：直播流。 
+	// 1：直播流。
 	// 默认为0。其他非0非1值默认为0。
 	Format *int64 `json:"Format,omitempty" name:"Format"`
 

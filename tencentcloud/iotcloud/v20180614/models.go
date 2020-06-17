@@ -15,9 +15,9 @@
 package v20180614
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Attribute struct {
@@ -61,12 +61,12 @@ type BindDevicesRequest struct {
 }
 
 func (r *BindDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindDevicesResponse struct {
@@ -79,12 +79,12 @@ type BindDevicesResponse struct {
 }
 
 func (r *BindDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BrokerSubscribe struct {
@@ -104,12 +104,12 @@ type CancelTaskRequest struct {
 }
 
 func (r *CancelTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelTaskResponse struct {
@@ -122,12 +122,12 @@ type CancelTaskResponse struct {
 }
 
 func (r *CancelTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDeviceRequest struct {
@@ -165,12 +165,12 @@ type CreateDeviceRequest struct {
 }
 
 func (r *CreateDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDeviceResponse struct {
@@ -207,12 +207,12 @@ type CreateDeviceResponse struct {
 }
 
 func (r *CreateDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLoraDeviceRequest struct {
@@ -244,12 +244,12 @@ type CreateLoraDeviceRequest struct {
 }
 
 func (r *CreateLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLoraDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLoraDeviceResponse struct {
@@ -274,12 +274,12 @@ type CreateLoraDeviceResponse struct {
 }
 
 func (r *CreateLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLoraDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMultiDeviceRequest struct {
@@ -293,12 +293,12 @@ type CreateMultiDeviceRequest struct {
 }
 
 func (r *CreateMultiDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMultiDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMultiDeviceResponse struct {
@@ -314,12 +314,12 @@ type CreateMultiDeviceResponse struct {
 }
 
 func (r *CreateMultiDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMultiDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMultiDevicesTaskRequest struct {
@@ -345,12 +345,12 @@ type CreateMultiDevicesTaskRequest struct {
 }
 
 func (r *CreateMultiDevicesTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMultiDevicesTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMultiDevicesTaskResponse struct {
@@ -366,12 +366,12 @@ type CreateMultiDevicesTaskResponse struct {
 }
 
 func (r *CreateMultiDevicesTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMultiDevicesTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProductRequest struct {
@@ -388,12 +388,12 @@ type CreateProductRequest struct {
 }
 
 func (r *CreateProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProductResponse struct {
@@ -415,12 +415,12 @@ type CreateProductResponse struct {
 }
 
 func (r *CreateProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskFileUrlRequest struct {
@@ -431,12 +431,12 @@ type CreateTaskFileUrlRequest struct {
 }
 
 func (r *CreateTaskFileUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskFileUrlRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskFileUrlResponse struct {
@@ -455,12 +455,12 @@ type CreateTaskFileUrlResponse struct {
 }
 
 func (r *CreateTaskFileUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskFileUrlResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskRequest struct {
@@ -486,12 +486,12 @@ type CreateTaskRequest struct {
 }
 
 func (r *CreateTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTaskResponse struct {
@@ -507,12 +507,12 @@ type CreateTaskResponse struct {
 }
 
 func (r *CreateTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTopicPolicyRequest struct {
@@ -532,12 +532,12 @@ type CreateTopicPolicyRequest struct {
 }
 
 func (r *CreateTopicPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTopicPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTopicPolicyResponse struct {
@@ -550,12 +550,12 @@ type CreateTopicPolicyResponse struct {
 }
 
 func (r *CreateTopicPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTopicPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTopicRuleRequest struct {
@@ -569,12 +569,12 @@ type CreateTopicRuleRequest struct {
 }
 
 func (r *CreateTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTopicRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTopicRuleResponse struct {
@@ -587,12 +587,12 @@ type CreateTopicRuleResponse struct {
 }
 
 func (r *CreateTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTopicRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceRequest struct {
@@ -609,12 +609,12 @@ type DeleteDeviceRequest struct {
 }
 
 func (r *DeleteDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceResponse struct {
@@ -627,12 +627,12 @@ type DeleteDeviceResponse struct {
 }
 
 func (r *DeleteDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLoraDeviceRequest struct {
@@ -646,12 +646,12 @@ type DeleteLoraDeviceRequest struct {
 }
 
 func (r *DeleteLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLoraDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLoraDeviceResponse struct {
@@ -664,12 +664,12 @@ type DeleteLoraDeviceResponse struct {
 }
 
 func (r *DeleteLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLoraDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProductRequest struct {
@@ -683,12 +683,12 @@ type DeleteProductRequest struct {
 }
 
 func (r *DeleteProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProductResponse struct {
@@ -701,12 +701,12 @@ type DeleteProductResponse struct {
 }
 
 func (r *DeleteProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTopicRuleRequest struct {
@@ -717,12 +717,12 @@ type DeleteTopicRuleRequest struct {
 }
 
 func (r *DeleteTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTopicRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTopicRuleResponse struct {
@@ -735,12 +735,12 @@ type DeleteTopicRuleResponse struct {
 }
 
 func (r *DeleteTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTopicRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceClientKeyRequest struct {
@@ -754,12 +754,12 @@ type DescribeDeviceClientKeyRequest struct {
 }
 
 func (r *DescribeDeviceClientKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceClientKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceClientKeyResponse struct {
@@ -775,12 +775,12 @@ type DescribeDeviceClientKeyResponse struct {
 }
 
 func (r *DescribeDeviceClientKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceClientKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceRequest struct {
@@ -794,12 +794,12 @@ type DescribeDeviceRequest struct {
 }
 
 func (r *DescribeDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceResponse struct {
@@ -852,35 +852,35 @@ type DescribeDeviceResponse struct {
 		LoraMoteType *uint64 `json:"LoraMoteType,omitempty" name:"LoraMoteType"`
 
 		// 设备的sdk日志等级
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LogLevel *uint64 `json:"LogLevel,omitempty" name:"LogLevel"`
 
 		// 首次上线时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FirstOnlineTime *uint64 `json:"FirstOnlineTime,omitempty" name:"FirstOnlineTime"`
 
 		// 最近下线时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LastOfflineTime *uint64 `json:"LastOfflineTime,omitempty" name:"LastOfflineTime"`
 
 		// 设备创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateTime *uint64 `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// 设备证书获取状态，0 未获取过设备密钥, 1 已获取过设备密钥
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertState *uint64 `json:"CertState,omitempty" name:"CertState"`
 
 		// 设备启用状态
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EnableState *uint64 `json:"EnableState,omitempty" name:"EnableState"`
 
 		// 设备标签
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Labels []*DeviceLabel `json:"Labels,omitempty" name:"Labels" list`
 
 		// MQTT客户端IP地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClientIP *string `json:"ClientIP,omitempty" name:"ClientIP"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -889,12 +889,12 @@ type DescribeDeviceResponse struct {
 }
 
 func (r *DescribeDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceShadowRequest struct {
@@ -908,12 +908,12 @@ type DescribeDeviceShadowRequest struct {
 }
 
 func (r *DescribeDeviceShadowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceShadowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceShadowResponse struct {
@@ -929,12 +929,12 @@ type DescribeDeviceShadowResponse struct {
 }
 
 func (r *DescribeDeviceShadowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceShadowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDevicesRequest struct {
@@ -954,12 +954,12 @@ type DescribeDevicesRequest struct {
 }
 
 func (r *DescribeDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDevicesResponse struct {
@@ -978,12 +978,12 @@ type DescribeDevicesResponse struct {
 }
 
 func (r *DescribeDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLoraDeviceRequest struct {
@@ -997,12 +997,12 @@ type DescribeLoraDeviceRequest struct {
 }
 
 func (r *DescribeLoraDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLoraDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLoraDeviceResponse struct {
@@ -1033,12 +1033,12 @@ type DescribeLoraDeviceResponse struct {
 }
 
 func (r *DescribeLoraDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLoraDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMultiDevTaskRequest struct {
@@ -1052,12 +1052,12 @@ type DescribeMultiDevTaskRequest struct {
 }
 
 func (r *DescribeMultiDevTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMultiDevTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMultiDevTaskResponse struct {
@@ -1076,12 +1076,12 @@ type DescribeMultiDevTaskResponse struct {
 }
 
 func (r *DescribeMultiDevTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMultiDevTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMultiDevicesRequest struct {
@@ -1101,12 +1101,12 @@ type DescribeMultiDevicesRequest struct {
 }
 
 func (r *DescribeMultiDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMultiDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMultiDevicesResponse struct {
@@ -1128,12 +1128,12 @@ type DescribeMultiDevicesResponse struct {
 }
 
 func (r *DescribeMultiDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMultiDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductTaskRequest struct {
@@ -1147,12 +1147,12 @@ type DescribeProductTaskRequest struct {
 }
 
 func (r *DescribeProductTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductTaskResponse struct {
@@ -1168,12 +1168,12 @@ type DescribeProductTaskResponse struct {
 }
 
 func (r *DescribeProductTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductTasksRequest struct {
@@ -1190,12 +1190,12 @@ type DescribeProductTasksRequest struct {
 }
 
 func (r *DescribeProductTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductTasksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductTasksResponse struct {
@@ -1214,12 +1214,12 @@ type DescribeProductTasksResponse struct {
 }
 
 func (r *DescribeProductTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductTasksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductsRequest struct {
@@ -1233,12 +1233,12 @@ type DescribeProductsRequest struct {
 }
 
 func (r *DescribeProductsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProductsResponse struct {
@@ -1257,12 +1257,12 @@ type DescribeProductsResponse struct {
 }
 
 func (r *DescribeProductsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProductsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskRequest struct {
@@ -1273,12 +1273,12 @@ type DescribeTaskRequest struct {
 }
 
 func (r *DescribeTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskResponse struct {
@@ -1330,12 +1330,12 @@ type DescribeTaskResponse struct {
 }
 
 func (r *DescribeTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTasksRequest struct {
@@ -1349,12 +1349,12 @@ type DescribeTasksRequest struct {
 }
 
 func (r *DescribeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTasksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTasksResponse struct {
@@ -1373,12 +1373,12 @@ type DescribeTasksResponse struct {
 }
 
 func (r *DescribeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTasksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeviceInfo struct {
@@ -1490,12 +1490,12 @@ type DisableTopicRuleRequest struct {
 }
 
 func (r *DisableTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableTopicRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableTopicRuleResponse struct {
@@ -1508,12 +1508,12 @@ type DisableTopicRuleResponse struct {
 }
 
 func (r *DisableTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableTopicRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableTopicRuleRequest struct {
@@ -1524,12 +1524,12 @@ type EnableTopicRuleRequest struct {
 }
 
 func (r *EnableTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableTopicRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableTopicRuleResponse struct {
@@ -1542,12 +1542,12 @@ type EnableTopicRuleResponse struct {
 }
 
 func (r *EnableTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableTopicRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MultiDevicesInfo struct {
@@ -1696,12 +1696,12 @@ type PublishAsDeviceRequest struct {
 }
 
 func (r *PublishAsDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishAsDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PublishAsDeviceResponse struct {
@@ -1714,12 +1714,12 @@ type PublishAsDeviceResponse struct {
 }
 
 func (r *PublishAsDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishAsDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PublishMessageRequest struct {
@@ -1742,12 +1742,12 @@ type PublishMessageRequest struct {
 }
 
 func (r *PublishMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishMessageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PublishMessageResponse struct {
@@ -1760,12 +1760,12 @@ type PublishMessageResponse struct {
 }
 
 func (r *PublishMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishMessageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PublishToDeviceRequest struct {
@@ -1785,12 +1785,12 @@ type PublishToDeviceRequest struct {
 }
 
 func (r *PublishToDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishToDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PublishToDeviceResponse struct {
@@ -1803,12 +1803,12 @@ type PublishToDeviceResponse struct {
 }
 
 func (r *PublishToDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PublishToDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReplaceTopicRuleRequest struct {
@@ -1828,12 +1828,12 @@ type ReplaceTopicRuleRequest struct {
 }
 
 func (r *ReplaceTopicRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplaceTopicRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReplaceTopicRuleResponse struct {
@@ -1846,12 +1846,12 @@ type ReplaceTopicRuleResponse struct {
 }
 
 func (r *ReplaceTopicRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplaceTopicRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetDeviceResult struct {
@@ -1878,12 +1878,12 @@ type ResetDeviceStateRequest struct {
 }
 
 func (r *ResetDeviceStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetDeviceStateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResetDeviceStateResponse struct {
@@ -1902,12 +1902,12 @@ type ResetDeviceStateResponse struct {
 }
 
 func (r *ResetDeviceStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResetDeviceStateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Task struct {
@@ -2029,12 +2029,12 @@ type UnbindDevicesRequest struct {
 }
 
 func (r *UnbindDevicesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnbindDevicesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnbindDevicesResponse struct {
@@ -2047,12 +2047,12 @@ type UnbindDevicesResponse struct {
 }
 
 func (r *UnbindDevicesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnbindDevicesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateDeviceAvailableStateRequest struct {
@@ -2069,12 +2069,12 @@ type UpdateDeviceAvailableStateRequest struct {
 }
 
 func (r *UpdateDeviceAvailableStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDeviceAvailableStateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateDeviceAvailableStateResponse struct {
@@ -2087,12 +2087,12 @@ type UpdateDeviceAvailableStateResponse struct {
 }
 
 func (r *UpdateDeviceAvailableStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDeviceAvailableStateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateDeviceShadowRequest struct {
@@ -2115,12 +2115,12 @@ type UpdateDeviceShadowRequest struct {
 }
 
 func (r *UpdateDeviceShadowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDeviceShadowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateDeviceShadowResponse struct {
@@ -2136,12 +2136,12 @@ type UpdateDeviceShadowResponse struct {
 }
 
 func (r *UpdateDeviceShadowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDeviceShadowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateTopicPolicyRequest struct {
@@ -2164,12 +2164,12 @@ type UpdateTopicPolicyRequest struct {
 }
 
 func (r *UpdateTopicPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateTopicPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateTopicPolicyResponse struct {
@@ -2182,10 +2182,10 @@ type UpdateTopicPolicyResponse struct {
 }
 
 func (r *UpdateTopicPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateTopicPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

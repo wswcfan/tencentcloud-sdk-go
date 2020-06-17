@@ -15,9 +15,9 @@
 package v20190614
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CreateAsrVocabRequest struct {
@@ -38,12 +38,12 @@ type CreateAsrVocabRequest struct {
 }
 
 func (r *CreateAsrVocabRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAsrVocabRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAsrVocabResponse struct {
@@ -59,12 +59,12 @@ type CreateAsrVocabResponse struct {
 }
 
 func (r *CreateAsrVocabResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAsrVocabResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRecTaskRequest struct {
@@ -116,12 +116,12 @@ type CreateRecTaskRequest struct {
 }
 
 func (r *CreateRecTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRecTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateRecTaskResponse struct {
@@ -137,12 +137,12 @@ type CreateRecTaskResponse struct {
 }
 
 func (r *CreateRecTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateRecTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAsrVocabRequest struct {
@@ -153,12 +153,12 @@ type DeleteAsrVocabRequest struct {
 }
 
 func (r *DeleteAsrVocabRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAsrVocabRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAsrVocabResponse struct {
@@ -171,12 +171,12 @@ type DeleteAsrVocabResponse struct {
 }
 
 func (r *DeleteAsrVocabResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAsrVocabResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskStatusRequest struct {
@@ -187,12 +187,12 @@ type DescribeTaskStatusRequest struct {
 }
 
 func (r *DescribeTaskStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskStatusResponse struct {
@@ -208,12 +208,12 @@ type DescribeTaskStatusResponse struct {
 }
 
 func (r *DescribeTaskStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadAsrVocabRequest struct {
@@ -224,12 +224,12 @@ type DownloadAsrVocabRequest struct {
 }
 
 func (r *DownloadAsrVocabRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadAsrVocabRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadAsrVocabResponse struct {
@@ -248,12 +248,12 @@ type DownloadAsrVocabResponse struct {
 }
 
 func (r *DownloadAsrVocabResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadAsrVocabResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetAsrVocabListRequest struct {
@@ -261,12 +261,12 @@ type GetAsrVocabListRequest struct {
 }
 
 func (r *GetAsrVocabListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetAsrVocabListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetAsrVocabListResponse struct {
@@ -282,12 +282,12 @@ type GetAsrVocabListResponse struct {
 }
 
 func (r *GetAsrVocabListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetAsrVocabListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetAsrVocabRequest struct {
@@ -298,12 +298,12 @@ type GetAsrVocabRequest struct {
 }
 
 func (r *GetAsrVocabRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetAsrVocabRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetAsrVocabResponse struct {
@@ -337,12 +337,12 @@ type GetAsrVocabResponse struct {
 }
 
 func (r *GetAsrVocabResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetAsrVocabResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type HotWord struct {
@@ -432,12 +432,12 @@ type SentenceRecognitionRequest struct {
 }
 
 func (r *SentenceRecognitionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceRecognitionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentenceRecognitionResponse struct {
@@ -453,12 +453,12 @@ type SentenceRecognitionResponse struct {
 }
 
 func (r *SentenceRecognitionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SentenceRecognitionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SentenceWords struct {
@@ -487,12 +487,12 @@ type SetVocabStateRequest struct {
 }
 
 func (r *SetVocabStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetVocabStateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetVocabStateResponse struct {
@@ -508,12 +508,12 @@ type SetVocabStateResponse struct {
 }
 
 func (r *SetVocabStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetVocabStateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Task struct {
@@ -565,12 +565,12 @@ type UpdateAsrVocabRequest struct {
 }
 
 func (r *UpdateAsrVocabRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAsrVocabRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateAsrVocabResponse struct {
@@ -586,12 +586,12 @@ type UpdateAsrVocabResponse struct {
 }
 
 func (r *UpdateAsrVocabResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAsrVocabResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Vocab struct {

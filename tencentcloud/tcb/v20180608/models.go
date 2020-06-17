@@ -15,9 +15,9 @@
 package v20180608
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AuthDomain struct {
@@ -50,12 +50,12 @@ type CheckTcbServiceRequest struct {
 }
 
 func (r *CheckTcbServiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckTcbServiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckTcbServiceResponse struct {
@@ -71,12 +71,12 @@ type CheckTcbServiceResponse struct {
 }
 
 func (r *CheckTcbServiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckTcbServiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CommonServiceAPIRequest struct {
@@ -90,12 +90,12 @@ type CommonServiceAPIRequest struct {
 }
 
 func (r *CommonServiceAPIRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CommonServiceAPIRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CommonServiceAPIResponse struct {
@@ -111,12 +111,12 @@ type CommonServiceAPIResponse struct {
 }
 
 func (r *CommonServiceAPIResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CommonServiceAPIResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAuthDomainRequest struct {
@@ -130,12 +130,12 @@ type CreateAuthDomainRequest struct {
 }
 
 func (r *CreateAuthDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAuthDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAuthDomainResponse struct {
@@ -148,12 +148,12 @@ type CreateAuthDomainResponse struct {
 }
 
 func (r *CreateAuthDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAuthDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateHostingDomainRequest struct {
@@ -170,12 +170,12 @@ type CreateHostingDomainRequest struct {
 }
 
 func (r *CreateHostingDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateHostingDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateHostingDomainResponse struct {
@@ -188,12 +188,12 @@ type CreateHostingDomainResponse struct {
 }
 
 func (r *CreateHostingDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateHostingDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePostpayPackageRequest struct {
@@ -230,12 +230,12 @@ type CreatePostpayPackageRequest struct {
 }
 
 func (r *CreatePostpayPackageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePostpayPackageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePostpayPackageResponse struct {
@@ -246,7 +246,7 @@ type CreatePostpayPackageResponse struct {
 		TranId *string `json:"TranId,omitempty" name:"TranId"`
 
 		// 环境ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EnvId *string `json:"EnvId,omitempty" name:"EnvId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -255,12 +255,12 @@ type CreatePostpayPackageResponse struct {
 }
 
 func (r *CreatePostpayPackageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePostpayPackageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStaticStoreRequest struct {
@@ -271,12 +271,12 @@ type CreateStaticStoreRequest struct {
 }
 
 func (r *CreateStaticStoreRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStaticStoreRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStaticStoreResponse struct {
@@ -284,7 +284,7 @@ type CreateStaticStoreResponse struct {
 	Response *struct {
 
 		// 创建静态资源结果(succ/fail)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -293,12 +293,12 @@ type CreateStaticStoreResponse struct {
 }
 
 func (r *CreateStaticStoreResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStaticStoreResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DatabasesInfo struct {
@@ -329,12 +329,12 @@ type DeleteEndUserRequest struct {
 }
 
 func (r *DeleteEndUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteEndUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteEndUserResponse struct {
@@ -347,12 +347,12 @@ type DeleteEndUserResponse struct {
 }
 
 func (r *DeleteEndUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteEndUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAuthDomainsRequest struct {
@@ -363,12 +363,12 @@ type DescribeAuthDomainsRequest struct {
 }
 
 func (r *DescribeAuthDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAuthDomainsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAuthDomainsResponse struct {
@@ -384,12 +384,12 @@ type DescribeAuthDomainsResponse struct {
 }
 
 func (r *DescribeAuthDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAuthDomainsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseACLRequest struct {
@@ -403,12 +403,12 @@ type DescribeDatabaseACLRequest struct {
 }
 
 func (r *DescribeDatabaseACLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseACLRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDatabaseACLResponse struct {
@@ -416,10 +416,10 @@ type DescribeDatabaseACLResponse struct {
 	Response *struct {
 
 		// 权限标签。包含以下取值：
-	// <li> READONLY：所有用户可读，仅创建者和管理员可写</li>
-	// <li> PRIVATE：仅创建者及管理员可读写</li>
-	// <li> ADMINWRITE：所有用户可读，仅管理员可写</li>
-	// <li> ADMINONLY：仅管理员可读写</li>
+		// <li> READONLY：所有用户可读，仅创建者和管理员可写</li>
+		// <li> PRIVATE：仅创建者及管理员可读写</li>
+		// <li> ADMINWRITE：所有用户可读，仅管理员可写</li>
+		// <li> ADMINONLY：仅管理员可读写</li>
 		AclTag *string `json:"AclTag,omitempty" name:"AclTag"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -428,12 +428,12 @@ type DescribeDatabaseACLResponse struct {
 }
 
 func (r *DescribeDatabaseACLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDatabaseACLResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUserLoginStatisticRequest struct {
@@ -449,12 +449,12 @@ type DescribeEndUserLoginStatisticRequest struct {
 }
 
 func (r *DescribeEndUserLoginStatisticRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUserLoginStatisticRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUserLoginStatisticResponse struct {
@@ -462,7 +462,7 @@ type DescribeEndUserLoginStatisticResponse struct {
 	Response *struct {
 
 		// 环境终端用户新增与登录统计
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LoginStatistics []*LoginStatistic `json:"LoginStatistics,omitempty" name:"LoginStatistics" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -471,12 +471,12 @@ type DescribeEndUserLoginStatisticResponse struct {
 }
 
 func (r *DescribeEndUserLoginStatisticResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUserLoginStatisticResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUserStatisticRequest struct {
@@ -487,12 +487,12 @@ type DescribeEndUserStatisticRequest struct {
 }
 
 func (r *DescribeEndUserStatisticRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUserStatisticRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUserStatisticResponse struct {
@@ -500,7 +500,7 @@ type DescribeEndUserStatisticResponse struct {
 	Response *struct {
 
 		// 终端用户各平台统计
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PlatformStatistics []*PlatformStatistic `json:"PlatformStatistics,omitempty" name:"PlatformStatistics" list`
 
 		// 终端用户总数
@@ -512,12 +512,12 @@ type DescribeEndUserStatisticResponse struct {
 }
 
 func (r *DescribeEndUserStatisticResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUserStatisticResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUsersRequest struct {
@@ -531,12 +531,12 @@ type DescribeEndUsersRequest struct {
 }
 
 func (r *DescribeEndUsersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUsersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEndUsersResponse struct {
@@ -555,12 +555,12 @@ type DescribeEndUsersResponse struct {
 }
 
 func (r *DescribeEndUsersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEndUsersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvFreeQuotaRequest struct {
@@ -575,12 +575,12 @@ type DescribeEnvFreeQuotaRequest struct {
 }
 
 func (r *DescribeEnvFreeQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvFreeQuotaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvFreeQuotaResponse struct {
@@ -588,7 +588,7 @@ type DescribeEnvFreeQuotaResponse struct {
 	Response *struct {
 
 		// 免费抵扣配额详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		QuotaItems []*PostpayEnvQuota `json:"QuotaItems,omitempty" name:"QuotaItems" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -597,12 +597,12 @@ type DescribeEnvFreeQuotaResponse struct {
 }
 
 func (r *DescribeEnvFreeQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvFreeQuotaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvLimitRequest struct {
@@ -610,12 +610,12 @@ type DescribeEnvLimitRequest struct {
 }
 
 func (r *DescribeEnvLimitRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvLimitRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvLimitResponse struct {
@@ -652,12 +652,12 @@ type DescribeEnvLimitResponse struct {
 }
 
 func (r *DescribeEnvLimitResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvLimitResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvsRequest struct {
@@ -675,12 +675,12 @@ type DescribeEnvsRequest struct {
 }
 
 func (r *DescribeEnvsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEnvsResponse struct {
@@ -696,12 +696,12 @@ type DescribeEnvsResponse struct {
 }
 
 func (r *DescribeEnvsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEnvsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeExtraPkgBillingInfoRequest struct {
@@ -712,12 +712,12 @@ type DescribeExtraPkgBillingInfoRequest struct {
 }
 
 func (r *DescribeExtraPkgBillingInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeExtraPkgBillingInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeExtraPkgBillingInfoResponse struct {
@@ -736,12 +736,12 @@ type DescribeExtraPkgBillingInfoResponse struct {
 }
 
 func (r *DescribeExtraPkgBillingInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeExtraPkgBillingInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePostpayPackageFreeQuotasRequest struct {
@@ -755,12 +755,12 @@ type DescribePostpayPackageFreeQuotasRequest struct {
 }
 
 func (r *DescribePostpayPackageFreeQuotasRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePostpayPackageFreeQuotasRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePostpayPackageFreeQuotasResponse struct {
@@ -768,7 +768,7 @@ type DescribePostpayPackageFreeQuotasResponse struct {
 	Response *struct {
 
 		// 免费量资源信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PackageFreeQuotaInfos []*PackageFreeQuotaInfo `json:"PackageFreeQuotaInfos,omitempty" name:"PackageFreeQuotaInfos" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -777,12 +777,12 @@ type DescribePostpayPackageFreeQuotasResponse struct {
 }
 
 func (r *DescribePostpayPackageFreeQuotasResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePostpayPackageFreeQuotasResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeQuotaDataRequest struct {
@@ -822,12 +822,12 @@ type DescribeQuotaDataRequest struct {
 }
 
 func (r *DescribeQuotaDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeQuotaDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeQuotaDataResponse struct {
@@ -846,12 +846,12 @@ type DescribeQuotaDataResponse struct {
 }
 
 func (r *DescribeQuotaDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeQuotaDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DestroyEnvRequest struct {
@@ -865,12 +865,12 @@ type DestroyEnvRequest struct {
 }
 
 func (r *DestroyEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DestroyEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DestroyEnvResponse struct {
@@ -883,12 +883,12 @@ type DestroyEnvResponse struct {
 }
 
 func (r *DestroyEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DestroyEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DestroyStaticStoreRequest struct {
@@ -902,12 +902,12 @@ type DestroyStaticStoreRequest struct {
 }
 
 func (r *DestroyStaticStoreRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DestroyStaticStoreRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DestroyStaticStoreResponse struct {
@@ -923,12 +923,12 @@ type DestroyStaticStoreResponse struct {
 }
 
 func (r *DestroyStaticStoreResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DestroyStaticStoreResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EndUserInfo struct {
@@ -1144,12 +1144,12 @@ type ModifyDatabaseACLRequest struct {
 }
 
 func (r *ModifyDatabaseACLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDatabaseACLRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDatabaseACLResponse struct {
@@ -1162,12 +1162,12 @@ type ModifyDatabaseACLResponse struct {
 }
 
 func (r *ModifyDatabaseACLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDatabaseACLResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyEnvRequest struct {
@@ -1181,12 +1181,12 @@ type ModifyEnvRequest struct {
 }
 
 func (r *ModifyEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyEnvResponse struct {
@@ -1199,12 +1199,12 @@ type ModifyEnvResponse struct {
 }
 
 func (r *ModifyEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OrderInfo struct {
@@ -1322,12 +1322,12 @@ type ReinstateEnvRequest struct {
 }
 
 func (r *ReinstateEnvRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReinstateEnvRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReinstateEnvResponse struct {
@@ -1340,12 +1340,12 @@ type ReinstateEnvResponse struct {
 }
 
 func (r *ReinstateEnvResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReinstateEnvResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StaticStorageInfo struct {

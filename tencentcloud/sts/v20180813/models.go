@@ -15,9 +15,9 @@
 package v20180813
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ApiKey struct {
@@ -53,12 +53,12 @@ type AssumeRoleRequest struct {
 }
 
 func (r *AssumeRoleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssumeRoleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssumeRoleResponse struct {
@@ -80,12 +80,12 @@ type AssumeRoleResponse struct {
 }
 
 func (r *AssumeRoleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssumeRoleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssumeRoleWithSAMLRequest struct {
@@ -108,12 +108,12 @@ type AssumeRoleWithSAMLRequest struct {
 }
 
 func (r *AssumeRoleWithSAMLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssumeRoleWithSAMLRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AssumeRoleWithSAMLResponse struct {
@@ -135,12 +135,12 @@ type AssumeRoleWithSAMLResponse struct {
 }
 
 func (r *AssumeRoleWithSAMLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AssumeRoleWithSAMLResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Credentials struct {
@@ -173,12 +173,12 @@ type GetFederationTokenRequest struct {
 }
 
 func (r *GetFederationTokenRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetFederationTokenRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetFederationTokenResponse struct {
@@ -192,7 +192,7 @@ type GetFederationTokenResponse struct {
 		ExpiredTime *uint64 `json:"ExpiredTime,omitempty" name:"ExpiredTime"`
 
 		// 证书有效的时间，以 iso8601 格式的 UTC 时间表示
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Expiration *string `json:"Expiration,omitempty" name:"Expiration"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -201,12 +201,12 @@ type GetFederationTokenResponse struct {
 }
 
 func (r *GetFederationTokenResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetFederationTokenResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryApiKeyRequest struct {
@@ -217,12 +217,12 @@ type QueryApiKeyRequest struct {
 }
 
 func (r *QueryApiKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryApiKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryApiKeyResponse struct {
@@ -238,10 +238,10 @@ type QueryApiKeyResponse struct {
 }
 
 func (r *QueryApiKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryApiKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

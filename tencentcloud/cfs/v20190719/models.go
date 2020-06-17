@@ -15,9 +15,9 @@
 package v20190719
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AvailableProtoStatus struct {
@@ -109,12 +109,12 @@ type CreateCfsFileSystemRequest struct {
 }
 
 func (r *CreateCfsFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCfsFileSystemResponse struct {
@@ -151,12 +151,12 @@ type CreateCfsFileSystemResponse struct {
 }
 
 func (r *CreateCfsFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCfsPGroupRequest struct {
@@ -170,12 +170,12 @@ type CreateCfsPGroupRequest struct {
 }
 
 func (r *CreateCfsPGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsPGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCfsPGroupResponse struct {
@@ -203,12 +203,12 @@ type CreateCfsPGroupResponse struct {
 }
 
 func (r *CreateCfsPGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsPGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCfsRuleRequest struct {
@@ -231,12 +231,12 @@ type CreateCfsRuleRequest struct {
 }
 
 func (r *CreateCfsRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCfsRuleResponse struct {
@@ -267,12 +267,12 @@ type CreateCfsRuleResponse struct {
 }
 
 func (r *CreateCfsRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCfsRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsFileSystemRequest struct {
@@ -283,12 +283,12 @@ type DeleteCfsFileSystemRequest struct {
 }
 
 func (r *DeleteCfsFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsFileSystemResponse struct {
@@ -301,12 +301,12 @@ type DeleteCfsFileSystemResponse struct {
 }
 
 func (r *DeleteCfsFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsPGroupRequest struct {
@@ -317,12 +317,12 @@ type DeleteCfsPGroupRequest struct {
 }
 
 func (r *DeleteCfsPGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsPGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsPGroupResponse struct {
@@ -341,12 +341,12 @@ type DeleteCfsPGroupResponse struct {
 }
 
 func (r *DeleteCfsPGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsPGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsRuleRequest struct {
@@ -360,12 +360,12 @@ type DeleteCfsRuleRequest struct {
 }
 
 func (r *DeleteCfsRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCfsRuleResponse struct {
@@ -384,12 +384,12 @@ type DeleteCfsRuleResponse struct {
 }
 
 func (r *DeleteCfsRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCfsRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMountTargetRequest struct {
@@ -403,12 +403,12 @@ type DeleteMountTargetRequest struct {
 }
 
 func (r *DeleteMountTargetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMountTargetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMountTargetResponse struct {
@@ -421,12 +421,12 @@ type DeleteMountTargetResponse struct {
 }
 
 func (r *DeleteMountTargetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMountTargetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAvailableZoneInfoRequest struct {
@@ -434,12 +434,12 @@ type DescribeAvailableZoneInfoRequest struct {
 }
 
 func (r *DescribeAvailableZoneInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableZoneInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAvailableZoneInfoResponse struct {
@@ -455,12 +455,12 @@ type DescribeAvailableZoneInfoResponse struct {
 }
 
 func (r *DescribeAvailableZoneInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableZoneInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsFileSystemsRequest struct {
@@ -477,12 +477,12 @@ type DescribeCfsFileSystemsRequest struct {
 }
 
 func (r *DescribeCfsFileSystemsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsFileSystemsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsFileSystemsResponse struct {
@@ -501,12 +501,12 @@ type DescribeCfsFileSystemsResponse struct {
 }
 
 func (r *DescribeCfsFileSystemsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsFileSystemsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsPGroupsRequest struct {
@@ -514,12 +514,12 @@ type DescribeCfsPGroupsRequest struct {
 }
 
 func (r *DescribeCfsPGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsPGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsPGroupsResponse struct {
@@ -535,12 +535,12 @@ type DescribeCfsPGroupsResponse struct {
 }
 
 func (r *DescribeCfsPGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsPGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsRulesRequest struct {
@@ -551,12 +551,12 @@ type DescribeCfsRulesRequest struct {
 }
 
 func (r *DescribeCfsRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsRulesResponse struct {
@@ -572,12 +572,12 @@ type DescribeCfsRulesResponse struct {
 }
 
 func (r *DescribeCfsRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsServiceStatusRequest struct {
@@ -585,12 +585,12 @@ type DescribeCfsServiceStatusRequest struct {
 }
 
 func (r *DescribeCfsServiceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsServiceStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCfsServiceStatusResponse struct {
@@ -606,12 +606,12 @@ type DescribeCfsServiceStatusResponse struct {
 }
 
 func (r *DescribeCfsServiceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCfsServiceStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountTargetsRequest struct {
@@ -622,12 +622,12 @@ type DescribeMountTargetsRequest struct {
 }
 
 func (r *DescribeMountTargetsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountTargetsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountTargetsResponse struct {
@@ -646,12 +646,12 @@ type DescribeMountTargetsResponse struct {
 }
 
 func (r *DescribeMountTargetsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountTargetsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FileSystemInfo struct {
@@ -791,12 +791,12 @@ type SignUpCfsServiceRequest struct {
 }
 
 func (r *SignUpCfsServiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SignUpCfsServiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SignUpCfsServiceResponse struct {
@@ -812,12 +812,12 @@ type SignUpCfsServiceResponse struct {
 }
 
 func (r *SignUpCfsServiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SignUpCfsServiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TagInfo struct {
@@ -840,12 +840,12 @@ type UpdateCfsFileSystemNameRequest struct {
 }
 
 func (r *UpdateCfsFileSystemNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemNameRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsFileSystemNameResponse struct {
@@ -867,12 +867,12 @@ type UpdateCfsFileSystemNameResponse struct {
 }
 
 func (r *UpdateCfsFileSystemNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemNameResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsFileSystemPGroupRequest struct {
@@ -886,12 +886,12 @@ type UpdateCfsFileSystemPGroupRequest struct {
 }
 
 func (r *UpdateCfsFileSystemPGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemPGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsFileSystemPGroupResponse struct {
@@ -910,12 +910,12 @@ type UpdateCfsFileSystemPGroupResponse struct {
 }
 
 func (r *UpdateCfsFileSystemPGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemPGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsFileSystemSizeLimitRequest struct {
@@ -929,12 +929,12 @@ type UpdateCfsFileSystemSizeLimitRequest struct {
 }
 
 func (r *UpdateCfsFileSystemSizeLimitRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemSizeLimitRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsFileSystemSizeLimitResponse struct {
@@ -947,12 +947,12 @@ type UpdateCfsFileSystemSizeLimitResponse struct {
 }
 
 func (r *UpdateCfsFileSystemSizeLimitResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsFileSystemSizeLimitResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsPGroupRequest struct {
@@ -969,12 +969,12 @@ type UpdateCfsPGroupRequest struct {
 }
 
 func (r *UpdateCfsPGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsPGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsPGroupResponse struct {
@@ -996,12 +996,12 @@ type UpdateCfsPGroupResponse struct {
 }
 
 func (r *UpdateCfsPGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsPGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsRuleRequest struct {
@@ -1027,12 +1027,12 @@ type UpdateCfsRuleRequest struct {
 }
 
 func (r *UpdateCfsRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateCfsRuleResponse struct {
@@ -1063,10 +1063,10 @@ type UpdateCfsRuleResponse struct {
 }
 
 func (r *UpdateCfsRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateCfsRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

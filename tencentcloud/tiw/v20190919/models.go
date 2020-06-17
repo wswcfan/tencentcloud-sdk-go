@@ -15,9 +15,9 @@
 package v20190919
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Canvas struct {
@@ -53,29 +53,29 @@ type CreateTranscodeRequest struct {
 	IsStaticPPT *bool `json:"IsStaticPPT,omitempty" name:"IsStaticPPT"`
 
 	// 转码后文档的最小分辨率，不传、传空字符串或分辨率格式错误则使用文档原分辨率
-	// 
+	//
 	// 注意分辨率宽高中间为英文字母"xyz"的"x"
 	MinResolution *string `json:"MinResolution,omitempty" name:"MinResolution"`
 
 	// 动态PPT转码可以为文件生成该分辨率的缩略图，不传、传空字符串或分辨率格式错误则不生成缩略图，分辨率格式同MinResolution
-	// 
+	//
 	// 静态转码这个参数不起作用
 	ThumbnailResolution *string `json:"ThumbnailResolution,omitempty" name:"ThumbnailResolution"`
 
 	// 转码文件压缩格式，不传、传空字符串或不是指定的格式则不生成压缩文件，目前支持如下压缩格式：
-	// 
+	//
 	// zip： 生成`.zip`压缩包
 	// tar.gz： 生成`.tar.gz`压缩包
 	CompressFileType *string `json:"CompressFileType,omitempty" name:"CompressFileType"`
 }
 
 func (r *CreateTranscodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTranscodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTranscodeResponse struct {
@@ -91,12 +91,12 @@ type CreateTranscodeResponse struct {
 }
 
 func (r *CreateTranscodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTranscodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CustomLayout struct {
@@ -116,12 +116,12 @@ type DescribeOnlineRecordCallbackRequest struct {
 }
 
 func (r *DescribeOnlineRecordCallbackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOnlineRecordCallbackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOnlineRecordCallbackResponse struct {
@@ -140,12 +140,12 @@ type DescribeOnlineRecordCallbackResponse struct {
 }
 
 func (r *DescribeOnlineRecordCallbackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOnlineRecordCallbackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOnlineRecordRequest struct {
@@ -159,12 +159,12 @@ type DescribeOnlineRecordRequest struct {
 }
 
 func (r *DescribeOnlineRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOnlineRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeOnlineRecordResponse struct {
@@ -172,20 +172,20 @@ type DescribeOnlineRecordResponse struct {
 	Response *struct {
 
 		// 录制结束原因，
-	// - AUTO: 房间内长时间没有音视频上行及白板操作导致自动停止录制
-	// - USER_CALL: 主动调用了停止录制接口
-	// - EXCEPTION: 录制异常结束
+		// - AUTO: 房间内长时间没有音视频上行及白板操作导致自动停止录制
+		// - USER_CALL: 主动调用了停止录制接口
+		// - EXCEPTION: 录制异常结束
 		FinishReason *string `json:"FinishReason,omitempty" name:"FinishReason"`
 
 		// 需要查询结果的录制任务Id
 		TaskId *string `json:"TaskId,omitempty" name:"TaskId"`
 
 		// 录制任务状态
-	// - PREPARED: 表示录制正在准备中（进房/启动录制服务等操作）
-	// - RECORDING: 表示录制已开始
-	// - PAUSED: 表示录制已暂停
-	// - STOPPED: 表示录制已停止，正在处理并上传视频
-	// - FINISHED: 表示视频处理并上传完成，成功生成录制结果
+		// - PREPARED: 表示录制正在准备中（进房/启动录制服务等操作）
+		// - RECORDING: 表示录制已开始
+		// - PAUSED: 表示录制已暂停
+		// - STOPPED: 表示录制已停止，正在处理并上传视频
+		// - FINISHED: 表示视频处理并上传完成，成功生成录制结果
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 房间号
@@ -221,12 +221,12 @@ type DescribeOnlineRecordResponse struct {
 }
 
 func (r *DescribeOnlineRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeOnlineRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeCallbackRequest struct {
@@ -237,12 +237,12 @@ type DescribeTranscodeCallbackRequest struct {
 }
 
 func (r *DescribeTranscodeCallbackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeCallbackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeCallbackResponse struct {
@@ -261,12 +261,12 @@ type DescribeTranscodeCallbackResponse struct {
 }
 
 func (r *DescribeTranscodeCallbackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeCallbackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeRequest struct {
@@ -280,12 +280,12 @@ type DescribeTranscodeRequest struct {
 }
 
 func (r *DescribeTranscodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTranscodeResponse struct {
@@ -302,15 +302,15 @@ type DescribeTranscodeResponse struct {
 		Resolution *string `json:"Resolution,omitempty" name:"Resolution"`
 
 		// 转码完成后结果的URL
-	// 动态转码：PPT转动态H5的链接
-	// 静态转码：文档每一页的图片URL前缀，比如，该URL前缀为`http://example.com/g0jb42ps49vtebjshilb/`，那么文档第1页的图片URL为
-	// `http://example.com/g0jb42ps49vtebjshilb/1.jpg`，其它页以此类推
+		// 动态转码：PPT转动态H5的链接
+		// 静态转码：文档每一页的图片URL前缀，比如，该URL前缀为`http://example.com/g0jb42ps49vtebjshilb/`，那么文档第1页的图片URL为
+		// `http://example.com/g0jb42ps49vtebjshilb/1.jpg`，其它页以此类推
 		ResultUrl *string `json:"ResultUrl,omitempty" name:"ResultUrl"`
 
 		// 任务的当前状态
-	// - QUEUED: 正在排队等待转换
-	// - PROCESSING: 转换中
-	// - FINISHED: 转换完成
+		// - QUEUED: 正在排队等待转换
+		// - PROCESSING: 转换中
+		// - FINISHED: 转换完成
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 转码任务的唯一标识Id
@@ -320,9 +320,9 @@ type DescribeTranscodeResponse struct {
 		Title *string `json:"Title,omitempty" name:"Title"`
 
 		// 缩略图URL前缀，比如，该URL前缀为`http://example.com/g0jb42ps49vtebjshilb/ `，那么动态PPT第1页的缩略图URL为
-	// `http://example.com/g0jb42ps49vtebjshilb/1.jpg`，其它页以此类推
-	// 
-	// 如果发起文档转码请求参数中带了ThumbnailResolution参数，并且转码类型为动态转码，该参数不为空，其余情况该参数为空字符串
+		// `http://example.com/g0jb42ps49vtebjshilb/1.jpg`，其它页以此类推
+		//
+		// 如果发起文档转码请求参数中带了ThumbnailResolution参数，并且转码类型为动态转码，该参数不为空，其余情况该参数为空字符串
 		ThumbnailUrl *string `json:"ThumbnailUrl,omitempty" name:"ThumbnailUrl"`
 
 		// 动态转码缩略图生成分辨率
@@ -337,12 +337,12 @@ type DescribeTranscodeResponse struct {
 }
 
 func (r *DescribeTranscodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTranscodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LayoutParams struct {
@@ -409,12 +409,12 @@ type PauseOnlineRecordRequest struct {
 }
 
 func (r *PauseOnlineRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PauseOnlineRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PauseOnlineRecordResponse struct {
@@ -427,12 +427,12 @@ type PauseOnlineRecordResponse struct {
 }
 
 func (r *PauseOnlineRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PauseOnlineRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResumeOnlineRecordRequest struct {
@@ -446,12 +446,12 @@ type ResumeOnlineRecordRequest struct {
 }
 
 func (r *ResumeOnlineRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeOnlineRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResumeOnlineRecordResponse struct {
@@ -464,12 +464,12 @@ type ResumeOnlineRecordResponse struct {
 }
 
 func (r *ResumeOnlineRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeOnlineRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetOnlineRecordCallbackKeyRequest struct {
@@ -483,12 +483,12 @@ type SetOnlineRecordCallbackKeyRequest struct {
 }
 
 func (r *SetOnlineRecordCallbackKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetOnlineRecordCallbackKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetOnlineRecordCallbackKeyResponse struct {
@@ -501,12 +501,12 @@ type SetOnlineRecordCallbackKeyResponse struct {
 }
 
 func (r *SetOnlineRecordCallbackKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetOnlineRecordCallbackKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetOnlineRecordCallbackRequest struct {
@@ -520,12 +520,12 @@ type SetOnlineRecordCallbackRequest struct {
 }
 
 func (r *SetOnlineRecordCallbackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetOnlineRecordCallbackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetOnlineRecordCallbackResponse struct {
@@ -538,12 +538,12 @@ type SetOnlineRecordCallbackResponse struct {
 }
 
 func (r *SetOnlineRecordCallbackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetOnlineRecordCallbackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetTranscodeCallbackKeyRequest struct {
@@ -557,12 +557,12 @@ type SetTranscodeCallbackKeyRequest struct {
 }
 
 func (r *SetTranscodeCallbackKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetTranscodeCallbackKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetTranscodeCallbackKeyResponse struct {
@@ -575,12 +575,12 @@ type SetTranscodeCallbackKeyResponse struct {
 }
 
 func (r *SetTranscodeCallbackKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetTranscodeCallbackKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetTranscodeCallbackRequest struct {
@@ -594,12 +594,12 @@ type SetTranscodeCallbackRequest struct {
 }
 
 func (r *SetTranscodeCallbackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetTranscodeCallbackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetTranscodeCallbackResponse struct {
@@ -612,12 +612,12 @@ type SetTranscodeCallbackResponse struct {
 }
 
 func (r *SetTranscodeCallbackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetTranscodeCallbackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartOnlineRecordRequest struct {
@@ -661,12 +661,12 @@ type StartOnlineRecordRequest struct {
 }
 
 func (r *StartOnlineRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartOnlineRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartOnlineRecordResponse struct {
@@ -682,12 +682,12 @@ type StartOnlineRecordResponse struct {
 }
 
 func (r *StartOnlineRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartOnlineRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopOnlineRecordRequest struct {
@@ -701,12 +701,12 @@ type StopOnlineRecordRequest struct {
 }
 
 func (r *StopOnlineRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopOnlineRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopOnlineRecordResponse struct {
@@ -719,12 +719,12 @@ type StopOnlineRecordResponse struct {
 }
 
 func (r *StopOnlineRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopOnlineRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StreamLayout struct {
@@ -764,10 +764,10 @@ type VideoInfo struct {
 	// 视频文件Id
 	VideoId *string `json:"VideoId,omitempty" name:"VideoId"`
 
-	// 视频流类型 
-	// - 0：摄像头视频 
+	// 视频流类型
+	// - 0：摄像头视频
 	// - 1：屏幕分享视频
-	// - 2：白板视频 
+	// - 2：白板视频
 	// - 3：混流视频
 	// - 4：纯音频（mp3)
 	VideoType *int64 `json:"VideoType,omitempty" name:"VideoType"`

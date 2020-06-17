@@ -15,9 +15,9 @@
 package v20190916
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Album struct {
@@ -62,12 +62,12 @@ type DescribeItemByIdRequest struct {
 }
 
 func (r *DescribeItemByIdRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeItemByIdRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeItemByIdResponse struct {
@@ -75,7 +75,7 @@ type DescribeItemByIdResponse struct {
 	Response *struct {
 
 		// 歌曲信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Items []*Item `json:"Items,omitempty" name:"Items" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -84,12 +84,12 @@ type DescribeItemByIdResponse struct {
 }
 
 func (r *DescribeItemByIdResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeItemByIdResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeItemsRequest struct {
@@ -109,12 +109,12 @@ type DescribeItemsRequest struct {
 }
 
 func (r *DescribeItemsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeItemsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeItemsResponse struct {
@@ -131,11 +131,11 @@ type DescribeItemsResponse struct {
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 剩余数量（total-offset-size），通过这个值判断是否
-	// 还有下一页
+		// 还有下一页
 		HaveMore *uint64 `json:"HaveMore,omitempty" name:"HaveMore"`
 
 		// Items 歌曲列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Items []*Item `json:"Items,omitempty" name:"Items" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -144,12 +144,12 @@ type DescribeItemsResponse struct {
 }
 
 func (r *DescribeItemsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeItemsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLyricRequest struct {
@@ -163,12 +163,12 @@ type DescribeLyricRequest struct {
 }
 
 func (r *DescribeLyricRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLyricRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLyricResponse struct {
@@ -176,7 +176,7 @@ type DescribeLyricResponse struct {
 	Response *struct {
 
 		// 歌词详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Lyric *Lyric `json:"Lyric,omitempty" name:"Lyric"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -185,12 +185,12 @@ type DescribeLyricResponse struct {
 }
 
 func (r *DescribeLyricResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLyricResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMusicRequest struct {
@@ -211,12 +211,12 @@ type DescribeMusicRequest struct {
 }
 
 func (r *DescribeMusicRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMusicRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMusicResponse struct {
@@ -224,7 +224,7 @@ type DescribeMusicResponse struct {
 	Response *struct {
 
 		// 音乐相关信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Music *Music `json:"Music,omitempty" name:"Music"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -233,12 +233,12 @@ type DescribeMusicResponse struct {
 }
 
 func (r *DescribeMusicResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMusicResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStationsRequest struct {
@@ -252,12 +252,12 @@ type DescribeStationsRequest struct {
 }
 
 func (r *DescribeStationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStationsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStationsResponse struct {
@@ -277,7 +277,7 @@ type DescribeStationsResponse struct {
 		HaveMore *uint64 `json:"HaveMore,omitempty" name:"HaveMore"`
 
 		// Stations 素材库列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Stations []*Station `json:"Stations,omitempty" name:"Stations" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -286,12 +286,12 @@ type DescribeStationsResponse struct {
 }
 
 func (r *DescribeStationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStationsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImagePath struct {
@@ -367,24 +367,24 @@ type ReportDataRequest struct {
 	// 压缩说明：
 	// a) 上报的json格式字符串通过流的转换（ByteArrayInputStream, java.util.zip.GZIPOutputStream），获取到压缩后的字节数组。
 	// b) 将压缩后的字节数组转成16进制字符串。
-	// 
+	//
 	// reportData由两部分数据组成：
 	// 1）report_type（上报类型）
 	// 2）data（歌曲上报数据）
 	// 不同的report_type对应的data数据结构不一样。
-	// 
+	//
 	// 详细说明请参考文档reportdata.docx：
 	// https://github.com/ame-demo/doc
 	ReportData *string `json:"ReportData,omitempty" name:"ReportData"`
 }
 
 func (r *ReportDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReportDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReportDataResponse struct {
@@ -397,12 +397,12 @@ type ReportDataResponse struct {
 }
 
 func (r *ReportDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReportDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Station struct {

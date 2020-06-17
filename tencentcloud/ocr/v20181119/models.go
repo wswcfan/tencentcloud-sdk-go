@@ -15,9 +15,9 @@
 package v20181119
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ArithmeticOCRRequest struct {
@@ -38,12 +38,12 @@ type ArithmeticOCRRequest struct {
 }
 
 func (r *ArithmeticOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ArithmeticOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ArithmeticOCRResponse struct {
@@ -59,12 +59,12 @@ type ArithmeticOCRResponse struct {
 }
 
 func (r *ArithmeticOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ArithmeticOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCardOCRRequest struct {
@@ -85,12 +85,12 @@ type BankCardOCRRequest struct {
 }
 
 func (r *BankCardOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCardOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCardOCRResponse struct {
@@ -112,12 +112,12 @@ type BankCardOCRResponse struct {
 }
 
 func (r *BankCardOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCardOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BizLicenseOCRRequest struct {
@@ -138,12 +138,12 @@ type BizLicenseOCRRequest struct {
 }
 
 func (r *BizLicenseOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BizLicenseOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BizLicenseOCRResponse struct {
@@ -186,12 +186,12 @@ type BizLicenseOCRResponse struct {
 }
 
 func (r *BizLicenseOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BizLicenseOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BusInvoiceInfo struct {
@@ -224,12 +224,12 @@ type BusInvoiceOCRRequest struct {
 }
 
 func (r *BusInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BusInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BusInvoiceOCRResponse struct {
@@ -248,12 +248,12 @@ type BusInvoiceOCRResponse struct {
 }
 
 func (r *BusInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BusInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BusinessCardInfo struct {
@@ -286,7 +286,7 @@ type BusinessCardOCRRequest struct {
 	// 目前支持的字段为：
 	// RetImageType-“PROPROCESS” 图像预处理，string 类型。
 	// 图像预处理功能为，检测图片倾斜的角度，将原本倾斜的图片围绕中心点转正，最终输出一张正的名片抠图。
-	// 
+	//
 	// SDK 设置方式参考：
 	// Config = Json.stringify({"RetImageType":"PROPROCESS"})
 	// API 3.0 Explorer 设置方式参考：
@@ -295,12 +295,12 @@ type BusinessCardOCRRequest struct {
 }
 
 func (r *BusinessCardOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BusinessCardOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BusinessCardOCRResponse struct {
@@ -319,12 +319,12 @@ type BusinessCardOCRResponse struct {
 }
 
 func (r *BusinessCardOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BusinessCardOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CarInvoiceInfo struct {
@@ -354,12 +354,12 @@ type CarInvoiceOCRRequest struct {
 }
 
 func (r *CarInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CarInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CarInvoiceOCRResponse struct {
@@ -375,12 +375,12 @@ type CarInvoiceOCRResponse struct {
 }
 
 func (r *CarInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CarInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Coord struct {
@@ -409,12 +409,12 @@ type DriverLicenseOCRRequest struct {
 }
 
 func (r *DriverLicenseOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DriverLicenseOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DriverLicenseOCRResponse struct {
@@ -458,17 +458,17 @@ type DriverLicenseOCRResponse struct {
 		Record *string `json:"Record,omitempty" name:"Record"`
 
 		// Code 告警码列表和释义：
-	// -9102  复印件告警
-	// -9103  翻拍件告警
-	// -9106  ps告警
-	// 注：告警码可以同时存在多个
+		// -9102  复印件告警
+		// -9103  翻拍件告警
+		// -9106  ps告警
+		// 注：告警码可以同时存在多个
 		RecognizeWarnCode []*int64 `json:"RecognizeWarnCode,omitempty" name:"RecognizeWarnCode" list`
 
 		// 告警码说明：
-	// WARN_DRIVER_LICENSE_COPY_CARD 复印件告警
-	// WARN_DRIVER_LICENSE_SCREENED_CARD 翻拍件告警
-	// WARN_DRIVER_LICENSE_PS_CARD ps告警
-	// 注：告警信息可以同时存在多个
+		// WARN_DRIVER_LICENSE_COPY_CARD 复印件告警
+		// WARN_DRIVER_LICENSE_SCREENED_CARD 翻拍件告警
+		// WARN_DRIVER_LICENSE_PS_CARD ps告警
+		// 注：告警信息可以同时存在多个
 		RecognizeWarnMsg []*string `json:"RecognizeWarnMsg,omitempty" name:"RecognizeWarnMsg" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -477,12 +477,12 @@ type DriverLicenseOCRResponse struct {
 }
 
 func (r *DriverLicenseOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DriverLicenseOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DutyPaidProofInfo struct {
@@ -515,12 +515,12 @@ type DutyPaidProofOCRRequest struct {
 }
 
 func (r *DutyPaidProofOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DutyPaidProofOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DutyPaidProofOCRResponse struct {
@@ -539,12 +539,12 @@ type DutyPaidProofOCRResponse struct {
 }
 
 func (r *DutyPaidProofOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DutyPaidProofOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EduPaperOCRRequest struct {
@@ -576,12 +576,12 @@ type EduPaperOCRRequest struct {
 }
 
 func (r *EduPaperOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EduPaperOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EduPaperOCRResponse struct {
@@ -603,12 +603,12 @@ type EduPaperOCRResponse struct {
 }
 
 func (r *EduPaperOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EduPaperOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnglishOCRRequest struct {
@@ -629,12 +629,12 @@ type EnglishOCRRequest struct {
 }
 
 func (r *EnglishOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnglishOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnglishOCRResponse struct {
@@ -650,12 +650,12 @@ type EnglishOCRResponse struct {
 }
 
 func (r *EnglishOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnglishOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnterpriseLicenseInfo struct {
@@ -685,12 +685,12 @@ type EnterpriseLicenseOCRRequest struct {
 }
 
 func (r *EnterpriseLicenseOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnterpriseLicenseOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnterpriseLicenseOCRResponse struct {
@@ -709,12 +709,12 @@ type EnterpriseLicenseOCRResponse struct {
 }
 
 func (r *EnterpriseLicenseOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnterpriseLicenseOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EstateCertOCRRequest struct {
@@ -735,12 +735,12 @@ type EstateCertOCRRequest struct {
 }
 
 func (r *EstateCertOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EstateCertOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EstateCertOCRResponse struct {
@@ -789,12 +789,12 @@ type EstateCertOCRResponse struct {
 }
 
 func (r *EstateCertOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EstateCertOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FinanBillInfo struct {
@@ -824,12 +824,12 @@ type FinanBillOCRRequest struct {
 }
 
 func (r *FinanBillOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FinanBillOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FinanBillOCRResponse struct {
@@ -845,12 +845,12 @@ type FinanBillOCRResponse struct {
 }
 
 func (r *FinanBillOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FinanBillOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FinanBillSliceInfo struct {
@@ -880,12 +880,12 @@ type FinanBillSliceOCRRequest struct {
 }
 
 func (r *FinanBillSliceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FinanBillSliceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FinanBillSliceOCRResponse struct {
@@ -901,12 +901,12 @@ type FinanBillSliceOCRResponse struct {
 }
 
 func (r *FinanBillSliceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FinanBillSliceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FlightInvoiceInfo struct {
@@ -936,12 +936,12 @@ type FlightInvoiceOCRRequest struct {
 }
 
 func (r *FlightInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FlightInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FlightInvoiceOCRResponse struct {
@@ -957,12 +957,12 @@ type FlightInvoiceOCRResponse struct {
 }
 
 func (r *FlightInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FlightInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FormulaOCRRequest struct {
@@ -983,12 +983,12 @@ type FormulaOCRRequest struct {
 }
 
 func (r *FormulaOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FormulaOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FormulaOCRResponse struct {
@@ -1007,12 +1007,12 @@ type FormulaOCRResponse struct {
 }
 
 func (r *FormulaOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *FormulaOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralAccurateOCRRequest struct {
@@ -1030,12 +1030,12 @@ type GeneralAccurateOCRRequest struct {
 }
 
 func (r *GeneralAccurateOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralAccurateOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralAccurateOCRResponse struct {
@@ -1054,12 +1054,12 @@ type GeneralAccurateOCRResponse struct {
 }
 
 func (r *GeneralAccurateOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralAccurateOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralBasicOCRRequest struct {
@@ -1096,12 +1096,12 @@ type GeneralBasicOCRRequest struct {
 }
 
 func (r *GeneralBasicOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralBasicOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralBasicOCRResponse struct {
@@ -1123,12 +1123,12 @@ type GeneralBasicOCRResponse struct {
 }
 
 func (r *GeneralBasicOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralBasicOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralEfficientOCRRequest struct {
@@ -1146,12 +1146,12 @@ type GeneralEfficientOCRRequest struct {
 }
 
 func (r *GeneralEfficientOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralEfficientOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralEfficientOCRResponse struct {
@@ -1170,12 +1170,12 @@ type GeneralEfficientOCRResponse struct {
 }
 
 func (r *GeneralEfficientOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralEfficientOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralFastOCRRequest struct {
@@ -1196,12 +1196,12 @@ type GeneralFastOCRRequest struct {
 }
 
 func (r *GeneralFastOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralFastOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralFastOCRResponse struct {
@@ -1212,7 +1212,7 @@ type GeneralFastOCRResponse struct {
 		TextDetections []*TextDetection `json:"TextDetections,omitempty" name:"TextDetections" list`
 
 		// 检测到的语言，目前支持的语种范围为：简体中文、繁体中文、英文、日文、韩文。未来将陆续新增对更多语种的支持。
-	// 返回结果含义为：zh - 中英混合，jap - 日文，kor - 韩文。
+		// 返回结果含义为：zh - 中英混合，jap - 日文，kor - 韩文。
 		Language *string `json:"Language,omitempty" name:"Language"`
 
 		// 图片旋转角度（角度制），文本的水平方向为0°；顺时针为正，逆时针为负
@@ -1224,12 +1224,12 @@ type GeneralFastOCRResponse struct {
 }
 
 func (r *GeneralFastOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralFastOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralHandwritingOCRRequest struct {
@@ -1254,12 +1254,12 @@ type GeneralHandwritingOCRRequest struct {
 }
 
 func (r *GeneralHandwritingOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralHandwritingOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GeneralHandwritingOCRResponse struct {
@@ -1275,12 +1275,12 @@ type GeneralHandwritingOCRResponse struct {
 }
 
 func (r *GeneralHandwritingOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GeneralHandwritingOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type HmtResidentPermitOCRRequest struct {
@@ -1306,12 +1306,12 @@ type HmtResidentPermitOCRRequest struct {
 }
 
 func (r *HmtResidentPermitOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *HmtResidentPermitOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type HmtResidentPermitOCRResponse struct {
@@ -1334,7 +1334,7 @@ type HmtResidentPermitOCRResponse struct {
 		IdCardNo *string `json:"IdCardNo,omitempty" name:"IdCardNo"`
 
 		// 0-正面
-	// 1-反面
+		// 1-反面
 		CardType *int64 `json:"CardType,omitempty" name:"CardType"`
 
 		// 证件有效期限
@@ -1349,12 +1349,12 @@ type HmtResidentPermitOCRResponse struct {
 }
 
 func (r *HmtResidentPermitOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *HmtResidentPermitOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IDCardOCRRequest struct {
@@ -1384,7 +1384,7 @@ type IDCardOCRRequest struct {
 	// InvalidDateWarn，身份证有效日期不合法告警
 	// Quality，图片质量分数（评价图片的模糊程度）
 	// MultiCardDetect，是否开启多卡证检测
-	// 
+	//
 	// SDK 设置方式参考：
 	// Config = Json.stringify({"CropIdCard":true,"CropPortrait":true})
 	// API 3.0 Explorer 设置方式参考：
@@ -1393,12 +1393,12 @@ type IDCardOCRRequest struct {
 }
 
 func (r *IDCardOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IDCardOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IDCardOCRResponse struct {
@@ -1430,17 +1430,17 @@ type IDCardOCRResponse struct {
 		ValidDate *string `json:"ValidDate,omitempty" name:"ValidDate"`
 
 		// 扩展信息，不请求则不返回，具体输入参考示例3和示例4。
-	// IdCard，裁剪后身份证照片的base64编码，请求 CropIdCard 时返回；
-	// Portrait，身份证头像照片的base64编码，请求 CropPortrait 时返回；
-	// QualityValue，图片质量分，请求 Quality 时返回（取值范围：0~100，分数越低越模糊，建议阈值≥50）;
-	// WarnInfos，告警信息，Code 告警码列表和释义：
-	// -9100	身份证有效日期不合法告警，
-	// -9101	身份证边框不完整告警，
-	// -9102	身份证复印件告警，
-	// -9103	身份证翻拍告警，
-	// -9105	身份证框内遮挡告警，
-	// -9104	临时身份证告警，
-	// -9106	身份证 PS 告警。
+		// IdCard，裁剪后身份证照片的base64编码，请求 CropIdCard 时返回；
+		// Portrait，身份证头像照片的base64编码，请求 CropPortrait 时返回；
+		// QualityValue，图片质量分，请求 Quality 时返回（取值范围：0~100，分数越低越模糊，建议阈值≥50）;
+		// WarnInfos，告警信息，Code 告警码列表和释义：
+		// -9100	身份证有效日期不合法告警，
+		// -9101	身份证边框不完整告警，
+		// -9102	身份证复印件告警，
+		// -9103	身份证翻拍告警，
+		// -9105	身份证框内遮挡告警，
+		// -9104	临时身份证告警，
+		// -9106	身份证 PS 告警。
 		AdvancedInfo *string `json:"AdvancedInfo,omitempty" name:"AdvancedInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1449,12 +1449,12 @@ type IDCardOCRResponse struct {
 }
 
 func (r *IDCardOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IDCardOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InstitutionOCRRequest struct {
@@ -1475,12 +1475,12 @@ type InstitutionOCRRequest struct {
 }
 
 func (r *InstitutionOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InstitutionOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InstitutionOCRResponse struct {
@@ -1508,12 +1508,12 @@ type InstitutionOCRResponse struct {
 }
 
 func (r *InstitutionOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InstitutionOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InsuranceBillInfo struct {
@@ -1543,12 +1543,12 @@ type InsuranceBillOCRRequest struct {
 }
 
 func (r *InsuranceBillOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InsuranceBillOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InsuranceBillOCRResponse struct {
@@ -1564,12 +1564,12 @@ type InsuranceBillOCRResponse struct {
 }
 
 func (r *InsuranceBillOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InsuranceBillOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InvoiceDetectInfo struct {
@@ -1634,12 +1634,12 @@ type InvoiceGeneralOCRRequest struct {
 }
 
 func (r *InvoiceGeneralOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InvoiceGeneralOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InvoiceGeneralOCRResponse struct {
@@ -1658,12 +1658,12 @@ type InvoiceGeneralOCRResponse struct {
 }
 
 func (r *InvoiceGeneralOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InvoiceGeneralOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ItemCoord struct {
@@ -1699,12 +1699,12 @@ type LicensePlateOCRRequest struct {
 }
 
 func (r *LicensePlateOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LicensePlateOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LicensePlateOCRResponse struct {
@@ -1723,12 +1723,12 @@ type LicensePlateOCRResponse struct {
 }
 
 func (r *LicensePlateOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LicensePlateOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MLIDCardOCRRequest struct {
@@ -1751,12 +1751,12 @@ type MLIDCardOCRRequest struct {
 }
 
 func (r *MLIDCardOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MLIDCardOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MLIDCardOCRResponse struct {
@@ -1776,32 +1776,32 @@ type MLIDCardOCRResponse struct {
 		Sex *string `json:"Sex,omitempty" name:"Sex"`
 
 		// 告警码
-	// -9103	证照翻拍告警
-	// -9102	证照复印件告警
-	// -9106       证件遮挡告警
+		// -9103	证照翻拍告警
+		// -9102	证照复印件告警
+		// -9106       证件遮挡告警
 		Warn []*int64 `json:"Warn,omitempty" name:"Warn" list`
 
 		// 证件图片
 		Image *string `json:"Image,omitempty" name:"Image"`
 
 		// 扩展字段:
-	// {
-	//     ID:{
-	//         Confidence:0.9999
-	//     },
-	//     Name:{
-	//         Confidence:0.9996
-	//     }
-	// }
+		// {
+		//     ID:{
+		//         Confidence:0.9999
+		//     },
+		//     Name:{
+		//         Confidence:0.9996
+		//     }
+		// }
 		AdvancedInfo *string `json:"AdvancedInfo,omitempty" name:"AdvancedInfo"`
 
 		// 证件类型
-	// MyKad  身份证
-	// MyPR    永居证
-	// MyTentera   军官证
-	// MyKAS    临时身份证
-	// POLIS  警察
-	// IKAD   劳工证
+		// MyKad  身份证
+		// MyPR    永居证
+		// MyTentera   军官证
+		// MyKAS    临时身份证
+		// POLIS  警察
+		// IKAD   劳工证
 		Type *string `json:"Type,omitempty" name:"Type"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1810,12 +1810,12 @@ type MLIDCardOCRResponse struct {
 }
 
 func (r *MLIDCardOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MLIDCardOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MLIDPassportOCRRequest struct {
@@ -1830,12 +1830,12 @@ type MLIDPassportOCRRequest struct {
 }
 
 func (r *MLIDPassportOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MLIDPassportOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MLIDPassportOCRResponse struct {
@@ -1864,23 +1864,23 @@ type MLIDPassportOCRResponse struct {
 		Nationality *string `json:"Nationality,omitempty" name:"Nationality"`
 
 		// 告警码
-	// -9103	证照翻拍告警
-	// -9102	证照复印件告警
-	// -9106       证件遮挡告警
+		// -9103	证照翻拍告警
+		// -9102	证照复印件告警
+		// -9106       证件遮挡告警
 		Warn []*int64 `json:"Warn,omitempty" name:"Warn" list`
 
 		// 证件图片
 		Image *string `json:"Image,omitempty" name:"Image"`
 
 		// 扩展字段:
-	// {
-	//     ID:{
-	//         Confidence:0.9999
-	//     },
-	//     Name:{
-	//         Confidence:0.9996
-	//     }
-	// }
+		// {
+		//     ID:{
+		//         Confidence:0.9999
+		//     },
+		//     Name:{
+		//         Confidence:0.9996
+		//     }
+		// }
 		AdvancedInfo *string `json:"AdvancedInfo,omitempty" name:"AdvancedInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1889,12 +1889,12 @@ type MLIDPassportOCRResponse struct {
 }
 
 func (r *MLIDPassportOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MLIDPassportOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MainlandPermitOCRRequest struct {
@@ -1918,12 +1918,12 @@ type MainlandPermitOCRRequest struct {
 }
 
 func (r *MainlandPermitOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MainlandPermitOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MainlandPermitOCRResponse struct {
@@ -1969,12 +1969,12 @@ type MainlandPermitOCRResponse struct {
 }
 
 func (r *MainlandPermitOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MainlandPermitOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MixedInvoiceDetectRequest struct {
@@ -1998,12 +1998,12 @@ type MixedInvoiceDetectRequest struct {
 }
 
 func (r *MixedInvoiceDetectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MixedInvoiceDetectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MixedInvoiceDetectResponse struct {
@@ -2019,12 +2019,12 @@ type MixedInvoiceDetectResponse struct {
 }
 
 func (r *MixedInvoiceDetectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MixedInvoiceDetectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MixedInvoiceItem struct {
@@ -2092,12 +2092,12 @@ type MixedInvoiceOCRRequest struct {
 }
 
 func (r *MixedInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MixedInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MixedInvoiceOCRResponse struct {
@@ -2113,12 +2113,12 @@ type MixedInvoiceOCRResponse struct {
 }
 
 func (r *MixedInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MixedInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OrgCodeCertOCRRequest struct {
@@ -2139,12 +2139,12 @@ type OrgCodeCertOCRRequest struct {
 }
 
 func (r *OrgCodeCertOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OrgCodeCertOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OrgCodeCertOCRResponse struct {
@@ -2169,12 +2169,12 @@ type OrgCodeCertOCRResponse struct {
 }
 
 func (r *OrgCodeCertOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OrgCodeCertOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PassportOCRRequest struct {
@@ -2194,12 +2194,12 @@ type PassportOCRRequest struct {
 }
 
 func (r *PassportOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PassportOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PassportOCRResponse struct {
@@ -2257,12 +2257,12 @@ type PassportOCRResponse struct {
 }
 
 func (r *PassportOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PassportOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PermitOCRRequest struct {
@@ -2283,12 +2283,12 @@ type PermitOCRRequest struct {
 }
 
 func (r *PermitOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PermitOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PermitOCRResponse struct {
@@ -2325,12 +2325,12 @@ type PermitOCRResponse struct {
 }
 
 func (r *PermitOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PermitOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProductDataRecord struct {
@@ -2418,12 +2418,12 @@ type PropOwnerCertOCRRequest struct {
 }
 
 func (r *PropOwnerCertOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PropOwnerCertOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PropOwnerCertOCRResponse struct {
@@ -2454,12 +2454,12 @@ type PropOwnerCertOCRResponse struct {
 }
 
 func (r *PropOwnerCertOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PropOwnerCertOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QrcodeImgSize struct {
@@ -2484,12 +2484,12 @@ type QrcodeOCRRequest struct {
 }
 
 func (r *QrcodeOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QrcodeOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QrcodeOCRResponse struct {
@@ -2508,12 +2508,12 @@ type QrcodeOCRResponse struct {
 }
 
 func (r *QrcodeOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QrcodeOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QrcodePositionObj struct {
@@ -2551,12 +2551,12 @@ type QueryBarCodeRequest struct {
 }
 
 func (r *QueryBarCodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBarCodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryBarCodeResponse struct {
@@ -2575,12 +2575,12 @@ type QueryBarCodeResponse struct {
 }
 
 func (r *QueryBarCodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryBarCodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuestionBlockObj struct {
@@ -2628,12 +2628,12 @@ type QuotaInvoiceOCRRequest struct {
 }
 
 func (r *QuotaInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuotaInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuotaInvoiceOCRResponse struct {
@@ -2656,15 +2656,15 @@ type QuotaInvoiceOCRResponse struct {
 		InvoiceType *string `json:"InvoiceType,omitempty" name:"InvoiceType"`
 
 		// 省
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Province *string `json:"Province,omitempty" name:"Province"`
 
 		// 市
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		City *string `json:"City,omitempty" name:"City"`
 
 		// 是否有公司印章（1有 0无 空为识别不出）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		HasStamp *string `json:"HasStamp,omitempty" name:"HasStamp"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2673,12 +2673,12 @@ type QuotaInvoiceOCRResponse struct {
 }
 
 func (r *QuotaInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuotaInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Rect struct {
@@ -2714,12 +2714,12 @@ type ResidenceBookletOCRRequest struct {
 }
 
 func (r *ResidenceBookletOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResidenceBookletOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResidenceBookletOCRResponse struct {
@@ -2768,12 +2768,12 @@ type ResidenceBookletOCRResponse struct {
 }
 
 func (r *ResidenceBookletOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResidenceBookletOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ShipInvoiceInfo struct {
@@ -2806,12 +2806,12 @@ type ShipInvoiceOCRRequest struct {
 }
 
 func (r *ShipInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ShipInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ShipInvoiceOCRResponse struct {
@@ -2830,12 +2830,12 @@ type ShipInvoiceOCRResponse struct {
 }
 
 func (r *ShipInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ShipInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SingleInvoiceInfo struct {
@@ -2865,12 +2865,12 @@ type TableOCRRequest struct {
 }
 
 func (r *TableOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TableOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TableOCRResponse struct {
@@ -2889,12 +2889,12 @@ type TableOCRResponse struct {
 }
 
 func (r *TableOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TableOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TaxiInvoiceOCRRequest struct {
@@ -2915,12 +2915,12 @@ type TaxiInvoiceOCRRequest struct {
 }
 
 func (r *TaxiInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TaxiInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TaxiInvoiceOCRResponse struct {
@@ -2958,11 +2958,11 @@ type TaxiInvoiceOCRResponse struct {
 		InvoiceType *string `json:"InvoiceType,omitempty" name:"InvoiceType"`
 
 		// 省
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Province *string `json:"Province,omitempty" name:"Province"`
 
 		// 市
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		City *string `json:"City,omitempty" name:"City"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2971,12 +2971,12 @@ type TaxiInvoiceOCRResponse struct {
 }
 
 func (r *TaxiInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TaxiInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextArithmetic struct {
@@ -3033,12 +3033,12 @@ type TextDetectRequest struct {
 }
 
 func (r *TextDetectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextDetectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextDetectResponse struct {
@@ -3054,12 +3054,12 @@ type TextDetectResponse struct {
 }
 
 func (r *TextDetectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextDetectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextDetection struct {
@@ -3316,12 +3316,12 @@ type TollInvoiceOCRRequest struct {
 }
 
 func (r *TollInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TollInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TollInvoiceOCRResponse struct {
@@ -3340,12 +3340,12 @@ type TollInvoiceOCRResponse struct {
 }
 
 func (r *TollInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TollInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TrainTicketOCRRequest struct {
@@ -3366,12 +3366,12 @@ type TrainTicketOCRRequest struct {
 }
 
 func (r *TrainTicketOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TrainTicketOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TrainTicketOCRResponse struct {
@@ -3420,12 +3420,12 @@ type TrainTicketOCRResponse struct {
 }
 
 func (r *TrainTicketOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TrainTicketOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VatInvoiceItem struct {
@@ -3476,12 +3476,12 @@ type VatInvoiceOCRRequest struct {
 }
 
 func (r *VatInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VatInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VatInvoiceOCRResponse struct {
@@ -3500,12 +3500,12 @@ type VatInvoiceOCRResponse struct {
 }
 
 func (r *VatInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VatInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VatRollInvoiceInfo struct {
@@ -3538,12 +3538,12 @@ type VatRollInvoiceOCRRequest struct {
 }
 
 func (r *VatRollInvoiceOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VatRollInvoiceOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VatRollInvoiceOCRResponse struct {
@@ -3562,12 +3562,12 @@ type VatRollInvoiceOCRResponse struct {
 }
 
 func (r *VatRollInvoiceOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VatRollInvoiceOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VehicleLicenseOCRRequest struct {
@@ -3587,12 +3587,12 @@ type VehicleLicenseOCRRequest struct {
 }
 
 func (r *VehicleLicenseOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VehicleLicenseOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VehicleLicenseOCRResponse struct {
@@ -3600,25 +3600,25 @@ type VehicleLicenseOCRResponse struct {
 	Response *struct {
 
 		// 行驶证主页正面的识别结果，CardSide 为 FRONT。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FrontInfo *TextVehicleFront `json:"FrontInfo,omitempty" name:"FrontInfo"`
 
 		// 行驶证副页正面的识别结果，CardSide 为 BACK。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BackInfo *TextVehicleBack `json:"BackInfo,omitempty" name:"BackInfo"`
 
 		// Code 告警码列表和释义：
-	// -9102 复印件告警
-	// -9103 翻拍件告警
-	// -9106 ps告警
-	// 注：告警码可以同时存在多个
+		// -9102 复印件告警
+		// -9103 翻拍件告警
+		// -9106 ps告警
+		// 注：告警码可以同时存在多个
 		RecognizeWarnCode []*int64 `json:"RecognizeWarnCode,omitempty" name:"RecognizeWarnCode" list`
 
 		// 告警码说明：
-	// WARN_DRIVER_LICENSE_COPY_CARD 复印件告警
-	// WARN_DRIVER_LICENSE_SCREENED_CARD 翻拍件告警
-	// WARN_DRIVER_LICENSE_PS_CARD ps告警
-	// 注：告警信息可以同时存在多个
+		// WARN_DRIVER_LICENSE_COPY_CARD 复印件告警
+		// WARN_DRIVER_LICENSE_SCREENED_CARD 翻拍件告警
+		// WARN_DRIVER_LICENSE_PS_CARD ps告警
+		// 注：告警信息可以同时存在多个
 		RecognizeWarnMsg []*string `json:"RecognizeWarnMsg,omitempty" name:"RecognizeWarnMsg" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3627,12 +3627,12 @@ type VehicleLicenseOCRResponse struct {
 }
 
 func (r *VehicleLicenseOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VehicleLicenseOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VehicleRegCertInfo struct {
@@ -3662,12 +3662,12 @@ type VehicleRegCertOCRRequest struct {
 }
 
 func (r *VehicleRegCertOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VehicleRegCertOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VehicleRegCertOCRResponse struct {
@@ -3683,12 +3683,12 @@ type VehicleRegCertOCRResponse struct {
 }
 
 func (r *VehicleRegCertOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VehicleRegCertOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VinOCRRequest struct {
@@ -3709,12 +3709,12 @@ type VinOCRRequest struct {
 }
 
 func (r *VinOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VinOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VinOCRResponse struct {
@@ -3730,12 +3730,12 @@ type VinOCRResponse struct {
 }
 
 func (r *VinOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VinOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WaybillOCRRequest struct {
@@ -3756,12 +3756,12 @@ type WaybillOCRRequest struct {
 }
 
 func (r *WaybillOCRRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WaybillOCRRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WaybillOCRResponse struct {
@@ -3777,12 +3777,12 @@ type WaybillOCRResponse struct {
 }
 
 func (r *WaybillOCRResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *WaybillOCRResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WaybillObj struct {

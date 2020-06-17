@@ -15,47 +15,46 @@
 package v20190319
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-03-19"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCreateAuditRequest() (request *CreateAuditRequest) {
-    request = &CreateAuditRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "CreateAudit")
-    return
+	request = &CreateAuditRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "CreateAudit")
+	return
 }
 
 func NewCreateAuditResponse() (response *CreateAuditResponse) {
-    response = &CreateAuditResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateAuditResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 参数要求：
@@ -64,277 +63,277 @@ func NewCreateAuditResponse() (response *CreateAuditResponse) {
 // 3、如果IsEnableCmqNotify的值是0的话，IsCreateNewQueue、CmqRegion和CmqQueueName都不能传。
 // 4、如果IsEnableKmsEncry的值是1的话，KmsRegion和KeyId属于必填项
 func (c *Client) CreateAudit(request *CreateAuditRequest) (response *CreateAuditResponse, err error) {
-    if request == nil {
-        request = NewCreateAuditRequest()
-    }
-    response = NewCreateAuditResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateAuditRequest()
+	}
+	response = NewCreateAuditResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteAuditRequest() (request *DeleteAuditRequest) {
-    request = &DeleteAuditRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "DeleteAudit")
-    return
+	request = &DeleteAuditRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "DeleteAudit")
+	return
 }
 
 func NewDeleteAuditResponse() (response *DeleteAuditResponse) {
-    response = &DeleteAuditResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteAuditResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除跟踪集
 func (c *Client) DeleteAudit(request *DeleteAuditRequest) (response *DeleteAuditResponse, err error) {
-    if request == nil {
-        request = NewDeleteAuditRequest()
-    }
-    response = NewDeleteAuditResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteAuditRequest()
+	}
+	response = NewDeleteAuditResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeAuditRequest() (request *DescribeAuditRequest) {
-    request = &DescribeAuditRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "DescribeAudit")
-    return
+	request = &DescribeAuditRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "DescribeAudit")
+	return
 }
 
 func NewDescribeAuditResponse() (response *DescribeAuditResponse) {
-    response = &DescribeAuditResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeAuditResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询跟踪集详情
 func (c *Client) DescribeAudit(request *DescribeAuditRequest) (response *DescribeAuditResponse, err error) {
-    if request == nil {
-        request = NewDescribeAuditRequest()
-    }
-    response = NewDescribeAuditResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeAuditRequest()
+	}
+	response = NewDescribeAuditResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewGetAttributeKeyRequest() (request *GetAttributeKeyRequest) {
-    request = &GetAttributeKeyRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "GetAttributeKey")
-    return
+	request = &GetAttributeKeyRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "GetAttributeKey")
+	return
 }
 
 func NewGetAttributeKeyResponse() (response *GetAttributeKeyResponse) {
-    response = &GetAttributeKeyResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &GetAttributeKeyResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询AttributeKey的有效取值范围
 func (c *Client) GetAttributeKey(request *GetAttributeKeyRequest) (response *GetAttributeKeyResponse, err error) {
-    if request == nil {
-        request = NewGetAttributeKeyRequest()
-    }
-    response = NewGetAttributeKeyResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewGetAttributeKeyRequest()
+	}
+	response = NewGetAttributeKeyResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewInquireAuditCreditRequest() (request *InquireAuditCreditRequest) {
-    request = &InquireAuditCreditRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "InquireAuditCredit")
-    return
+	request = &InquireAuditCreditRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "InquireAuditCredit")
+	return
 }
 
 func NewInquireAuditCreditResponse() (response *InquireAuditCreditResponse) {
-    response = &InquireAuditCreditResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &InquireAuditCreditResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询用户可创建跟踪集的数量
 func (c *Client) InquireAuditCredit(request *InquireAuditCreditRequest) (response *InquireAuditCreditResponse, err error) {
-    if request == nil {
-        request = NewInquireAuditCreditRequest()
-    }
-    response = NewInquireAuditCreditResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewInquireAuditCreditRequest()
+	}
+	response = NewInquireAuditCreditResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewListAuditsRequest() (request *ListAuditsRequest) {
-    request = &ListAuditsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "ListAudits")
-    return
+	request = &ListAuditsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "ListAudits")
+	return
 }
 
 func NewListAuditsResponse() (response *ListAuditsResponse) {
-    response = &ListAuditsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ListAuditsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询跟踪集概要
 func (c *Client) ListAudits(request *ListAuditsRequest) (response *ListAuditsResponse, err error) {
-    if request == nil {
-        request = NewListAuditsRequest()
-    }
-    response = NewListAuditsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewListAuditsRequest()
+	}
+	response = NewListAuditsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewListCmqEnableRegionRequest() (request *ListCmqEnableRegionRequest) {
-    request = &ListCmqEnableRegionRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "ListCmqEnableRegion")
-    return
+	request = &ListCmqEnableRegionRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "ListCmqEnableRegion")
+	return
 }
 
 func NewListCmqEnableRegionResponse() (response *ListCmqEnableRegionResponse) {
-    response = &ListCmqEnableRegionResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ListCmqEnableRegionResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询云审计支持的cmq的可用区
 func (c *Client) ListCmqEnableRegion(request *ListCmqEnableRegionRequest) (response *ListCmqEnableRegionResponse, err error) {
-    if request == nil {
-        request = NewListCmqEnableRegionRequest()
-    }
-    response = NewListCmqEnableRegionResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewListCmqEnableRegionRequest()
+	}
+	response = NewListCmqEnableRegionResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewListCosEnableRegionRequest() (request *ListCosEnableRegionRequest) {
-    request = &ListCosEnableRegionRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "ListCosEnableRegion")
-    return
+	request = &ListCosEnableRegionRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "ListCosEnableRegion")
+	return
 }
 
 func NewListCosEnableRegionResponse() (response *ListCosEnableRegionResponse) {
-    response = &ListCosEnableRegionResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ListCosEnableRegionResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询云审计支持的cos可用区
 func (c *Client) ListCosEnableRegion(request *ListCosEnableRegionRequest) (response *ListCosEnableRegionResponse, err error) {
-    if request == nil {
-        request = NewListCosEnableRegionRequest()
-    }
-    response = NewListCosEnableRegionResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewListCosEnableRegionRequest()
+	}
+	response = NewListCosEnableRegionResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewLookUpEventsRequest() (request *LookUpEventsRequest) {
-    request = &LookUpEventsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "LookUpEvents")
-    return
+	request = &LookUpEventsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "LookUpEvents")
+	return
 }
 
 func NewLookUpEventsResponse() (response *LookUpEventsResponse) {
-    response = &LookUpEventsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &LookUpEventsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 用于对操作日志进行检索，便于用户进行查询相关的操作信息。
 func (c *Client) LookUpEvents(request *LookUpEventsRequest) (response *LookUpEventsResponse, err error) {
-    if request == nil {
-        request = NewLookUpEventsRequest()
-    }
-    response = NewLookUpEventsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewLookUpEventsRequest()
+	}
+	response = NewLookUpEventsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewStartLoggingRequest() (request *StartLoggingRequest) {
-    request = &StartLoggingRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "StartLogging")
-    return
+	request = &StartLoggingRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "StartLogging")
+	return
 }
 
 func NewStartLoggingResponse() (response *StartLoggingResponse) {
-    response = &StartLoggingResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &StartLoggingResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 开启跟踪集
 func (c *Client) StartLogging(request *StartLoggingRequest) (response *StartLoggingResponse, err error) {
-    if request == nil {
-        request = NewStartLoggingRequest()
-    }
-    response = NewStartLoggingResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewStartLoggingRequest()
+	}
+	response = NewStartLoggingResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewStopLoggingRequest() (request *StopLoggingRequest) {
-    request = &StopLoggingRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "StopLogging")
-    return
+	request = &StopLoggingRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "StopLogging")
+	return
 }
 
 func NewStopLoggingResponse() (response *StopLoggingResponse) {
-    response = &StopLoggingResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &StopLoggingResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 关闭跟踪集
 func (c *Client) StopLogging(request *StopLoggingRequest) (response *StopLoggingResponse, err error) {
-    if request == nil {
-        request = NewStopLoggingRequest()
-    }
-    response = NewStopLoggingResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewStopLoggingRequest()
+	}
+	response = NewStopLoggingResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewUpdateAuditRequest() (request *UpdateAuditRequest) {
-    request = &UpdateAuditRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("cloudaudit", APIVersion, "UpdateAudit")
-    return
+	request = &UpdateAuditRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("cloudaudit", APIVersion, "UpdateAudit")
+	return
 }
 
 func NewUpdateAuditResponse() (response *UpdateAuditResponse) {
-    response = &UpdateAuditResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &UpdateAuditResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 参数要求：
@@ -343,10 +342,10 @@ func NewUpdateAuditResponse() (response *UpdateAuditResponse) {
 // 3、如果IsEnableCmqNotify的值是0的话，IsCreateNewQueue、CmqRegion和CmqQueueName都不能传。
 // 4、如果IsEnableKmsEncry的值是1的话，KmsRegion和KeyId属于必填项
 func (c *Client) UpdateAudit(request *UpdateAuditRequest) (response *UpdateAuditResponse, err error) {
-    if request == nil {
-        request = NewUpdateAuditRequest()
-    }
-    response = NewUpdateAuditResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewUpdateAuditRequest()
+	}
+	response = NewUpdateAuditResponse()
+	err = c.Send(request, response)
+	return
 }

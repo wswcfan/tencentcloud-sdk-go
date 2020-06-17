@@ -15,9 +15,9 @@
 package v20200224
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type QueryRegisterProtectionRequest struct {
@@ -130,12 +130,12 @@ type QueryRegisterProtectionRequest struct {
 }
 
 func (r *QueryRegisterProtectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryRegisterProtectionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryRegisterProtectionResponse struct {
@@ -143,27 +143,27 @@ type QueryRegisterProtectionResponse struct {
 	Response *struct {
 
 		// 业务侧错误码，成功时返回 Success，错误时返回具体业务错误原因。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeDesc *string `json:"CodeDesc,omitempty" name:"CodeDesc"`
 
 		// accountType 是 QQ 或微信开放账号时，用于标识 QQ 或微信用户登录后关联业务自身的账号 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AssociateAccount *string `json:"AssociateAccount,omitempty" name:"AssociateAccount"`
 
 		// 注册时间戳，单位：秒。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RegisterTime *string `json:"RegisterTime,omitempty" name:"RegisterTime"`
 
 		// 用户 ID 不同的 accountType 对应不同的用户 ID。如果是 QQ，则填入对应的 openid，微信用户则填入对应的 openid/unionid，手机号则填入对应真实用户手机号（如13123456789）。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Uid *string `json:"Uid,omitempty" name:"Uid"`
 
 		// 注册来源的外网 IP。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RegisterIp *string `json:"RegisterIp,omitempty" name:"RegisterIp"`
 
 		// 0：表示无恶意。
-	// 1 - 4：恶意等级由低到高。
+		// 1 - 4：恶意等级由低到高。
 		Level *int64 `json:"Level,omitempty" name:"Level"`
 
 		// 风险类型。
@@ -175,10 +175,10 @@ type QueryRegisterProtectionResponse struct {
 }
 
 func (r *QueryRegisterProtectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryRegisterProtectionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

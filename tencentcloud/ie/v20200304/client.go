@@ -15,80 +15,79 @@
 package v20200304
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-03-04"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCreateEditingTaskRequest() (request *CreateEditingTaskRequest) {
-    request = &CreateEditingTaskRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ie", APIVersion, "CreateEditingTask")
-    return
+	request = &CreateEditingTaskRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ie", APIVersion, "CreateEditingTask")
+	return
 }
 
 func NewCreateEditingTaskResponse() (response *CreateEditingTaskResponse) {
-    response = &CreateEditingTaskResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateEditingTaskResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 创建智能编辑任务，可以同时选择视频标签识别、分类识别、智能拆条、智能集锦、智能封面和片头片尾识别中的一项或者多项能力。
 func (c *Client) CreateEditingTask(request *CreateEditingTaskRequest) (response *CreateEditingTaskResponse, err error) {
-    if request == nil {
-        request = NewCreateEditingTaskRequest()
-    }
-    response = NewCreateEditingTaskResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateEditingTaskRequest()
+	}
+	response = NewCreateEditingTaskResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeEditingTaskResultRequest() (request *DescribeEditingTaskResultRequest) {
-    request = &DescribeEditingTaskResultRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ie", APIVersion, "DescribeEditingTaskResult")
-    return
+	request = &DescribeEditingTaskResultRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ie", APIVersion, "DescribeEditingTaskResult")
+	return
 }
 
 func NewDescribeEditingTaskResultResponse() (response *DescribeEditingTaskResultResponse) {
-    response = &DescribeEditingTaskResultResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeEditingTaskResultResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取智能编辑任务结果。
 func (c *Client) DescribeEditingTaskResult(request *DescribeEditingTaskResultRequest) (response *DescribeEditingTaskResultResponse, err error) {
-    if request == nil {
-        request = NewDescribeEditingTaskResultRequest()
-    }
-    response = NewDescribeEditingTaskResultResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeEditingTaskResultRequest()
+	}
+	response = NewDescribeEditingTaskResultResponse()
+	err = c.Send(request, response)
+	return
 }

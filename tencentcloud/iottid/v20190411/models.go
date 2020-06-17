@@ -15,9 +15,9 @@
 package v20190411
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AuthTestTidRequest struct {
@@ -28,12 +28,12 @@ type AuthTestTidRequest struct {
 }
 
 func (r *AuthTestTidRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AuthTestTidRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AuthTestTidResponse struct {
@@ -49,12 +49,12 @@ type AuthTestTidResponse struct {
 }
 
 func (r *AuthTestTidResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AuthTestTidResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BurnTidNotifyRequest struct {
@@ -68,12 +68,12 @@ type BurnTidNotifyRequest struct {
 }
 
 func (r *BurnTidNotifyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BurnTidNotifyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BurnTidNotifyResponse struct {
@@ -89,12 +89,12 @@ type BurnTidNotifyResponse struct {
 }
 
 func (r *BurnTidNotifyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BurnTidNotifyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeliverTidNotifyRequest struct {
@@ -108,12 +108,12 @@ type DeliverTidNotifyRequest struct {
 }
 
 func (r *DeliverTidNotifyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeliverTidNotifyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeliverTidNotifyResponse struct {
@@ -135,12 +135,12 @@ type DeliverTidNotifyResponse struct {
 }
 
 func (r *DeliverTidNotifyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeliverTidNotifyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeliverTidsRequest struct {
@@ -154,12 +154,12 @@ type DeliverTidsRequest struct {
 }
 
 func (r *DeliverTidsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeliverTidsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeliverTidsResponse struct {
@@ -167,7 +167,7 @@ type DeliverTidsResponse struct {
 	Response *struct {
 
 		// 空发的TID信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TidSet []*TidKeysInfo `json:"TidSet,omitempty" name:"TidSet" list`
 
 		// 产品公钥
@@ -179,12 +179,12 @@ type DeliverTidsResponse struct {
 }
 
 func (r *DeliverTidsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeliverTidsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAvailableLibCountRequest struct {
@@ -195,12 +195,12 @@ type DescribeAvailableLibCountRequest struct {
 }
 
 func (r *DescribeAvailableLibCountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableLibCountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAvailableLibCountResponse struct {
@@ -216,12 +216,12 @@ type DescribeAvailableLibCountResponse struct {
 }
 
 func (r *DescribeAvailableLibCountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAvailableLibCountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePermissionRequest struct {
@@ -229,12 +229,12 @@ type DescribePermissionRequest struct {
 }
 
 func (r *DescribePermissionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePermissionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePermissionResponse struct {
@@ -256,12 +256,12 @@ type DescribePermissionResponse struct {
 }
 
 func (r *DescribePermissionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePermissionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadTidsRequest struct {
@@ -275,12 +275,12 @@ type DownloadTidsRequest struct {
 }
 
 func (r *DownloadTidsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadTidsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadTidsResponse struct {
@@ -288,7 +288,7 @@ type DownloadTidsResponse struct {
 	Response *struct {
 
 		// 下载的TID信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TidSet []*TidKeysInfo `json:"TidSet,omitempty" name:"TidSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -297,12 +297,12 @@ type DownloadTidsResponse struct {
 }
 
 func (r *DownloadTidsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadTidsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TidKeysInfo struct {
@@ -337,12 +337,12 @@ type UploadDeviceUniqueCodeRequest struct {
 }
 
 func (r *UploadDeviceUniqueCodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDeviceUniqueCodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadDeviceUniqueCodeResponse struct {
@@ -353,14 +353,14 @@ type UploadDeviceUniqueCodeResponse struct {
 		Count *uint64 `json:"Count,omitempty" name:"Count"`
 
 		// 重复的硬件唯一标识码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ExistedCodeSet []*string `json:"ExistedCodeSet,omitempty" name:"ExistedCodeSet" list`
 
 		// 剩余可上传数量
 		LeftQuantity *uint64 `json:"LeftQuantity,omitempty" name:"LeftQuantity"`
 
 		// 错误的硬件唯一标识码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IllegalCodeSet []*string `json:"IllegalCodeSet,omitempty" name:"IllegalCodeSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -369,12 +369,12 @@ type UploadDeviceUniqueCodeResponse struct {
 }
 
 func (r *UploadDeviceUniqueCodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDeviceUniqueCodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyChipBurnInfoRequest struct {
@@ -385,12 +385,12 @@ type VerifyChipBurnInfoRequest struct {
 }
 
 func (r *VerifyChipBurnInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyChipBurnInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyChipBurnInfoResponse struct {
@@ -412,10 +412,10 @@ type VerifyChipBurnInfoResponse struct {
 }
 
 func (r *VerifyChipBurnInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyChipBurnInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

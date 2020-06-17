@@ -15,80 +15,79 @@
 package v20200304
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-03-04"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewChangeAgePicRequest() (request *ChangeAgePicRequest) {
-    request = &ChangeAgePicRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ft", APIVersion, "ChangeAgePic")
-    return
+	request = &ChangeAgePicRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ft", APIVersion, "ChangeAgePic")
+	return
 }
 
 func NewChangeAgePicResponse() (response *ChangeAgePicResponse) {
-    response = &ChangeAgePicResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ChangeAgePicResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 用户上传一张人脸图片，基于人脸编辑与生成算法，输出一张人脸变老或变年轻的图片，支持实现人脸不同年龄的变化。
 func (c *Client) ChangeAgePic(request *ChangeAgePicRequest) (response *ChangeAgePicResponse, err error) {
-    if request == nil {
-        request = NewChangeAgePicRequest()
-    }
-    response = NewChangeAgePicResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewChangeAgePicRequest()
+	}
+	response = NewChangeAgePicResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewSwapGenderPicRequest() (request *SwapGenderPicRequest) {
-    request = &SwapGenderPicRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("ft", APIVersion, "SwapGenderPic")
-    return
+	request = &SwapGenderPicRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("ft", APIVersion, "SwapGenderPic")
+	return
 }
 
 func NewSwapGenderPicResponse() (response *SwapGenderPicResponse) {
-    response = &SwapGenderPicResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &SwapGenderPicResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
-// 用户上传一张人脸图片，基于人脸编辑与生成算法，输出一张人脸性别转换的图片。男变女可实现美颜、淡妆、加刘海和长发的效果；女变男可实现加胡须、变短发的效果。 
+// 用户上传一张人脸图片，基于人脸编辑与生成算法，输出一张人脸性别转换的图片。男变女可实现美颜、淡妆、加刘海和长发的效果；女变男可实现加胡须、变短发的效果。
 func (c *Client) SwapGenderPic(request *SwapGenderPicRequest) (response *SwapGenderPicResponse, err error) {
-    if request == nil {
-        request = NewSwapGenderPicRequest()
-    }
-    response = NewSwapGenderPicResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewSwapGenderPicRequest()
+	}
+	response = NewSwapGenderPicResponse()
+	err = c.Send(request, response)
+	return
 }

@@ -15,9 +15,9 @@
 package v20190823
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CallBackCdr struct {
@@ -134,12 +134,12 @@ type CreateCallBackRequest struct {
 }
 
 func (r *CreateCallBackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCallBackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCallBackResponse struct {
@@ -147,22 +147,22 @@ type CreateCallBackResponse struct {
 	Response *struct {
 
 		// 话单id
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CallId *string `json:"CallId,omitempty" name:"CallId"`
 
 		// 主叫显示系统分配的固话号码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SrcDisplayNum *string `json:"SrcDisplayNum,omitempty" name:"SrcDisplayNum"`
 
 		// 被叫显示系统分配的固话号码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DstDisplayNum *string `json:"DstDisplayNum,omitempty" name:"DstDisplayNum"`
 
 		// 错误码
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -171,12 +171,12 @@ type CreateCallBackResponse struct {
 }
 
 func (r *CreateCallBackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCallBackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DelVirtualNumRequest struct {
@@ -193,12 +193,12 @@ type DelVirtualNumRequest struct {
 }
 
 func (r *DelVirtualNumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DelVirtualNumRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DelVirtualNumResponse struct {
@@ -209,15 +209,15 @@ type DelVirtualNumResponse struct {
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 绑定 ID，该 ID 全局唯一
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BindId *string `json:"BindId,omitempty" name:"BindId"`
 
 		// 中间号还剩引用计数，如果计数为 0 会解绑
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RefLeftNum *string `json:"RefLeftNum,omitempty" name:"RefLeftNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -226,12 +226,12 @@ type DelVirtualNumResponse struct {
 }
 
 func (r *DelVirtualNumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DelVirtualNumResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCallBackRequest struct {
@@ -248,12 +248,12 @@ type DeleteCallBackRequest struct {
 }
 
 func (r *DeleteCallBackRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCallBackRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCallBackResponse struct {
@@ -264,11 +264,11 @@ type DeleteCallBackResponse struct {
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 话单id
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CallId *string `json:"CallId,omitempty" name:"CallId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -277,12 +277,12 @@ type DeleteCallBackResponse struct {
 }
 
 func (r *DeleteCallBackResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCallBackResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallBackCdrRequest struct {
@@ -305,12 +305,12 @@ type DescribeCallBackCdrRequest struct {
 }
 
 func (r *DescribeCallBackCdrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallBackCdrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallBackCdrResponse struct {
@@ -318,19 +318,19 @@ type DescribeCallBackCdrResponse struct {
 	Response *struct {
 
 		// 话单列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Cdr []*CallBackCdr `json:"Cdr,omitempty" name:"Cdr" list`
 
 		// 偏移
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Offset *string `json:"Offset,omitempty" name:"Offset"`
 
 		// 错误码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -339,12 +339,12 @@ type DescribeCallBackCdrResponse struct {
 }
 
 func (r *DescribeCallBackCdrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallBackCdrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallBackStatusRequest struct {
@@ -367,12 +367,12 @@ type DescribeCallBackStatusRequest struct {
 }
 
 func (r *DescribeCallBackStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallBackStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallBackStatusResponse struct {
@@ -406,12 +406,12 @@ type DescribeCallBackStatusResponse struct {
 }
 
 func (r *DescribeCallBackStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallBackStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallerDisplayListRequest struct {
@@ -422,12 +422,12 @@ type DescribeCallerDisplayListRequest struct {
 }
 
 func (r *DescribeCallerDisplayListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallerDisplayListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCallerDisplayListResponse struct {
@@ -435,18 +435,18 @@ type DescribeCallerDisplayListResponse struct {
 	Response *struct {
 
 		// appid
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AppId *string `json:"AppId,omitempty" name:"AppId"`
 
 		// 主叫显号号码集合，codeList[0...*] 结构体数组，如果业务是主被叫互显，该字段为空
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeList []*CallBackPhoneCode `json:"CodeList,omitempty" name:"CodeList" list`
 
 		// 错误码
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -455,12 +455,12 @@ type DescribeCallerDisplayListResponse struct {
 }
 
 func (r *DescribeCallerDisplayListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCallerDisplayListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Get400CdrRequest struct {
@@ -483,12 +483,12 @@ type Get400CdrRequest struct {
 }
 
 func (r *Get400CdrRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *Get400CdrRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Get400CdrResponse struct {
@@ -499,15 +499,15 @@ type Get400CdrResponse struct {
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 偏移
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Offset *string `json:"Offset,omitempty" name:"Offset"`
 
 		// 话单列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Cdr []*VirturalNumCdr `json:"Cdr,omitempty" name:"Cdr" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -516,12 +516,12 @@ type Get400CdrResponse struct {
 }
 
 func (r *Get400CdrResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *Get400CdrResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetVirtualNumRequest struct {
@@ -566,7 +566,7 @@ type GetVirtualNumRequest struct {
 	// 被叫正常挂机状态：4096
 	// 主叫呼叫异常：32
 	// 被叫呼叫异常：8192
-	// 
+	//
 	// 例如：
 	// 值为 0：表示所有状态不需要推送
 	// 值为 4：表示只要推送主叫接听状态
@@ -584,12 +584,12 @@ type GetVirtualNumRequest struct {
 }
 
 func (r *GetVirtualNumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetVirtualNumRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetVirtualNumResponse struct {
@@ -600,19 +600,19 @@ type GetVirtualNumResponse struct {
 		ErrorCode *string `json:"ErrorCode,omitempty" name:"ErrorCode"`
 
 		// 绑定 ID，该 ID 全局唯一
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BindId *string `json:"BindId,omitempty" name:"BindId"`
 
 		// 中间号还剩引用计数，如果计数为 0 会解绑
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RefNum *string `json:"RefNum,omitempty" name:"RefNum"`
 
 		// 中间号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VirtualNum *string `json:"VirtualNum,omitempty" name:"VirtualNum"`
 
 		// 错误原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Msg *string `json:"Msg,omitempty" name:"Msg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -621,12 +621,12 @@ type GetVirtualNumResponse struct {
 }
 
 func (r *GetVirtualNumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetVirtualNumResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type KeyList struct {

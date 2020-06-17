@@ -15,80 +15,79 @@
 package v20190627
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-06-27"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewTextProcessRequest() (request *TextProcessRequest) {
-    request = &TextProcessRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tbp", APIVersion, "TextProcess")
-    return
+	request = &TextProcessRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tbp", APIVersion, "TextProcess")
+	return
 }
 
 func NewTextProcessResponse() (response *TextProcessResponse) {
-    response = &TextProcessResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &TextProcessResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 接收调用侧的文本输入，返回应答文本。
 func (c *Client) TextProcess(request *TextProcessRequest) (response *TextProcessResponse, err error) {
-    if request == nil {
-        request = NewTextProcessRequest()
-    }
-    response = NewTextProcessResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewTextProcessRequest()
+	}
+	response = NewTextProcessResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewTextResetRequest() (request *TextResetRequest) {
-    request = &TextResetRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tbp", APIVersion, "TextReset")
-    return
+	request = &TextResetRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tbp", APIVersion, "TextReset")
+	return
 }
 
 func NewTextResetResponse() (response *TextResetResponse) {
-    response = &TextResetResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &TextResetResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 会话重置接口。
 func (c *Client) TextReset(request *TextResetRequest) (response *TextResetResponse, err error) {
-    if request == nil {
-        request = NewTextResetRequest()
-    }
-    response = NewTextResetResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewTextResetRequest()
+	}
+	response = NewTextResetResponse()
+	err = c.Send(request, response)
+	return
 }

@@ -15,9 +15,9 @@
 package v20190118
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AlgorithmInfo struct {
@@ -43,12 +43,12 @@ type AsymmetricRsaDecryptRequest struct {
 }
 
 func (r *AsymmetricRsaDecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AsymmetricRsaDecryptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AsymmetricRsaDecryptResponse struct {
@@ -67,12 +67,12 @@ type AsymmetricRsaDecryptResponse struct {
 }
 
 func (r *AsymmetricRsaDecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AsymmetricRsaDecryptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AsymmetricSm2DecryptRequest struct {
@@ -86,12 +86,12 @@ type AsymmetricSm2DecryptRequest struct {
 }
 
 func (r *AsymmetricSm2DecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AsymmetricSm2DecryptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AsymmetricSm2DecryptResponse struct {
@@ -110,12 +110,12 @@ type AsymmetricSm2DecryptResponse struct {
 }
 
 func (r *AsymmetricSm2DecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AsymmetricSm2DecryptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelKeyDeletionRequest struct {
@@ -126,12 +126,12 @@ type CancelKeyDeletionRequest struct {
 }
 
 func (r *CancelKeyDeletionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelKeyDeletionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelKeyDeletionResponse struct {
@@ -147,12 +147,12 @@ type CancelKeyDeletionResponse struct {
 }
 
 func (r *CancelKeyDeletionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelKeyDeletionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateKeyRequest struct {
@@ -175,12 +175,12 @@ type CreateKeyRequest struct {
 }
 
 func (r *CreateKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateKeyResponse struct {
@@ -197,7 +197,7 @@ type CreateKeyResponse struct {
 		CreateTime *uint64 `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// CMK的描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// CMK的状态
@@ -207,11 +207,11 @@ type CreateKeyResponse struct {
 		KeyUsage *string `json:"KeyUsage,omitempty" name:"KeyUsage"`
 
 		// 标签操作的返回码. 0: 成功；1: 内部错误；2: 业务处理错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagCode *uint64 `json:"TagCode,omitempty" name:"TagCode"`
 
 		// 标签操作的返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagMsg *string `json:"TagMsg,omitempty" name:"TagMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -220,12 +220,12 @@ type CreateKeyResponse struct {
 }
 
 func (r *CreateKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWhiteBoxKeyRequest struct {
@@ -245,12 +245,12 @@ type CreateWhiteBoxKeyRequest struct {
 }
 
 func (r *CreateWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWhiteBoxKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateWhiteBoxKeyResponse struct {
@@ -267,11 +267,11 @@ type CreateWhiteBoxKeyResponse struct {
 		KeyId *string `json:"KeyId,omitempty" name:"KeyId"`
 
 		// 标签操作的返回码. 0: 成功；1: 内部错误；2: 业务处理错误
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagCode *uint64 `json:"TagCode,omitempty" name:"TagCode"`
 
 		// 标签操作的返回信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TagMsg *string `json:"TagMsg,omitempty" name:"TagMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -280,12 +280,12 @@ type CreateWhiteBoxKeyResponse struct {
 }
 
 func (r *CreateWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateWhiteBoxKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DecryptRequest struct {
@@ -299,12 +299,12 @@ type DecryptRequest struct {
 }
 
 func (r *DecryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DecryptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DecryptResponse struct {
@@ -323,12 +323,12 @@ type DecryptResponse struct {
 }
 
 func (r *DecryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DecryptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImportedKeyMaterialRequest struct {
@@ -339,12 +339,12 @@ type DeleteImportedKeyMaterialRequest struct {
 }
 
 func (r *DeleteImportedKeyMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImportedKeyMaterialRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteImportedKeyMaterialResponse struct {
@@ -357,12 +357,12 @@ type DeleteImportedKeyMaterialResponse struct {
 }
 
 func (r *DeleteImportedKeyMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteImportedKeyMaterialResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWhiteBoxKeyRequest struct {
@@ -373,12 +373,12 @@ type DeleteWhiteBoxKeyRequest struct {
 }
 
 func (r *DeleteWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWhiteBoxKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteWhiteBoxKeyResponse struct {
@@ -391,12 +391,12 @@ type DeleteWhiteBoxKeyResponse struct {
 }
 
 func (r *DeleteWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteWhiteBoxKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeyRequest struct {
@@ -407,12 +407,12 @@ type DescribeKeyRequest struct {
 }
 
 func (r *DescribeKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeyResponse struct {
@@ -420,7 +420,7 @@ type DescribeKeyResponse struct {
 	Response *struct {
 
 		// 密钥属性信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadata *KeyMetadata `json:"KeyMetadata,omitempty" name:"KeyMetadata"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -429,12 +429,12 @@ type DescribeKeyResponse struct {
 }
 
 func (r *DescribeKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeysRequest struct {
@@ -445,12 +445,12 @@ type DescribeKeysRequest struct {
 }
 
 func (r *DescribeKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeysResponse struct {
@@ -458,7 +458,7 @@ type DescribeKeysResponse struct {
 	Response *struct {
 
 		// 返回的属性信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadatas []*KeyMetadata `json:"KeyMetadatas,omitempty" name:"KeyMetadatas" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -467,12 +467,12 @@ type DescribeKeysResponse struct {
 }
 
 func (r *DescribeKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxDecryptKeyRequest struct {
@@ -483,12 +483,12 @@ type DescribeWhiteBoxDecryptKeyRequest struct {
 }
 
 func (r *DescribeWhiteBoxDecryptKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxDecryptKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxDecryptKeyResponse struct {
@@ -504,12 +504,12 @@ type DescribeWhiteBoxDecryptKeyResponse struct {
 }
 
 func (r *DescribeWhiteBoxDecryptKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxDecryptKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxKeyDetailsRequest struct {
@@ -520,12 +520,12 @@ type DescribeWhiteBoxKeyDetailsRequest struct {
 }
 
 func (r *DescribeWhiteBoxKeyDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxKeyDetailsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxKeyDetailsResponse struct {
@@ -541,12 +541,12 @@ type DescribeWhiteBoxKeyDetailsResponse struct {
 }
 
 func (r *DescribeWhiteBoxKeyDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxKeyDetailsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxKeyRequest struct {
@@ -557,12 +557,12 @@ type DescribeWhiteBoxKeyRequest struct {
 }
 
 func (r *DescribeWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxKeyResponse struct {
@@ -578,12 +578,12 @@ type DescribeWhiteBoxKeyResponse struct {
 }
 
 func (r *DescribeWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxServiceStatusRequest struct {
@@ -591,12 +591,12 @@ type DescribeWhiteBoxServiceStatusRequest struct {
 }
 
 func (r *DescribeWhiteBoxServiceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxServiceStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeWhiteBoxServiceStatusResponse struct {
@@ -612,12 +612,12 @@ type DescribeWhiteBoxServiceStatusResponse struct {
 }
 
 func (r *DescribeWhiteBoxServiceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeWhiteBoxServiceStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeyRequest struct {
@@ -628,12 +628,12 @@ type DisableKeyRequest struct {
 }
 
 func (r *DisableKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeyResponse struct {
@@ -646,12 +646,12 @@ type DisableKeyResponse struct {
 }
 
 func (r *DisableKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeyRotationRequest struct {
@@ -662,12 +662,12 @@ type DisableKeyRotationRequest struct {
 }
 
 func (r *DisableKeyRotationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeyRotationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeyRotationResponse struct {
@@ -680,12 +680,12 @@ type DisableKeyRotationResponse struct {
 }
 
 func (r *DisableKeyRotationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeyRotationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeysRequest struct {
@@ -696,12 +696,12 @@ type DisableKeysRequest struct {
 }
 
 func (r *DisableKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableKeysResponse struct {
@@ -714,12 +714,12 @@ type DisableKeysResponse struct {
 }
 
 func (r *DisableKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWhiteBoxKeyRequest struct {
@@ -730,12 +730,12 @@ type DisableWhiteBoxKeyRequest struct {
 }
 
 func (r *DisableWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWhiteBoxKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWhiteBoxKeyResponse struct {
@@ -748,12 +748,12 @@ type DisableWhiteBoxKeyResponse struct {
 }
 
 func (r *DisableWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWhiteBoxKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWhiteBoxKeysRequest struct {
@@ -764,12 +764,12 @@ type DisableWhiteBoxKeysRequest struct {
 }
 
 func (r *DisableWhiteBoxKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWhiteBoxKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableWhiteBoxKeysResponse struct {
@@ -782,12 +782,12 @@ type DisableWhiteBoxKeysResponse struct {
 }
 
 func (r *DisableWhiteBoxKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableWhiteBoxKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeyRequest struct {
@@ -798,12 +798,12 @@ type EnableKeyRequest struct {
 }
 
 func (r *EnableKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeyResponse struct {
@@ -816,12 +816,12 @@ type EnableKeyResponse struct {
 }
 
 func (r *EnableKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeyRotationRequest struct {
@@ -832,12 +832,12 @@ type EnableKeyRotationRequest struct {
 }
 
 func (r *EnableKeyRotationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeyRotationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeyRotationResponse struct {
@@ -850,12 +850,12 @@ type EnableKeyRotationResponse struct {
 }
 
 func (r *EnableKeyRotationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeyRotationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeysRequest struct {
@@ -866,12 +866,12 @@ type EnableKeysRequest struct {
 }
 
 func (r *EnableKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableKeysResponse struct {
@@ -884,12 +884,12 @@ type EnableKeysResponse struct {
 }
 
 func (r *EnableKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableWhiteBoxKeyRequest struct {
@@ -900,12 +900,12 @@ type EnableWhiteBoxKeyRequest struct {
 }
 
 func (r *EnableWhiteBoxKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWhiteBoxKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableWhiteBoxKeyResponse struct {
@@ -918,12 +918,12 @@ type EnableWhiteBoxKeyResponse struct {
 }
 
 func (r *EnableWhiteBoxKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWhiteBoxKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableWhiteBoxKeysRequest struct {
@@ -934,12 +934,12 @@ type EnableWhiteBoxKeysRequest struct {
 }
 
 func (r *EnableWhiteBoxKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWhiteBoxKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableWhiteBoxKeysResponse struct {
@@ -952,12 +952,12 @@ type EnableWhiteBoxKeysResponse struct {
 }
 
 func (r *EnableWhiteBoxKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableWhiteBoxKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EncryptByWhiteBoxRequest struct {
@@ -974,12 +974,12 @@ type EncryptByWhiteBoxRequest struct {
 }
 
 func (r *EncryptByWhiteBoxRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EncryptByWhiteBoxRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EncryptByWhiteBoxResponse struct {
@@ -998,12 +998,12 @@ type EncryptByWhiteBoxResponse struct {
 }
 
 func (r *EncryptByWhiteBoxResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EncryptByWhiteBoxResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EncryptRequest struct {
@@ -1020,12 +1020,12 @@ type EncryptRequest struct {
 }
 
 func (r *EncryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EncryptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EncryptResponse struct {
@@ -1044,12 +1044,12 @@ type EncryptResponse struct {
 }
 
 func (r *EncryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EncryptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GenerateDataKeyRequest struct {
@@ -1069,12 +1069,12 @@ type GenerateDataKeyRequest struct {
 }
 
 func (r *GenerateDataKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GenerateDataKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GenerateDataKeyResponse struct {
@@ -1096,12 +1096,12 @@ type GenerateDataKeyResponse struct {
 }
 
 func (r *GenerateDataKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GenerateDataKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GenerateRandomRequest struct {
@@ -1112,12 +1112,12 @@ type GenerateRandomRequest struct {
 }
 
 func (r *GenerateRandomRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GenerateRandomRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GenerateRandomResponse struct {
@@ -1133,12 +1133,12 @@ type GenerateRandomResponse struct {
 }
 
 func (r *GenerateRandomResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GenerateRandomResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetKeyRotationStatusRequest struct {
@@ -1149,12 +1149,12 @@ type GetKeyRotationStatusRequest struct {
 }
 
 func (r *GetKeyRotationStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetKeyRotationStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetKeyRotationStatusResponse struct {
@@ -1170,12 +1170,12 @@ type GetKeyRotationStatusResponse struct {
 }
 
 func (r *GetKeyRotationStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetKeyRotationStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetParametersForImportRequest struct {
@@ -1192,12 +1192,12 @@ type GetParametersForImportRequest struct {
 }
 
 func (r *GetParametersForImportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetParametersForImportRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetParametersForImportResponse struct {
@@ -1222,12 +1222,12 @@ type GetParametersForImportResponse struct {
 }
 
 func (r *GetParametersForImportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetParametersForImportResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPublicKeyRequest struct {
@@ -1238,12 +1238,12 @@ type GetPublicKeyRequest struct {
 }
 
 func (r *GetPublicKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPublicKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPublicKeyResponse struct {
@@ -1265,12 +1265,12 @@ type GetPublicKeyResponse struct {
 }
 
 func (r *GetPublicKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPublicKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetServiceStatusRequest struct {
@@ -1278,12 +1278,12 @@ type GetServiceStatusRequest struct {
 }
 
 func (r *GetServiceStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetServiceStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetServiceStatusResponse struct {
@@ -1294,7 +1294,7 @@ type GetServiceStatusResponse struct {
 		ServiceEnabled *bool `json:"ServiceEnabled,omitempty" name:"ServiceEnabled"`
 
 		// 服务不可用类型： 0-未购买，1-正常， 2-欠费停服， 3-资源释放
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InvalidType *int64 `json:"InvalidType,omitempty" name:"InvalidType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1303,12 +1303,12 @@ type GetServiceStatusResponse struct {
 }
 
 func (r *GetServiceStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetServiceStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImportKeyMaterialRequest struct {
@@ -1328,12 +1328,12 @@ type ImportKeyMaterialRequest struct {
 }
 
 func (r *ImportKeyMaterialRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImportKeyMaterialRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImportKeyMaterialResponse struct {
@@ -1346,12 +1346,12 @@ type ImportKeyMaterialResponse struct {
 }
 
 func (r *ImportKeyMaterialResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImportKeyMaterialResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Key struct {
@@ -1416,12 +1416,12 @@ type ListAlgorithmsRequest struct {
 }
 
 func (r *ListAlgorithmsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAlgorithmsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListAlgorithmsResponse struct {
@@ -1440,12 +1440,12 @@ type ListAlgorithmsResponse struct {
 }
 
 func (r *ListAlgorithmsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListAlgorithmsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListKeyDetailRequest struct {
@@ -1477,12 +1477,12 @@ type ListKeyDetailRequest struct {
 }
 
 func (r *ListKeyDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListKeyDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListKeyDetailResponse struct {
@@ -1493,7 +1493,7 @@ type ListKeyDetailResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 返回的属性信息列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		KeyMetadatas []*KeyMetadata `json:"KeyMetadatas,omitempty" name:"KeyMetadatas" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1502,12 +1502,12 @@ type ListKeyDetailResponse struct {
 }
 
 func (r *ListKeyDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListKeyDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListKeysRequest struct {
@@ -1524,12 +1524,12 @@ type ListKeysRequest struct {
 }
 
 func (r *ListKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListKeysResponse struct {
@@ -1537,7 +1537,7 @@ type ListKeysResponse struct {
 	Response *struct {
 
 		// CMK列表数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Keys []*Key `json:"Keys,omitempty" name:"Keys" list`
 
 		// CMK的总数量
@@ -1549,12 +1549,12 @@ type ListKeysResponse struct {
 }
 
 func (r *ListKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReEncryptRequest struct {
@@ -1574,12 +1574,12 @@ type ReEncryptRequest struct {
 }
 
 func (r *ReEncryptRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReEncryptRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReEncryptResponse struct {
@@ -1604,12 +1604,12 @@ type ReEncryptResponse struct {
 }
 
 func (r *ReEncryptResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReEncryptResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScheduleKeyDeletionRequest struct {
@@ -1623,12 +1623,12 @@ type ScheduleKeyDeletionRequest struct {
 }
 
 func (r *ScheduleKeyDeletionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScheduleKeyDeletionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScheduleKeyDeletionResponse struct {
@@ -1647,12 +1647,12 @@ type ScheduleKeyDeletionResponse struct {
 }
 
 func (r *ScheduleKeyDeletionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScheduleKeyDeletionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Tag struct {
@@ -1675,12 +1675,12 @@ type UpdateAliasRequest struct {
 }
 
 func (r *UpdateAliasRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAliasRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateAliasResponse struct {
@@ -1693,12 +1693,12 @@ type UpdateAliasResponse struct {
 }
 
 func (r *UpdateAliasResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateAliasResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateKeyDescriptionRequest struct {
@@ -1712,12 +1712,12 @@ type UpdateKeyDescriptionRequest struct {
 }
 
 func (r *UpdateKeyDescriptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateKeyDescriptionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateKeyDescriptionResponse struct {
@@ -1730,12 +1730,12 @@ type UpdateKeyDescriptionResponse struct {
 }
 
 func (r *UpdateKeyDescriptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateKeyDescriptionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WhiteboxKeyInfo struct {

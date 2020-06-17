@@ -15,9 +15,9 @@
 package v20180801
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddDelayLiveStreamRequest struct {
@@ -43,12 +43,12 @@ type AddDelayLiveStreamRequest struct {
 }
 
 func (r *AddDelayLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddDelayLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddDelayLiveStreamResponse struct {
@@ -61,12 +61,12 @@ type AddDelayLiveStreamResponse struct {
 }
 
 func (r *AddDelayLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddDelayLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddLiveDomainRequest struct {
@@ -101,12 +101,12 @@ type AddLiveDomainRequest struct {
 }
 
 func (r *AddLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddLiveDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddLiveDomainResponse struct {
@@ -119,12 +119,12 @@ type AddLiveDomainResponse struct {
 }
 
 func (r *AddLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddLiveDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddLiveWatermarkRequest struct {
@@ -150,12 +150,12 @@ type AddLiveWatermarkRequest struct {
 }
 
 func (r *AddLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddLiveWatermarkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddLiveWatermarkResponse struct {
@@ -171,12 +171,12 @@ type AddLiveWatermarkResponse struct {
 }
 
 func (r *AddLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddLiveWatermarkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BillDataInfo struct {
@@ -208,12 +208,12 @@ type BindLiveDomainCertRequest struct {
 }
 
 func (r *BindLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindLiveDomainCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BindLiveDomainCertResponse struct {
@@ -226,12 +226,12 @@ type BindLiveDomainCertResponse struct {
 }
 
 func (r *BindLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BindLiveDomainCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CallBackRuleInfo struct {
@@ -293,12 +293,12 @@ type CancelCommonMixStreamRequest struct {
 }
 
 func (r *CancelCommonMixStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelCommonMixStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelCommonMixStreamResponse struct {
@@ -311,12 +311,12 @@ type CancelCommonMixStreamResponse struct {
 }
 
 func (r *CancelCommonMixStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelCommonMixStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CdnPlayStatData struct {
@@ -432,7 +432,7 @@ type CommonMixLayoutParams struct {
 	// 不填默认为0。
 	// 0表示输入流为音视频。
 	// 2表示输入流为图片。
-	// 3表示输入流为画布。 
+	// 3表示输入流为画布。
 	// 4表示输入流为音频。
 	// 5表示输入流为纯视频。
 	InputType *int64 `json:"InputType,omitempty" name:"InputType"`
@@ -455,7 +455,7 @@ type CommonMixLayoutParams struct {
 	// 像素：[0，2000]
 	// 百分比：[0.01，0.99]
 	// 不填默认为0。
-	// 相对于大主播背景画面左上角的横向偏移。 
+	// 相对于大主播背景画面左上角的横向偏移。
 	// 使用百分比时，期望输出为（百分比 * 背景宽）。
 	LocationX *float64 `json:"LocationX,omitempty" name:"LocationX"`
 
@@ -463,7 +463,7 @@ type CommonMixLayoutParams struct {
 	// 像素：[0，2000]
 	// 百分比：[0.01，0.99]
 	// 不填默认为0。
-	// 相对于大主播背景画面左上角的纵向偏移。 
+	// 相对于大主播背景画面左上角的纵向偏移。
 	// 使用百分比时，期望输出为（百分比 * 背景宽）
 	LocationY *float64 `json:"LocationY,omitempty" name:"LocationY"`
 
@@ -557,12 +557,12 @@ type CreateCommonMixStreamRequest struct {
 }
 
 func (r *CreateCommonMixStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCommonMixStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCommonMixStreamResponse struct {
@@ -575,12 +575,12 @@ type CreateCommonMixStreamResponse struct {
 }
 
 func (r *CreateCommonMixStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCommonMixStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCallbackRuleRequest struct {
@@ -597,12 +597,12 @@ type CreateLiveCallbackRuleRequest struct {
 }
 
 func (r *CreateLiveCallbackRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCallbackRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCallbackRuleResponse struct {
@@ -615,12 +615,12 @@ type CreateLiveCallbackRuleResponse struct {
 }
 
 func (r *CreateLiveCallbackRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCallbackRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCallbackTemplateRequest struct {
@@ -662,12 +662,12 @@ type CreateLiveCallbackTemplateRequest struct {
 }
 
 func (r *CreateLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCallbackTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCallbackTemplateResponse struct {
@@ -683,12 +683,12 @@ type CreateLiveCallbackTemplateResponse struct {
 }
 
 func (r *CreateLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCallbackTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCertRequest struct {
@@ -716,12 +716,12 @@ type CreateLiveCertRequest struct {
 }
 
 func (r *CreateLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveCertResponse struct {
@@ -737,12 +737,12 @@ type CreateLiveCertResponse struct {
 }
 
 func (r *CreateLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordRequest struct {
@@ -797,12 +797,12 @@ type CreateLiveRecordRequest struct {
 }
 
 func (r *CreateLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordResponse struct {
@@ -818,12 +818,12 @@ type CreateLiveRecordResponse struct {
 }
 
 func (r *CreateLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordRuleRequest struct {
@@ -844,12 +844,12 @@ type CreateLiveRecordRuleRequest struct {
 }
 
 func (r *CreateLiveRecordRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordRuleResponse struct {
@@ -862,12 +862,12 @@ type CreateLiveRecordRuleResponse struct {
 }
 
 func (r *CreateLiveRecordRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordTemplateRequest struct {
@@ -904,12 +904,12 @@ type CreateLiveRecordTemplateRequest struct {
 }
 
 func (r *CreateLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveRecordTemplateResponse struct {
@@ -925,12 +925,12 @@ type CreateLiveRecordTemplateResponse struct {
 }
 
 func (r *CreateLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveRecordTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveSnapshotRuleRequest struct {
@@ -951,12 +951,12 @@ type CreateLiveSnapshotRuleRequest struct {
 }
 
 func (r *CreateLiveSnapshotRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveSnapshotRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveSnapshotRuleResponse struct {
@@ -969,12 +969,12 @@ type CreateLiveSnapshotRuleResponse struct {
 }
 
 func (r *CreateLiveSnapshotRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveSnapshotRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveSnapshotTemplateRequest struct {
@@ -1020,12 +1020,12 @@ type CreateLiveSnapshotTemplateRequest struct {
 }
 
 func (r *CreateLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveSnapshotTemplateResponse struct {
@@ -1041,12 +1041,12 @@ type CreateLiveSnapshotTemplateResponse struct {
 }
 
 func (r *CreateLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveTranscodeRuleRequest struct {
@@ -1066,12 +1066,12 @@ type CreateLiveTranscodeRuleRequest struct {
 }
 
 func (r *CreateLiveTranscodeRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveTranscodeRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveTranscodeRuleResponse struct {
@@ -1084,12 +1084,12 @@ type CreateLiveTranscodeRuleResponse struct {
 }
 
 func (r *CreateLiveTranscodeRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveTranscodeRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveTranscodeTemplateRequest struct {
@@ -1157,12 +1157,12 @@ type CreateLiveTranscodeTemplateRequest struct {
 }
 
 func (r *CreateLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveTranscodeTemplateResponse struct {
@@ -1178,12 +1178,12 @@ type CreateLiveTranscodeTemplateResponse struct {
 }
 
 func (r *CreateLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveWatermarkRuleRequest struct {
@@ -1203,12 +1203,12 @@ type CreateLiveWatermarkRuleRequest struct {
 }
 
 func (r *CreateLiveWatermarkRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveWatermarkRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLiveWatermarkRuleResponse struct {
@@ -1221,12 +1221,12 @@ type CreateLiveWatermarkRuleResponse struct {
 }
 
 func (r *CreateLiveWatermarkRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLiveWatermarkRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePullStreamConfigRequest struct {
@@ -1275,12 +1275,12 @@ type CreatePullStreamConfigRequest struct {
 }
 
 func (r *CreatePullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePullStreamConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePullStreamConfigResponse struct {
@@ -1296,12 +1296,12 @@ type CreatePullStreamConfigResponse struct {
 }
 
 func (r *CreatePullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePullStreamConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DayStreamPlayInfo struct {
@@ -1327,7 +1327,7 @@ type DelayInfo struct {
 	// 推流域名。
 	DomainName *string `json:"DomainName,omitempty" name:"DomainName"`
 
-	// 推流路径，与推流和播放地址中的 
+	// 推流路径，与推流和播放地址中的
 	//  AppName 保持一致，默认为 live。
 	AppName *string `json:"AppName,omitempty" name:"AppName"`
 
@@ -1364,12 +1364,12 @@ type DeleteLiveCallbackRuleRequest struct {
 }
 
 func (r *DeleteLiveCallbackRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCallbackRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveCallbackRuleResponse struct {
@@ -1382,12 +1382,12 @@ type DeleteLiveCallbackRuleResponse struct {
 }
 
 func (r *DeleteLiveCallbackRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCallbackRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveCallbackTemplateRequest struct {
@@ -1400,12 +1400,12 @@ type DeleteLiveCallbackTemplateRequest struct {
 }
 
 func (r *DeleteLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCallbackTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveCallbackTemplateResponse struct {
@@ -1418,12 +1418,12 @@ type DeleteLiveCallbackTemplateResponse struct {
 }
 
 func (r *DeleteLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCallbackTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveCertRequest struct {
@@ -1434,12 +1434,12 @@ type DeleteLiveCertRequest struct {
 }
 
 func (r *DeleteLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveCertResponse struct {
@@ -1452,12 +1452,12 @@ type DeleteLiveCertResponse struct {
 }
 
 func (r *DeleteLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveDomainRequest struct {
@@ -1471,12 +1471,12 @@ type DeleteLiveDomainRequest struct {
 }
 
 func (r *DeleteLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveDomainResponse struct {
@@ -1489,12 +1489,12 @@ type DeleteLiveDomainResponse struct {
 }
 
 func (r *DeleteLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordRequest struct {
@@ -1509,12 +1509,12 @@ type DeleteLiveRecordRequest struct {
 }
 
 func (r *DeleteLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordResponse struct {
@@ -1527,12 +1527,12 @@ type DeleteLiveRecordResponse struct {
 }
 
 func (r *DeleteLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordRuleRequest struct {
@@ -1552,12 +1552,12 @@ type DeleteLiveRecordRuleRequest struct {
 }
 
 func (r *DeleteLiveRecordRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordRuleResponse struct {
@@ -1570,12 +1570,12 @@ type DeleteLiveRecordRuleResponse struct {
 }
 
 func (r *DeleteLiveRecordRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordTemplateRequest struct {
@@ -1586,12 +1586,12 @@ type DeleteLiveRecordTemplateRequest struct {
 }
 
 func (r *DeleteLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveRecordTemplateResponse struct {
@@ -1604,12 +1604,12 @@ type DeleteLiveRecordTemplateResponse struct {
 }
 
 func (r *DeleteLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveRecordTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveSnapshotRuleRequest struct {
@@ -1626,12 +1626,12 @@ type DeleteLiveSnapshotRuleRequest struct {
 }
 
 func (r *DeleteLiveSnapshotRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveSnapshotRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveSnapshotRuleResponse struct {
@@ -1644,12 +1644,12 @@ type DeleteLiveSnapshotRuleResponse struct {
 }
 
 func (r *DeleteLiveSnapshotRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveSnapshotRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveSnapshotTemplateRequest struct {
@@ -1662,12 +1662,12 @@ type DeleteLiveSnapshotTemplateRequest struct {
 }
 
 func (r *DeleteLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveSnapshotTemplateResponse struct {
@@ -1680,12 +1680,12 @@ type DeleteLiveSnapshotTemplateResponse struct {
 }
 
 func (r *DeleteLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveTranscodeRuleRequest struct {
@@ -1705,12 +1705,12 @@ type DeleteLiveTranscodeRuleRequest struct {
 }
 
 func (r *DeleteLiveTranscodeRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveTranscodeRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveTranscodeRuleResponse struct {
@@ -1723,12 +1723,12 @@ type DeleteLiveTranscodeRuleResponse struct {
 }
 
 func (r *DeleteLiveTranscodeRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveTranscodeRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveTranscodeTemplateRequest struct {
@@ -1741,12 +1741,12 @@ type DeleteLiveTranscodeTemplateRequest struct {
 }
 
 func (r *DeleteLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveTranscodeTemplateResponse struct {
@@ -1759,12 +1759,12 @@ type DeleteLiveTranscodeTemplateResponse struct {
 }
 
 func (r *DeleteLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveWatermarkRequest struct {
@@ -1776,12 +1776,12 @@ type DeleteLiveWatermarkRequest struct {
 }
 
 func (r *DeleteLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveWatermarkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveWatermarkResponse struct {
@@ -1794,12 +1794,12 @@ type DeleteLiveWatermarkResponse struct {
 }
 
 func (r *DeleteLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveWatermarkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveWatermarkRuleRequest struct {
@@ -1816,12 +1816,12 @@ type DeleteLiveWatermarkRuleRequest struct {
 }
 
 func (r *DeleteLiveWatermarkRuleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveWatermarkRuleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLiveWatermarkRuleResponse struct {
@@ -1834,12 +1834,12 @@ type DeleteLiveWatermarkRuleResponse struct {
 }
 
 func (r *DeleteLiveWatermarkRuleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLiveWatermarkRuleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePullStreamConfigRequest struct {
@@ -1852,12 +1852,12 @@ type DeletePullStreamConfigRequest struct {
 }
 
 func (r *DeletePullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePullStreamConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePullStreamConfigResponse struct {
@@ -1870,12 +1870,12 @@ type DeletePullStreamConfigResponse struct {
 }
 
 func (r *DeletePullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePullStreamConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAllStreamPlayInfoListRequest struct {
@@ -1886,12 +1886,12 @@ type DescribeAllStreamPlayInfoListRequest struct {
 }
 
 func (r *DescribeAllStreamPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAllStreamPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAllStreamPlayInfoListResponse struct {
@@ -1910,12 +1910,12 @@ type DescribeAllStreamPlayInfoListResponse struct {
 }
 
 func (r *DescribeAllStreamPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAllStreamPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillBandwidthAndFluxListRequest struct {
@@ -1949,12 +1949,12 @@ type DescribeBillBandwidthAndFluxListRequest struct {
 }
 
 func (r *DescribeBillBandwidthAndFluxListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillBandwidthAndFluxListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillBandwidthAndFluxListResponse struct {
@@ -1985,12 +1985,12 @@ type DescribeBillBandwidthAndFluxListResponse struct {
 }
 
 func (r *DescribeBillBandwidthAndFluxListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillBandwidthAndFluxListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeConcurrentRecordStreamNumRequest struct {
@@ -2016,12 +2016,12 @@ type DescribeConcurrentRecordStreamNumRequest struct {
 }
 
 func (r *DescribeConcurrentRecordStreamNumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeConcurrentRecordStreamNumRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeConcurrentRecordStreamNumResponse struct {
@@ -2037,12 +2037,12 @@ type DescribeConcurrentRecordStreamNumResponse struct {
 }
 
 func (r *DescribeConcurrentRecordStreamNumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeConcurrentRecordStreamNumResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGroupProIspPlayInfoListRequest struct {
@@ -2069,12 +2069,12 @@ type DescribeGroupProIspPlayInfoListRequest struct {
 }
 
 func (r *DescribeGroupProIspPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGroupProIspPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGroupProIspPlayInfoListResponse struct {
@@ -2090,12 +2090,12 @@ type DescribeGroupProIspPlayInfoListResponse struct {
 }
 
 func (r *DescribeGroupProIspPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGroupProIspPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHttpStatusInfoListRequest struct {
@@ -2116,12 +2116,12 @@ type DescribeHttpStatusInfoListRequest struct {
 }
 
 func (r *DescribeHttpStatusInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHttpStatusInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeHttpStatusInfoListResponse struct {
@@ -2137,12 +2137,12 @@ type DescribeHttpStatusInfoListResponse struct {
 }
 
 func (r *DescribeHttpStatusInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeHttpStatusInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackRulesRequest struct {
@@ -2150,12 +2150,12 @@ type DescribeLiveCallbackRulesRequest struct {
 }
 
 func (r *DescribeLiveCallbackRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackRulesResponse struct {
@@ -2171,12 +2171,12 @@ type DescribeLiveCallbackRulesResponse struct {
 }
 
 func (r *DescribeLiveCallbackRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackTemplateRequest struct {
@@ -2189,12 +2189,12 @@ type DescribeLiveCallbackTemplateRequest struct {
 }
 
 func (r *DescribeLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackTemplateResponse struct {
@@ -2210,12 +2210,12 @@ type DescribeLiveCallbackTemplateResponse struct {
 }
 
 func (r *DescribeLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackTemplatesRequest struct {
@@ -2223,12 +2223,12 @@ type DescribeLiveCallbackTemplatesRequest struct {
 }
 
 func (r *DescribeLiveCallbackTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCallbackTemplatesResponse struct {
@@ -2244,12 +2244,12 @@ type DescribeLiveCallbackTemplatesResponse struct {
 }
 
 func (r *DescribeLiveCallbackTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCallbackTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCertRequest struct {
@@ -2260,12 +2260,12 @@ type DescribeLiveCertRequest struct {
 }
 
 func (r *DescribeLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCertResponse struct {
@@ -2281,12 +2281,12 @@ type DescribeLiveCertResponse struct {
 }
 
 func (r *DescribeLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCertsRequest struct {
@@ -2294,12 +2294,12 @@ type DescribeLiveCertsRequest struct {
 }
 
 func (r *DescribeLiveCertsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCertsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveCertsResponse struct {
@@ -2315,12 +2315,12 @@ type DescribeLiveCertsResponse struct {
 }
 
 func (r *DescribeLiveCertsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveCertsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDelayInfoListRequest struct {
@@ -2328,12 +2328,12 @@ type DescribeLiveDelayInfoListRequest struct {
 }
 
 func (r *DescribeLiveDelayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDelayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDelayInfoListResponse struct {
@@ -2349,12 +2349,12 @@ type DescribeLiveDelayInfoListResponse struct {
 }
 
 func (r *DescribeLiveDelayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDelayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainCertRequest struct {
@@ -2365,12 +2365,12 @@ type DescribeLiveDomainCertRequest struct {
 }
 
 func (r *DescribeLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainCertResponse struct {
@@ -2386,12 +2386,12 @@ type DescribeLiveDomainCertResponse struct {
 }
 
 func (r *DescribeLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainPlayInfoListRequest struct {
@@ -2402,12 +2402,12 @@ type DescribeLiveDomainPlayInfoListRequest struct {
 }
 
 func (r *DescribeLiveDomainPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainPlayInfoListResponse struct {
@@ -2438,12 +2438,12 @@ type DescribeLiveDomainPlayInfoListResponse struct {
 }
 
 func (r *DescribeLiveDomainPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainRequest struct {
@@ -2454,12 +2454,12 @@ type DescribeLiveDomainRequest struct {
 }
 
 func (r *DescribeLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainResponse struct {
@@ -2475,12 +2475,12 @@ type DescribeLiveDomainResponse struct {
 }
 
 func (r *DescribeLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainsRequest struct {
@@ -2506,12 +2506,12 @@ type DescribeLiveDomainsRequest struct {
 }
 
 func (r *DescribeLiveDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveDomainsResponse struct {
@@ -2530,12 +2530,12 @@ type DescribeLiveDomainsResponse struct {
 }
 
 func (r *DescribeLiveDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveDomainsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveForbidStreamListRequest struct {
@@ -2544,19 +2544,19 @@ type DescribeLiveForbidStreamListRequest struct {
 	// 取得第几页，默认1。
 	PageNum *int64 `json:"PageNum,omitempty" name:"PageNum"`
 
-	// 每页大小，最大100。 
+	// 每页大小，最大100。
 	// 取值：1~100之前的任意整数。
 	// 默认值：10。
 	PageSize *int64 `json:"PageSize,omitempty" name:"PageSize"`
 }
 
 func (r *DescribeLiveForbidStreamListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveForbidStreamListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveForbidStreamListResponse struct {
@@ -2584,12 +2584,12 @@ type DescribeLiveForbidStreamListResponse struct {
 }
 
 func (r *DescribeLiveForbidStreamListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveForbidStreamListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePackageInfoRequest struct {
@@ -2602,12 +2602,12 @@ type DescribeLivePackageInfoRequest struct {
 }
 
 func (r *DescribeLivePackageInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePackageInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePackageInfoResponse struct {
@@ -2615,7 +2615,7 @@ type DescribeLivePackageInfoResponse struct {
 	Response *struct {
 
 		// 套餐包信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LivePackageInfoList []*LivePackageInfo `json:"LivePackageInfoList,omitempty" name:"LivePackageInfoList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -2624,12 +2624,12 @@ type DescribeLivePackageInfoResponse struct {
 }
 
 func (r *DescribeLivePackageInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePackageInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePlayAuthKeyRequest struct {
@@ -2640,12 +2640,12 @@ type DescribeLivePlayAuthKeyRequest struct {
 }
 
 func (r *DescribeLivePlayAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePlayAuthKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePlayAuthKeyResponse struct {
@@ -2661,12 +2661,12 @@ type DescribeLivePlayAuthKeyResponse struct {
 }
 
 func (r *DescribeLivePlayAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePlayAuthKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePushAuthKeyRequest struct {
@@ -2677,12 +2677,12 @@ type DescribeLivePushAuthKeyRequest struct {
 }
 
 func (r *DescribeLivePushAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePushAuthKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLivePushAuthKeyResponse struct {
@@ -2698,12 +2698,12 @@ type DescribeLivePushAuthKeyResponse struct {
 }
 
 func (r *DescribeLivePushAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLivePushAuthKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordRulesRequest struct {
@@ -2711,12 +2711,12 @@ type DescribeLiveRecordRulesRequest struct {
 }
 
 func (r *DescribeLiveRecordRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordRulesResponse struct {
@@ -2732,12 +2732,12 @@ type DescribeLiveRecordRulesResponse struct {
 }
 
 func (r *DescribeLiveRecordRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordTemplateRequest struct {
@@ -2748,12 +2748,12 @@ type DescribeLiveRecordTemplateRequest struct {
 }
 
 func (r *DescribeLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordTemplateResponse struct {
@@ -2769,12 +2769,12 @@ type DescribeLiveRecordTemplateResponse struct {
 }
 
 func (r *DescribeLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordTemplatesRequest struct {
@@ -2787,12 +2787,12 @@ type DescribeLiveRecordTemplatesRequest struct {
 }
 
 func (r *DescribeLiveRecordTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveRecordTemplatesResponse struct {
@@ -2808,12 +2808,12 @@ type DescribeLiveRecordTemplatesResponse struct {
 }
 
 func (r *DescribeLiveRecordTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveRecordTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotRulesRequest struct {
@@ -2821,12 +2821,12 @@ type DescribeLiveSnapshotRulesRequest struct {
 }
 
 func (r *DescribeLiveSnapshotRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotRulesResponse struct {
@@ -2842,12 +2842,12 @@ type DescribeLiveSnapshotRulesResponse struct {
 }
 
 func (r *DescribeLiveSnapshotRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotTemplateRequest struct {
@@ -2859,12 +2859,12 @@ type DescribeLiveSnapshotTemplateRequest struct {
 }
 
 func (r *DescribeLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotTemplateResponse struct {
@@ -2880,12 +2880,12 @@ type DescribeLiveSnapshotTemplateResponse struct {
 }
 
 func (r *DescribeLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotTemplatesRequest struct {
@@ -2893,12 +2893,12 @@ type DescribeLiveSnapshotTemplatesRequest struct {
 }
 
 func (r *DescribeLiveSnapshotTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveSnapshotTemplatesResponse struct {
@@ -2914,18 +2914,18 @@ type DescribeLiveSnapshotTemplatesResponse struct {
 }
 
 func (r *DescribeLiveSnapshotTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveSnapshotTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamEventListRequest struct {
 	*tchttp.BaseRequest
 
-	// 起始时间。 
+	// 起始时间。
 	// UTC 格式，例如：2018-12-29T19:00:00Z。
 	// 支持查询60天内的历史记录。
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
@@ -2975,12 +2975,12 @@ type DescribeLiveStreamEventListRequest struct {
 }
 
 func (r *DescribeLiveStreamEventListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamEventListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamEventListResponse struct {
@@ -3008,12 +3008,12 @@ type DescribeLiveStreamEventListResponse struct {
 }
 
 func (r *DescribeLiveStreamEventListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamEventListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamOnlineListRequest struct {
@@ -3028,7 +3028,7 @@ type DescribeLiveStreamOnlineListRequest struct {
 	// 取得第几页，默认1。
 	PageNum *uint64 `json:"PageNum,omitempty" name:"PageNum"`
 
-	// 每页大小，最大100。 
+	// 每页大小，最大100。
 	// 取值：10~100之间的任意整数。
 	// 默认值：10。
 	PageSize *uint64 `json:"PageSize,omitempty" name:"PageSize"`
@@ -3038,12 +3038,12 @@ type DescribeLiveStreamOnlineListRequest struct {
 }
 
 func (r *DescribeLiveStreamOnlineListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamOnlineListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamOnlineListResponse struct {
@@ -3071,12 +3071,12 @@ type DescribeLiveStreamOnlineListResponse struct {
 }
 
 func (r *DescribeLiveStreamOnlineListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamOnlineListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamPublishedListRequest struct {
@@ -3091,7 +3091,7 @@ type DescribeLiveStreamPublishedListRequest struct {
 	// 注意：EndTime和StartTime相差不可超过30天。
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
 
-	// 起始时间。 
+	// 起始时间。
 	// UTC 格式，例如：2016-06-29T19:00:00Z。
 	// 最长支持查询60天内数据。
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
@@ -3114,12 +3114,12 @@ type DescribeLiveStreamPublishedListRequest struct {
 }
 
 func (r *DescribeLiveStreamPublishedListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamPublishedListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamPublishedListResponse struct {
@@ -3147,12 +3147,12 @@ type DescribeLiveStreamPublishedListResponse struct {
 }
 
 func (r *DescribeLiveStreamPublishedListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamPublishedListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamPushInfoListRequest struct {
@@ -3176,12 +3176,12 @@ type DescribeLiveStreamPushInfoListRequest struct {
 }
 
 func (r *DescribeLiveStreamPushInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamPushInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamPushInfoListResponse struct {
@@ -3209,12 +3209,12 @@ type DescribeLiveStreamPushInfoListResponse struct {
 }
 
 func (r *DescribeLiveStreamPushInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamPushInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamStateRequest struct {
@@ -3231,12 +3231,12 @@ type DescribeLiveStreamStateRequest struct {
 }
 
 func (r *DescribeLiveStreamStateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamStateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveStreamStateResponse struct {
@@ -3244,9 +3244,9 @@ type DescribeLiveStreamStateResponse struct {
 	Response *struct {
 
 		// 流状态，
-	// active：活跃，
-	// inactive：非活跃，
-	// forbid：禁播。
+		// active：活跃，
+		// inactive：非活跃，
+		// forbid：禁播。
 		StreamState *string `json:"StreamState,omitempty" name:"StreamState"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -3255,12 +3255,12 @@ type DescribeLiveStreamStateResponse struct {
 }
 
 func (r *DescribeLiveStreamStateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveStreamStateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeDetailInfoRequest struct {
@@ -3297,12 +3297,12 @@ type DescribeLiveTranscodeDetailInfoRequest struct {
 }
 
 func (r *DescribeLiveTranscodeDetailInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeDetailInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeDetailInfoResponse struct {
@@ -3330,12 +3330,12 @@ type DescribeLiveTranscodeDetailInfoResponse struct {
 }
 
 func (r *DescribeLiveTranscodeDetailInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeDetailInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeRulesRequest struct {
@@ -3343,12 +3343,12 @@ type DescribeLiveTranscodeRulesRequest struct {
 }
 
 func (r *DescribeLiveTranscodeRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeRulesResponse struct {
@@ -3364,12 +3364,12 @@ type DescribeLiveTranscodeRulesResponse struct {
 }
 
 func (r *DescribeLiveTranscodeRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeTemplateRequest struct {
@@ -3381,12 +3381,12 @@ type DescribeLiveTranscodeTemplateRequest struct {
 }
 
 func (r *DescribeLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeTemplateResponse struct {
@@ -3402,12 +3402,12 @@ type DescribeLiveTranscodeTemplateResponse struct {
 }
 
 func (r *DescribeLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeTemplatesRequest struct {
@@ -3415,12 +3415,12 @@ type DescribeLiveTranscodeTemplatesRequest struct {
 }
 
 func (r *DescribeLiveTranscodeTemplatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeTemplatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveTranscodeTemplatesResponse struct {
@@ -3436,12 +3436,12 @@ type DescribeLiveTranscodeTemplatesResponse struct {
 }
 
 func (r *DescribeLiveTranscodeTemplatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveTranscodeTemplatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarkRequest struct {
@@ -3452,12 +3452,12 @@ type DescribeLiveWatermarkRequest struct {
 }
 
 func (r *DescribeLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarkResponse struct {
@@ -3473,12 +3473,12 @@ type DescribeLiveWatermarkResponse struct {
 }
 
 func (r *DescribeLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarkRulesRequest struct {
@@ -3486,12 +3486,12 @@ type DescribeLiveWatermarkRulesRequest struct {
 }
 
 func (r *DescribeLiveWatermarkRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarkRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarkRulesResponse struct {
@@ -3507,12 +3507,12 @@ type DescribeLiveWatermarkRulesResponse struct {
 }
 
 func (r *DescribeLiveWatermarkRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarkRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarksRequest struct {
@@ -3520,12 +3520,12 @@ type DescribeLiveWatermarksRequest struct {
 }
 
 func (r *DescribeLiveWatermarksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLiveWatermarksResponse struct {
@@ -3544,12 +3544,12 @@ type DescribeLiveWatermarksResponse struct {
 }
 
 func (r *DescribeLiveWatermarksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLiveWatermarksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLogDownloadListRequest struct {
@@ -3569,12 +3569,12 @@ type DescribeLogDownloadListRequest struct {
 }
 
 func (r *DescribeLogDownloadListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLogDownloadListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLogDownloadListResponse struct {
@@ -3593,12 +3593,12 @@ type DescribeLogDownloadListResponse struct {
 }
 
 func (r *DescribeLogDownloadListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLogDownloadListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayErrorCodeDetailInfoListRequest struct {
@@ -3628,12 +3628,12 @@ type DescribePlayErrorCodeDetailInfoListRequest struct {
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayErrorCodeDetailInfoListResponse struct {
@@ -3652,12 +3652,12 @@ type DescribePlayErrorCodeDetailInfoListResponse struct {
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayErrorCodeDetailInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayErrorCodeSumInfoListRequest struct {
@@ -3692,12 +3692,12 @@ type DescribePlayErrorCodeSumInfoListRequest struct {
 }
 
 func (r *DescribePlayErrorCodeSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayErrorCodeSumInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayErrorCodeSumInfoListResponse struct {
@@ -3743,12 +3743,12 @@ type DescribePlayErrorCodeSumInfoListResponse struct {
 }
 
 func (r *DescribePlayErrorCodeSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayErrorCodeSumInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProIspPlaySumInfoListRequest struct {
@@ -3783,12 +3783,12 @@ type DescribeProIspPlaySumInfoListRequest struct {
 }
 
 func (r *DescribeProIspPlaySumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProIspPlaySumInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProIspPlaySumInfoListResponse struct {
@@ -3828,12 +3828,12 @@ type DescribeProIspPlaySumInfoListResponse struct {
 }
 
 func (r *DescribeProIspPlaySumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProIspPlaySumInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProvinceIspPlayInfoListRequest struct {
@@ -3874,12 +3874,12 @@ type DescribeProvinceIspPlayInfoListRequest struct {
 }
 
 func (r *DescribeProvinceIspPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProvinceIspPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProvinceIspPlayInfoListResponse struct {
@@ -3898,12 +3898,12 @@ type DescribeProvinceIspPlayInfoListResponse struct {
 }
 
 func (r *DescribeProvinceIspPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProvinceIspPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePullStreamConfigsRequest struct {
@@ -3914,12 +3914,12 @@ type DescribePullStreamConfigsRequest struct {
 }
 
 func (r *DescribePullStreamConfigsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePullStreamConfigsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePullStreamConfigsResponse struct {
@@ -3935,12 +3935,12 @@ type DescribePullStreamConfigsResponse struct {
 }
 
 func (r *DescribePullStreamConfigsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePullStreamConfigsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScreenShotSheetNumListRequest struct {
@@ -3963,12 +3963,12 @@ type DescribeScreenShotSheetNumListRequest struct {
 }
 
 func (r *DescribeScreenShotSheetNumListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScreenShotSheetNumListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScreenShotSheetNumListResponse struct {
@@ -3984,12 +3984,12 @@ type DescribeScreenShotSheetNumListResponse struct {
 }
 
 func (r *DescribeScreenShotSheetNumListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScreenShotSheetNumListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamDayPlayInfoListRequest struct {
@@ -4010,12 +4010,12 @@ type DescribeStreamDayPlayInfoListRequest struct {
 }
 
 func (r *DescribeStreamDayPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamDayPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamDayPlayInfoListResponse struct {
@@ -4043,12 +4043,12 @@ type DescribeStreamDayPlayInfoListResponse struct {
 }
 
 func (r *DescribeStreamDayPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamDayPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamPlayInfoListRequest struct {
@@ -4077,12 +4077,12 @@ type DescribeStreamPlayInfoListRequest struct {
 }
 
 func (r *DescribeStreamPlayInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPlayInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamPlayInfoListResponse struct {
@@ -4098,12 +4098,12 @@ type DescribeStreamPlayInfoListResponse struct {
 }
 
 func (r *DescribeStreamPlayInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPlayInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamPushInfoListRequest struct {
@@ -4126,12 +4126,12 @@ type DescribeStreamPushInfoListRequest struct {
 }
 
 func (r *DescribeStreamPushInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPushInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStreamPushInfoListResponse struct {
@@ -4147,12 +4147,12 @@ type DescribeStreamPushInfoListResponse struct {
 }
 
 func (r *DescribeStreamPushInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStreamPushInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTopClientIpSumInfoListRequest struct {
@@ -4185,12 +4185,12 @@ type DescribeTopClientIpSumInfoListRequest struct {
 }
 
 func (r *DescribeTopClientIpSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTopClientIpSumInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTopClientIpSumInfoListResponse struct {
@@ -4221,12 +4221,12 @@ type DescribeTopClientIpSumInfoListResponse struct {
 }
 
 func (r *DescribeTopClientIpSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTopClientIpSumInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVisitTopSumInfoListRequest struct {
@@ -4259,12 +4259,12 @@ type DescribeVisitTopSumInfoListRequest struct {
 }
 
 func (r *DescribeVisitTopSumInfoListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVisitTopSumInfoListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeVisitTopSumInfoListResponse struct {
@@ -4272,12 +4272,12 @@ type DescribeVisitTopSumInfoListResponse struct {
 	Response *struct {
 
 		// 页号，
-	// 范围是[1,1000]，
-	// 默认值是1。
+		// 范围是[1,1000]，
+		// 默认值是1。
 		PageNum *uint64 `json:"PageNum,omitempty" name:"PageNum"`
 
 		// 每页个数，范围是[1,1000]，
-	// 默认值是20。
+		// 默认值是20。
 		PageSize *uint64 `json:"PageSize,omitempty" name:"PageSize"`
 
 		// 峰值指标，可选值包括”Domain”，”StreamId”。
@@ -4301,12 +4301,12 @@ type DescribeVisitTopSumInfoListResponse struct {
 }
 
 func (r *DescribeVisitTopSumInfoListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeVisitTopSumInfoListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DomainCertInfo struct {
@@ -4436,12 +4436,12 @@ type DropLiveStreamRequest struct {
 }
 
 func (r *DropLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DropLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DropLiveStreamResponse struct {
@@ -4454,12 +4454,12 @@ type DropLiveStreamResponse struct {
 }
 
 func (r *DropLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DropLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableLiveDomainRequest struct {
@@ -4470,12 +4470,12 @@ type EnableLiveDomainRequest struct {
 }
 
 func (r *EnableLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableLiveDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableLiveDomainResponse struct {
@@ -4488,12 +4488,12 @@ type EnableLiveDomainResponse struct {
 }
 
 func (r *EnableLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableLiveDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveDomainRequest struct {
@@ -4504,12 +4504,12 @@ type ForbidLiveDomainRequest struct {
 }
 
 func (r *ForbidLiveDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveDomainResponse struct {
@@ -4522,12 +4522,12 @@ type ForbidLiveDomainResponse struct {
 }
 
 func (r *ForbidLiveDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveStreamRequest struct {
@@ -4555,12 +4555,12 @@ type ForbidLiveStreamRequest struct {
 }
 
 func (r *ForbidLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidLiveStreamResponse struct {
@@ -4573,12 +4573,12 @@ type ForbidLiveStreamResponse struct {
 }
 
 func (r *ForbidLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ForbidLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ForbidStreamInfo struct {
@@ -4739,12 +4739,12 @@ type ModifyLiveCallbackTemplateRequest struct {
 }
 
 func (r *ModifyLiveCallbackTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveCallbackTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveCallbackTemplateResponse struct {
@@ -4757,12 +4757,12 @@ type ModifyLiveCallbackTemplateResponse struct {
 }
 
 func (r *ModifyLiveCallbackTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveCallbackTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveCertRequest struct {
@@ -4788,12 +4788,12 @@ type ModifyLiveCertRequest struct {
 }
 
 func (r *ModifyLiveCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveCertResponse struct {
@@ -4806,12 +4806,12 @@ type ModifyLiveCertResponse struct {
 }
 
 func (r *ModifyLiveCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveDomainCertRequest struct {
@@ -4828,12 +4828,12 @@ type ModifyLiveDomainCertRequest struct {
 }
 
 func (r *ModifyLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveDomainCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveDomainCertResponse struct {
@@ -4846,12 +4846,12 @@ type ModifyLiveDomainCertResponse struct {
 }
 
 func (r *ModifyLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveDomainCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePlayAuthKeyRequest struct {
@@ -4874,12 +4874,12 @@ type ModifyLivePlayAuthKeyRequest struct {
 }
 
 func (r *ModifyLivePlayAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePlayAuthKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePlayAuthKeyResponse struct {
@@ -4892,12 +4892,12 @@ type ModifyLivePlayAuthKeyResponse struct {
 }
 
 func (r *ModifyLivePlayAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePlayAuthKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePlayDomainRequest struct {
@@ -4911,12 +4911,12 @@ type ModifyLivePlayDomainRequest struct {
 }
 
 func (r *ModifyLivePlayDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePlayDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePlayDomainResponse struct {
@@ -4929,12 +4929,12 @@ type ModifyLivePlayDomainResponse struct {
 }
 
 func (r *ModifyLivePlayDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePlayDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePushAuthKeyRequest struct {
@@ -4957,12 +4957,12 @@ type ModifyLivePushAuthKeyRequest struct {
 }
 
 func (r *ModifyLivePushAuthKeyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePushAuthKeyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLivePushAuthKeyResponse struct {
@@ -4975,12 +4975,12 @@ type ModifyLivePushAuthKeyResponse struct {
 }
 
 func (r *ModifyLivePushAuthKeyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLivePushAuthKeyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveRecordTemplateRequest struct {
@@ -5015,12 +5015,12 @@ type ModifyLiveRecordTemplateRequest struct {
 }
 
 func (r *ModifyLiveRecordTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveRecordTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveRecordTemplateResponse struct {
@@ -5033,12 +5033,12 @@ type ModifyLiveRecordTemplateResponse struct {
 }
 
 func (r *ModifyLiveRecordTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveRecordTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveSnapshotTemplateRequest struct {
@@ -5087,12 +5087,12 @@ type ModifyLiveSnapshotTemplateRequest struct {
 }
 
 func (r *ModifyLiveSnapshotTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveSnapshotTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveSnapshotTemplateResponse struct {
@@ -5105,12 +5105,12 @@ type ModifyLiveSnapshotTemplateResponse struct {
 }
 
 func (r *ModifyLiveSnapshotTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveSnapshotTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveTranscodeTemplateRequest struct {
@@ -5178,12 +5178,12 @@ type ModifyLiveTranscodeTemplateRequest struct {
 }
 
 func (r *ModifyLiveTranscodeTemplateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveTranscodeTemplateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLiveTranscodeTemplateResponse struct {
@@ -5196,12 +5196,12 @@ type ModifyLiveTranscodeTemplateResponse struct {
 }
 
 func (r *ModifyLiveTranscodeTemplateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLiveTranscodeTemplateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPullStreamConfigRequest struct {
@@ -5237,7 +5237,7 @@ type ModifyPullStreamConfigRequest struct {
 	// 1. 结束时间必须大于开始时间；
 	// 2. 结束时间和开始时间必须大于当前时间；
 	// 3. 结束时间 和 开始时间 间隔必须小于七天。
-	// 
+	//
 	// 使用UTC格式时间，
 	// 例如：2019-01-08T10:00:00Z。
 	// 注意：北京时间值为 UTC 时间值 + 8 小时，格式按照 ISO 8601 标准表示，详见 [ISO 日期格式说明](https://cloud.tencent.com/document/product/266/11732#I)。
@@ -5245,12 +5245,12 @@ type ModifyPullStreamConfigRequest struct {
 }
 
 func (r *ModifyPullStreamConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPullStreamConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPullStreamConfigResponse struct {
@@ -5263,12 +5263,12 @@ type ModifyPullStreamConfigResponse struct {
 }
 
 func (r *ModifyPullStreamConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPullStreamConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPullStreamStatusRequest struct {
@@ -5282,12 +5282,12 @@ type ModifyPullStreamStatusRequest struct {
 }
 
 func (r *ModifyPullStreamStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPullStreamStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPullStreamStatusResponse struct {
@@ -5300,12 +5300,12 @@ type ModifyPullStreamStatusResponse struct {
 }
 
 func (r *ModifyPullStreamStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPullStreamStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MonitorStreamPlayInfo struct {
@@ -5467,7 +5467,7 @@ type PullStreamConfig struct {
 	StartTime *string `json:"StartTime,omitempty" name:"StartTime"`
 
 	// 结束时间。
-	// 
+	//
 	// UTC格式时间，例如：2019-01-08T10:00:00Z。
 	// 注意：北京时间值为 UTC 时间值 + 8 小时，格式按照 ISO 8601 标准表示，详见 [ISO 日期格式说明](https://cloud.tencent.com/document/product/266/11732#I)。
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
@@ -5686,12 +5686,12 @@ type ResumeDelayLiveStreamRequest struct {
 }
 
 func (r *ResumeDelayLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeDelayLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResumeDelayLiveStreamResponse struct {
@@ -5704,12 +5704,12 @@ type ResumeDelayLiveStreamResponse struct {
 }
 
 func (r *ResumeDelayLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeDelayLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResumeLiveStreamRequest struct {
@@ -5726,12 +5726,12 @@ type ResumeLiveStreamRequest struct {
 }
 
 func (r *ResumeLiveStreamRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeLiveStreamRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResumeLiveStreamResponse struct {
@@ -5744,12 +5744,12 @@ type ResumeLiveStreamResponse struct {
 }
 
 func (r *ResumeLiveStreamResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ResumeLiveStreamResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RuleInfo struct {
@@ -5784,7 +5784,7 @@ type SnapshotTemplateInfo struct {
 	// 截图时间间隔，5-300秒。
 	SnapshotInterval *int64 `json:"SnapshotInterval,omitempty" name:"SnapshotInterval"`
 
-	// 截图宽度，范围：0-3000。 
+	// 截图宽度，范围：0-3000。
 	// 0：原始宽度并适配原始比例。
 	Width *int64 `json:"Width,omitempty" name:"Width"`
 
@@ -5827,12 +5827,12 @@ type StopLiveRecordRequest struct {
 }
 
 func (r *StopLiveRecordRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopLiveRecordRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopLiveRecordResponse struct {
@@ -5845,12 +5845,12 @@ type StopLiveRecordResponse struct {
 }
 
 func (r *StopLiveRecordResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopLiveRecordResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StreamEventInfo struct {
@@ -6050,12 +6050,12 @@ type UnBindLiveDomainCertRequest struct {
 }
 
 func (r *UnBindLiveDomainCertRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnBindLiveDomainCertRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UnBindLiveDomainCertResponse struct {
@@ -6068,12 +6068,12 @@ type UnBindLiveDomainCertResponse struct {
 }
 
 func (r *UnBindLiveDomainCertResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UnBindLiveDomainCertResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateLiveWatermarkRequest struct {
@@ -6103,12 +6103,12 @@ type UpdateLiveWatermarkRequest struct {
 }
 
 func (r *UpdateLiveWatermarkRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateLiveWatermarkRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateLiveWatermarkResponse struct {
@@ -6121,12 +6121,12 @@ type UpdateLiveWatermarkResponse struct {
 }
 
 func (r *UpdateLiveWatermarkResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateLiveWatermarkResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type WatermarkInfo struct {

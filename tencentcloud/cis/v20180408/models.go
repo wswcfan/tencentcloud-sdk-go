@@ -15,9 +15,9 @@
 package v20180408
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Container struct {
@@ -160,12 +160,12 @@ type CreateContainerInstanceRequest struct {
 }
 
 func (r *CreateContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateContainerInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateContainerInstanceResponse struct {
@@ -181,12 +181,12 @@ type CreateContainerInstanceResponse struct {
 }
 
 func (r *CreateContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateContainerInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteContainerInstanceRequest struct {
@@ -197,12 +197,12 @@ type DeleteContainerInstanceRequest struct {
 }
 
 func (r *DeleteContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteContainerInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteContainerInstanceResponse struct {
@@ -218,12 +218,12 @@ type DeleteContainerInstanceResponse struct {
 }
 
 func (r *DeleteContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteContainerInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstanceEventsRequest struct {
@@ -234,12 +234,12 @@ type DescribeContainerInstanceEventsRequest struct {
 }
 
 func (r *DescribeContainerInstanceEventsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstanceEventsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstanceEventsResponse struct {
@@ -255,12 +255,12 @@ type DescribeContainerInstanceEventsResponse struct {
 }
 
 func (r *DescribeContainerInstanceEventsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstanceEventsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstanceRequest struct {
@@ -271,12 +271,12 @@ type DescribeContainerInstanceRequest struct {
 }
 
 func (r *DescribeContainerInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstanceResponse struct {
@@ -292,12 +292,12 @@ type DescribeContainerInstanceResponse struct {
 }
 
 func (r *DescribeContainerInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstancesRequest struct {
@@ -317,12 +317,12 @@ type DescribeContainerInstancesRequest struct {
 }
 
 func (r *DescribeContainerInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerInstancesResponse struct {
@@ -341,12 +341,12 @@ type DescribeContainerInstancesResponse struct {
 }
 
 func (r *DescribeContainerInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerLogRequest struct {
@@ -366,12 +366,12 @@ type DescribeContainerLogRequest struct {
 }
 
 func (r *DescribeContainerLogRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerLogRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeContainerLogResponse struct {
@@ -387,12 +387,12 @@ type DescribeContainerLogResponse struct {
 }
 
 func (r *DescribeContainerLogResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeContainerLogResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnvironmentVar struct {
@@ -448,12 +448,12 @@ type InquiryPriceCreateCisRequest struct {
 }
 
 func (r *InquiryPriceCreateCisRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceCreateCisRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InquiryPriceCreateCisResponse struct {
@@ -469,12 +469,12 @@ type InquiryPriceCreateCisResponse struct {
 }
 
 func (r *InquiryPriceCreateCisResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *InquiryPriceCreateCisResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Price struct {

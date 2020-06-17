@@ -15,9 +15,9 @@
 package v20200210
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type DetectFraudKOLRequest struct {
@@ -28,12 +28,12 @@ type DetectFraudKOLRequest struct {
 }
 
 func (r *DetectFraudKOLRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectFraudKOLRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectFraudKOLResponse struct {
@@ -41,7 +41,7 @@ type DetectFraudKOLResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputKolData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -50,12 +50,12 @@ type DetectFraudKOLResponse struct {
 }
 
 func (r *DetectFraudKOLResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectFraudKOLResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhanceTaDegreeRequest struct {
@@ -66,12 +66,12 @@ type EnhanceTaDegreeRequest struct {
 }
 
 func (r *EnhanceTaDegreeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnhanceTaDegreeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhanceTaDegreeResponse struct {
@@ -79,7 +79,7 @@ type EnhanceTaDegreeResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputTaData `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -88,12 +88,12 @@ type EnhanceTaDegreeResponse struct {
 }
 
 func (r *EnhanceTaDegreeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnhanceTaDegreeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type InputKolBspData struct {
@@ -434,12 +434,12 @@ type RecognizeCustomizedAudienceRequest struct {
 }
 
 func (r *RecognizeCustomizedAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeCustomizedAudienceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizeCustomizedAudienceResponse struct {
@@ -447,7 +447,7 @@ type RecognizeCustomizedAudienceResponse struct {
 	Response *struct {
 
 		// 业务出参
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -456,12 +456,12 @@ type RecognizeCustomizedAudienceResponse struct {
 }
 
 func (r *RecognizeCustomizedAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeCustomizedAudienceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizePreciseTargetAudienceRequest struct {
@@ -472,12 +472,12 @@ type RecognizePreciseTargetAudienceRequest struct {
 }
 
 func (r *RecognizePreciseTargetAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizePreciseTargetAudienceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizePreciseTargetAudienceResponse struct {
@@ -485,7 +485,7 @@ type RecognizePreciseTargetAudienceResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -494,12 +494,12 @@ type RecognizePreciseTargetAudienceResponse struct {
 }
 
 func (r *RecognizePreciseTargetAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizePreciseTargetAudienceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizeTargetAudienceRequest struct {
@@ -510,12 +510,12 @@ type RecognizeTargetAudienceRequest struct {
 }
 
 func (r *RecognizeTargetAudienceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeTargetAudienceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RecognizeTargetAudienceResponse struct {
@@ -523,7 +523,7 @@ type RecognizeTargetAudienceResponse struct {
 	Response *struct {
 
 		// 回包数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputRecognizeTargetAudience `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -532,12 +532,12 @@ type RecognizeTargetAudienceResponse struct {
 }
 
 func (r *RecognizeTargetAudienceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RecognizeTargetAudienceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendTrafficSecuritySmsMessageRequest struct {
@@ -548,12 +548,12 @@ type SendTrafficSecuritySmsMessageRequest struct {
 }
 
 func (r *SendTrafficSecuritySmsMessageRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendTrafficSecuritySmsMessageRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendTrafficSecuritySmsMessageResponse struct {
@@ -561,7 +561,7 @@ type SendTrafficSecuritySmsMessageResponse struct {
 	Response *struct {
 
 		// 返回结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *OutputSendTrafficSecuritySmsMsg `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -570,10 +570,10 @@ type SendTrafficSecuritySmsMessageResponse struct {
 }
 
 func (r *SendTrafficSecuritySmsMessageResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendTrafficSecuritySmsMessageResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

@@ -15,9 +15,9 @@
 package v20191112
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CreateGameServerSessionRequest struct {
@@ -52,12 +52,12 @@ type CreateGameServerSessionRequest struct {
 }
 
 func (r *CreateGameServerSessionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGameServerSessionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGameServerSessionResponse struct {
@@ -65,7 +65,7 @@ type CreateGameServerSessionResponse struct {
 	Response *struct {
 
 		// 游戏服务器会话
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GameServerSession *GameServerSession `json:"GameServerSession,omitempty" name:"GameServerSession"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -74,12 +74,12 @@ type CreateGameServerSessionResponse struct {
 }
 
 func (r *CreateGameServerSessionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGameServerSessionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Credentials struct {
@@ -102,12 +102,12 @@ type DeleteScalingPolicyRequest struct {
 }
 
 func (r *DeleteScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScalingPolicyResponse struct {
@@ -120,12 +120,12 @@ type DeleteScalingPolicyResponse struct {
 }
 
 func (r *DeleteScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionDetailsRequest struct {
@@ -151,12 +151,12 @@ type DescribeGameServerSessionDetailsRequest struct {
 }
 
 func (r *DescribeGameServerSessionDetailsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionDetailsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionDetailsResponse struct {
@@ -164,11 +164,11 @@ type DescribeGameServerSessionDetailsResponse struct {
 	Response *struct {
 
 		// 游戏服务器会话详情列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GameServerSessionDetails []*GameServerSessionDetail `json:"GameServerSessionDetails,omitempty" name:"GameServerSessionDetails" list`
 
 		// 页偏移，用于查询下一页
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NextToken *string `json:"NextToken,omitempty" name:"NextToken"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -177,12 +177,12 @@ type DescribeGameServerSessionDetailsResponse struct {
 }
 
 func (r *DescribeGameServerSessionDetailsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionDetailsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionPlacementRequest struct {
@@ -193,12 +193,12 @@ type DescribeGameServerSessionPlacementRequest struct {
 }
 
 func (r *DescribeGameServerSessionPlacementRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionPlacementRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionPlacementResponse struct {
@@ -214,12 +214,12 @@ type DescribeGameServerSessionPlacementResponse struct {
 }
 
 func (r *DescribeGameServerSessionPlacementResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionPlacementResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionQueuesRequest struct {
@@ -236,12 +236,12 @@ type DescribeGameServerSessionQueuesRequest struct {
 }
 
 func (r *DescribeGameServerSessionQueuesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionQueuesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionQueuesResponse struct {
@@ -249,7 +249,7 @@ type DescribeGameServerSessionQueuesResponse struct {
 	Response *struct {
 
 		// 游戏服务器会话队列数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GameServerSessionQueues []*GameServerSessionQueue `json:"GameServerSessionQueues,omitempty" name:"GameServerSessionQueues" list`
 
 		// 总数
@@ -261,12 +261,12 @@ type DescribeGameServerSessionQueuesResponse struct {
 }
 
 func (r *DescribeGameServerSessionQueuesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionQueuesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionsRequest struct {
@@ -292,12 +292,12 @@ type DescribeGameServerSessionsRequest struct {
 }
 
 func (r *DescribeGameServerSessionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeGameServerSessionsResponse struct {
@@ -305,11 +305,11 @@ type DescribeGameServerSessionsResponse struct {
 	Response *struct {
 
 		// 游戏服务器会话列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GameServerSessions []*GameServerSession `json:"GameServerSessions,omitempty" name:"GameServerSessions" list`
 
 		// 页便宜，用于查询下一页
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NextToken *string `json:"NextToken,omitempty" name:"NextToken"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -318,12 +318,12 @@ type DescribeGameServerSessionsResponse struct {
 }
 
 func (r *DescribeGameServerSessionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeGameServerSessionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesRequest struct {
@@ -343,12 +343,12 @@ type DescribeInstancesRequest struct {
 }
 
 func (r *DescribeInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeInstancesResponse struct {
@@ -356,11 +356,11 @@ type DescribeInstancesResponse struct {
 	Response *struct {
 
 		// 实例信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Instances []*Instance `json:"Instances,omitempty" name:"Instances" list`
 
 		// 结果返回最大数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -369,12 +369,12 @@ type DescribeInstancesResponse struct {
 }
 
 func (r *DescribeInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayerSessionsRequest struct {
@@ -400,12 +400,12 @@ type DescribePlayerSessionsRequest struct {
 }
 
 func (r *DescribePlayerSessionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayerSessionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePlayerSessionsResponse struct {
@@ -413,11 +413,11 @@ type DescribePlayerSessionsResponse struct {
 	Response *struct {
 
 		// 玩家会话列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PlayerSessions []*PlayerSession `json:"PlayerSessions,omitempty" name:"PlayerSessions" list`
 
 		// 页偏移
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NextToken *string `json:"NextToken,omitempty" name:"NextToken"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -426,12 +426,12 @@ type DescribePlayerSessionsResponse struct {
 }
 
 func (r *DescribePlayerSessionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePlayerSessionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScalingPoliciesRequest struct {
@@ -451,12 +451,12 @@ type DescribeScalingPoliciesRequest struct {
 }
 
 func (r *DescribeScalingPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScalingPoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScalingPoliciesResponse struct {
@@ -464,11 +464,11 @@ type DescribeScalingPoliciesResponse struct {
 	Response *struct {
 
 		// 动态扩缩容配置
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ScalingPolicies []*ScalingPolicy `json:"ScalingPolicies,omitempty" name:"ScalingPolicies" list`
 
 		// 返回总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -477,12 +477,12 @@ type DescribeScalingPoliciesResponse struct {
 }
 
 func (r *DescribeScalingPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScalingPoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DesiredPlayerSession struct {
@@ -697,12 +697,12 @@ type GetGameServerSessionLogUrlRequest struct {
 }
 
 func (r *GetGameServerSessionLogUrlRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGameServerSessionLogUrlRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGameServerSessionLogUrlResponse struct {
@@ -710,7 +710,7 @@ type GetGameServerSessionLogUrlResponse struct {
 	Response *struct {
 
 		// 日志下载URL
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PreSignedUrl *string `json:"PreSignedUrl,omitempty" name:"PreSignedUrl"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -719,12 +719,12 @@ type GetGameServerSessionLogUrlResponse struct {
 }
 
 func (r *GetGameServerSessionLogUrlResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGameServerSessionLogUrlResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetInstanceAccessRequest struct {
@@ -738,12 +738,12 @@ type GetInstanceAccessRequest struct {
 }
 
 func (r *GetInstanceAccessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetInstanceAccessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetInstanceAccessResponse struct {
@@ -759,12 +759,12 @@ type GetInstanceAccessResponse struct {
 }
 
 func (r *GetInstanceAccessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetInstanceAccessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Instance struct {
@@ -834,12 +834,12 @@ type JoinGameServerSessionRequest struct {
 }
 
 func (r *JoinGameServerSessionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *JoinGameServerSessionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type JoinGameServerSessionResponse struct {
@@ -847,7 +847,7 @@ type JoinGameServerSessionResponse struct {
 	Response *struct {
 
 		// 玩家会话
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PlayerSession *PlayerSession `json:"PlayerSession,omitempty" name:"PlayerSession"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -856,12 +856,12 @@ type JoinGameServerSessionResponse struct {
 }
 
 func (r *JoinGameServerSessionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *JoinGameServerSessionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PlacedPlayerSession struct {
@@ -973,12 +973,12 @@ type PutScalingPolicyRequest struct {
 }
 
 func (r *PutScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PutScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PutScalingPolicyResponse struct {
@@ -986,7 +986,7 @@ type PutScalingPolicyResponse struct {
 	Response *struct {
 
 		// 规则名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Name *string `json:"Name,omitempty" name:"Name"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -995,12 +995,12 @@ type PutScalingPolicyResponse struct {
 }
 
 func (r *PutScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PutScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScalingPolicy struct {
@@ -1073,7 +1073,7 @@ type SearchGameServerSessionsRequest struct {
 	// playerSessionCount 当前玩家会话数 Number
 	// hasAvailablePlayerSessions 是否有可用玩家数 String 取值true或false
 	// gameServerSessionProperties 游戏会话属性 String
-	// 
+	//
 	// 表达式String类型 等于=，不等于<>判断
 	// 表示Number类型支持 =,<>,>,>=,<,<=
 	FilterExpression *string `json:"FilterExpression,omitempty" name:"FilterExpression"`
@@ -1089,12 +1089,12 @@ type SearchGameServerSessionsRequest struct {
 }
 
 func (r *SearchGameServerSessionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchGameServerSessionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchGameServerSessionsResponse struct {
@@ -1102,11 +1102,11 @@ type SearchGameServerSessionsResponse struct {
 	Response *struct {
 
 		// 游戏服务器会话列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GameServerSessions []*GameServerSession `json:"GameServerSessions,omitempty" name:"GameServerSessions" list`
 
 		// 页偏移，用于查询下一页
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NextToken *string `json:"NextToken,omitempty" name:"NextToken"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1115,12 +1115,12 @@ type SearchGameServerSessionsResponse struct {
 }
 
 func (r *SearchGameServerSessionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchGameServerSessionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetServerWeightRequest struct {
@@ -1137,12 +1137,12 @@ type SetServerWeightRequest struct {
 }
 
 func (r *SetServerWeightRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetServerWeightRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetServerWeightResponse struct {
@@ -1155,12 +1155,12 @@ type SetServerWeightResponse struct {
 }
 
 func (r *SetServerWeightResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetServerWeightResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartGameServerSessionPlacementRequest struct {
@@ -1192,12 +1192,12 @@ type StartGameServerSessionPlacementRequest struct {
 }
 
 func (r *StartGameServerSessionPlacementRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartGameServerSessionPlacementRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartGameServerSessionPlacementResponse struct {
@@ -1213,12 +1213,12 @@ type StartGameServerSessionPlacementResponse struct {
 }
 
 func (r *StartGameServerSessionPlacementResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartGameServerSessionPlacementResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopGameServerSessionPlacementRequest struct {
@@ -1229,12 +1229,12 @@ type StopGameServerSessionPlacementRequest struct {
 }
 
 func (r *StopGameServerSessionPlacementRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopGameServerSessionPlacementRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopGameServerSessionPlacementResponse struct {
@@ -1250,12 +1250,12 @@ type StopGameServerSessionPlacementResponse struct {
 }
 
 func (r *StopGameServerSessionPlacementResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopGameServerSessionPlacementResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TargetConfiguration struct {
@@ -1285,12 +1285,12 @@ type UpdateGameServerSessionRequest struct {
 }
 
 func (r *UpdateGameServerSessionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateGameServerSessionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateGameServerSessionResponse struct {
@@ -1306,10 +1306,10 @@ type UpdateGameServerSessionResponse struct {
 }
 
 func (r *UpdateGameServerSessionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateGameServerSessionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

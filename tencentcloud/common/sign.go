@@ -9,7 +9,7 @@ import (
 	"encoding/hex"
 	"sort"
 
-	tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 const (

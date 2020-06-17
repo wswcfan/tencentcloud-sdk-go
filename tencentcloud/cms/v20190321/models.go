@@ -15,9 +15,9 @@
 package v20190321
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CodeDetail struct {
@@ -77,9 +77,9 @@ type CreateFileSampleRequest struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
+	// 20007：谩骂
 	// 24001：暴恐
 	// 20105：广告引流
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
@@ -94,12 +94,12 @@ type CreateFileSampleRequest struct {
 }
 
 func (r *CreateFileSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFileSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateFileSampleResponse struct {
@@ -107,8 +107,8 @@ type CreateFileSampleResponse struct {
 	Response *struct {
 
 		// 任务状态
-	// 1：已完成
-	// 2：处理中
+		// 1：已完成
+		// 2：处理中
 		Progress *uint64 `json:"Progress,omitempty" name:"Progress"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -117,12 +117,12 @@ type CreateFileSampleResponse struct {
 }
 
 func (r *CreateFileSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFileSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTextSampleRequest struct {
@@ -134,9 +134,9 @@ type CreateTextSampleRequest struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
+	// 20007：谩骂
 	// 24001：暴恐
 	// 20105：广告引流
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
@@ -151,12 +151,12 @@ type CreateTextSampleRequest struct {
 }
 
 func (r *CreateTextSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTextSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateTextSampleResponse struct {
@@ -167,8 +167,8 @@ type CreateTextSampleResponse struct {
 		ErrMsg *string `json:"ErrMsg,omitempty" name:"ErrMsg"`
 
 		// 任务状态
-	// 1：已完成
-	// 2：处理中
+		// 1：已完成
+		// 2：处理中
 		Progress *uint64 `json:"Progress,omitempty" name:"Progress"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -177,12 +177,12 @@ type CreateTextSampleResponse struct {
 }
 
 func (r *CreateTextSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateTextSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CustomResult struct {
@@ -205,12 +205,12 @@ type DeleteFileSampleRequest struct {
 }
 
 func (r *DeleteFileSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFileSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFileSampleResponse struct {
@@ -218,8 +218,8 @@ type DeleteFileSampleResponse struct {
 	Response *struct {
 
 		// 任务状态
-	// 1：已完成
-	// 2：处理中
+		// 1：已完成
+		// 2：处理中
 		Progress *uint64 `json:"Progress,omitempty" name:"Progress"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -228,12 +228,12 @@ type DeleteFileSampleResponse struct {
 }
 
 func (r *DeleteFileSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFileSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTextSampleRequest struct {
@@ -244,12 +244,12 @@ type DeleteTextSampleRequest struct {
 }
 
 func (r *DeleteTextSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTextSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteTextSampleResponse struct {
@@ -257,8 +257,8 @@ type DeleteTextSampleResponse struct {
 	Response *struct {
 
 		// 任务状态
-	// 1：已完成
-	// 2：处理中
+		// 1：已完成
+		// 2：处理中
 		Progress *uint64 `json:"Progress,omitempty" name:"Progress"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -267,12 +267,12 @@ type DeleteTextSampleResponse struct {
 }
 
 func (r *DeleteTextSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteTextSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSampleRequest struct {
@@ -295,12 +295,12 @@ type DescribeFileSampleRequest struct {
 }
 
 func (r *DescribeFileSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSampleResponse struct {
@@ -319,12 +319,12 @@ type DescribeFileSampleResponse struct {
 }
 
 func (r *DescribeFileSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTextSampleRequest struct {
@@ -347,12 +347,12 @@ type DescribeTextSampleRequest struct {
 }
 
 func (r *DescribeTextSampleRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTextSampleRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTextSampleResponse struct {
@@ -371,12 +371,12 @@ type DescribeTextSampleResponse struct {
 }
 
 func (r *DescribeTextSampleResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTextSampleResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetailResult struct {
@@ -387,10 +387,10 @@ type DetailResult struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
 	// 20007：谩骂
-	// 20105：广告引流 
+	// 20105：广告引流
 	// 24001：暴恐
 	EvilType *uint64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -427,9 +427,9 @@ type FileSampleInfo struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
+	// 20007：谩骂
 	// 24001：暴恐
 	EvilType *uint64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -477,11 +477,11 @@ type ImageData struct {
 	EvilFlag *int64 `json:"EvilFlag,omitempty" name:"EvilFlag"`
 
 	// 恶意类型
-	// 100：正常 
+	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
+	// 20007：谩骂
 	// 20103：性感
 	// 24001：暴恐
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
@@ -540,7 +540,7 @@ type ImageHotDetect struct {
 type ImageIllegalDetect struct {
 
 	// 恶意类型
-	// 100：正常 
+	// 100：正常
 	// 20006：涉毒违法
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -571,12 +571,12 @@ type ImageModerationRequest struct {
 }
 
 func (r *ImageModerationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImageModerationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImageModerationResponse struct {
@@ -595,18 +595,18 @@ type ImageModerationResponse struct {
 }
 
 func (r *ImageModerationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImageModerationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImagePolityDetect struct {
 
 	// 恶意类型
-	// 100：正常 
+	// 100：正常
 	// 20001：政治
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -755,11 +755,11 @@ type RrectF struct {
 type Similar struct {
 
 	// 恶意类型
-	// 100：正常 
+	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
+	// 20007：谩骂
 	// 24001：暴恐
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -778,10 +778,10 @@ type TextData struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
 	// 20007：谩骂
-	// 20105：广告引流 
+	// 20105：广告引流
 	// 24001：暴恐
 	EvilType *int64 `json:"EvilType,omitempty" name:"EvilType"`
 
@@ -833,12 +833,12 @@ type TextModerationRequest struct {
 }
 
 func (r *TextModerationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextModerationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextModerationResponse struct {
@@ -857,12 +857,12 @@ type TextModerationResponse struct {
 }
 
 func (r *TextModerationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextModerationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextOutputComm struct {
@@ -919,10 +919,10 @@ type TextSample struct {
 	// 恶意类型
 	// 100：正常
 	// 20001：政治
-	// 20002：色情 
+	// 20002：色情
 	// 20006：涉毒违法
-	// 20007：谩骂 
-	// 20105：广告引流 
+	// 20007：谩骂
+	// 20105：广告引流
 	// 24001：暴恐
 	EvilType *uint64 `json:"EvilType,omitempty" name:"EvilType"`
 

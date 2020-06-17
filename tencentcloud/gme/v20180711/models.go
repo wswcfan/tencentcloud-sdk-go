@@ -15,9 +15,9 @@
 package v20180711
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AppStatisticsItem struct {
@@ -67,12 +67,12 @@ type CreateAppRequest struct {
 }
 
 func (r *CreateAppRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAppRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAppResponse struct {
@@ -106,12 +106,12 @@ type CreateAppResponse struct {
 }
 
 func (r *CreateAppResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAppResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAppStatisticsRequest struct {
@@ -131,12 +131,12 @@ type DescribeAppStatisticsRequest struct {
 }
 
 func (r *DescribeAppStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAppStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAppStatisticsResponse struct {
@@ -149,12 +149,12 @@ type DescribeAppStatisticsResponse struct {
 }
 
 func (r *DescribeAppStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAppStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFilterResultListRequest struct {
@@ -177,12 +177,12 @@ type DescribeFilterResultListRequest struct {
 }
 
 func (r *DescribeFilterResultListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFilterResultListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFilterResultListResponse struct {
@@ -190,11 +190,11 @@ type DescribeFilterResultListResponse struct {
 	Response *struct {
 
 		// 过滤结果总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 当前分页过滤结果列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*VoiceFilterInfo `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -203,12 +203,12 @@ type DescribeFilterResultListResponse struct {
 }
 
 func (r *DescribeFilterResultListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFilterResultListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFilterResultRequest struct {
@@ -222,12 +222,12 @@ type DescribeFilterResultRequest struct {
 }
 
 func (r *DescribeFilterResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFilterResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFilterResultResponse struct {
@@ -235,7 +235,7 @@ type DescribeFilterResultResponse struct {
 	Response *struct {
 
 		// 过滤结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *VoiceFilterInfo `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -244,12 +244,12 @@ type DescribeFilterResultResponse struct {
 }
 
 func (r *DescribeFilterResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFilterResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanResult struct {
@@ -310,12 +310,12 @@ type DescribeScanResultListRequest struct {
 }
 
 func (r *DescribeScanResultListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanResultListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanResultListResponse struct {
@@ -323,7 +323,7 @@ type DescribeScanResultListResponse struct {
 	Response *struct {
 
 		// 要查询的语音检测任务的结果
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*DescribeScanResult `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -332,12 +332,12 @@ type DescribeScanResultListResponse struct {
 }
 
 func (r *DescribeScanResultListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanResultListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAppStatusRequest struct {
@@ -351,12 +351,12 @@ type ModifyAppStatusRequest struct {
 }
 
 func (r *ModifyAppStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAppStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAppStatusResponse struct {
@@ -372,12 +372,12 @@ type ModifyAppStatusResponse struct {
 }
 
 func (r *ModifyAppStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAppStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RealTimeSpeechStatisticsItem struct {
@@ -491,12 +491,12 @@ type ScanVoiceRequest struct {
 }
 
 func (r *ScanVoiceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanVoiceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanVoiceResponse struct {
@@ -504,7 +504,7 @@ type ScanVoiceResponse struct {
 	Response *struct {
 
 		// 语音检测返回。Data 字段是 JSON 数组，每一个元素包含：<li>DataId： 请求中对应的 DataId。</li>
-	// <li>TaskID ：该检测任务的 ID，用于轮询语音检测结果。</li>
+		// <li>TaskID ：该检测任务的 ID，用于轮询语音检测结果。</li>
 		Data []*ScanVoiceResult `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -513,12 +513,12 @@ type ScanVoiceResponse struct {
 }
 
 func (r *ScanVoiceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanVoiceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanVoiceResult struct {
@@ -623,12 +623,12 @@ type VoiceFilterRequest struct {
 }
 
 func (r *VoiceFilterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VoiceFilterRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VoiceFilterResponse struct {
@@ -641,12 +641,12 @@ type VoiceFilterResponse struct {
 }
 
 func (r *VoiceFilterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VoiceFilterResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VoiceFilterStatisticsItem struct {

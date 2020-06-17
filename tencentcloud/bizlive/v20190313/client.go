@@ -15,180 +15,179 @@
 package v20190313
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-03-13"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCreateSessionRequest() (request *CreateSessionRequest) {
-    request = &CreateSessionRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "CreateSession")
-    return
+	request = &CreateSessionRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "CreateSession")
+	return
 }
 
 func NewCreateSessionResponse() (response *CreateSessionResponse) {
-    response = &CreateSessionResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateSessionResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 创建会话
 func (c *Client) CreateSession(request *CreateSessionRequest) (response *CreateSessionResponse, err error) {
-    if request == nil {
-        request = NewCreateSessionRequest()
-    }
-    response = NewCreateSessionResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateSessionRequest()
+	}
+	response = NewCreateSessionResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeStreamPlayInfoListRequest() (request *DescribeStreamPlayInfoListRequest) {
-    request = &DescribeStreamPlayInfoListRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "DescribeStreamPlayInfoList")
-    return
+	request = &DescribeStreamPlayInfoListRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "DescribeStreamPlayInfoList")
+	return
 }
 
 func NewDescribeStreamPlayInfoListResponse() (response *DescribeStreamPlayInfoListResponse) {
-    response = &DescribeStreamPlayInfoListResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeStreamPlayInfoListResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询播放数据，支持按流名称查询详细播放数据，也可按播放域名查询详细总数据。
 func (c *Client) DescribeStreamPlayInfoList(request *DescribeStreamPlayInfoListRequest) (response *DescribeStreamPlayInfoListResponse, err error) {
-    if request == nil {
-        request = NewDescribeStreamPlayInfoListRequest()
-    }
-    response = NewDescribeStreamPlayInfoListResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeStreamPlayInfoListRequest()
+	}
+	response = NewDescribeStreamPlayInfoListResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeWorkersRequest() (request *DescribeWorkersRequest) {
-    request = &DescribeWorkersRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "DescribeWorkers")
-    return
+	request = &DescribeWorkersRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "DescribeWorkers")
+	return
 }
 
 func NewDescribeWorkersResponse() (response *DescribeWorkersResponse) {
-    response = &DescribeWorkersResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeWorkersResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询空闲机器数量
 func (c *Client) DescribeWorkers(request *DescribeWorkersRequest) (response *DescribeWorkersResponse, err error) {
-    if request == nil {
-        request = NewDescribeWorkersRequest()
-    }
-    response = NewDescribeWorkersResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeWorkersRequest()
+	}
+	response = NewDescribeWorkersResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewForbidLiveStreamRequest() (request *ForbidLiveStreamRequest) {
-    request = &ForbidLiveStreamRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "ForbidLiveStream")
-    return
+	request = &ForbidLiveStreamRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "ForbidLiveStream")
+	return
 }
 
 func NewForbidLiveStreamResponse() (response *ForbidLiveStreamResponse) {
-    response = &ForbidLiveStreamResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ForbidLiveStreamResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 禁止某条流的推送，可以预设某个时刻将流恢复。
 func (c *Client) ForbidLiveStream(request *ForbidLiveStreamRequest) (response *ForbidLiveStreamResponse, err error) {
-    if request == nil {
-        request = NewForbidLiveStreamRequest()
-    }
-    response = NewForbidLiveStreamResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewForbidLiveStreamRequest()
+	}
+	response = NewForbidLiveStreamResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewRegisterIMRequest() (request *RegisterIMRequest) {
-    request = &RegisterIMRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "RegisterIM")
-    return
+	request = &RegisterIMRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "RegisterIM")
+	return
 }
 
 func NewRegisterIMResponse() (response *RegisterIMResponse) {
-    response = &RegisterIMResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &RegisterIMResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 注册聊天室
 func (c *Client) RegisterIM(request *RegisterIMRequest) (response *RegisterIMResponse, err error) {
-    if request == nil {
-        request = NewRegisterIMRequest()
-    }
-    response = NewRegisterIMResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewRegisterIMRequest()
+	}
+	response = NewRegisterIMResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewStopGameRequest() (request *StopGameRequest) {
-    request = &StopGameRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("bizlive", APIVersion, "StopGame")
-    return
+	request = &StopGameRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("bizlive", APIVersion, "StopGame")
+	return
 }
 
 func NewStopGameResponse() (response *StopGameResponse) {
-    response = &StopGameResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &StopGameResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 强制退出游戏
 func (c *Client) StopGame(request *StopGameRequest) (response *StopGameResponse, err error) {
-    if request == nil {
-        request = NewStopGameRequest()
-    }
-    response = NewStopGameResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewStopGameRequest()
+	}
+	response = NewStopGameResponse()
+	err = c.Send(request, response)
+	return
 }

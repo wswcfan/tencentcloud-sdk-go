@@ -15,9 +15,9 @@
 package v20190926
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Data struct {
@@ -25,7 +25,7 @@ type Data struct {
 	// 操作时间戳，单位秒
 	PostTime *uint64 `json:"PostTime,omitempty" name:"PostTime"`
 
-	// 用户ID 
+	// 用户ID
 	// accountType不同对应不同的用户ID。如果是QQ或微信用户则填入对应的openId
 	Uid *string `json:"Uid,omitempty" name:"Uid"`
 
@@ -62,12 +62,12 @@ type MarketingValueJudgementRequest struct {
 }
 
 func (r *MarketingValueJudgementRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MarketingValueJudgementRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MarketingValueJudgementResponse struct {
@@ -83,10 +83,10 @@ type MarketingValueJudgementResponse struct {
 }
 
 func (r *MarketingValueJudgementResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MarketingValueJudgementResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

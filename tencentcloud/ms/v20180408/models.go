@@ -15,9 +15,9 @@
 package v20180408
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AdInfo struct {
@@ -211,12 +211,12 @@ type CreateBindInstanceRequest struct {
 }
 
 func (r *CreateBindInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBindInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateBindInstanceResponse struct {
@@ -232,12 +232,12 @@ type CreateBindInstanceResponse struct {
 }
 
 func (r *CreateBindInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateBindInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCosSecKeyInstanceRequest struct {
@@ -251,12 +251,12 @@ type CreateCosSecKeyInstanceRequest struct {
 }
 
 func (r *CreateCosSecKeyInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCosSecKeyInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateCosSecKeyInstanceResponse struct {
@@ -293,12 +293,12 @@ type CreateCosSecKeyInstanceResponse struct {
 }
 
 func (r *CreateCosSecKeyInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateCosSecKeyInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateResourceInstancesRequest struct {
@@ -318,12 +318,12 @@ type CreateResourceInstancesRequest struct {
 }
 
 func (r *CreateResourceInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateResourceInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateResourceInstancesResponse struct {
@@ -339,12 +339,12 @@ type CreateResourceInstancesResponse struct {
 }
 
 func (r *CreateResourceInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateResourceInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScanInstancesRequest struct {
@@ -358,12 +358,12 @@ type CreateScanInstancesRequest struct {
 }
 
 func (r *CreateScanInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScanInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScanInstancesResponse struct {
@@ -391,12 +391,12 @@ type CreateScanInstancesResponse struct {
 }
 
 func (r *CreateScanInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScanInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateShieldInstanceRequest struct {
@@ -410,12 +410,12 @@ type CreateShieldInstanceRequest struct {
 }
 
 func (r *CreateShieldInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateShieldInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateShieldInstanceResponse struct {
@@ -434,12 +434,12 @@ type CreateShieldInstanceResponse struct {
 }
 
 func (r *CreateShieldInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateShieldInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateShieldPlanInstanceRequest struct {
@@ -456,12 +456,12 @@ type CreateShieldPlanInstanceRequest struct {
 }
 
 func (r *CreateShieldPlanInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateShieldPlanInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateShieldPlanInstanceResponse struct {
@@ -480,12 +480,12 @@ type CreateShieldPlanInstanceResponse struct {
 }
 
 func (r *CreateShieldPlanInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateShieldPlanInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScanInstancesRequest struct {
@@ -496,12 +496,12 @@ type DeleteScanInstancesRequest struct {
 }
 
 func (r *DeleteScanInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScanInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScanInstancesResponse struct {
@@ -517,12 +517,12 @@ type DeleteScanInstancesResponse struct {
 }
 
 func (r *DeleteScanInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScanInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteShieldInstancesRequest struct {
@@ -533,12 +533,12 @@ type DeleteShieldInstancesRequest struct {
 }
 
 func (r *DeleteShieldInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteShieldInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteShieldInstancesResponse struct {
@@ -554,12 +554,12 @@ type DeleteShieldInstancesResponse struct {
 }
 
 func (r *DeleteShieldInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteShieldInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeResourceInstancesRequest struct {
@@ -585,12 +585,12 @@ type DescribeResourceInstancesRequest struct {
 }
 
 func (r *DescribeResourceInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeResourceInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeResourceInstancesResponse struct {
@@ -609,12 +609,12 @@ type DescribeResourceInstancesResponse struct {
 }
 
 func (r *DescribeResourceInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeResourceInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanInstancesRequest struct {
@@ -640,12 +640,12 @@ type DescribeScanInstancesRequest struct {
 }
 
 func (r *DescribeScanInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanInstancesResponse struct {
@@ -664,12 +664,12 @@ type DescribeScanInstancesResponse struct {
 }
 
 func (r *DescribeScanInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanResultsRequest struct {
@@ -683,12 +683,12 @@ type DescribeScanResultsRequest struct {
 }
 
 func (r *DescribeScanResultsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanResultsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScanResultsResponse struct {
@@ -707,12 +707,12 @@ type DescribeScanResultsResponse struct {
 }
 
 func (r *DescribeScanResultsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScanResultsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldInstancesRequest struct {
@@ -738,12 +738,12 @@ type DescribeShieldInstancesRequest struct {
 }
 
 func (r *DescribeShieldInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldInstancesResponse struct {
@@ -762,12 +762,12 @@ type DescribeShieldInstancesResponse struct {
 }
 
 func (r *DescribeShieldInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldPlanInstanceRequest struct {
@@ -781,12 +781,12 @@ type DescribeShieldPlanInstanceRequest struct {
 }
 
 func (r *DescribeShieldPlanInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldPlanInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldPlanInstanceResponse struct {
@@ -808,12 +808,12 @@ type DescribeShieldPlanInstanceResponse struct {
 }
 
 func (r *DescribeShieldPlanInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldPlanInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldResultRequest struct {
@@ -824,12 +824,12 @@ type DescribeShieldResultRequest struct {
 }
 
 func (r *DescribeShieldResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeShieldResultResponse struct {
@@ -857,12 +857,12 @@ type DescribeShieldResultResponse struct {
 }
 
 func (r *DescribeShieldResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeShieldResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUserBaseInfoInstanceRequest struct {
@@ -870,12 +870,12 @@ type DescribeUserBaseInfoInstanceRequest struct {
 }
 
 func (r *DescribeUserBaseInfoInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUserBaseInfoInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUserBaseInfoInstanceResponse struct {
@@ -897,12 +897,12 @@ type DescribeUserBaseInfoInstanceResponse struct {
 }
 
 func (r *DescribeUserBaseInfoInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUserBaseInfoInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Filter struct {

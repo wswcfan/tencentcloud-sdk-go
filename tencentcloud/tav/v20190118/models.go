@@ -15,9 +15,9 @@
 package v20190118
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type GetLocalEngineRequest struct {
@@ -28,12 +28,12 @@ type GetLocalEngineRequest struct {
 }
 
 func (r *GetLocalEngineRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetLocalEngineRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetLocalEngineResponse struct {
@@ -55,12 +55,12 @@ type GetLocalEngineResponse struct {
 }
 
 func (r *GetLocalEngineResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetLocalEngineResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetScanResultRequest struct {
@@ -74,12 +74,12 @@ type GetScanResultRequest struct {
 }
 
 func (r *GetScanResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetScanResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetScanResultResponse struct {
@@ -93,7 +93,7 @@ type GetScanResultResponse struct {
 		Info *string `json:"Info,omitempty" name:"Info"`
 
 		// 实际结果信息，包括md5、scan_status、virus_name三个字段；virus_name报毒名："torjan.**":黑样本的报毒名、".":样本不报毒、"" :样本无检出信息，需上传扫描；
-	// scan_status样本状态：-1无检出信息需上传扫描、0样本扫描中、1样本扫描结束且不报毒、2样本扫描结束且报黑、3样本下载失败；
+		// scan_status样本状态：-1无检出信息需上传扫描、0样本扫描中、1样本扫描结束且不报毒、2样本扫描结束且报黑、3样本下载失败；
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -102,12 +102,12 @@ type GetScanResultResponse struct {
 }
 
 func (r *GetScanResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetScanResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanFileHashRequest struct {
@@ -127,12 +127,12 @@ type ScanFileHashRequest struct {
 }
 
 func (r *ScanFileHashRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanFileHashRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanFileHashResponse struct {
@@ -145,9 +145,9 @@ type ScanFileHashResponse struct {
 		// 接口调用描述信息，成功返回"scan success"，失败返回"scan error"
 		Info *string `json:"Info,omitempty" name:"Info"`
 
-		// 云查实际结果信息，包括md5、return_state、virus_state、virus_name字符逗号间隔；        
-	// return_state查询状态：-1/0代表失败、1/2代表成功；
-	// virus_state文状件态：0文件不存在、1白、2黑、3未知、4感染性、5低可信白；
+		// 云查实际结果信息，包括md5、return_state、virus_state、virus_name字符逗号间隔；
+		// return_state查询状态：-1/0代表失败、1/2代表成功；
+		// virus_state文状件态：0文件不存在、1白、2黑、3未知、4感染性、5低可信白；
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -156,12 +156,12 @@ type ScanFileHashResponse struct {
 }
 
 func (r *ScanFileHashResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanFileHashResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanFileRequest struct {
@@ -178,12 +178,12 @@ type ScanFileRequest struct {
 }
 
 func (r *ScanFileRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanFileRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ScanFileResponse struct {
@@ -205,10 +205,10 @@ type ScanFileResponse struct {
 }
 
 func (r *ScanFileResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ScanFileResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

@@ -15,9 +15,9 @@
 package v20180709
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ActionSummaryOverviewItem struct {
@@ -749,12 +749,12 @@ type DescribeAccountBalanceRequest struct {
 }
 
 func (r *DescribeAccountBalanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountBalanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountBalanceResponse struct {
@@ -770,12 +770,12 @@ type DescribeAccountBalanceResponse struct {
 }
 
 func (r *DescribeAccountBalanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountBalanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillDetailRequest struct {
@@ -817,12 +817,12 @@ type DescribeBillDetailRequest struct {
 }
 
 func (r *DescribeBillDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillDetailResponse struct {
@@ -833,7 +833,7 @@ type DescribeBillDetailResponse struct {
 		DetailSet []*BillDetail `json:"DetailSet,omitempty" name:"DetailSet" list`
 
 		// 总记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -842,12 +842,12 @@ type DescribeBillDetailResponse struct {
 }
 
 func (r *DescribeBillDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillListRequest struct {
@@ -876,12 +876,12 @@ type DescribeBillListRequest struct {
 }
 
 func (r *DescribeBillListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillListResponse struct {
@@ -915,12 +915,12 @@ type DescribeBillListResponse struct {
 }
 
 func (r *DescribeBillListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillResourceSummaryRequest struct {
@@ -947,12 +947,12 @@ type DescribeBillResourceSummaryRequest struct {
 }
 
 func (r *DescribeBillResourceSummaryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillResourceSummaryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillResourceSummaryResponse struct {
@@ -963,7 +963,7 @@ type DescribeBillResourceSummaryResponse struct {
 		ResourceSummarySet []*BillResourceSummary `json:"ResourceSummarySet,omitempty" name:"ResourceSummarySet" list`
 
 		// 资源汇总列表总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *int64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -972,12 +972,12 @@ type DescribeBillResourceSummaryResponse struct {
 }
 
 func (r *DescribeBillResourceSummaryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillResourceSummaryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByPayModeRequest struct {
@@ -994,12 +994,12 @@ type DescribeBillSummaryByPayModeRequest struct {
 }
 
 func (r *DescribeBillSummaryByPayModeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByPayModeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByPayModeResponse struct {
@@ -1010,7 +1010,7 @@ type DescribeBillSummaryByPayModeResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各付费模式花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*PayModeSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1019,12 +1019,12 @@ type DescribeBillSummaryByPayModeResponse struct {
 }
 
 func (r *DescribeBillSummaryByPayModeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByPayModeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByProductRequest struct {
@@ -1041,12 +1041,12 @@ type DescribeBillSummaryByProductRequest struct {
 }
 
 func (r *DescribeBillSummaryByProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByProductResponse struct {
@@ -1057,11 +1057,11 @@ type DescribeBillSummaryByProductResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 总花费详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryTotal *BusinessSummaryTotal `json:"SummaryTotal,omitempty" name:"SummaryTotal"`
 
 		// 各产品花费分布
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*BusinessSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1070,12 +1070,12 @@ type DescribeBillSummaryByProductResponse struct {
 }
 
 func (r *DescribeBillSummaryByProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByProjectRequest struct {
@@ -1092,12 +1092,12 @@ type DescribeBillSummaryByProjectRequest struct {
 }
 
 func (r *DescribeBillSummaryByProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByProjectResponse struct {
@@ -1108,7 +1108,7 @@ type DescribeBillSummaryByProjectResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各项目花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*ProjectSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1117,12 +1117,12 @@ type DescribeBillSummaryByProjectResponse struct {
 }
 
 func (r *DescribeBillSummaryByProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByRegionRequest struct {
@@ -1139,12 +1139,12 @@ type DescribeBillSummaryByRegionRequest struct {
 }
 
 func (r *DescribeBillSummaryByRegionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByRegionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByRegionResponse struct {
@@ -1155,7 +1155,7 @@ type DescribeBillSummaryByRegionResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各地域花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*RegionSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1164,12 +1164,12 @@ type DescribeBillSummaryByRegionResponse struct {
 }
 
 func (r *DescribeBillSummaryByRegionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByRegionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByTagRequest struct {
@@ -1189,12 +1189,12 @@ type DescribeBillSummaryByTagRequest struct {
 }
 
 func (r *DescribeBillSummaryByTagRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByTagRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBillSummaryByTagResponse struct {
@@ -1205,7 +1205,7 @@ type DescribeBillSummaryByTagResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 各标签值花费分布详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SummaryOverview []*TagSummaryOverviewItem `json:"SummaryOverview,omitempty" name:"SummaryOverview" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1214,12 +1214,12 @@ type DescribeBillSummaryByTagResponse struct {
 }
 
 func (r *DescribeBillSummaryByTagResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBillSummaryByTagResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostDetailRequest struct {
@@ -1255,12 +1255,12 @@ type DescribeCostDetailRequest struct {
 }
 
 func (r *DescribeCostDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostDetailResponse struct {
@@ -1268,11 +1268,11 @@ type DescribeCostDetailResponse struct {
 	Response *struct {
 
 		// 消耗明细
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DetailSet []*CostDetail `json:"DetailSet,omitempty" name:"DetailSet" list`
 
 		// 记录数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *uint64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1281,12 +1281,12 @@ type DescribeCostDetailResponse struct {
 }
 
 func (r *DescribeCostDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByProductRequest struct {
@@ -1312,12 +1312,12 @@ type DescribeCostSummaryByProductRequest struct {
 }
 
 func (r *DescribeCostSummaryByProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByProductResponse struct {
@@ -1331,11 +1331,11 @@ type DescribeCostSummaryByProductResponse struct {
 		Total *ConsumptionSummaryTotal `json:"Total,omitempty" name:"Total"`
 
 		// 消耗按产品汇总详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*ConsumptionBusinessSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 记录数量，NeedRecordNum为0是返回null
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1344,12 +1344,12 @@ type DescribeCostSummaryByProductResponse struct {
 }
 
 func (r *DescribeCostSummaryByProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByProjectRequest struct {
@@ -1375,12 +1375,12 @@ type DescribeCostSummaryByProjectRequest struct {
 }
 
 func (r *DescribeCostSummaryByProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByProjectResponse struct {
@@ -1405,12 +1405,12 @@ type DescribeCostSummaryByProjectResponse struct {
 }
 
 func (r *DescribeCostSummaryByProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByRegionRequest struct {
@@ -1436,12 +1436,12 @@ type DescribeCostSummaryByRegionRequest struct {
 }
 
 func (r *DescribeCostSummaryByRegionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByRegionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByRegionResponse struct {
@@ -1458,7 +1458,7 @@ type DescribeCostSummaryByRegionResponse struct {
 		Data []*ConsumptionRegionSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 记录数量，NeedRecordNum为0是返回null
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1467,12 +1467,12 @@ type DescribeCostSummaryByRegionResponse struct {
 }
 
 func (r *DescribeCostSummaryByRegionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByRegionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByResourceRequest struct {
@@ -1504,12 +1504,12 @@ type DescribeCostSummaryByResourceRequest struct {
 }
 
 func (r *DescribeCostSummaryByResourceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByResourceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCostSummaryByResourceResponse struct {
@@ -1520,19 +1520,19 @@ type DescribeCostSummaryByResourceResponse struct {
 		Ready *uint64 `json:"Ready,omitempty" name:"Ready"`
 
 		// 消耗详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *ConsumptionSummaryTotal `json:"Total,omitempty" name:"Total"`
 
 		// 过滤条件
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ConditionValue *ConsumptionResourceSummaryConditionValue `json:"ConditionValue,omitempty" name:"ConditionValue"`
 
 		// 记录数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordNum *uint64 `json:"RecordNum,omitempty" name:"RecordNum"`
 
 		// 资源消耗详情
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data []*ConsumptionResourceSummaryDataItem `json:"Data,omitempty" name:"Data" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1541,12 +1541,12 @@ type DescribeCostSummaryByResourceResponse struct {
 }
 
 func (r *DescribeCostSummaryByResourceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCostSummaryByResourceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDealsByCondRequest struct {
@@ -1587,12 +1587,12 @@ type DescribeDealsByCondRequest struct {
 }
 
 func (r *DescribeDealsByCondRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDealsByCondRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDealsByCondResponse struct {
@@ -1611,12 +1611,12 @@ type DescribeDealsByCondResponse struct {
 }
 
 func (r *DescribeDealsByCondResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDealsByCondResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDosageDetailByDateRequest struct {
@@ -1631,7 +1631,7 @@ type DescribeDosageDetailByDateRequest struct {
 	// 互动直播：
 	// 10194   互动直播-核心机房           :
 	// 10195   互动直播-边缘机房
-	// 
+	//
 	// cdn业务：
 	// 10180：CDN静态加速流量(国内)
 	// 10181：CDN静态加速带宽(国内)
@@ -1639,10 +1639,10 @@ type DescribeDosageDetailByDateRequest struct {
 	// 10183：CDN静态加速普通带宽
 	// 10231：CDN静态加速流量(海外)
 	// 10232：CDN静态加速带宽(海外)
-	// 
+	//
 	// 100967：弹性公网IP-按流量计费
 	// 101065：公网负载均衡-按流量计费
-	// 
+	//
 	// 视频直播
 	// 10226 视频直播流量(国内)
 	// 10227 视频直播带宽(国内)
@@ -1660,12 +1660,12 @@ type DescribeDosageDetailByDateRequest struct {
 }
 
 func (r *DescribeDosageDetailByDateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDosageDetailByDateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDosageDetailByDateResponse struct {
@@ -1673,19 +1673,19 @@ type DescribeDosageDetailByDateResponse struct {
 	Response *struct {
 
 		// 计量单位
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Unit *string `json:"Unit,omitempty" name:"Unit"`
 
 		// 用量数组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DetailSets []*DetailSet `json:"DetailSets,omitempty" name:"DetailSets" list`
 
 		// 错误码
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RetCode *int64 `json:"RetCode,omitempty" name:"RetCode"`
 
 		// 错误信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RetMsg *string `json:"RetMsg,omitempty" name:"RetMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1694,12 +1694,12 @@ type DescribeDosageDetailByDateResponse struct {
 }
 
 func (r *DescribeDosageDetailByDateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDosageDetailByDateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetailPoint struct {
@@ -1741,12 +1741,12 @@ type PayDealsRequest struct {
 }
 
 func (r *PayDealsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PayDealsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PayDealsResponse struct {
@@ -1768,12 +1768,12 @@ type PayDealsResponse struct {
 }
 
 func (r *PayDealsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PayDealsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PayModeSummaryOverviewItem struct {

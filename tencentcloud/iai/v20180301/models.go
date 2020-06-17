@@ -15,9 +15,9 @@
 package v20180301
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AnalyzeFaceRequest struct {
@@ -31,14 +31,14 @@ type AnalyzeFaceRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。  
-	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。  
+	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。
+	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。
 	// 不同算法模型版本对应的人脸识别算法不同，新版本的整体效果会优于旧版本，建议使用最新版本。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
@@ -47,12 +47,12 @@ type AnalyzeFaceRequest struct {
 }
 
 func (r *AnalyzeFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AnalyzeFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AnalyzeFaceResponse struct {
@@ -77,12 +77,12 @@ type AnalyzeFaceResponse struct {
 }
 
 func (r *AnalyzeFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AnalyzeFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Candidate struct {
@@ -93,12 +93,12 @@ type Candidate struct {
 	// 人脸ID
 	FaceId *string `json:"FaceId,omitempty" name:"FaceId"`
 
-	// 候选者的匹配得分。 
-	// 
+	// 候选者的匹配得分。
+	//
 	// 1万大小人脸底库下，误识率百分之一对应分数为70分，误识率千分之一对应分数为80分，误识率万分之一对应分数为90分；
 	// 10万大小人脸底库下，误识率百分之一对应分数为80分，误识率千分之一对应分数为90分，误识率万分之一对应分数为100分；
 	// 30万大小人脸底库下，误识率百分之一对应分数为85分，误识率千分之一对应分数为95分。
-	// 
+	//
 	// 一般80分左右可适用大部分场景，建议分数不要超过90分。您可以根据实际情况选择合适的分数。
 	Score *float64 `json:"Score,omitempty" name:"Score"`
 
@@ -118,7 +118,7 @@ type Candidate struct {
 type CheckSimilarPersonRequest struct {
 	*tchttp.BaseRequest
 
-	// 待整理的人员库列表。 
+	// 待整理的人员库列表。
 	// 人员库总人数不可超过200万，人员库个数不可超过10个。
 	GroupIds []*string `json:"GroupIds,omitempty" name:"GroupIds" list`
 
@@ -129,12 +129,12 @@ type CheckSimilarPersonRequest struct {
 }
 
 func (r *CheckSimilarPersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckSimilarPersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckSimilarPersonResponse struct {
@@ -150,12 +150,12 @@ type CheckSimilarPersonResponse struct {
 }
 
 func (r *CheckSimilarPersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckSimilarPersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CompareFaceRequest struct {
@@ -172,33 +172,33 @@ type CompareFaceRequest struct {
 	ImageB *string `json:"ImageB,omitempty" name:"ImageB"`
 
 	// A 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
-	// A 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// A 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	UrlA *string `json:"UrlA,omitempty" name:"UrlA"`
 
 	// B 图片的 Url ，对应图片 base64 编码后大小不可超过5M。
-	// B 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// B 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	UrlB *string `json:"UrlB,omitempty" name:"UrlB"`
 
-	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。 
-	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。 
+	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。
+	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。
 	// 不同算法模型版本对应的人脸识别算法不同，新版本的整体效果会优于旧版本，建议使用“3.0”版本。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -207,12 +207,12 @@ type CompareFaceRequest struct {
 }
 
 func (r *CompareFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompareFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CompareFaceResponse struct {
@@ -220,10 +220,10 @@ type CompareFaceResponse struct {
 	Response *struct {
 
 		// 两张图片中人脸的相似度分数。
-	// 不同算法版本返回的相似度分数不同。 
-	// 若需要验证两张图片中人脸是否为同一人，3.0版本误识率千分之一对应分数为40分，误识率万分之一对应分数为50分，误识率十万分之一对应分数为60分。  一般超过50分则可认定为同一人。 
-	// 2.0版本误识率千分之一对应分数为70分，误识率万分之一对应分数为80分，误识率十万分之一对应分数为90分。 一般超过80分则可认定为同一人。 
-	// 若需要验证两张图片中的人脸是否为同一人，建议使用人脸验证接口。
+		// 不同算法版本返回的相似度分数不同。
+		// 若需要验证两张图片中人脸是否为同一人，3.0版本误识率千分之一对应分数为40分，误识率万分之一对应分数为50分，误识率十万分之一对应分数为60分。  一般超过50分则可认定为同一人。
+		// 2.0版本误识率千分之一对应分数为70分，误识率万分之一对应分数为80分，误识率十万分之一对应分数为90分。 一般超过80分则可认定为同一人。
+		// 若需要验证两张图片中的人脸是否为同一人，建议使用人脸验证接口。
 		Score *float64 `json:"Score,omitempty" name:"Score"`
 
 		// 人脸识别所用的算法模型版本。
@@ -235,12 +235,12 @@ type CompareFaceResponse struct {
 }
 
 func (r *CompareFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompareFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CopyPersonRequest struct {
@@ -254,12 +254,12 @@ type CopyPersonRequest struct {
 }
 
 func (r *CopyPersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyPersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CopyPersonResponse struct {
@@ -278,12 +278,12 @@ type CopyPersonResponse struct {
 }
 
 func (r *CopyPersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyPersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateFaceRequest struct {
@@ -299,25 +299,25 @@ type CreateFaceRequest struct {
 	Images []*string `json:"Images,omitempty" name:"Images" list`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	// 人员人脸总数量不可超过5张。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	Urls []*string `json:"Urls,omitempty" name:"Urls" list`
 
-	// 只有和该人员已有的人脸相似度超过FaceMatchThreshold值的人脸，才能增加人脸成功。 
+	// 只有和该人员已有的人脸相似度超过FaceMatchThreshold值的人脸，才能增加人脸成功。
 	// 默认值60分。取值范围[0,100] 。
 	FaceMatchThreshold *float64 `json:"FaceMatchThreshold,omitempty" name:"FaceMatchThreshold"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -326,12 +326,12 @@ type CreateFaceRequest struct {
 }
 
 func (r *CreateFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateFaceResponse struct {
@@ -344,14 +344,14 @@ type CreateFaceResponse struct {
 		// 加入成功的人脸ID列表
 		SucFaceIds []*string `json:"SucFaceIds,omitempty" name:"SucFaceIds" list`
 
-		// 每张人脸图片添加结果，-1101 代表未检测到人脸，-1102 代表图片解码失败， 
-	// -1601代表不符合图片质量控制要求, -1604 代表人脸相似度没有超过FaceMatchThreshold。 
-	// 其他非 0 值代表算法服务异常。 
-	// RetCode的顺序和入参中 Images 或 Urls 的顺序一致。
+		// 每张人脸图片添加结果，-1101 代表未检测到人脸，-1102 代表图片解码失败，
+		// -1601代表不符合图片质量控制要求, -1604 代表人脸相似度没有超过FaceMatchThreshold。
+		// 其他非 0 值代表算法服务异常。
+		// RetCode的顺序和入参中 Images 或 Urls 的顺序一致。
 		RetCode []*int64 `json:"RetCode,omitempty" name:"RetCode" list`
 
-		// 加入成功的人脸索引。索引顺序和入参中 Images 或 Urls 的顺序一致。 
-	// 例， Urls 中 有 3 个 url，第二个 url 失败，则 SucIndexes 值为 [0,2] 。
+		// 加入成功的人脸索引。索引顺序和入参中 Images 或 Urls 的顺序一致。
+		// 例， Urls 中 有 3 个 url，第二个 url 失败，则 SucIndexes 值为 [0,2] 。
 		SucIndexes []*uint64 `json:"SucIndexes,omitempty" name:"SucIndexes" list`
 
 		// 加入成功的人脸框位置。顺序和入参中 Images 或 Urls 的顺序一致。
@@ -366,12 +366,12 @@ type CreateFaceResponse struct {
 }
 
 func (r *CreateFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGroupRequest struct {
@@ -383,12 +383,12 @@ type CreateGroupRequest struct {
 	// 人员库 ID，不可修改，不可重复。支持英文、数字、-%@#&_，长度限制64B。
 	GroupId *string `json:"GroupId,omitempty" name:"GroupId"`
 
-	// 人员库自定义描述字段，用于描述人员库中人员属性，该人员库下所有人员将拥有此描述字段。 
-	// 最多可以创建5个。 
-	// 每个自定义描述字段支持[1,30]个字符。 
-	// 在同一人员库中自定义描述字段不可重复。 
-	// 例： 设置某人员库“自定义描述字段”为["学号","工号","手机号"]， 
-	// 则该人员库下所有人员将拥有名为“学号”、“工号”、“手机号”的描述字段， 
+	// 人员库自定义描述字段，用于描述人员库中人员属性，该人员库下所有人员将拥有此描述字段。
+	// 最多可以创建5个。
+	// 每个自定义描述字段支持[1,30]个字符。
+	// 在同一人员库中自定义描述字段不可重复。
+	// 例： 设置某人员库“自定义描述字段”为["学号","工号","手机号"]，
+	// 则该人员库下所有人员将拥有名为“学号”、“工号”、“手机号”的描述字段，
 	// 可在对应人员描述字段中填写内容，登记该人员的学号、工号、手机号等信息。
 	GroupExDescriptions []*string `json:"GroupExDescriptions,omitempty" name:"GroupExDescriptions" list`
 
@@ -396,18 +396,18 @@ type CreateGroupRequest struct {
 	Tag *string `json:"Tag,omitempty" name:"Tag"`
 
 	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。
-	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。 
+	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。
 	// 不同算法模型版本对应的人脸识别算法不同，新版本的整体效果会优于旧版本，建议使用“3.0”版本。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 }
 
 func (r *CreateGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateGroupResponse struct {
@@ -423,12 +423,12 @@ type CreateGroupResponse struct {
 }
 
 func (r *CreateGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonRequest struct {
@@ -454,31 +454,31 @@ type CreatePersonRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 此参数用于控制判断 Image 或 Url 中图片包含的人脸，是否在人员库中已有疑似的同一人。 
-	// 如果判断为已有相同人在人员库中，则不会创建新的人员，返回疑似同一人的人员信息。 
-	// 如果判断没有，则完成创建人员。 
-	// 0: 不进行判断，无论是否有疑似同一人在库中均完成入库； 
-	// 1:较低的同一人判断要求（百一误识别率）； 
-	// 2: 一般的同一人判断要求（千一误识别率）； 
-	// 3: 较高的同一人判断要求（万一误识别率）； 
-	// 4: 很高的同一人判断要求（十万一误识别率）。 
-	// 默认 0。  
+	// 此参数用于控制判断 Image 或 Url 中图片包含的人脸，是否在人员库中已有疑似的同一人。
+	// 如果判断为已有相同人在人员库中，则不会创建新的人员，返回疑似同一人的人员信息。
+	// 如果判断没有，则完成创建人员。
+	// 0: 不进行判断，无论是否有疑似同一人在库中均完成入库；
+	// 1:较低的同一人判断要求（百一误识别率）；
+	// 2: 一般的同一人判断要求（千一误识别率）；
+	// 3: 较高的同一人判断要求（万一误识别率）；
+	// 4: 很高的同一人判断要求（十万一误识别率）。
+	// 默认 0。
 	// 注： 要求越高，则疑似同一人的概率越小。不同要求对应的误识别率仅为参考值，您可以根据实际情况调整。
 	UniquePersonControl *uint64 `json:"UniquePersonControl,omitempty" name:"UniquePersonControl"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -487,12 +487,12 @@ type CreatePersonRequest struct {
 }
 
 func (r *CreatePersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePersonResponse struct {
@@ -503,11 +503,11 @@ type CreatePersonResponse struct {
 		FaceId *string `json:"FaceId,omitempty" name:"FaceId"`
 
 		// 检测出的人脸框的位置。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 
-		// 疑似同一人的PersonId。 
-	// 当 UniquePersonControl 参数不为0且人员库中有疑似的同一人，此参数才有意义。
+		// 疑似同一人的PersonId。
+		// 当 UniquePersonControl 参数不为0且人员库中有疑似的同一人，此参数才有意义。
 		SimilarPersonId *string `json:"SimilarPersonId,omitempty" name:"SimilarPersonId"`
 
 		// 人脸识别所用的算法模型版本。
@@ -519,12 +519,12 @@ type CreatePersonResponse struct {
 }
 
 func (r *CreatePersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFaceRequest struct {
@@ -538,12 +538,12 @@ type DeleteFaceRequest struct {
 }
 
 func (r *DeleteFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFaceResponse struct {
@@ -562,12 +562,12 @@ type DeleteFaceResponse struct {
 }
 
 func (r *DeleteFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupRequest struct {
@@ -578,12 +578,12 @@ type DeleteGroupRequest struct {
 }
 
 func (r *DeleteGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteGroupResponse struct {
@@ -596,12 +596,12 @@ type DeleteGroupResponse struct {
 }
 
 func (r *DeleteGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonFromGroupRequest struct {
@@ -615,12 +615,12 @@ type DeletePersonFromGroupRequest struct {
 }
 
 func (r *DeletePersonFromGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonFromGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonFromGroupResponse struct {
@@ -633,12 +633,12 @@ type DeletePersonFromGroupResponse struct {
 }
 
 func (r *DeletePersonFromGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonFromGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonRequest struct {
@@ -649,12 +649,12 @@ type DeletePersonRequest struct {
 }
 
 func (r *DeletePersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeletePersonResponse struct {
@@ -667,18 +667,18 @@ type DeletePersonResponse struct {
 }
 
 func (r *DeletePersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeletePersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectFaceRequest struct {
 	*tchttp.BaseRequest
 
-	// 最多处理的人脸数目。默认值为1（仅检测图片中面积最大的那张人脸），最大值为120。 
+	// 最多处理的人脸数目。默认值为1（仅检测图片中面积最大的那张人脸），最大值为120。
 	// 此参数用于控制处理待检测图片中的人脸个数，值越小，处理速度越快。
 	MaxFaceNum *uint64 `json:"MaxFaceNum,omitempty" name:"MaxFaceNum"`
 
@@ -692,26 +692,26 @@ type DetectFaceRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 是否需要返回人脸属性信息（FaceAttributesInfo）。0 为不需要返回，1 为需要返回。默认为 0。 
-	// 非 1 值均视为不需要返回，此时 FaceAttributesInfo 不具备参考意义。  
-	// 最多返回面积最大的 5 张人脸属性信息，超过 5 张人脸（第 6 张及以后的人脸）的 FaceAttributesInfo 不具备参考意义。  
+	// 是否需要返回人脸属性信息（FaceAttributesInfo）。0 为不需要返回，1 为需要返回。默认为 0。
+	// 非 1 值均视为不需要返回，此时 FaceAttributesInfo 不具备参考意义。
+	// 最多返回面积最大的 5 张人脸属性信息，超过 5 张人脸（第 6 张及以后的人脸）的 FaceAttributesInfo 不具备参考意义。
 	// 提取人脸属性信息较为耗时，如不需要人脸属性信息，建议关闭此项功能，加快人脸检测速度。
 	NeedFaceAttributes *uint64 `json:"NeedFaceAttributes,omitempty" name:"NeedFaceAttributes"`
 
-	// 是否开启质量检测。0 为关闭，1 为开启。默认为 0。 
+	// 是否开启质量检测。0 为关闭，1 为开启。默认为 0。
 	// 非 1 值均视为不进行质量检测。
-	// 最多返回面积最大的 30 张人脸质量分信息，超过 30 张人脸（第 31 张及以后的人脸）的 FaceQualityInfo不具备参考意义。  
+	// 最多返回面积最大的 30 张人脸质量分信息，超过 30 张人脸（第 31 张及以后的人脸）的 FaceQualityInfo不具备参考意义。
 	// 建议：人脸入库操作建议开启此功能。
 	NeedQualityDetection *uint64 `json:"NeedQualityDetection,omitempty" name:"NeedQualityDetection"`
 
-	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。  
-	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。 
+	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。
+	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。
 	// 不同算法模型版本对应的人脸识别算法不同，新版本的整体效果会优于旧版本，建议使用“3.0”版本。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
@@ -720,12 +720,12 @@ type DetectFaceRequest struct {
 }
 
 func (r *DetectFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectFaceResponse struct {
@@ -750,12 +750,12 @@ type DetectFaceResponse struct {
 }
 
 func (r *DetectFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectLiveFaceRequest struct {
@@ -766,26 +766,26 @@ type DetectLiveFaceRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// （图片的宽高比请接近 3:4，不符合宽高比的图片返回的分值不具备参考意义） 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// （图片的宽高比请接近 3:4，不符合宽高比的图片返回的分值不具备参考意义）
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。  
-	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。 
+	// 人脸识别服务所用的算法模型版本。目前入参支持 “2.0”和“3.0“ 两个输入。
+	// 2020年4月2日开始，默认为“3.0”，之前使用过本接口的账号若未填写本参数默认为“2.0”。
 	// 不同算法模型版本对应的人脸识别算法不同，新版本的整体效果会优于旧版本，建议使用“3.0”版本。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 }
 
 func (r *DetectLiveFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectLiveFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectLiveFaceResponse struct {
@@ -793,14 +793,14 @@ type DetectLiveFaceResponse struct {
 	Response *struct {
 
 		// 活体打分，取值范围 [0,100]，分数一般落于[80, 100]区间内，0分也为常见值。推荐相大于 87 时可判断为活体。可根据具体场景自行调整阈值。
-	// 本字段当且仅当FaceModelVersion为2.0时才具备参考意义。
+		// 本字段当且仅当FaceModelVersion为2.0时才具备参考意义。
 		Score *float64 `json:"Score,omitempty" name:"Score"`
 
 		// 人脸识别所用的算法模型版本。
 		FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
 		// 活体检测是否通过。
-	// 本字段只有FaceModelVersion为3.0时才具备参考意义。
+		// 本字段只有FaceModelVersion为3.0时才具备参考意义。
 		IsLiveness *bool `json:"IsLiveness,omitempty" name:"IsLiveness"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -809,29 +809,29 @@ type DetectLiveFaceResponse struct {
 }
 
 func (r *DetectLiveFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectLiveFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EstimateCheckSimilarPersonCostTimeRequest struct {
 	*tchttp.BaseRequest
 
-	// 待整理的人员库列表。 
+	// 待整理的人员库列表。
 	// 人员库总人数不可超过200万，人员库个数不可超过10个。
 	GroupIds []*string `json:"GroupIds,omitempty" name:"GroupIds" list`
 }
 
 func (r *EstimateCheckSimilarPersonCostTimeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EstimateCheckSimilarPersonCostTimeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EstimateCheckSimilarPersonCostTimeResponse struct {
@@ -847,12 +847,12 @@ type EstimateCheckSimilarPersonCostTimeResponse struct {
 }
 
 func (r *EstimateCheckSimilarPersonCostTimeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EstimateCheckSimilarPersonCostTimeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FaceAttributesInfo struct {
@@ -869,15 +869,15 @@ type FaceAttributesInfo struct {
 	// 是否有眼镜 [true,false]。NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。
 	Glass *bool `json:"Glass,omitempty" name:"Glass"`
 
-	// 上下偏移[-30,30]，单位角度。NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。 
+	// 上下偏移[-30,30]，单位角度。NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。
 	// 建议：人脸入库选择[-10,10]的图片。
 	Pitch *int64 `json:"Pitch,omitempty" name:"Pitch"`
 
-	// 左右偏移[-30,30]，单位角度。 NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。 
+	// 左右偏移[-30,30]，单位角度。 NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。
 	// 建议：人脸入库选择[-10,10]的图片。
 	Yaw *int64 `json:"Yaw,omitempty" name:"Yaw"`
 
-	// 平面旋转[-180,180]，单位角度。 NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。  
+	// 平面旋转[-180,180]，单位角度。 NeedFaceAttributes 不为1 或检测超过 5 张人脸时，此参数仍返回，但不具备参考意义。
 	// 建议：人脸入库选择[-20,20]的图片。
 	Roll *int64 `json:"Roll,omitempty" name:"Roll"`
 
@@ -919,12 +919,12 @@ type FaceHairAttributesInfo struct {
 type FaceInfo struct {
 
 	// 人脸框左上角横坐标。
-	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。 
+	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。
 	// 若需截取完整人脸，可以在完整分completess满足需求的情况下，将负值坐标取0。
 	X *int64 `json:"X,omitempty" name:"X"`
 
-	// 人脸框左上角纵坐标。 
-	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。 
+	// 人脸框左上角纵坐标。
+	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。
 	// 若需截取完整人脸，可以在完整分completess满足需求的情况下，将负值坐标取0。
 	Y *int64 `json:"Y,omitempty" name:"Y"`
 
@@ -934,7 +934,7 @@ type FaceInfo struct {
 	// 人脸框高度。
 	Height *int64 `json:"Height,omitempty" name:"Height"`
 
-	// 人脸属性信息，包含性别( gender )、年龄( age )、表情( expression )、 
+	// 人脸属性信息，包含性别( gender )、年龄( age )、表情( expression )、
 	// 魅力( beauty )、眼镜( glass )、口罩（mask）、头发（hair）和姿态 (pitch，roll，yaw )。只有当 NeedFaceAttributes 设为 1 时才返回有效信息。
 	FaceAttributesInfo *FaceAttributesInfo `json:"FaceAttributesInfo,omitempty" name:"FaceAttributesInfo"`
 
@@ -945,32 +945,32 @@ type FaceInfo struct {
 
 type FaceQualityCompleteness struct {
 
-	// 眉毛的遮挡分数[0,100]，分数越高遮挡越少。 
+	// 眉毛的遮挡分数[0,100]，分数越高遮挡越少。
 	// 参考范围：[0,80]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Eyebrow *int64 `json:"Eyebrow,omitempty" name:"Eyebrow"`
 
-	// 眼睛的遮挡分数[0,100],分数越高遮挡越少。 
+	// 眼睛的遮挡分数[0,100],分数越高遮挡越少。
 	// 参考范围：[0,80]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Eye *int64 `json:"Eye,omitempty" name:"Eye"`
 
-	// 鼻子的遮挡分数[0,100],分数越高遮挡越少。 
+	// 鼻子的遮挡分数[0,100],分数越高遮挡越少。
 	// 参考范围：[0,60]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Nose *int64 `json:"Nose,omitempty" name:"Nose"`
 
-	// 脸颊的遮挡分数[0,100],分数越高遮挡越少。 
+	// 脸颊的遮挡分数[0,100],分数越高遮挡越少。
 	// 参考范围：[0,70]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Cheek *int64 `json:"Cheek,omitempty" name:"Cheek"`
 
-	// 嘴巴的遮挡分数[0,100],分数越高遮挡越少。 
+	// 嘴巴的遮挡分数[0,100],分数越高遮挡越少。
 	// 参考范围：[0,50]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Mouth *int64 `json:"Mouth,omitempty" name:"Mouth"`
 
-	// 下巴的遮挡分数[0,100],分数越高遮挡越少。 
+	// 下巴的遮挡分数[0,100],分数越高遮挡越少。
 	// 参考范围：[0,70]表示发生遮挡。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Chin *int64 `json:"Chin,omitempty" name:"Chin"`
@@ -978,21 +978,21 @@ type FaceQualityCompleteness struct {
 
 type FaceQualityInfo struct {
 
-	// 质量分: [0,100]，综合评价图像质量是否适合人脸识别，分数越高质量越好。 
+	// 质量分: [0,100]，综合评价图像质量是否适合人脸识别，分数越高质量越好。
 	// 正常情况，只需要使用Score作为质量分总体的判断标准即可。Sharpness、Brightness、Completeness等细项分仅供参考。
-	// 参考范围：[0,40]较差，[40,60] 一般，[60,80]较好，[80,100]很好。 
+	// 参考范围：[0,40]较差，[40,60] 一般，[60,80]较好，[80,100]很好。
 	// 建议：人脸入库选取70以上的图片。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Score *int64 `json:"Score,omitempty" name:"Score"`
 
-	// 清晰分：[0,100]，评价图片清晰程度，分数越高越清晰。 
-	// 参考范围：[0,40]特别模糊，[40,60]模糊，[60,80]一般，[80,100]清晰。 
+	// 清晰分：[0,100]，评价图片清晰程度，分数越高越清晰。
+	// 参考范围：[0,40]特别模糊，[40,60]模糊，[60,80]一般，[80,100]清晰。
 	// 建议：人脸入库选取80以上的图片。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Sharpness *int64 `json:"Sharpness,omitempty" name:"Sharpness"`
 
-	// 光照分：[0,100]，评价图片光照程度，分数越高越亮。 
-	// 参考范围： [0,30]偏暗，[30,70]光照正常，[70,100]偏亮。 
+	// 光照分：[0,100]，评价图片光照程度，分数越高越亮。
+	// 参考范围： [0,30]偏暗，[30,70]光照正常，[70,100]偏亮。
 	// 建议：人脸入库选取[30,70]的图片。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	Brightness *int64 `json:"Brightness,omitempty" name:"Brightness"`
@@ -1004,13 +1004,13 @@ type FaceQualityInfo struct {
 
 type FaceRect struct {
 
-	// 人脸框左上角横坐标。 
-	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。 
+	// 人脸框左上角横坐标。
+	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。
 	// 若需截取完整人脸，可以在完整分completess满足需求的情况下，将负值坐标取0。
 	X *int64 `json:"X,omitempty" name:"X"`
 
-	// 人脸框左上角纵坐标。 
-	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。 
+	// 人脸框左上角纵坐标。
+	// 人脸框包含人脸五官位置并在此基础上进行一定的扩展，若人脸框超出图片范围，会导致坐标负值。
 	// 若需截取完整人脸，可以在完整分completess满足需求的情况下，将负值坐标取0。
 	Y *int64 `json:"Y,omitempty" name:"Y"`
 
@@ -1062,12 +1062,12 @@ type GetCheckSimilarPersonJobIdListRequest struct {
 }
 
 func (r *GetCheckSimilarPersonJobIdListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetCheckSimilarPersonJobIdListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetCheckSimilarPersonJobIdListResponse struct {
@@ -1086,12 +1086,12 @@ type GetCheckSimilarPersonJobIdListResponse struct {
 }
 
 func (r *GetCheckSimilarPersonJobIdListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetCheckSimilarPersonJobIdListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupInfoRequest struct {
@@ -1102,12 +1102,12 @@ type GetGroupInfoRequest struct {
 }
 
 func (r *GetGroupInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupInfoResponse struct {
@@ -1138,12 +1138,12 @@ type GetGroupInfoResponse struct {
 }
 
 func (r *GetGroupInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupListRequest struct {
@@ -1157,12 +1157,12 @@ type GetGroupListRequest struct {
 }
 
 func (r *GetGroupListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetGroupListResponse struct {
@@ -1173,7 +1173,7 @@ type GetGroupListResponse struct {
 		GroupInfos []*GroupInfo `json:"GroupInfos,omitempty" name:"GroupInfos" list`
 
 		// 人员库总数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GroupNum *uint64 `json:"GroupNum,omitempty" name:"GroupNum"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1182,12 +1182,12 @@ type GetGroupListResponse struct {
 }
 
 func (r *GetGroupListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetGroupListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonBaseInfoRequest struct {
@@ -1198,12 +1198,12 @@ type GetPersonBaseInfoRequest struct {
 }
 
 func (r *GetPersonBaseInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonBaseInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonBaseInfoResponse struct {
@@ -1225,12 +1225,12 @@ type GetPersonBaseInfoResponse struct {
 }
 
 func (r *GetPersonBaseInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonBaseInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonGroupInfoRequest struct {
@@ -1247,12 +1247,12 @@ type GetPersonGroupInfoRequest struct {
 }
 
 func (r *GetPersonGroupInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonGroupInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonGroupInfoResponse struct {
@@ -1263,11 +1263,11 @@ type GetPersonGroupInfoResponse struct {
 		PersonGroupInfos []*PersonGroupInfo `json:"PersonGroupInfos,omitempty" name:"PersonGroupInfos" list`
 
 		// 人员库总数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		GroupNum *uint64 `json:"GroupNum,omitempty" name:"GroupNum"`
 
 		// 人脸识别服务所用的算法模型版本。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1276,12 +1276,12 @@ type GetPersonGroupInfoResponse struct {
 }
 
 func (r *GetPersonGroupInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonGroupInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListNumRequest struct {
@@ -1292,12 +1292,12 @@ type GetPersonListNumRequest struct {
 }
 
 func (r *GetPersonListNumRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListNumRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListNumResponse struct {
@@ -1316,12 +1316,12 @@ type GetPersonListNumResponse struct {
 }
 
 func (r *GetPersonListNumResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListNumResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListRequest struct {
@@ -1338,12 +1338,12 @@ type GetPersonListRequest struct {
 }
 
 func (r *GetPersonListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetPersonListResponse struct {
@@ -1354,15 +1354,15 @@ type GetPersonListResponse struct {
 		PersonInfos []*PersonInfo `json:"PersonInfos,omitempty" name:"PersonInfos" list`
 
 		// 该人员库的人员数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PersonNum *uint64 `json:"PersonNum,omitempty" name:"PersonNum"`
 
 		// 该人员库的人脸数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceNum *uint64 `json:"FaceNum,omitempty" name:"FaceNum"`
 
 		// 人脸识别所用的算法模型版本。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1371,12 +1371,12 @@ type GetPersonListResponse struct {
 }
 
 func (r *GetPersonListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetPersonListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetSimilarPersonResultRequest struct {
@@ -1387,12 +1387,12 @@ type GetSimilarPersonResultRequest struct {
 }
 
 func (r *GetSimilarPersonResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetSimilarPersonResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetSimilarPersonResultResponse struct {
@@ -1403,7 +1403,7 @@ type GetSimilarPersonResultResponse struct {
 		Progress *float64 `json:"Progress,omitempty" name:"Progress"`
 
 		// 疑似同一人的人员信息文件临时下载链接， 有效时间为5分钟，结果文件实际保存90天。
-	// 文件内容由 SimilarPerson 的数组组成。
+		// 文件内容由 SimilarPerson 的数组组成。
 		SimilarPersonsUrl *string `json:"SimilarPersonsUrl,omitempty" name:"SimilarPersonsUrl"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1412,12 +1412,12 @@ type GetSimilarPersonResultResponse struct {
 }
 
 func (r *GetSimilarPersonResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetSimilarPersonResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GroupCandidate struct {
@@ -1459,7 +1459,7 @@ type GroupInfo struct {
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
-	// Group的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。 
+	// Group的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。
 	// Unix 纪元时间是 1970 年 1 月 1 日星期四，协调世界时 (UTC) 00:00:00。有关更多信息，请参阅 Unix 时间。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	CreationTimestamp *uint64 `json:"CreationTimestamp,omitempty" name:"CreationTimestamp"`
@@ -1470,9 +1470,9 @@ type JobIdInfo struct {
 	// 查重任务ID，用于查询、获取查重的进度和结果。
 	JobId *string `json:"JobId,omitempty" name:"JobId"`
 
-	// 查重起始时间。 
-	// StartTime的值是自 Unix 纪元时间到Group创建时间的毫秒数。 
-	// Unix 纪元时间是 1970 年 1 月 1 日星期四，协调世界时 (UTC) 00:00:00。 
+	// 查重起始时间。
+	// StartTime的值是自 Unix 纪元时间到Group创建时间的毫秒数。
+	// Unix 纪元时间是 1970 年 1 月 1 日星期四，协调世界时 (UTC) 00:00:00。
 	// 有关更多信息，请参阅 Unix 时间。
 	StartTime *uint64 `json:"StartTime,omitempty" name:"StartTime"`
 
@@ -1497,12 +1497,12 @@ type ModifyGroupRequest struct {
 }
 
 func (r *ModifyGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyGroupResponse struct {
@@ -1515,12 +1515,12 @@ type ModifyGroupResponse struct {
 }
 
 func (r *ModifyGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonBaseInfoRequest struct {
@@ -1537,12 +1537,12 @@ type ModifyPersonBaseInfoRequest struct {
 }
 
 func (r *ModifyPersonBaseInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonBaseInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonBaseInfoResponse struct {
@@ -1555,12 +1555,12 @@ type ModifyPersonBaseInfoResponse struct {
 }
 
 func (r *ModifyPersonBaseInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonBaseInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonGroupInfoRequest struct {
@@ -1577,12 +1577,12 @@ type ModifyPersonGroupInfoRequest struct {
 }
 
 func (r *ModifyPersonGroupInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonGroupInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyPersonGroupInfoResponse struct {
@@ -1595,12 +1595,12 @@ type ModifyPersonGroupInfoResponse struct {
 }
 
 func (r *ModifyPersonGroupInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyPersonGroupInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PersonExDescriptionInfo struct {
@@ -1639,7 +1639,7 @@ type PersonInfo struct {
 	// 包含的人脸照片列表
 	FaceIds []*string `json:"FaceIds,omitempty" name:"FaceIds" list`
 
-	// 人员的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。 
+	// 人员的创建时间和日期 CreationTimestamp。CreationTimestamp 的值是自 Unix 纪元时间到Group创建时间的毫秒数。
 	// Unix 纪元时间是 1970 年 1 月 1 日星期四，协调世界时 (UTC) 00:00:00。有关更多信息，请参阅 Unix 时间。
 	CreationTimestamp *uint64 `json:"CreationTimestamp,omitempty" name:"CreationTimestamp"`
 }
@@ -1661,7 +1661,7 @@ type Result struct {
 	// 检测出的人脸框位置
 	FaceRect *FaceRect `json:"FaceRect,omitempty" name:"FaceRect"`
 
-	// 检测出的人脸图片状态返回码。0 表示正常。 
+	// 检测出的人脸图片状态返回码。0 表示正常。
 	// -1601代表不符合图片质量控制要求，此时Candidate内容为空。
 	RetCode *int64 `json:"RetCode,omitempty" name:"RetCode"`
 }
@@ -1674,7 +1674,7 @@ type ResultsReturnsByGroup struct {
 	// 识别结果。
 	GroupCandidates []*GroupCandidate `json:"GroupCandidates,omitempty" name:"GroupCandidates" list`
 
-	// 检测出的人脸图片状态返回码。0 表示正常。 
+	// 检测出的人脸图片状态返回码。0 表示正常。
 	// -1601代表不符合图片质量控制要求，此时Candidate内容为空。
 	RetCode *int64 `json:"RetCode,omitempty" name:"RetCode"`
 }
@@ -1690,21 +1690,21 @@ type SearchFacesRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 最多识别的人脸数目。默认值为1（仅检测图片中面积最大的那张人脸），最大值为10。 
-	// MaxFaceNum用于，当输入的待识别图片包含多张人脸时，设定要搜索的人脸的数量。 
+	// 最多识别的人脸数目。默认值为1（仅检测图片中面积最大的那张人脸），最大值为10。
+	// MaxFaceNum用于，当输入的待识别图片包含多张人脸时，设定要搜索的人脸的数量。
 	// 例：输入的Image或Url中的图片包含多张人脸，设MaxFaceNum=5，则会识别图片中面积最大的5张人脸。
 	MaxFaceNum *uint64 `json:"MaxFaceNum,omitempty" name:"MaxFaceNum"`
 
 	// 人脸长和宽的最小尺寸，单位为像素。默认为34。低于34的人脸图片无法被识别。建议设置为80。
 	MinFaceSize *uint64 `json:"MinFaceSize,omitempty" name:"MinFaceSize"`
 
-	// 单张被识别的人脸返回的最相似人员数量。默认值为5，最大值为100。 
+	// 单张被识别的人脸返回的最相似人员数量。默认值为5，最大值为100。
 	// 例，设MaxFaceNum为1，MaxPersonNum为8，则返回Top8相似的人员信息。
 	// 值越大，需要处理的时间越长。建议不要超过10。
 	MaxPersonNum *uint64 `json:"MaxPersonNum,omitempty" name:"MaxPersonNum"`
@@ -1712,13 +1712,13 @@ type SearchFacesRequest struct {
 	// 是否返回人员具体信息。0 为关闭，1 为开启。默认为 0。其他非0非1值默认为0
 	NeedPersonInfo *int64 `json:"NeedPersonInfo,omitempty" name:"NeedPersonInfo"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -1730,12 +1730,12 @@ type SearchFacesRequest struct {
 }
 
 func (r *SearchFacesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchFacesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchFacesResponse struct {
@@ -1757,12 +1757,12 @@ type SearchFacesResponse struct {
 }
 
 func (r *SearchFacesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchFacesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchFacesReturnsByGroupRequest struct {
@@ -1790,20 +1790,20 @@ type SearchFacesReturnsByGroupRequest struct {
 	// 人脸长和宽的最小尺寸，单位为像素。默认为34。低于34将影响搜索精度。建议设置为80。
 	MinFaceSize *uint64 `json:"MinFaceSize,omitempty" name:"MinFaceSize"`
 
-	// 被检测到的人脸，对应最多返回的最相似人员数目。默认值为5，最大值为10。  
+	// 被检测到的人脸，对应最多返回的最相似人员数目。默认值为5，最大值为10。
 	// 例，设MaxFaceNum为3，MaxPersonNum为5，则最多可能返回3*5=15个人员。
 	MaxPersonNumPerGroup *uint64 `json:"MaxPersonNumPerGroup,omitempty" name:"MaxPersonNumPerGroup"`
 
 	// 是否返回人员具体信息。0 为关闭，1 为开启。默认为 0。其他非0非1值默认为0
 	NeedPersonInfo *int64 `json:"NeedPersonInfo,omitempty" name:"NeedPersonInfo"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -1817,12 +1817,12 @@ type SearchFacesReturnsByGroupRequest struct {
 }
 
 func (r *SearchFacesReturnsByGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchFacesReturnsByGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchFacesReturnsByGroupResponse struct {
@@ -1844,12 +1844,12 @@ type SearchFacesReturnsByGroupResponse struct {
 }
 
 func (r *SearchFacesReturnsByGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchFacesReturnsByGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchPersonsRequest struct {
@@ -1883,13 +1883,13 @@ type SearchPersonsRequest struct {
 	// 值越大，需要处理的时间越长。建议不要超过10。
 	MaxPersonNum *uint64 `json:"MaxPersonNum,omitempty" name:"MaxPersonNum"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -1904,12 +1904,12 @@ type SearchPersonsRequest struct {
 }
 
 func (r *SearchPersonsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchPersonsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchPersonsResponse struct {
@@ -1923,7 +1923,7 @@ type SearchPersonsResponse struct {
 		PersonNum *uint64 `json:"PersonNum,omitempty" name:"PersonNum"`
 
 		// 人脸识别所用的算法模型版本。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FaceModelVersion *string `json:"FaceModelVersion,omitempty" name:"FaceModelVersion"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1932,12 +1932,12 @@ type SearchPersonsResponse struct {
 }
 
 func (r *SearchPersonsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchPersonsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchPersonsReturnsByGroupRequest struct {
@@ -1965,17 +1965,17 @@ type SearchPersonsReturnsByGroupRequest struct {
 	// 人脸长和宽的最小尺寸，单位为像素。默认为34。低于34将影响搜索精度。建议设置为80。
 	MinFaceSize *uint64 `json:"MinFaceSize,omitempty" name:"MinFaceSize"`
 
-	// 被检测到的人脸，对应最多返回的最相似人员数目。默认值为5，最大值为10。  
+	// 被检测到的人脸，对应最多返回的最相似人员数目。默认值为5，最大值为10。
 	// 例，设MaxFaceNum为3，MaxPersonNumPerGroup为5，GroupIds长度为3，则最多可能返回3*5*3=45个人员。
 	MaxPersonNumPerGroup *uint64 `json:"MaxPersonNumPerGroup,omitempty" name:"MaxPersonNumPerGroup"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -1990,12 +1990,12 @@ type SearchPersonsReturnsByGroupRequest struct {
 }
 
 func (r *SearchPersonsReturnsByGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchPersonsReturnsByGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchPersonsReturnsByGroupResponse struct {
@@ -2017,12 +2017,12 @@ type SearchPersonsReturnsByGroupResponse struct {
 }
 
 func (r *SearchPersonsReturnsByGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchPersonsReturnsByGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyFaceRequest struct {
@@ -2037,20 +2037,20 @@ type VerifyFaceRequest struct {
 	Image *string `json:"Image,omitempty" name:"Image"`
 
 	// 图片的 Url 。对应图片 base64 编码后大小不可超过5M。
-	// Url、Image必须提供一个，如果都提供，只使用 Url。  
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Url *string `json:"Url,omitempty" name:"Url"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -2059,12 +2059,12 @@ type VerifyFaceRequest struct {
 }
 
 func (r *VerifyFaceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyFaceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyFaceResponse struct {
@@ -2072,10 +2072,10 @@ type VerifyFaceResponse struct {
 	Response *struct {
 
 		// 给定的人脸图片与 PersonId 对应人脸的相似度。若 PersonId 下有多张人脸（Face），返回相似度最大的分数。
-	// 
-	// 不同算法版本返回的相似度分数不同。
-	// 若需要验证两张图片中人脸是否为同一人，3.0版本误识率千分之一对应分数为40分，误识率万分之一对应分数为50分，误识率十万分之一对应分数为60分。 一般超过50分则可认定为同一人。
-	// 2.0版本误识率千分之一对应分数为70分，误识率万分之一对应分数为80分，误识率十万分之一对应分数为90分。 一般超过80分则可认定为同一人。
+		//
+		// 不同算法版本返回的相似度分数不同。
+		// 若需要验证两张图片中人脸是否为同一人，3.0版本误识率千分之一对应分数为40分，误识率万分之一对应分数为50分，误识率十万分之一对应分数为60分。 一般超过50分则可认定为同一人。
+		// 2.0版本误识率千分之一对应分数为70分，误识率万分之一对应分数为80分，误识率十万分之一对应分数为90分。 一般超过80分则可认定为同一人。
 		Score *float64 `json:"Score,omitempty" name:"Score"`
 
 		// 是否为同一人的判断。
@@ -2090,12 +2090,12 @@ type VerifyFaceResponse struct {
 }
 
 func (r *VerifyFaceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyFaceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyPersonRequest struct {
@@ -2106,8 +2106,8 @@ type VerifyPersonRequest struct {
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
 	Image *string `json:"Image,omitempty" name:"Image"`
 
-	// 图片的 Url 。 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。 
-	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。 
+	// 图片的 Url 。 图片的 Url、Image必须提供一个，如果都提供，只使用 Url。
+	// 图片存储于腾讯云的Url可保障更高下载速度和稳定性，建议图片存储于腾讯云。
 	// 非腾讯云存储的Url速度和稳定性可能受一定影响。
 	// 若图片中包含多张人脸，只选取其中人脸面积最大的人脸。
 	// 支持PNG、JPG、JPEG、BMP，不支持 GIF 图片。
@@ -2116,13 +2116,13 @@ type VerifyPersonRequest struct {
 	// 待验证的人员ID。人员ID具体信息请参考人员库管理相关接口。
 	PersonId *string `json:"PersonId,omitempty" name:"PersonId"`
 
-	// 图片质量控制。 
-	// 0: 不进行控制； 
-	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况； 
-	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况； 
-	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况； 
-	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题； 
-	// 默认 0。 
+	// 图片质量控制。
+	// 0: 不进行控制；
+	// 1:较低的质量要求，图像存在非常模糊，眼睛鼻子嘴巴遮挡至少其中一种或多种的情况；
+	// 2: 一般的质量要求，图像存在偏亮，偏暗，模糊或一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，至少其中三种的情况；
+	// 3: 较高的质量要求，图像存在偏亮，偏暗，一般模糊，眉毛遮挡，脸颊遮挡，下巴遮挡，其中一到两种的情况；
+	// 4: 很高的质量要求，各个维度均为最好或最多在某一维度上存在轻微问题；
+	// 默认 0。
 	// 若图片质量不满足要求，则返回结果中会提示图片质量检测不符要求。
 	QualityControl *uint64 `json:"QualityControl,omitempty" name:"QualityControl"`
 
@@ -2131,12 +2131,12 @@ type VerifyPersonRequest struct {
 }
 
 func (r *VerifyPersonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyPersonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type VerifyPersonResponse struct {
@@ -2158,10 +2158,10 @@ type VerifyPersonResponse struct {
 }
 
 func (r *VerifyPersonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *VerifyPersonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

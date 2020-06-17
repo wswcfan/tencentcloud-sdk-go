@@ -15,9 +15,9 @@
 package v20180129
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AgePortrait struct {
@@ -109,12 +109,12 @@ type DescribeBrandCommentCountRequest struct {
 }
 
 func (r *DescribeBrandCommentCountRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandCommentCountRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandCommentCountResponse struct {
@@ -130,12 +130,12 @@ type DescribeBrandCommentCountResponse struct {
 }
 
 func (r *DescribeBrandCommentCountResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandCommentCountResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandExposureRequest struct {
@@ -152,12 +152,12 @@ type DescribeBrandExposureRequest struct {
 }
 
 func (r *DescribeBrandExposureRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandExposureRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandExposureResponse struct {
@@ -176,12 +176,12 @@ type DescribeBrandExposureResponse struct {
 }
 
 func (r *DescribeBrandExposureResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandExposureResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandMediaReportRequest struct {
@@ -198,12 +198,12 @@ type DescribeBrandMediaReportRequest struct {
 }
 
 func (r *DescribeBrandMediaReportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandMediaReportRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandMediaReportResponse struct {
@@ -222,12 +222,12 @@ type DescribeBrandMediaReportResponse struct {
 }
 
 func (r *DescribeBrandMediaReportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandMediaReportResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandNegCommentsRequest struct {
@@ -250,12 +250,12 @@ type DescribeBrandNegCommentsRequest struct {
 }
 
 func (r *DescribeBrandNegCommentsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandNegCommentsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandNegCommentsResponse struct {
@@ -274,12 +274,12 @@ type DescribeBrandNegCommentsResponse struct {
 }
 
 func (r *DescribeBrandNegCommentsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandNegCommentsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandPosCommentsRequest struct {
@@ -302,12 +302,12 @@ type DescribeBrandPosCommentsRequest struct {
 }
 
 func (r *DescribeBrandPosCommentsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandPosCommentsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandPosCommentsResponse struct {
@@ -326,12 +326,12 @@ type DescribeBrandPosCommentsResponse struct {
 }
 
 func (r *DescribeBrandPosCommentsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandPosCommentsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandSocialOpinionRequest struct {
@@ -357,12 +357,12 @@ type DescribeBrandSocialOpinionRequest struct {
 }
 
 func (r *DescribeBrandSocialOpinionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandSocialOpinionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandSocialOpinionResponse struct {
@@ -387,12 +387,12 @@ type DescribeBrandSocialOpinionResponse struct {
 }
 
 func (r *DescribeBrandSocialOpinionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandSocialOpinionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandSocialReportRequest struct {
@@ -409,12 +409,12 @@ type DescribeBrandSocialReportRequest struct {
 }
 
 func (r *DescribeBrandSocialReportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandSocialReportRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeBrandSocialReportResponse struct {
@@ -433,12 +433,12 @@ type DescribeBrandSocialReportResponse struct {
 }
 
 func (r *DescribeBrandSocialReportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeBrandSocialReportResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIndustryNewsRequest struct {
@@ -464,12 +464,12 @@ type DescribeIndustryNewsRequest struct {
 }
 
 func (r *DescribeIndustryNewsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIndustryNewsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeIndustryNewsResponse struct {
@@ -497,12 +497,12 @@ type DescribeIndustryNewsResponse struct {
 }
 
 func (r *DescribeIndustryNewsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeIndustryNewsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUserPortraitRequest struct {
@@ -513,12 +513,12 @@ type DescribeUserPortraitRequest struct {
 }
 
 func (r *DescribeUserPortraitRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUserPortraitRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeUserPortraitResponse struct {
@@ -546,12 +546,12 @@ type DescribeUserPortraitResponse struct {
 }
 
 func (r *DescribeUserPortraitResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeUserPortraitResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GenderPortrait struct {

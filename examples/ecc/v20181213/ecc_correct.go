@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/errors"
-	ecc "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/ecc/v20181213"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/errors"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
+	ecc "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/ecc/v20181213"
 )
 
 func main() {
@@ -46,9 +46,9 @@ func main() {
 	// 此接口允许设置返回的实例数量。此处指定为只返回一个。
 	// SDK采用的是指针风格指定参数，即使对于基本类型你也需要用指针来对参数赋值。
 	// SDK提供对基本类型的指针引用封装函数
-	content := "this composition content" 
-    request.Content = common.StringPtr(content)
-   
+	content := "this composition content"
+	request.Content = common.StringPtr(content)
+
 	// 通过client对象调用想要访问的接口，需要传入请求对象
 	response, err := client.ECC(request)
 	// 处理异常

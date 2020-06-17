@@ -15,9 +15,9 @@
 package v20191205
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ApplyCertificateRequest struct {
@@ -61,12 +61,12 @@ type ApplyCertificateRequest struct {
 }
 
 func (r *ApplyCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyCertificateResponse struct {
@@ -82,12 +82,12 @@ type ApplyCertificateResponse struct {
 }
 
 func (r *ApplyCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelCertificateOrderRequest struct {
@@ -98,12 +98,12 @@ type CancelCertificateOrderRequest struct {
 }
 
 func (r *CancelCertificateOrderRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelCertificateOrderRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelCertificateOrderResponse struct {
@@ -119,12 +119,12 @@ type CancelCertificateOrderResponse struct {
 }
 
 func (r *CancelCertificateOrderResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelCertificateOrderResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CertificateExtra struct {
@@ -277,12 +277,12 @@ type CommitCertificateInformationRequest struct {
 }
 
 func (r *CommitCertificateInformationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CommitCertificateInformationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CommitCertificateInformationResponse struct {
@@ -301,12 +301,12 @@ type CommitCertificateInformationResponse struct {
 }
 
 func (r *CommitCertificateInformationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CommitCertificateInformationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCertificateRequest struct {
@@ -317,12 +317,12 @@ type DeleteCertificateRequest struct {
 }
 
 func (r *DeleteCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteCertificateResponse struct {
@@ -338,12 +338,12 @@ type DeleteCertificateResponse struct {
 }
 
 func (r *DeleteCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateDetailRequest struct {
@@ -354,12 +354,12 @@ type DescribeCertificateDetailRequest struct {
 }
 
 func (r *DescribeCertificateDetailRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateDetailRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateDetailResponse struct {
@@ -367,135 +367,135 @@ type DescribeCertificateDetailResponse struct {
 	Response *struct {
 
 		// 用户 UIN。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OwnerUin *string `json:"OwnerUin,omitempty" name:"OwnerUin"`
 
 		// 项目 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProjectId *string `json:"ProjectId,omitempty" name:"ProjectId"`
 
 		// 证书来源：trustasia = 亚洲诚信，upload = 用户上传。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		From *string `json:"From,omitempty" name:"From"`
 
 		// 证书类型：CA = 客户端证书，SVR = 服务器证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateType *string `json:"CertificateType,omitempty" name:"CertificateType"`
 
 		// 证书套餐类型：1 = GeoTrust DV SSL CA - G3， 2 = TrustAsia TLS RSA CA， 3 = SecureSite 增强型企业版（EV Pro）， 4 = SecureSite 增强型（EV）， 5 = SecureSite 企业型专业版（OV Pro）， 6 = SecureSite 企业型（OV）， 7 = SecureSite 企业型（OV）通配符， 8 = Geotrust 增强型（EV）， 9 = Geotrust 企业型（OV）， 10 = Geotrust 企业型（OV）通配符， 11 = TrustAsia 域名型多域名 SSL 证书， 12 = TrustAsia 域名型（DV）通配符， 13 = TrustAsia 企业型通配符（OV）SSL 证书（D3）， 14 = TrustAsia 企业型（OV）SSL 证书（D3）， 15 = TrustAsia 企业型多域名 （OV）SSL 证书（D3）， 16 = TrustAsia 增强型 （EV）SSL 证书（D3）， 17 = TrustAsia 增强型多域名（EV）SSL 证书（D3）， 18 = GlobalSign 企业型（OV）SSL 证书， 19 = GlobalSign 企业型通配符 （OV）SSL 证书， 20 = GlobalSign 增强型 （EV）SSL 证书， 21 = TrustAsia 企业型通配符多域名（OV）SSL 证书（D3）， 22 = GlobalSign 企业型多域名（OV）SSL 证书， 23 = GlobalSign 企业型通配符多域名（OV）SSL 证书， 24 = GlobalSign 增强型多域名（EV）SSL 证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PackageType *string `json:"PackageType,omitempty" name:"PackageType"`
 
 		// 颁发者。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProductZhName *string `json:"ProductZhName,omitempty" name:"ProductZhName"`
 
 		// 域名。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Domain *string `json:"Domain,omitempty" name:"Domain"`
 
 		// 备注名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Alias *string `json:"Alias,omitempty" name:"Alias"`
 
 		// 证书状态：0 = 审核中，1 = 已通过，2 = 审核失败，3 = 已过期，4 = 已添加DNS记录，5 = 企业证书，待提交，6 = 订单取消中，7 = 已取消，8 = 已提交资料， 待上传确认函，9 = 证书吊销中，10 = 已吊销，11 = 重颁发中，12 = 待上传吊销确认函。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *uint64 `json:"Status,omitempty" name:"Status"`
 
 		// 状态信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StatusMsg *string `json:"StatusMsg,omitempty" name:"StatusMsg"`
 
 		// 验证类型：DNS_AUTO = 自动DNS验证，DNS = 手动DNS验证，FILE = 文件验证，EMAIL = 邮件验证。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VerifyType *string `json:"VerifyType,omitempty" name:"VerifyType"`
 
 		// 漏洞扫描状态。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VulnerabilityStatus *string `json:"VulnerabilityStatus,omitempty" name:"VulnerabilityStatus"`
 
 		// 证书生效时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertBeginTime *string `json:"CertBeginTime,omitempty" name:"CertBeginTime"`
 
 		// 证书失效时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertEndTime *string `json:"CertEndTime,omitempty" name:"CertEndTime"`
 
 		// 证书有效期：单位（月）。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ValidityPeriod *string `json:"ValidityPeriod,omitempty" name:"ValidityPeriod"`
 
 		// 申请时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InsertTime *string `json:"InsertTime,omitempty" name:"InsertTime"`
 
 		// 订单 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OrderId *string `json:"OrderId,omitempty" name:"OrderId"`
 
 		// 证书扩展信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateExtra *CertificateExtra `json:"CertificateExtra,omitempty" name:"CertificateExtra"`
 
 		// 证书私钥
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificatePrivateKey *string `json:"CertificatePrivateKey,omitempty" name:"CertificatePrivateKey"`
 
 		// 证书公钥
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificatePublicKey *string `json:"CertificatePublicKey,omitempty" name:"CertificatePublicKey"`
 
 		// DV 认证信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DvAuthDetail *DvAuthDetail `json:"DvAuthDetail,omitempty" name:"DvAuthDetail"`
 
 		// 漏洞扫描评估报告。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VulnerabilityReport *string `json:"VulnerabilityReport,omitempty" name:"VulnerabilityReport"`
 
 		// 证书 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateId *string `json:"CertificateId,omitempty" name:"CertificateId"`
 
 		// 证书类型名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TypeName *string `json:"TypeName,omitempty" name:"TypeName"`
 
 		// 状态描述。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StatusName *string `json:"StatusName,omitempty" name:"StatusName"`
 
 		// 证书包含的多个域名（包含主域名）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubjectAltName []*string `json:"SubjectAltName,omitempty" name:"SubjectAltName" list`
 
 		// 是否为 VIP 客户。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsVip *bool `json:"IsVip,omitempty" name:"IsVip"`
 
 		// 是否为泛域名证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsWildcard *bool `json:"IsWildcard,omitempty" name:"IsWildcard"`
 
 		// 是否为 DV 版证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsDv *bool `json:"IsDv,omitempty" name:"IsDv"`
 
 		// 是否启用了漏洞扫描功能。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsVulnerability *bool `json:"IsVulnerability,omitempty" name:"IsVulnerability"`
 
 		// 提交的资料信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubmittedData *SubmittedData `json:"SubmittedData,omitempty" name:"SubmittedData"`
 
 		// 是否可重颁发证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RenewAble *bool `json:"RenewAble,omitempty" name:"RenewAble"`
 
 		// 是否可部署。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Deployable *bool `json:"Deployable,omitempty" name:"Deployable"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -504,12 +504,12 @@ type DescribeCertificateDetailResponse struct {
 }
 
 func (r *DescribeCertificateDetailResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateDetailResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateOperateLogsRequest struct {
@@ -529,12 +529,12 @@ type DescribeCertificateOperateLogsRequest struct {
 }
 
 func (r *DescribeCertificateOperateLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateOperateLogsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateOperateLogsResponse struct {
@@ -548,7 +548,7 @@ type DescribeCertificateOperateLogsResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 证书操作日志列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OperateLogs []*OperationLog `json:"OperateLogs,omitempty" name:"OperateLogs" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -557,12 +557,12 @@ type DescribeCertificateOperateLogsResponse struct {
 }
 
 func (r *DescribeCertificateOperateLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateOperateLogsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateRequest struct {
@@ -573,12 +573,12 @@ type DescribeCertificateRequest struct {
 }
 
 func (r *DescribeCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificateResponse struct {
@@ -586,127 +586,127 @@ type DescribeCertificateResponse struct {
 	Response *struct {
 
 		// 用户 UIN。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OwnerUin *string `json:"OwnerUin,omitempty" name:"OwnerUin"`
 
 		// 项目 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProjectId *string `json:"ProjectId,omitempty" name:"ProjectId"`
 
 		// 证书来源：trustasia = 亚洲诚信，upload = 用户上传。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		From *string `json:"From,omitempty" name:"From"`
 
 		// 证书类型：CA = 客户端证书，SVR = 服务器证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateType *string `json:"CertificateType,omitempty" name:"CertificateType"`
 
 		// 证书套餐类型：1 = GeoTrust DV SSL CA - G3， 2 = TrustAsia TLS RSA CA， 3 = SecureSite 增强型企业版（EV Pro）， 4 = SecureSite 增强型（EV）， 5 = SecureSite 企业型专业版（OV Pro）， 6 = SecureSite 企业型（OV）， 7 = SecureSite 企业型（OV）通配符， 8 = Geotrust 增强型（EV）， 9 = Geotrust 企业型（OV）， 10 = Geotrust 企业型（OV）通配符， 11 = TrustAsia 域名型多域名 SSL 证书， 12 = TrustAsia 域名型（DV）通配符， 13 = TrustAsia 企业型通配符（OV）SSL 证书（D3）， 14 = TrustAsia 企业型（OV）SSL 证书（D3）， 15 = TrustAsia 企业型多域名 （OV）SSL 证书（D3）， 16 = TrustAsia 增强型 （EV）SSL 证书（D3）， 17 = TrustAsia 增强型多域名（EV）SSL 证书（D3）， 18 = GlobalSign 企业型（OV）SSL 证书， 19 = GlobalSign 企业型通配符 （OV）SSL 证书， 20 = GlobalSign 增强型 （EV）SSL 证书， 21 = TrustAsia 企业型通配符多域名（OV）SSL 证书（D3）， 22 = GlobalSign 企业型多域名（OV）SSL 证书， 23 = GlobalSign 企业型通配符多域名（OV）SSL 证书， 24 = GlobalSign 增强型多域名（EV）SSL 证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PackageType *string `json:"PackageType,omitempty" name:"PackageType"`
 
 		// 证书办法者名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProductZhName *string `json:"ProductZhName,omitempty" name:"ProductZhName"`
 
 		// 域名。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Domain *string `json:"Domain,omitempty" name:"Domain"`
 
 		// 备注名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Alias *string `json:"Alias,omitempty" name:"Alias"`
 
 		// 证书状态：0 = 审核中，1 = 已通过，2 = 审核失败，3 = 已过期，4 = 已添加DNS记录，5 = 企业证书，待提交，6 = 订单取消中，7 = 已取消，8 = 已提交资料， 待上传确认函，9 = 证书吊销中，10 = 已吊销，11 = 重颁发中，12 = 待上传吊销确认函。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *uint64 `json:"Status,omitempty" name:"Status"`
 
 		// 状态信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StatusMsg *string `json:"StatusMsg,omitempty" name:"StatusMsg"`
 
 		// 验证类型：DNS_AUTO = 自动DNS验证，DNS = 手动DNS验证，FILE = 文件验证，EMAIL = 邮件验证。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VerifyType *string `json:"VerifyType,omitempty" name:"VerifyType"`
 
 		// 漏洞扫描状态。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VulnerabilityStatus *string `json:"VulnerabilityStatus,omitempty" name:"VulnerabilityStatus"`
 
 		// 证书生效时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertBeginTime *string `json:"CertBeginTime,omitempty" name:"CertBeginTime"`
 
 		// 证书失效时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertEndTime *string `json:"CertEndTime,omitempty" name:"CertEndTime"`
 
 		// 证书有效期：单位(月)。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ValidityPeriod *string `json:"ValidityPeriod,omitempty" name:"ValidityPeriod"`
 
 		// 申请时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InsertTime *string `json:"InsertTime,omitempty" name:"InsertTime"`
 
 		// 订单 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OrderId *string `json:"OrderId,omitempty" name:"OrderId"`
 
 		// 证书扩展信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateExtra *CertificateExtra `json:"CertificateExtra,omitempty" name:"CertificateExtra"`
 
 		// DV 认证信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DvAuthDetail *DvAuthDetail `json:"DvAuthDetail,omitempty" name:"DvAuthDetail"`
 
 		// 漏洞扫描评估报告。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VulnerabilityReport *string `json:"VulnerabilityReport,omitempty" name:"VulnerabilityReport"`
 
 		// 证书 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CertificateId *string `json:"CertificateId,omitempty" name:"CertificateId"`
 
 		// 证书类型名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PackageTypeName *string `json:"PackageTypeName,omitempty" name:"PackageTypeName"`
 
 		// 状态描述。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		StatusName *string `json:"StatusName,omitempty" name:"StatusName"`
 
 		// 证书包含的多个域名（包含主域名）。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubjectAltName []*string `json:"SubjectAltName,omitempty" name:"SubjectAltName" list`
 
 		// 是否为 VIP 客户。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsVip *bool `json:"IsVip,omitempty" name:"IsVip"`
 
 		// 是否为泛域名证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsWildcard *bool `json:"IsWildcard,omitempty" name:"IsWildcard"`
 
 		// 是否为 DV 版证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsDv *bool `json:"IsDv,omitempty" name:"IsDv"`
 
 		// 是否启用了漏洞扫描功能。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IsVulnerability *bool `json:"IsVulnerability,omitempty" name:"IsVulnerability"`
 
 		// 是否可重颁发证书。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RenewAble *bool `json:"RenewAble,omitempty" name:"RenewAble"`
 
 		// 提交的资料信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubmittedData *SubmittedData `json:"SubmittedData,omitempty" name:"SubmittedData"`
 
 		// 是否可部署。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Deployable *bool `json:"Deployable,omitempty" name:"Deployable"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -715,12 +715,12 @@ type DescribeCertificateResponse struct {
 }
 
 func (r *DescribeCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificatesRequest struct {
@@ -752,12 +752,12 @@ type DescribeCertificatesRequest struct {
 }
 
 func (r *DescribeCertificatesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificatesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCertificatesResponse struct {
@@ -765,11 +765,11 @@ type DescribeCertificatesResponse struct {
 	Response *struct {
 
 		// 总数量。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Certificates []*Certificates `json:"Certificates,omitempty" name:"Certificates" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -778,12 +778,12 @@ type DescribeCertificatesResponse struct {
 }
 
 func (r *DescribeCertificatesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCertificatesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadCertificateRequest struct {
@@ -794,12 +794,12 @@ type DownloadCertificateRequest struct {
 }
 
 func (r *DownloadCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadCertificateResponse struct {
@@ -807,11 +807,11 @@ type DownloadCertificateResponse struct {
 	Response *struct {
 
 		// ZIP base64 编码内容，base64 解码后可保存为 ZIP 文件。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Content *string `json:"Content,omitempty" name:"Content"`
 
 		// MIME 类型：application/zip = ZIP 压缩文件。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ContentType *string `json:"ContentType,omitempty" name:"ContentType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -820,12 +820,12 @@ type DownloadCertificateResponse struct {
 }
 
 func (r *DownloadCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DvAuthDetail struct {
@@ -893,12 +893,12 @@ type ModifyCertificateAliasRequest struct {
 }
 
 func (r *ModifyCertificateAliasRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyCertificateAliasRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyCertificateAliasResponse struct {
@@ -914,12 +914,12 @@ type ModifyCertificateAliasResponse struct {
 }
 
 func (r *ModifyCertificateAliasResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyCertificateAliasResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyCertificateProjectRequest struct {
@@ -933,12 +933,12 @@ type ModifyCertificateProjectRequest struct {
 }
 
 func (r *ModifyCertificateProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyCertificateProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyCertificateProjectResponse struct {
@@ -946,11 +946,11 @@ type ModifyCertificateProjectResponse struct {
 	Response *struct {
 
 		// 修改所属项目成功的证书集合。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SuccessCertificates []*string `json:"SuccessCertificates,omitempty" name:"SuccessCertificates" list`
 
 		// 修改所属项目失败的证书集合。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailCertificates []*string `json:"FailCertificates,omitempty" name:"FailCertificates" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -959,12 +959,12 @@ type ModifyCertificateProjectResponse struct {
 }
 
 func (r *ModifyCertificateProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyCertificateProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OperationLog struct {
@@ -1023,12 +1023,12 @@ type ReplaceCertificateRequest struct {
 }
 
 func (r *ReplaceCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplaceCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReplaceCertificateResponse struct {
@@ -1044,12 +1044,12 @@ type ReplaceCertificateResponse struct {
 }
 
 func (r *ReplaceCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplaceCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubmitCertificateInformationRequest struct {
@@ -1135,12 +1135,12 @@ type SubmitCertificateInformationRequest struct {
 }
 
 func (r *SubmitCertificateInformationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SubmitCertificateInformationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubmitCertificateInformationResponse struct {
@@ -1156,12 +1156,12 @@ type SubmitCertificateInformationResponse struct {
 }
 
 func (r *SubmitCertificateInformationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SubmitCertificateInformationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubmittedData struct {
@@ -1287,12 +1287,12 @@ type UploadCertificateRequest struct {
 }
 
 func (r *UploadCertificateRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadCertificateRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadCertificateResponse struct {
@@ -1308,10 +1308,10 @@ type UploadCertificateResponse struct {
 }
 
 func (r *UploadCertificateResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadCertificateResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

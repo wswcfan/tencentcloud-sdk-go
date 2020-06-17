@@ -15,9 +15,9 @@
 package v20180321
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ApplyBlackListRequest struct {
@@ -37,12 +37,12 @@ type ApplyBlackListRequest struct {
 }
 
 func (r *ApplyBlackListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyBlackListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyBlackListResponse struct {
@@ -55,12 +55,12 @@ type ApplyBlackListResponse struct {
 }
 
 func (r *ApplyBlackListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyBlackListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyCreditAuditRequest struct {
@@ -89,12 +89,12 @@ type ApplyCreditAuditRequest struct {
 }
 
 func (r *ApplyCreditAuditRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyCreditAuditRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ApplyCreditAuditResponse struct {
@@ -110,12 +110,12 @@ type ApplyCreditAuditResponse struct {
 }
 
 func (r *ApplyCreditAuditResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ApplyCreditAuditResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCreditResultRequest struct {
@@ -141,12 +141,12 @@ type DescribeCreditResultRequest struct {
 }
 
 func (r *DescribeCreditResultRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCreditResultRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCreditResultResponse struct {
@@ -157,11 +157,11 @@ type DescribeCreditResultResponse struct {
 		ResultCode *string `json:"ResultCode,omitempty" name:"ResultCode"`
 
 		// 客户标识代码，多个标识码以英文逗号分隔，ResultCode为NON时才有。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClientCode *string `json:"ClientCode,omitempty" name:"ClientCode"`
 
 		// 开始振铃时间，ResultCode为NON或DAD时才有此字段。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RingStartTime *string `json:"RingStartTime,omitempty" name:"RingStartTime"`
 
 		// 振铃时长
@@ -171,7 +171,7 @@ type DescribeCreditResultResponse struct {
 		AnswerDuration *int64 `json:"AnswerDuration,omitempty" name:"AnswerDuration"`
 
 		// JSON格式的扩展信息字段，ResultCode为NON时才有。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ContextValue *string `json:"ContextValue,omitempty" name:"ContextValue"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -180,12 +180,12 @@ type DescribeCreditResultResponse struct {
 }
 
 func (r *DescribeCreditResultResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCreditResultResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRecordsRequest struct {
@@ -223,12 +223,12 @@ type DescribeRecordsRequest struct {
 }
 
 func (r *DescribeRecordsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRecordsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRecordsResponse struct {
@@ -236,7 +236,7 @@ type DescribeRecordsResponse struct {
 	Response *struct {
 
 		// 录音列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RecordList []*SingleRecord `json:"RecordList,omitempty" name:"RecordList" list`
 
 		// 录音总量。
@@ -248,12 +248,12 @@ type DescribeRecordsResponse struct {
 }
 
 func (r *DescribeRecordsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRecordsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskStatusRequest struct {
@@ -273,12 +273,12 @@ type DescribeTaskStatusRequest struct {
 }
 
 func (r *DescribeTaskStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeTaskStatusResponse struct {
@@ -292,7 +292,7 @@ type DescribeTaskStatusResponse struct {
 		TaskType *string `json:"TaskType,omitempty" name:"TaskType"`
 
 		// 过滤文件下载链接，有过滤数据时才存在。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TaskFileUrl *string `json:"TaskFileUrl,omitempty" name:"TaskFileUrl"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -301,12 +301,12 @@ type DescribeTaskStatusResponse struct {
 }
 
 func (r *DescribeTaskStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeTaskStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadDialogueTextRequest struct {
@@ -326,12 +326,12 @@ type DownloadDialogueTextRequest struct {
 }
 
 func (r *DownloadDialogueTextRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadDialogueTextRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadDialogueTextResponse struct {
@@ -347,12 +347,12 @@ type DownloadDialogueTextResponse struct {
 }
 
 func (r *DownloadDialogueTextResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadDialogueTextResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadRecordListRequest struct {
@@ -372,12 +372,12 @@ type DownloadRecordListRequest struct {
 }
 
 func (r *DownloadRecordListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadRecordListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadRecordListResponse struct {
@@ -393,12 +393,12 @@ type DownloadRecordListResponse struct {
 }
 
 func (r *DownloadRecordListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadRecordListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadReportRequest struct {
@@ -418,12 +418,12 @@ type DownloadReportRequest struct {
 }
 
 func (r *DownloadReportRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadReportRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DownloadReportResponse struct {
@@ -431,27 +431,27 @@ type DownloadReportResponse struct {
 	Response *struct {
 
 		// 到期/逾期提醒日报下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DailyReportUrl *string `json:"DailyReportUrl,omitempty" name:"DailyReportUrl"`
 
 		// 到期/逾期提醒结果下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultReportUrl *string `json:"ResultReportUrl,omitempty" name:"ResultReportUrl"`
 
 		// 到期/逾期提醒明细下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DetailReportUrl *string `json:"DetailReportUrl,omitempty" name:"DetailReportUrl"`
 
 		// 回访日报下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CallbackDailyReportUrl *string `json:"CallbackDailyReportUrl,omitempty" name:"CallbackDailyReportUrl"`
 
 		// 回访结果下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CallbackResultReportUrl *string `json:"CallbackResultReportUrl,omitempty" name:"CallbackResultReportUrl"`
 
 		// 回访明细下载地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CallbackDetailReportUrl *string `json:"CallbackDetailReportUrl,omitempty" name:"CallbackDetailReportUrl"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -460,12 +460,12 @@ type DownloadReportResponse struct {
 }
 
 func (r *DownloadReportResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DownloadReportResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryInstantDataRequest struct {
@@ -491,12 +491,12 @@ type QueryInstantDataRequest struct {
 }
 
 func (r *QueryInstantDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryInstantDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryInstantDataResponse struct {
@@ -504,11 +504,11 @@ type QueryInstantDataResponse struct {
 	Response *struct {
 
 		// 总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *int64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 返回内容
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -517,12 +517,12 @@ type QueryInstantDataResponse struct {
 }
 
 func (r *QueryInstantDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryInstantDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SingleBlackApply struct {
@@ -598,12 +598,12 @@ type UploadDataFileRequest struct {
 }
 
 func (r *UploadDataFileRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDataFileRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadDataFileResponse struct {
@@ -619,12 +619,12 @@ type UploadDataFileResponse struct {
 }
 
 func (r *UploadDataFileResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDataFileResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadDataJsonRequest struct {
@@ -647,12 +647,12 @@ type UploadDataJsonRequest struct {
 }
 
 func (r *UploadDataJsonRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDataJsonRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadDataJsonResponse struct {
@@ -660,7 +660,7 @@ type UploadDataJsonResponse struct {
 	Response *struct {
 
 		// 响应报文信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Data *string `json:"Data,omitempty" name:"Data"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -669,12 +669,12 @@ type UploadDataJsonResponse struct {
 }
 
 func (r *UploadDataJsonResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadDataJsonResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadFileRequest struct {
@@ -697,12 +697,12 @@ type UploadFileRequest struct {
 }
 
 func (r *UploadFileRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadFileRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UploadFileResponse struct {
@@ -718,10 +718,10 @@ type UploadFileResponse struct {
 }
 
 func (r *UploadFileResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UploadFileResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

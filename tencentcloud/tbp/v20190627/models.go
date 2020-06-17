@@ -15,9 +15,9 @@
 package v20190627
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Group struct {
@@ -78,12 +78,12 @@ type TextProcessRequest struct {
 }
 
 func (r *TextProcessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextProcessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextProcessResponse struct {
@@ -91,35 +91,35 @@ type TextProcessResponse struct {
 	Response *struct {
 
 		// 当前会话状态{会话开始: START; 会话中: COUTINUE; 会话结束: COMPLETE}。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DialogStatus *string `json:"DialogStatus,omitempty" name:"DialogStatus"`
 
 		// 匹配到的机器人名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BotName *string `json:"BotName,omitempty" name:"BotName"`
 
 		// 匹配到的意图名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IntentName *string `json:"IntentName,omitempty" name:"IntentName"`
 
 		// 槽位信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SlotInfoList []*SlotInfo `json:"SlotInfoList,omitempty" name:"SlotInfoList" list`
 
 		// 原始的用户说法。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InputText *string `json:"InputText,omitempty" name:"InputText"`
 
 		// 机器人应答。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResponseMessage *ResponseMessage `json:"ResponseMessage,omitempty" name:"ResponseMessage"`
 
 		// 透传字段，由用户自定义的WebService服务返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionAttributes *string `json:"SessionAttributes,omitempty" name:"SessionAttributes"`
 
 		// 结果类型 {中间逻辑出错:0; 任务型机器人:1; 问答型机器人:2; 闲聊型机器人:3; 未匹配上，返回预设兜底话术:5; 未匹配上，返回相似问题列表:6}。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultType *string `json:"ResultType,omitempty" name:"ResultType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -128,12 +128,12 @@ type TextProcessResponse struct {
 }
 
 func (r *TextProcessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextProcessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextResetRequest struct {
@@ -156,12 +156,12 @@ type TextResetRequest struct {
 }
 
 func (r *TextResetRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextResetRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TextResetResponse struct {
@@ -169,35 +169,35 @@ type TextResetResponse struct {
 	Response *struct {
 
 		// 当前会话状态{会话开始: START; 会话中: COUTINUE; 会话结束: COMPLETE}。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DialogStatus *string `json:"DialogStatus,omitempty" name:"DialogStatus"`
 
 		// 匹配到的机器人名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BotName *string `json:"BotName,omitempty" name:"BotName"`
 
 		// 匹配到的意图名称。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IntentName *string `json:"IntentName,omitempty" name:"IntentName"`
 
 		// 槽位信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SlotInfoList []*SlotInfo `json:"SlotInfoList,omitempty" name:"SlotInfoList" list`
 
 		// 原始的用户说法。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		InputText *string `json:"InputText,omitempty" name:"InputText"`
 
 		// 机器人应答。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResponseMessage *ResponseMessage `json:"ResponseMessage,omitempty" name:"ResponseMessage"`
 
 		// 透传字段，由用户自定义的WebService服务返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionAttributes *string `json:"SessionAttributes,omitempty" name:"SessionAttributes"`
 
 		// 结果类型 {中间逻辑出错:0; 任务型机器人:1; 问答型机器人:2; 闲聊型机器人:3; 未匹配上，返回预设兜底话术:5; 未匹配上，返回相似问题列表:6}。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ResultType *string `json:"ResultType,omitempty" name:"ResultType"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -206,10 +206,10 @@ type TextResetResponse struct {
 }
 
 func (r *TextResetResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *TextResetResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

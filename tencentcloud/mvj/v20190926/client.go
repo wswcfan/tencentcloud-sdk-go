@@ -15,57 +15,56 @@
 package v20190926
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2019-09-26"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewMarketingValueJudgementRequest() (request *MarketingValueJudgementRequest) {
-    request = &MarketingValueJudgementRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("mvj", APIVersion, "MarketingValueJudgement")
-    return
+	request = &MarketingValueJudgementRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("mvj", APIVersion, "MarketingValueJudgement")
+	return
 }
 
 func NewMarketingValueJudgementResponse() (response *MarketingValueJudgementResponse) {
-    response = &MarketingValueJudgementResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &MarketingValueJudgementResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 欢迎使用营销价值判断（Marketing Value Judgement，简称 MVJ）。
-// 
+//
 // 营销价值判断（MVJ）是针对零售场景的风控服务，通过识别高价值顾客，以帮助零售商保障营销资金
 func (c *Client) MarketingValueJudgement(request *MarketingValueJudgementRequest) (response *MarketingValueJudgementResponse, err error) {
-    if request == nil {
-        request = NewMarketingValueJudgementRequest()
-    }
-    response = NewMarketingValueJudgementResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewMarketingValueJudgementRequest()
+	}
+	response = NewMarketingValueJudgementResponse()
+	err = c.Send(request, response)
+	return
 }

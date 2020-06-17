@@ -15,55 +15,54 @@
 package v20200224
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2020-02-24"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewQueryLoginProtectionRequest() (request *QueryLoginProtectionRequest) {
-    request = &QueryLoginProtectionRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("lp", APIVersion, "QueryLoginProtection")
-    return
+	request = &QueryLoginProtectionRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("lp", APIVersion, "QueryLoginProtection")
+	return
 }
 
 func NewQueryLoginProtectionResponse() (response *QueryLoginProtectionResponse) {
-    response = &QueryLoginProtectionResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &QueryLoginProtectionResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 登录保护服务（LoginProtection，LP）针对网站和 APP 的用户登录场景，实时检测是否存在盗号、撞库等恶意登录行为，帮助开发者发现异常登录，降低恶意用户登录给业务带来的风险。
 func (c *Client) QueryLoginProtection(request *QueryLoginProtectionRequest) (response *QueryLoginProtectionResponse, err error) {
-    if request == nil {
-        request = NewQueryLoginProtectionRequest()
-    }
-    response = NewQueryLoginProtectionResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewQueryLoginProtectionRequest()
+	}
+	response = NewQueryLoginProtectionResponse()
+	err = c.Send(request, response)
+	return
 }

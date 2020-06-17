@@ -15,9 +15,9 @@
 package v20180525
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddExistedInstancesRequest struct {
@@ -46,12 +46,12 @@ type AddExistedInstancesRequest struct {
 }
 
 func (r *AddExistedInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddExistedInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddExistedInstancesResponse struct {
@@ -59,15 +59,15 @@ type AddExistedInstancesResponse struct {
 	Response *struct {
 
 		// 失败的节点ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailedInstanceIds []*string `json:"FailedInstanceIds,omitempty" name:"FailedInstanceIds" list`
 
 		// 成功的节点ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SuccInstanceIds []*string `json:"SuccInstanceIds,omitempty" name:"SuccInstanceIds" list`
 
 		// 超时未返回出来节点的ID(可能失败，也可能成功)
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TimeoutInstanceIds []*string `json:"TimeoutInstanceIds,omitempty" name:"TimeoutInstanceIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -76,12 +76,12 @@ type AddExistedInstancesResponse struct {
 }
 
 func (r *AddExistedInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddExistedInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AutoScalingGroupRange struct {
@@ -384,12 +384,12 @@ type CreateClusterAsGroupRequest struct {
 }
 
 func (r *CreateClusterAsGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterAsGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterAsGroupResponse struct {
@@ -408,12 +408,12 @@ type CreateClusterAsGroupResponse struct {
 }
 
 func (r *CreateClusterAsGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterAsGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterEndpointRequest struct {
@@ -430,12 +430,12 @@ type CreateClusterEndpointRequest struct {
 }
 
 func (r *CreateClusterEndpointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterEndpointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterEndpointResponse struct {
@@ -448,12 +448,12 @@ type CreateClusterEndpointResponse struct {
 }
 
 func (r *CreateClusterEndpointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterEndpointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterEndpointVipRequest struct {
@@ -467,12 +467,12 @@ type CreateClusterEndpointVipRequest struct {
 }
 
 func (r *CreateClusterEndpointVipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterEndpointVipRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterEndpointVipResponse struct {
@@ -488,12 +488,12 @@ type CreateClusterEndpointVipResponse struct {
 }
 
 func (r *CreateClusterEndpointVipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterEndpointVipResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterInstancesRequest struct {
@@ -510,12 +510,12 @@ type CreateClusterInstancesRequest struct {
 }
 
 func (r *CreateClusterInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterInstancesResponse struct {
@@ -531,12 +531,12 @@ type CreateClusterInstancesResponse struct {
 }
 
 func (r *CreateClusterInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterRequest struct {
@@ -568,12 +568,12 @@ type CreateClusterRequest struct {
 }
 
 func (r *CreateClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterResponse struct {
@@ -589,12 +589,12 @@ type CreateClusterResponse struct {
 }
 
 func (r *CreateClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterRouteRequest struct {
@@ -611,12 +611,12 @@ type CreateClusterRouteRequest struct {
 }
 
 func (r *CreateClusterRouteRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterRouteRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterRouteResponse struct {
@@ -629,12 +629,12 @@ type CreateClusterRouteResponse struct {
 }
 
 func (r *CreateClusterRouteResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterRouteResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterRouteTableRequest struct {
@@ -654,12 +654,12 @@ type CreateClusterRouteTableRequest struct {
 }
 
 func (r *CreateClusterRouteTableRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterRouteTableRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateClusterRouteTableResponse struct {
@@ -672,12 +672,12 @@ type CreateClusterRouteTableResponse struct {
 }
 
 func (r *CreateClusterRouteTableResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateClusterRouteTableResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DataDisk struct {
@@ -717,12 +717,12 @@ type DeleteClusterAsGroupsRequest struct {
 }
 
 func (r *DeleteClusterAsGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterAsGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterAsGroupsResponse struct {
@@ -735,12 +735,12 @@ type DeleteClusterAsGroupsResponse struct {
 }
 
 func (r *DeleteClusterAsGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterAsGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterEndpointRequest struct {
@@ -754,12 +754,12 @@ type DeleteClusterEndpointRequest struct {
 }
 
 func (r *DeleteClusterEndpointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterEndpointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterEndpointResponse struct {
@@ -772,12 +772,12 @@ type DeleteClusterEndpointResponse struct {
 }
 
 func (r *DeleteClusterEndpointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterEndpointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterEndpointVipRequest struct {
@@ -788,12 +788,12 @@ type DeleteClusterEndpointVipRequest struct {
 }
 
 func (r *DeleteClusterEndpointVipRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterEndpointVipRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterEndpointVipResponse struct {
@@ -806,12 +806,12 @@ type DeleteClusterEndpointVipResponse struct {
 }
 
 func (r *DeleteClusterEndpointVipResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterEndpointVipResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterInstancesRequest struct {
@@ -831,12 +831,12 @@ type DeleteClusterInstancesRequest struct {
 }
 
 func (r *DeleteClusterInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterInstancesResponse struct {
@@ -844,15 +844,15 @@ type DeleteClusterInstancesResponse struct {
 	Response *struct {
 
 		// 删除成功的实例ID列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SuccInstanceIds []*string `json:"SuccInstanceIds,omitempty" name:"SuccInstanceIds" list`
 
 		// 删除失败的实例ID列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FailedInstanceIds []*string `json:"FailedInstanceIds,omitempty" name:"FailedInstanceIds" list`
 
 		// 未匹配到的实例ID列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		NotFoundInstanceIds []*string `json:"NotFoundInstanceIds,omitempty" name:"NotFoundInstanceIds" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -861,12 +861,12 @@ type DeleteClusterInstancesResponse struct {
 }
 
 func (r *DeleteClusterInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterRequest struct {
@@ -883,12 +883,12 @@ type DeleteClusterRequest struct {
 }
 
 func (r *DeleteClusterRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterResponse struct {
@@ -901,12 +901,12 @@ type DeleteClusterResponse struct {
 }
 
 func (r *DeleteClusterResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterRouteRequest struct {
@@ -923,12 +923,12 @@ type DeleteClusterRouteRequest struct {
 }
 
 func (r *DeleteClusterRouteRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterRouteRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterRouteResponse struct {
@@ -941,12 +941,12 @@ type DeleteClusterRouteResponse struct {
 }
 
 func (r *DeleteClusterRouteResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterRouteResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterRouteTableRequest struct {
@@ -957,12 +957,12 @@ type DeleteClusterRouteTableRequest struct {
 }
 
 func (r *DeleteClusterRouteTableRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterRouteTableRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteClusterRouteTableResponse struct {
@@ -975,12 +975,12 @@ type DeleteClusterRouteTableResponse struct {
 }
 
 func (r *DeleteClusterRouteTableResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteClusterRouteTableResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterAsGroupOptionRequest struct {
@@ -991,12 +991,12 @@ type DescribeClusterAsGroupOptionRequest struct {
 }
 
 func (r *DescribeClusterAsGroupOptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterAsGroupOptionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterAsGroupOptionResponse struct {
@@ -1004,7 +1004,7 @@ type DescribeClusterAsGroupOptionResponse struct {
 	Response *struct {
 
 		// 集群弹性伸缩属性
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClusterAsGroupOption *ClusterAsGroupOption `json:"ClusterAsGroupOption,omitempty" name:"ClusterAsGroupOption"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1013,12 +1013,12 @@ type DescribeClusterAsGroupOptionResponse struct {
 }
 
 func (r *DescribeClusterAsGroupOptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterAsGroupOptionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterAsGroupsRequest struct {
@@ -1038,12 +1038,12 @@ type DescribeClusterAsGroupsRequest struct {
 }
 
 func (r *DescribeClusterAsGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterAsGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterAsGroupsResponse struct {
@@ -1062,12 +1062,12 @@ type DescribeClusterAsGroupsResponse struct {
 }
 
 func (r *DescribeClusterAsGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterAsGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterEndpointStatusRequest struct {
@@ -1081,12 +1081,12 @@ type DescribeClusterEndpointStatusRequest struct {
 }
 
 func (r *DescribeClusterEndpointStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterEndpointStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterEndpointStatusResponse struct {
@@ -1094,7 +1094,7 @@ type DescribeClusterEndpointStatusResponse struct {
 	Response *struct {
 
 		// 查询集群访问端口状态（Created 开启成功，Creating 开启中中，NotFound 未开启）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1103,12 +1103,12 @@ type DescribeClusterEndpointStatusResponse struct {
 }
 
 func (r *DescribeClusterEndpointStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterEndpointStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterEndpointVipStatusRequest struct {
@@ -1119,12 +1119,12 @@ type DescribeClusterEndpointVipStatusRequest struct {
 }
 
 func (r *DescribeClusterEndpointVipStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterEndpointVipStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterEndpointVipStatusResponse struct {
@@ -1135,7 +1135,7 @@ type DescribeClusterEndpointVipStatusResponse struct {
 		Status *string `json:"Status,omitempty" name:"Status"`
 
 		// 操作失败的原因
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ErrorMsg *string `json:"ErrorMsg,omitempty" name:"ErrorMsg"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1144,12 +1144,12 @@ type DescribeClusterEndpointVipStatusResponse struct {
 }
 
 func (r *DescribeClusterEndpointVipStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterEndpointVipStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterInstancesRequest struct {
@@ -1172,12 +1172,12 @@ type DescribeClusterInstancesRequest struct {
 }
 
 func (r *DescribeClusterInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterInstancesResponse struct {
@@ -1196,12 +1196,12 @@ type DescribeClusterInstancesResponse struct {
 }
 
 func (r *DescribeClusterInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterRouteTablesRequest struct {
@@ -1209,12 +1209,12 @@ type DescribeClusterRouteTablesRequest struct {
 }
 
 func (r *DescribeClusterRouteTablesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterRouteTablesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterRouteTablesResponse struct {
@@ -1233,12 +1233,12 @@ type DescribeClusterRouteTablesResponse struct {
 }
 
 func (r *DescribeClusterRouteTablesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterRouteTablesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterRoutesRequest struct {
@@ -1249,12 +1249,12 @@ type DescribeClusterRoutesRequest struct {
 }
 
 func (r *DescribeClusterRoutesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterRoutesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterRoutesResponse struct {
@@ -1273,12 +1273,12 @@ type DescribeClusterRoutesResponse struct {
 }
 
 func (r *DescribeClusterRoutesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterRoutesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterSecurityRequest struct {
@@ -1289,12 +1289,12 @@ type DescribeClusterSecurityRequest struct {
 }
 
 func (r *DescribeClusterSecurityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterSecurityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClusterSecurityResponse struct {
@@ -1320,15 +1320,15 @@ type DescribeClusterSecurityResponse struct {
 		PgwEndpoint *string `json:"PgwEndpoint,omitempty" name:"PgwEndpoint"`
 
 		// 集群访问策略组
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SecurityPolicy []*string `json:"SecurityPolicy,omitempty" name:"SecurityPolicy" list`
 
 		// 集群Kubeconfig文件
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Kubeconfig *string `json:"Kubeconfig,omitempty" name:"Kubeconfig"`
 
 		// 集群JnsGw的访问地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		JnsGwEndpoint *string `json:"JnsGwEndpoint,omitempty" name:"JnsGwEndpoint"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1337,12 +1337,12 @@ type DescribeClusterSecurityResponse struct {
 }
 
 func (r *DescribeClusterSecurityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClusterSecurityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClustersRequest struct {
@@ -1363,12 +1363,12 @@ type DescribeClustersRequest struct {
 }
 
 func (r *DescribeClustersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClustersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeClustersResponse struct {
@@ -1387,12 +1387,12 @@ type DescribeClustersResponse struct {
 }
 
 func (r *DescribeClustersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeClustersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeExistedInstancesRequest struct {
@@ -1421,12 +1421,12 @@ type DescribeExistedInstancesRequest struct {
 }
 
 func (r *DescribeExistedInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeExistedInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeExistedInstancesResponse struct {
@@ -1434,7 +1434,7 @@ type DescribeExistedInstancesResponse struct {
 	Response *struct {
 
 		// 已经存在的实例信息数组。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ExistedInstanceSet []*ExistedInstance `json:"ExistedInstanceSet,omitempty" name:"ExistedInstanceSet" list`
 
 		// 符合条件的实例数量。
@@ -1446,12 +1446,12 @@ type DescribeExistedInstancesResponse struct {
 }
 
 func (r *DescribeExistedInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeExistedInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImagesRequest struct {
@@ -1459,12 +1459,12 @@ type DescribeImagesRequest struct {
 }
 
 func (r *DescribeImagesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImagesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeImagesResponse struct {
@@ -1472,11 +1472,11 @@ type DescribeImagesResponse struct {
 	Response *struct {
 
 		// 镜像数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 镜像信息列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ImageInstanceSet []*ImageInstance `json:"ImageInstanceSet,omitempty" name:"ImageInstanceSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1485,12 +1485,12 @@ type DescribeImagesResponse struct {
 }
 
 func (r *DescribeImagesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeImagesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegionsRequest struct {
@@ -1498,12 +1498,12 @@ type DescribeRegionsRequest struct {
 }
 
 func (r *DescribeRegionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRegionsResponse struct {
@@ -1511,11 +1511,11 @@ type DescribeRegionsResponse struct {
 	Response *struct {
 
 		// 地域的数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 地域列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RegionInstanceSet []*RegionInstance `json:"RegionInstanceSet,omitempty" name:"RegionInstanceSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1524,12 +1524,12 @@ type DescribeRegionsResponse struct {
 }
 
 func (r *DescribeRegionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRegionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRouteTableConflictsRequest struct {
@@ -1543,12 +1543,12 @@ type DescribeRouteTableConflictsRequest struct {
 }
 
 func (r *DescribeRouteTableConflictsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRouteTableConflictsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeRouteTableConflictsResponse struct {
@@ -1559,7 +1559,7 @@ type DescribeRouteTableConflictsResponse struct {
 		HasConflict *bool `json:"HasConflict,omitempty" name:"HasConflict"`
 
 		// 路由表冲突列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RouteTableConflictSet []*RouteTableConflict `json:"RouteTableConflictSet,omitempty" name:"RouteTableConflictSet" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1568,12 +1568,12 @@ type DescribeRouteTableConflictsResponse struct {
 }
 
 func (r *DescribeRouteTableConflictsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeRouteTableConflictsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhancedService struct {
@@ -1827,12 +1827,12 @@ type ModifyClusterAsGroupAttributeRequest struct {
 }
 
 func (r *ModifyClusterAsGroupAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterAsGroupAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClusterAsGroupAttributeResponse struct {
@@ -1845,12 +1845,12 @@ type ModifyClusterAsGroupAttributeResponse struct {
 }
 
 func (r *ModifyClusterAsGroupAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterAsGroupAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClusterAttributeRequest struct {
@@ -1870,12 +1870,12 @@ type ModifyClusterAttributeRequest struct {
 }
 
 func (r *ModifyClusterAttributeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterAttributeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClusterAttributeResponse struct {
@@ -1883,15 +1883,15 @@ type ModifyClusterAttributeResponse struct {
 	Response *struct {
 
 		// 集群所属项目
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProjectId *int64 `json:"ProjectId,omitempty" name:"ProjectId"`
 
 		// 集群名称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClusterName *string `json:"ClusterName,omitempty" name:"ClusterName"`
 
 		// 集群描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ClusterDesc *string `json:"ClusterDesc,omitempty" name:"ClusterDesc"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1900,12 +1900,12 @@ type ModifyClusterAttributeResponse struct {
 }
 
 func (r *ModifyClusterAttributeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterAttributeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClusterEndpointSPRequest struct {
@@ -1919,12 +1919,12 @@ type ModifyClusterEndpointSPRequest struct {
 }
 
 func (r *ModifyClusterEndpointSPRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterEndpointSPRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyClusterEndpointSPResponse struct {
@@ -1937,12 +1937,12 @@ type ModifyClusterEndpointSPResponse struct {
 }
 
 func (r *ModifyClusterEndpointSPResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyClusterEndpointSPResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RegionInstance struct {

@@ -15,280 +15,279 @@
 package v20180226
 
 import (
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
-    "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
 )
 
 const APIVersion = "2018-02-26"
 
 type Client struct {
-    common.Client
+	common.Client
 }
 
 // Deprecated
 func NewClientWithSecretId(secretId, secretKey, region string) (client *Client, err error) {
-    cpf := profile.NewClientProfile()
-    client = &Client{}
-    client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
-    return
+	cpf := profile.NewClientProfile()
+	client = &Client{}
+	client.Init(region).WithSecretId(secretId, secretKey).WithProfile(cpf)
+	return
 }
 
 func NewClient(credential *common.Credential, region string, clientProfile *profile.ClientProfile) (client *Client, err error) {
-    client = &Client{}
-    client.Init(region).
-        WithCredential(credential).
-        WithProfile(clientProfile)
-    return
+	client = &Client{}
+	client.Init(region).
+		WithCredential(credential).
+		WithProfile(clientProfile)
+	return
 }
 
-
 func NewCreateJobRequest() (request *CreateJobRequest) {
-    request = &CreateJobRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "CreateJob")
-    return
+	request = &CreateJobRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "CreateJob")
+	return
 }
 
 func NewCreateJobResponse() (response *CreateJobResponse) {
-    response = &CreateJobResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateJobResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 创建训练任务
 func (c *Client) CreateJob(request *CreateJobRequest) (response *CreateJobResponse, err error) {
-    if request == nil {
-        request = NewCreateJobRequest()
-    }
-    response = NewCreateJobResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateJobRequest()
+	}
+	response = NewCreateJobResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewCreateModelRequest() (request *CreateModelRequest) {
-    request = &CreateModelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "CreateModel")
-    return
+	request = &CreateModelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "CreateModel")
+	return
 }
 
 func NewCreateModelResponse() (response *CreateModelResponse) {
-    response = &CreateModelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &CreateModelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 部署模型，用以对外提供服务。有两种部署模式：`无服务器模式` 和 `集群模式`。`无服务器模式` 下，模型文件被部署到无服务器云函数，即 [SCF](https://cloud.tencent.com/product/scf)，用户可以在其控制台上进一步操作。`集群模式` 下，模型文件被部署到 TI-A 的计算集群中。
 func (c *Client) CreateModel(request *CreateModelRequest) (response *CreateModelResponse, err error) {
-    if request == nil {
-        request = NewCreateModelRequest()
-    }
-    response = NewCreateModelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewCreateModelRequest()
+	}
+	response = NewCreateModelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteJobRequest() (request *DeleteJobRequest) {
-    request = &DeleteJobRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "DeleteJob")
-    return
+	request = &DeleteJobRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "DeleteJob")
+	return
 }
 
 func NewDeleteJobResponse() (response *DeleteJobResponse) {
-    response = &DeleteJobResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteJobResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除训练任务
 func (c *Client) DeleteJob(request *DeleteJobRequest) (response *DeleteJobResponse, err error) {
-    if request == nil {
-        request = NewDeleteJobRequest()
-    }
-    response = NewDeleteJobResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteJobRequest()
+	}
+	response = NewDeleteJobResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDeleteModelRequest() (request *DeleteModelRequest) {
-    request = &DeleteModelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "DeleteModel")
-    return
+	request = &DeleteModelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "DeleteModel")
+	return
 }
 
 func NewDeleteModelResponse() (response *DeleteModelResponse) {
-    response = &DeleteModelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DeleteModelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 删除指定的部署模型。模型有两种部署模式：`无服务器模式` 和 `集群模式`。`无服务器模式` 下，模型文件被部署到无服务器云函数，即 [SCF](https://cloud.tencent.com/product/scf)，用户可以在其控制台上进一步操作。`集群模式` 下，模型文件被部署到 TI-A 的计算集群中。
 func (c *Client) DeleteModel(request *DeleteModelRequest) (response *DeleteModelResponse, err error) {
-    if request == nil {
-        request = NewDeleteModelRequest()
-    }
-    response = NewDeleteModelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDeleteModelRequest()
+	}
+	response = NewDeleteModelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeJobRequest() (request *DescribeJobRequest) {
-    request = &DescribeJobRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "DescribeJob")
-    return
+	request = &DescribeJobRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "DescribeJob")
+	return
 }
 
 func NewDescribeJobResponse() (response *DescribeJobResponse) {
-    response = &DescribeJobResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeJobResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 获取训练任务详情
 func (c *Client) DescribeJob(request *DescribeJobRequest) (response *DescribeJobResponse, err error) {
-    if request == nil {
-        request = NewDescribeJobRequest()
-    }
-    response = NewDescribeJobResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeJobRequest()
+	}
+	response = NewDescribeJobResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewDescribeModelRequest() (request *DescribeModelRequest) {
-    request = &DescribeModelRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "DescribeModel")
-    return
+	request = &DescribeModelRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "DescribeModel")
+	return
 }
 
 func NewDescribeModelResponse() (response *DescribeModelResponse) {
-    response = &DescribeModelResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &DescribeModelResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 描述已经部署的某个模型。而模型部署有两种模式：`无服务器模式` 和 `集群模式`。`无服务器模式` 下，模型文件被部署到无服务器云函数，即 [SCF](https://cloud.tencent.com/product/scf)，用户可以在其控制台上进一步操作。`集群模式` 下，模型文件被部署到 TI-A 的计算集群中。
 func (c *Client) DescribeModel(request *DescribeModelRequest) (response *DescribeModelResponse, err error) {
-    if request == nil {
-        request = NewDescribeModelRequest()
-    }
-    response = NewDescribeModelResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewDescribeModelRequest()
+	}
+	response = NewDescribeModelResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewInstallAgentRequest() (request *InstallAgentRequest) {
-    request = &InstallAgentRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "InstallAgent")
-    return
+	request = &InstallAgentRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "InstallAgent")
+	return
 }
 
 func NewInstallAgentResponse() (response *InstallAgentResponse) {
-    response = &InstallAgentResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &InstallAgentResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 安装agent
 func (c *Client) InstallAgent(request *InstallAgentRequest) (response *InstallAgentResponse, err error) {
-    if request == nil {
-        request = NewInstallAgentRequest()
-    }
-    response = NewInstallAgentResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewInstallAgentRequest()
+	}
+	response = NewInstallAgentResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewListJobsRequest() (request *ListJobsRequest) {
-    request = &ListJobsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "ListJobs")
-    return
+	request = &ListJobsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "ListJobs")
+	return
 }
 
 func NewListJobsResponse() (response *ListJobsResponse) {
-    response = &ListJobsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ListJobsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 列举训练任务
 func (c *Client) ListJobs(request *ListJobsRequest) (response *ListJobsResponse, err error) {
-    if request == nil {
-        request = NewListJobsRequest()
-    }
-    response = NewListJobsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewListJobsRequest()
+	}
+	response = NewListJobsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewListModelsRequest() (request *ListModelsRequest) {
-    request = &ListModelsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "ListModels")
-    return
+	request = &ListModelsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "ListModels")
+	return
 }
 
 func NewListModelsResponse() (response *ListModelsResponse) {
-    response = &ListModelsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &ListModelsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 用以列举已经部署的模型。而部署有两种模式：`无服务器模式` 和 `集群模式`。`无服务器模式` 下，模型文件被部署到无服务器云函数，即 [SCF](https://cloud.tencent.com/product/scf)，用户可以在其控制台上进一步操作。`集群模式` 下，模型文件被部署到 TI-A 的计算集群中。不同部署模式下的模型分开列出。
 func (c *Client) ListModels(request *ListModelsRequest) (response *ListModelsResponse, err error) {
-    if request == nil {
-        request = NewListModelsRequest()
-    }
-    response = NewListModelsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewListModelsRequest()
+	}
+	response = NewListModelsResponse()
+	err = c.Send(request, response)
+	return
 }
 
 func NewQueryLogsRequest() (request *QueryLogsRequest) {
-    request = &QueryLogsRequest{
-        BaseRequest: &tchttp.BaseRequest{},
-    }
-    request.Init().WithApiInfo("tia", APIVersion, "QueryLogs")
-    return
+	request = &QueryLogsRequest{
+		BaseRequest: &tchttp.BaseRequest{},
+	}
+	request.Init().WithApiInfo("tia", APIVersion, "QueryLogs")
+	return
 }
 
 func NewQueryLogsResponse() (response *QueryLogsResponse) {
-    response = &QueryLogsResponse{
-        BaseResponse: &tchttp.BaseResponse{},
-    }
-    return
+	response = &QueryLogsResponse{
+		BaseResponse: &tchttp.BaseResponse{},
+	}
+	return
 }
 
 // 查询 TI-A 训练任务的日志
 func (c *Client) QueryLogs(request *QueryLogsRequest) (response *QueryLogsResponse, err error) {
-    if request == nil {
-        request = NewQueryLogsRequest()
-    }
-    response = NewQueryLogsResponse()
-    err = c.Send(request, response)
-    return
+	if request == nil {
+		request = NewQueryLogsRequest()
+	}
+	response = NewQueryLogsResponse()
+	err = c.Send(request, response)
+	return
 }

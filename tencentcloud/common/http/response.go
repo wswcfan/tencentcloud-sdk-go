@@ -7,7 +7,7 @@ import (
 	//"log"
 	"net/http"
 
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/errors"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/errors"
 )
 
 type Response interface {

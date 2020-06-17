@@ -15,9 +15,9 @@
 package v20191012
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddEcdnDomainRequest struct {
@@ -58,12 +58,12 @@ type AddEcdnDomainRequest struct {
 }
 
 func (r *AddEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddEcdnDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddEcdnDomainResponse struct {
@@ -76,12 +76,12 @@ type AddEcdnDomainResponse struct {
 }
 
 func (r *AddEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddEcdnDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Cache struct {
@@ -142,12 +142,12 @@ type DeleteEcdnDomainRequest struct {
 }
 
 func (r *DeleteEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteEcdnDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteEcdnDomainResponse struct {
@@ -160,12 +160,12 @@ type DeleteEcdnDomainResponse struct {
 }
 
 func (r *DeleteEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteEcdnDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainsConfigRequest struct {
@@ -185,12 +185,12 @@ type DescribeDomainsConfigRequest struct {
 }
 
 func (r *DescribeDomainsConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainsConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainsConfigResponse struct {
@@ -209,12 +209,12 @@ type DescribeDomainsConfigResponse struct {
 }
 
 func (r *DescribeDomainsConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainsConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainsRequest struct {
@@ -231,12 +231,12 @@ type DescribeDomainsRequest struct {
 }
 
 func (r *DescribeDomainsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDomainsResponse struct {
@@ -255,12 +255,12 @@ type DescribeDomainsResponse struct {
 }
 
 func (r *DescribeDomainsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDomainsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnDomainLogsRequest struct {
@@ -283,12 +283,12 @@ type DescribeEcdnDomainLogsRequest struct {
 }
 
 func (r *DescribeEcdnDomainLogsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnDomainLogsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnDomainLogsResponse struct {
@@ -296,7 +296,7 @@ type DescribeEcdnDomainLogsResponse struct {
 	Response *struct {
 
 		// 日志链接列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		DomainLogs []*DomainLogs `json:"DomainLogs,omitempty" name:"DomainLogs" list`
 
 		// 日志链接总条数。
@@ -308,12 +308,12 @@ type DescribeEcdnDomainLogsResponse struct {
 }
 
 func (r *DescribeEcdnDomainLogsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnDomainLogsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnDomainStatisticsRequest struct {
@@ -354,12 +354,12 @@ type DescribeEcdnDomainStatisticsRequest struct {
 }
 
 func (r *DescribeEcdnDomainStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnDomainStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnDomainStatisticsResponse struct {
@@ -378,12 +378,12 @@ type DescribeEcdnDomainStatisticsResponse struct {
 }
 
 func (r *DescribeEcdnDomainStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnDomainStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnStatisticsRequest struct {
@@ -413,14 +413,14 @@ type DescribeEcdnStatisticsRequest struct {
 	Metrics []*string `json:"Metrics,omitempty" name:"Metrics" list`
 
 	// 时间粒度，支持以下几种模式：
-	// 1 天	 1，5，15，30，60，120，240，1440 
+	// 1 天	 1，5，15，30，60，120，240，1440
 	// 2 ~ 3 天	15，30，60，120，240，1440
 	// 4 ~ 7 天	30，60，120，240，1440
 	// 8 ~ 90 天	 60，120，240，1440
 	Interval *int64 `json:"Interval,omitempty" name:"Interval"`
 
 	// 指定查询域名列表
-	// 
+	//
 	// 最多可一次性查询30个加速域名。
 	Domains []*string `json:"Domains,omitempty" name:"Domains" list`
 
@@ -430,12 +430,12 @@ type DescribeEcdnStatisticsRequest struct {
 }
 
 func (r *DescribeEcdnStatisticsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnStatisticsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeEcdnStatisticsResponse struct {
@@ -451,12 +451,12 @@ type DescribeEcdnStatisticsResponse struct {
 }
 
 func (r *DescribeEcdnStatisticsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeEcdnStatisticsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePurgeQuotaRequest struct {
@@ -464,12 +464,12 @@ type DescribePurgeQuotaRequest struct {
 }
 
 func (r *DescribePurgeQuotaRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePurgeQuotaRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePurgeQuotaResponse struct {
@@ -488,12 +488,12 @@ type DescribePurgeQuotaResponse struct {
 }
 
 func (r *DescribePurgeQuotaResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePurgeQuotaResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePurgeTasksRequest struct {
@@ -525,12 +525,12 @@ type DescribePurgeTasksRequest struct {
 }
 
 func (r *DescribePurgeTasksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePurgeTasksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePurgeTasksResponse struct {
@@ -549,12 +549,12 @@ type DescribePurgeTasksResponse struct {
 }
 
 func (r *DescribePurgeTasksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePurgeTasksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetailData struct {
@@ -865,12 +865,12 @@ type PurgePathCacheRequest struct {
 }
 
 func (r *PurgePathCacheRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PurgePathCacheRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PurgePathCacheResponse struct {
@@ -886,12 +886,12 @@ type PurgePathCacheResponse struct {
 }
 
 func (r *PurgePathCacheResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PurgePathCacheResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PurgeTask struct {
@@ -923,12 +923,12 @@ type PurgeUrlsCacheRequest struct {
 }
 
 func (r *PurgeUrlsCacheRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PurgeUrlsCacheRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PurgeUrlsCacheResponse struct {
@@ -944,12 +944,12 @@ type PurgeUrlsCacheResponse struct {
 }
 
 func (r *PurgeUrlsCacheResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PurgeUrlsCacheResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Quota struct {
@@ -1037,12 +1037,12 @@ type StartEcdnDomainRequest struct {
 }
 
 func (r *StartEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartEcdnDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartEcdnDomainResponse struct {
@@ -1055,12 +1055,12 @@ type StartEcdnDomainResponse struct {
 }
 
 func (r *StartEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartEcdnDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopEcdnDomainRequest struct {
@@ -1071,12 +1071,12 @@ type StopEcdnDomainRequest struct {
 }
 
 func (r *StopEcdnDomainRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopEcdnDomainRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopEcdnDomainResponse struct {
@@ -1089,12 +1089,12 @@ type StopEcdnDomainResponse struct {
 }
 
 func (r *StopEcdnDomainResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopEcdnDomainResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type TimestampData struct {
@@ -1145,12 +1145,12 @@ type UpdateDomainConfigRequest struct {
 }
 
 func (r *UpdateDomainConfigRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDomainConfigRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateDomainConfigResponse struct {
@@ -1163,10 +1163,10 @@ type UpdateDomainConfigResponse struct {
 }
 
 func (r *UpdateDomainConfigResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateDomainConfigResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

@@ -15,9 +15,9 @@
 package v20181115
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AddFairPlayPemRequest struct {
@@ -45,12 +45,12 @@ type AddFairPlayPemRequest struct {
 }
 
 func (r *AddFairPlayPemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddFairPlayPemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddFairPlayPemResponse struct {
@@ -58,11 +58,11 @@ type AddFairPlayPemResponse struct {
 	Response *struct {
 
 		// 设置私钥后，后台返回的pem id，用来唯一标识一个私钥。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FairPlayPemId *uint64 `json:"FairPlayPemId,omitempty" name:"FairPlayPemId"`
 
 		// 私钥的优先级，优先级数值越高，优先级越高。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Priority *uint64 `json:"Priority,omitempty" name:"Priority"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -71,12 +71,12 @@ type AddFairPlayPemResponse struct {
 }
 
 func (r *AddFairPlayPemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddFairPlayPemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateEncryptKeysRequest struct {
@@ -96,12 +96,12 @@ type CreateEncryptKeysRequest struct {
 }
 
 func (r *CreateEncryptKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateEncryptKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateEncryptKeysResponse struct {
@@ -114,12 +114,12 @@ type CreateEncryptKeysResponse struct {
 }
 
 func (r *CreateEncryptKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateEncryptKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLicenseRequest struct {
@@ -143,12 +143,12 @@ type CreateLicenseRequest struct {
 }
 
 func (r *CreateLicenseRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLicenseRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLicenseResponse struct {
@@ -167,12 +167,12 @@ type CreateLicenseResponse struct {
 }
 
 func (r *CreateLicenseResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLicenseResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFairPlayPemRequest struct {
@@ -187,12 +187,12 @@ type DeleteFairPlayPemRequest struct {
 }
 
 func (r *DeleteFairPlayPemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFairPlayPemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFairPlayPemResponse struct {
@@ -205,12 +205,12 @@ type DeleteFairPlayPemResponse struct {
 }
 
 func (r *DeleteFairPlayPemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFairPlayPemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAllKeysRequest struct {
@@ -231,12 +231,12 @@ type DescribeAllKeysRequest struct {
 }
 
 func (r *DescribeAllKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAllKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAllKeysResponse struct {
@@ -244,17 +244,17 @@ type DescribeAllKeysResponse struct {
 	Response *struct {
 
 		// 加密密钥列表。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Keys []*Key `json:"Keys,omitempty" name:"Keys" list`
 
 		// 用来加密密钥。
-	// 如果入参中带有RsaPublicKey，则SessionKey为使用Rsa公钥加密后的二进制数据，Base64编码字符串。
-	// 如果入参中没有RsaPublicKey，则SessionKey为原始数据的字符串形式。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 如果入参中带有RsaPublicKey，则SessionKey为使用Rsa公钥加密后的二进制数据，Base64编码字符串。
+		// 如果入参中没有RsaPublicKey，则SessionKey为原始数据的字符串形式。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SessionKey *string `json:"SessionKey,omitempty" name:"SessionKey"`
 
 		// 内容ID
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ContentId *string `json:"ContentId,omitempty" name:"ContentId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -263,12 +263,12 @@ type DescribeAllKeysResponse struct {
 }
 
 func (r *DescribeAllKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAllKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFairPlayPemRequest struct {
@@ -283,12 +283,12 @@ type DescribeFairPlayPemRequest struct {
 }
 
 func (r *DescribeFairPlayPemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFairPlayPemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFairPlayPemResponse struct {
@@ -296,7 +296,7 @@ type DescribeFairPlayPemResponse struct {
 	Response *struct {
 
 		// 该账户下，所有设置的FairPlay私钥摘要信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FairPlayPems []*FairPlayPemDigestInfo `json:"FairPlayPems,omitempty" name:"FairPlayPems" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -305,12 +305,12 @@ type DescribeFairPlayPemResponse struct {
 }
 
 func (r *DescribeFairPlayPemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFairPlayPemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeysRequest struct {
@@ -335,12 +335,12 @@ type DescribeKeysRequest struct {
 }
 
 func (r *DescribeKeysRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeysRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeKeysResponse struct {
@@ -351,15 +351,15 @@ type DescribeKeysResponse struct {
 		Keys []*Key `json:"Keys,omitempty" name:"Keys" list`
 
 		// 用来加密密钥。
-	// 如果入参中带有RsaPublicKey，则SessionKey为使用Rsa公钥加密后的二进制数据，Base64编码字符串。
-	// 如果入参中没有RsaPublicKey，则SessionKey为原始数据的字符串形式。
+		// 如果入参中带有RsaPublicKey，则SessionKey为使用Rsa公钥加密后的二进制数据，Base64编码字符串。
+		// 如果入参中没有RsaPublicKey，则SessionKey为原始数据的字符串形式。
 		SessionKey *string `json:"SessionKey,omitempty" name:"SessionKey"`
 
 		// 内容ID
 		ContentId *string `json:"ContentId,omitempty" name:"ContentId"`
 
 		// Widevine方案的Pssh数据，Base64编码。
-	// Fairplay方案无该值。
+		// Fairplay方案无该值。
 		Pssh *string `json:"Pssh,omitempty" name:"Pssh"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -368,12 +368,12 @@ type DescribeKeysResponse struct {
 }
 
 func (r *DescribeKeysResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeKeysResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DrmOutputObject struct {
@@ -492,12 +492,12 @@ type ModifyFairPlayPemRequest struct {
 }
 
 func (r *ModifyFairPlayPemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyFairPlayPemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyFairPlayPemResponse struct {
@@ -505,11 +505,11 @@ type ModifyFairPlayPemResponse struct {
 	Response *struct {
 
 		// 设置私钥后，后台返回的pem id，用来唯一标识一个私钥。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FairPlayPemId *uint64 `json:"FairPlayPemId,omitempty" name:"FairPlayPemId"`
 
 		// 私钥的优先级，优先级数值越高，优先级越高。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Priority *uint64 `json:"Priority,omitempty" name:"Priority"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -518,12 +518,12 @@ type ModifyFairPlayPemResponse struct {
 }
 
 func (r *ModifyFairPlayPemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyFairPlayPemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PlaybackPolicy struct {
@@ -558,12 +558,12 @@ type StartEncryptionRequest struct {
 }
 
 func (r *StartEncryptionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartEncryptionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartEncryptionResponse struct {
@@ -576,10 +576,10 @@ type StartEncryptionResponse struct {
 }
 
 func (r *StartEncryptionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartEncryptionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

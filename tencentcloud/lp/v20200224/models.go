@@ -15,9 +15,9 @@
 package v20200224
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type QueryLoginProtectionRequest struct {
@@ -140,12 +140,12 @@ type QueryLoginProtectionRequest struct {
 }
 
 func (r *QueryLoginProtectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryLoginProtectionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QueryLoginProtectionResponse struct {
@@ -153,53 +153,53 @@ type QueryLoginProtectionResponse struct {
 	Response *struct {
 
 		// AssociateAccount
-	// 
-	// accountType 是 QQ 或微信开放账号时，用于标识 QQ 或微信用户登录后关联业务自身的账号 ID。
-	// LoginTime
-	// 
-	// 操作时间。
-	// Uid
-	// 
-	// 用户 ID 不同的 accountType 对应不同的用户 ID。如果是 QQ，则填入对应的 openid，微信用户则填入对应的 openid/unionid，手机号则填入对应真实用户手机号（如13123456789）。
-	// LoginIp
-	// 
-	// 登录 IP。
-	// Level
-	// 
-	// 0：表示无恶意。
-	// 1 - 4：恶意等级由低到高。
-	// RiskType
-	// 
-	// 风险类型。
-	// 出参不用填"Req业务侧错误码。成功时返回 Success，错误时返回具体业务错误原因。uestId"等公共出参， 详细解释>>>
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		//
+		// accountType 是 QQ 或微信开放账号时，用于标识 QQ 或微信用户登录后关联业务自身的账号 ID。
+		// LoginTime
+		//
+		// 操作时间。
+		// Uid
+		//
+		// 用户 ID 不同的 accountType 对应不同的用户 ID。如果是 QQ，则填入对应的 openid，微信用户则填入对应的 openid/unionid，手机号则填入对应真实用户手机号（如13123456789）。
+		// LoginIp
+		//
+		// 登录 IP。
+		// Level
+		//
+		// 0：表示无恶意。
+		// 1 - 4：恶意等级由低到高。
+		// RiskType
+		//
+		// 风险类型。
+		// 出参不用填"Req业务侧错误码。成功时返回 Success，错误时返回具体业务错误原因。uestId"等公共出参， 详细解释>>>
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CodeDesc *string `json:"CodeDesc,omitempty" name:"CodeDesc"`
 
 		// accountType 是 QQ 或微信开放账号时，用于标识 QQ 或微信用户登录后关联业务自身的账号 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AssociateAccount *string `json:"AssociateAccount,omitempty" name:"AssociateAccount"`
 
 		// 操作时间。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LoginTime *string `json:"LoginTime,omitempty" name:"LoginTime"`
 
 		// 用户 ID 不同的 accountType 对应不同的用户 ID。如果是 QQ，则填入对应的 openid，微信用户则填入对应的 openid/unionid，手机号则填入对应真实用户手机号（如13123456789）。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Uid *string `json:"Uid,omitempty" name:"Uid"`
 
 		// 登录 IP。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LoginIp *string `json:"LoginIp,omitempty" name:"LoginIp"`
 
 		// 0：表示无恶意。
-	// 1 - 4：恶意等级由低到高。
+		// 1 - 4：恶意等级由低到高。
 		Level *int64 `json:"Level,omitempty" name:"Level"`
 
 		// 风险类型。
 		RiskType []*int64 `json:"RiskType,omitempty" name:"RiskType" list`
 
 		// accountType 是 QQ 或微信开放账号时，用于标识 QQ 或微信用户登录后关联业务自身的账号 ID。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RootId *string `json:"RootId,omitempty" name:"RootId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -208,10 +208,10 @@ type QueryLoginProtectionResponse struct {
 }
 
 func (r *QueryLoginProtectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QueryLoginProtectionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

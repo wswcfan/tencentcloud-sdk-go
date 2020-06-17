@@ -15,9 +15,9 @@
 package v20190718
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AccessGroup struct {
@@ -64,12 +64,12 @@ type CreateAccessGroupRequest struct {
 }
 
 func (r *CreateAccessGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccessGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAccessGroupResponse struct {
@@ -85,12 +85,12 @@ type CreateAccessGroupResponse struct {
 }
 
 func (r *CreateAccessGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccessGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAccessRulesRequest struct {
@@ -104,12 +104,12 @@ type CreateAccessRulesRequest struct {
 }
 
 func (r *CreateAccessRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccessRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAccessRulesResponse struct {
@@ -122,12 +122,12 @@ type CreateAccessRulesResponse struct {
 }
 
 func (r *CreateAccessRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAccessRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateFileSystemRequest struct {
@@ -144,12 +144,12 @@ type CreateFileSystemRequest struct {
 }
 
 func (r *CreateFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateFileSystemResponse struct {
@@ -165,12 +165,12 @@ type CreateFileSystemResponse struct {
 }
 
 func (r *CreateFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMountPointRequest struct {
@@ -196,12 +196,12 @@ type CreateMountPointRequest struct {
 }
 
 func (r *CreateMountPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMountPointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateMountPointResponse struct {
@@ -217,12 +217,12 @@ type CreateMountPointResponse struct {
 }
 
 func (r *CreateMountPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateMountPointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAccessGroupRequest struct {
@@ -233,12 +233,12 @@ type DeleteAccessGroupRequest struct {
 }
 
 func (r *DeleteAccessGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccessGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAccessGroupResponse struct {
@@ -251,12 +251,12 @@ type DeleteAccessGroupResponse struct {
 }
 
 func (r *DeleteAccessGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccessGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAccessRulesRequest struct {
@@ -267,12 +267,12 @@ type DeleteAccessRulesRequest struct {
 }
 
 func (r *DeleteAccessRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccessRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAccessRulesResponse struct {
@@ -285,12 +285,12 @@ type DeleteAccessRulesResponse struct {
 }
 
 func (r *DeleteAccessRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAccessRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFileSystemRequest struct {
@@ -301,12 +301,12 @@ type DeleteFileSystemRequest struct {
 }
 
 func (r *DeleteFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteFileSystemResponse struct {
@@ -319,12 +319,12 @@ type DeleteFileSystemResponse struct {
 }
 
 func (r *DeleteFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMountPointRequest struct {
@@ -335,12 +335,12 @@ type DeleteMountPointRequest struct {
 }
 
 func (r *DeleteMountPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMountPointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteMountPointResponse struct {
@@ -353,12 +353,12 @@ type DeleteMountPointResponse struct {
 }
 
 func (r *DeleteMountPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteMountPointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessGroupsRequest struct {
@@ -375,12 +375,12 @@ type DescribeAccessGroupsRequest struct {
 }
 
 func (r *DescribeAccessGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessGroupsResponse struct {
@@ -396,12 +396,12 @@ type DescribeAccessGroupsResponse struct {
 }
 
 func (r *DescribeAccessGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessRulesRequest struct {
@@ -418,12 +418,12 @@ type DescribeAccessRulesRequest struct {
 }
 
 func (r *DescribeAccessRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccessRulesResponse struct {
@@ -439,12 +439,12 @@ type DescribeAccessRulesResponse struct {
 }
 
 func (r *DescribeAccessRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccessRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSystemRequest struct {
@@ -455,12 +455,12 @@ type DescribeFileSystemRequest struct {
 }
 
 func (r *DescribeFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSystemResponse struct {
@@ -471,11 +471,11 @@ type DescribeFileSystemResponse struct {
 		FileSystem *FileSystem `json:"FileSystem,omitempty" name:"FileSystem"`
 
 		// 文件系统已使用容量（byte）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FileSystemCapacityUsed *uint64 `json:"FileSystemCapacityUsed,omitempty" name:"FileSystemCapacityUsed"`
 
 		// 已使用容量（byte）
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CapacityUsed *uint64 `json:"CapacityUsed,omitempty" name:"CapacityUsed"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -484,12 +484,12 @@ type DescribeFileSystemResponse struct {
 }
 
 func (r *DescribeFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSystemsRequest struct {
@@ -503,12 +503,12 @@ type DescribeFileSystemsRequest struct {
 }
 
 func (r *DescribeFileSystemsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSystemsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeFileSystemsResponse struct {
@@ -524,12 +524,12 @@ type DescribeFileSystemsResponse struct {
 }
 
 func (r *DescribeFileSystemsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeFileSystemsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountPointRequest struct {
@@ -540,12 +540,12 @@ type DescribeMountPointRequest struct {
 }
 
 func (r *DescribeMountPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountPointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountPointResponse struct {
@@ -561,12 +561,12 @@ type DescribeMountPointResponse struct {
 }
 
 func (r *DescribeMountPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountPointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountPointsRequest struct {
@@ -588,12 +588,12 @@ type DescribeMountPointsRequest struct {
 }
 
 func (r *DescribeMountPointsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountPointsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeMountPointsResponse struct {
@@ -609,12 +609,12 @@ type DescribeMountPointsResponse struct {
 }
 
 func (r *DescribeMountPointsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeMountPointsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type FileSystem struct {
@@ -670,12 +670,12 @@ type ModifyAccessGroupRequest struct {
 }
 
 func (r *ModifyAccessGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccessGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAccessGroupResponse struct {
@@ -688,12 +688,12 @@ type ModifyAccessGroupResponse struct {
 }
 
 func (r *ModifyAccessGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccessGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAccessRulesRequest struct {
@@ -704,12 +704,12 @@ type ModifyAccessRulesRequest struct {
 }
 
 func (r *ModifyAccessRulesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccessRulesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAccessRulesResponse struct {
@@ -722,12 +722,12 @@ type ModifyAccessRulesResponse struct {
 }
 
 func (r *ModifyAccessRulesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAccessRulesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyFileSystemRequest struct {
@@ -748,12 +748,12 @@ type ModifyFileSystemRequest struct {
 }
 
 func (r *ModifyFileSystemRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyFileSystemRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyFileSystemResponse struct {
@@ -766,12 +766,12 @@ type ModifyFileSystemResponse struct {
 }
 
 func (r *ModifyFileSystemResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyFileSystemResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMountPointRequest struct {
@@ -791,12 +791,12 @@ type ModifyMountPointRequest struct {
 }
 
 func (r *ModifyMountPointRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMountPointRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyMountPointResponse struct {
@@ -809,12 +809,12 @@ type ModifyMountPointResponse struct {
 }
 
 func (r *ModifyMountPointResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyMountPointResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MountPoint struct {

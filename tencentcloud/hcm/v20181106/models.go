@@ -15,9 +15,9 @@
 package v20181106
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type EvaluationRequest struct {
@@ -46,12 +46,12 @@ type EvaluationRequest struct {
 }
 
 func (r *EvaluationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EvaluationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EvaluationResponse struct {
@@ -62,7 +62,7 @@ type EvaluationResponse struct {
 		SessionId *string `json:"SessionId,omitempty" name:"SessionId"`
 
 		// 识别出的算式信息；
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Items []*Item `json:"Items,omitempty" name:"Items" list`
 
 		// 任务 id，用于查询接口
@@ -74,12 +74,12 @@ type EvaluationResponse struct {
 }
 
 func (r *EvaluationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EvaluationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Item struct {

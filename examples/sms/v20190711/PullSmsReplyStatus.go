@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/errors"
-	"github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
-	sms "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/sms/v20190711"//引入sms
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/errors"
+	"github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/profile"
+	sms "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/sms/v20190711" //引入sms
 )
 
 func main() {

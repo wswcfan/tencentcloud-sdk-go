@@ -15,9 +15,9 @@
 package v20190423
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type CallDeviceActionAsyncRequest struct {
@@ -37,12 +37,12 @@ type CallDeviceActionAsyncRequest struct {
 }
 
 func (r *CallDeviceActionAsyncRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallDeviceActionAsyncRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CallDeviceActionAsyncResponse struct {
@@ -61,12 +61,12 @@ type CallDeviceActionAsyncResponse struct {
 }
 
 func (r *CallDeviceActionAsyncResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallDeviceActionAsyncResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CallDeviceActionSyncRequest struct {
@@ -86,12 +86,12 @@ type CallDeviceActionSyncRequest struct {
 }
 
 func (r *CallDeviceActionSyncRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallDeviceActionSyncRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CallDeviceActionSyncResponse struct {
@@ -102,7 +102,7 @@ type CallDeviceActionSyncResponse struct {
 		ClientToken *string `json:"ClientToken,omitempty" name:"ClientToken"`
 
 		// 输出参数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OutputParams *string `json:"OutputParams,omitempty" name:"OutputParams"`
 
 		// 返回状态
@@ -114,12 +114,12 @@ type CallDeviceActionSyncResponse struct {
 }
 
 func (r *CallDeviceActionSyncResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CallDeviceActionSyncResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ControlDeviceDataRequest struct {
@@ -145,12 +145,12 @@ type ControlDeviceDataRequest struct {
 }
 
 func (r *ControlDeviceDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ControlDeviceDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ControlDeviceDataResponse struct {
@@ -160,9 +160,9 @@ type ControlDeviceDataResponse struct {
 		// 返回信息
 		Data *string `json:"Data,omitempty" name:"Data"`
 
-		// JSON字符串， 返回下发控制的结果信息, 
-	// Sent = 1 表示设备已经在线并且订阅了控制下发的mqtt topic
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// JSON字符串， 返回下发控制的结果信息,
+		// Sent = 1 表示设备已经在线并且订阅了控制下发的mqtt topic
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -171,12 +171,12 @@ type ControlDeviceDataResponse struct {
 }
 
 func (r *ControlDeviceDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ControlDeviceDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDeviceRequest struct {
@@ -205,12 +205,12 @@ type CreateDeviceRequest struct {
 }
 
 func (r *CreateDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateDeviceResponse struct {
@@ -226,12 +226,12 @@ type CreateDeviceResponse struct {
 }
 
 func (r *CreateDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProjectRequest struct {
@@ -245,12 +245,12 @@ type CreateProjectRequest struct {
 }
 
 func (r *CreateProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProjectResponse struct {
@@ -266,12 +266,12 @@ type CreateProjectResponse struct {
 }
 
 func (r *CreateProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStudioProductRequest struct {
@@ -303,12 +303,12 @@ type CreateStudioProductRequest struct {
 }
 
 func (r *CreateStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateStudioProductResponse struct {
@@ -324,12 +324,12 @@ type CreateStudioProductResponse struct {
 }
 
 func (r *CreateStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceRequest struct {
@@ -343,12 +343,12 @@ type DeleteDeviceRequest struct {
 }
 
 func (r *DeleteDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteDeviceResponse struct {
@@ -361,12 +361,12 @@ type DeleteDeviceResponse struct {
 }
 
 func (r *DeleteDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProjectRequest struct {
@@ -377,12 +377,12 @@ type DeleteProjectRequest struct {
 }
 
 func (r *DeleteProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProjectResponse struct {
@@ -395,12 +395,12 @@ type DeleteProjectResponse struct {
 }
 
 func (r *DeleteProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteStudioProductRequest struct {
@@ -411,12 +411,12 @@ type DeleteStudioProductRequest struct {
 }
 
 func (r *DeleteStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteStudioProductResponse struct {
@@ -429,12 +429,12 @@ type DeleteStudioProductResponse struct {
 }
 
 func (r *DeleteStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceDataHistoryRequest struct {
@@ -463,12 +463,12 @@ type DescribeDeviceDataHistoryRequest struct {
 }
 
 func (r *DescribeDeviceDataHistoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceDataHistoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceDataHistoryResponse struct {
@@ -476,19 +476,19 @@ type DescribeDeviceDataHistoryResponse struct {
 	Response *struct {
 
 		// 属性字段名称，对应数据模板中功能属性的标识符
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		FieldName *string `json:"FieldName,omitempty" name:"FieldName"`
 
 		// 数据是否已全部返回，true 表示数据全部返回，false 表示还有数据待返回，可将 Context 作为入参，继续查询返回结果。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Listover *bool `json:"Listover,omitempty" name:"Listover"`
 
 		// 检索上下文，当 ListOver 为false时，可以用此上下文，继续读取后续数据
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Context *string `json:"Context,omitempty" name:"Context"`
 
 		// 历史数据结果数组，返回对应时间点及取值。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Results []*DeviceDataHistoryItem `json:"Results,omitempty" name:"Results" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -497,12 +497,12 @@ type DescribeDeviceDataHistoryResponse struct {
 }
 
 func (r *DescribeDeviceDataHistoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceDataHistoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceDataRequest struct {
@@ -519,12 +519,12 @@ type DescribeDeviceDataRequest struct {
 }
 
 func (r *DescribeDeviceDataRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceDataRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceDataResponse struct {
@@ -540,12 +540,12 @@ type DescribeDeviceDataResponse struct {
 }
 
 func (r *DescribeDeviceDataResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceDataResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceRequest struct {
@@ -562,12 +562,12 @@ type DescribeDeviceRequest struct {
 }
 
 func (r *DescribeDeviceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeDeviceResponse struct {
@@ -583,12 +583,12 @@ type DescribeDeviceResponse struct {
 }
 
 func (r *DescribeDeviceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeDeviceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModelDefinitionRequest struct {
@@ -599,12 +599,12 @@ type DescribeModelDefinitionRequest struct {
 }
 
 func (r *DescribeModelDefinitionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModelDefinitionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeModelDefinitionResponse struct {
@@ -620,12 +620,12 @@ type DescribeModelDefinitionResponse struct {
 }
 
 func (r *DescribeModelDefinitionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeModelDefinitionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectRequest struct {
@@ -636,12 +636,12 @@ type DescribeProjectRequest struct {
 }
 
 func (r *DescribeProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectResponse struct {
@@ -657,12 +657,12 @@ type DescribeProjectResponse struct {
 }
 
 func (r *DescribeProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStudioProductRequest struct {
@@ -673,12 +673,12 @@ type DescribeStudioProductRequest struct {
 }
 
 func (r *DescribeStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeStudioProductResponse struct {
@@ -694,12 +694,12 @@ type DescribeStudioProductResponse struct {
 }
 
 func (r *DescribeStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeviceData struct {
@@ -828,12 +828,12 @@ type GetDeviceListRequest struct {
 }
 
 func (r *GetDeviceListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDeviceListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetDeviceListResponse struct {
@@ -841,11 +841,11 @@ type GetDeviceListResponse struct {
 	Response *struct {
 
 		// 返回的设备列表, 注意列表设备的 DevicePsk 为空, 要获取设备的 DevicePsk 请使用 DescribeDevice
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Devices []*DeviceInfo `json:"Devices,omitempty" name:"Devices" list`
 
 		// 产品下的设备总数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *int64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -854,12 +854,12 @@ type GetDeviceListResponse struct {
 }
 
 func (r *GetDeviceListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDeviceListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetProjectListRequest struct {
@@ -873,12 +873,12 @@ type GetProjectListRequest struct {
 }
 
 func (r *GetProjectListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetProjectListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetProjectListResponse struct {
@@ -886,11 +886,11 @@ type GetProjectListResponse struct {
 	Response *struct {
 
 		// 项目列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Projects []*ProjectEntryEx `json:"Projects,omitempty" name:"Projects" list`
 
 		// 列表项个数
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *int64 `json:"Total,omitempty" name:"Total"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -899,12 +899,12 @@ type GetProjectListResponse struct {
 }
 
 func (r *GetProjectListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetProjectListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetStudioProductListRequest struct {
@@ -924,12 +924,12 @@ type GetStudioProductListRequest struct {
 }
 
 func (r *GetStudioProductListRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetStudioProductListRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetStudioProductListResponse struct {
@@ -948,12 +948,12 @@ type GetStudioProductListResponse struct {
 }
 
 func (r *GetStudioProductListResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetStudioProductListResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListEventHistoryRequest struct {
@@ -982,12 +982,12 @@ type ListEventHistoryRequest struct {
 }
 
 func (r *ListEventHistoryRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListEventHistoryRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListEventHistoryResponse struct {
@@ -995,19 +995,19 @@ type ListEventHistoryResponse struct {
 	Response *struct {
 
 		// 搜索上下文, 用作查询游标
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Context *string `json:"Context,omitempty" name:"Context"`
 
 		// 搜索结果数量
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Total *int64 `json:"Total,omitempty" name:"Total"`
 
 		// 搜索结果是否已经结束
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Listover *bool `json:"Listover,omitempty" name:"Listover"`
 
 		// 搜集结果集
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		EventHistory []*EventHistoryItem `json:"EventHistory,omitempty" name:"EventHistory" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1016,12 +1016,12 @@ type ListEventHistoryResponse struct {
 }
 
 func (r *ListEventHistoryResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListEventHistoryResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModelDefinitionRequest struct {
@@ -1035,12 +1035,12 @@ type ModifyModelDefinitionRequest struct {
 }
 
 func (r *ModifyModelDefinitionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModelDefinitionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyModelDefinitionResponse struct {
@@ -1053,12 +1053,12 @@ type ModifyModelDefinitionResponse struct {
 }
 
 func (r *ModifyModelDefinitionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyModelDefinitionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyProjectRequest struct {
@@ -1075,12 +1075,12 @@ type ModifyProjectRequest struct {
 }
 
 func (r *ModifyProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyProjectResponse struct {
@@ -1096,12 +1096,12 @@ type ModifyProjectResponse struct {
 }
 
 func (r *ModifyProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyStudioProductRequest struct {
@@ -1124,12 +1124,12 @@ type ModifyStudioProductRequest struct {
 }
 
 func (r *ModifyStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyStudioProductResponse struct {
@@ -1145,12 +1145,12 @@ type ModifyStudioProductResponse struct {
 }
 
 func (r *ModifyStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProductEntry struct {
@@ -1277,12 +1277,12 @@ type ReleaseStudioProductRequest struct {
 }
 
 func (r *ReleaseStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReleaseStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReleaseStudioProductResponse struct {
@@ -1295,12 +1295,12 @@ type ReleaseStudioProductResponse struct {
 }
 
 func (r *ReleaseStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReleaseStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchStudioProductRequest struct {
@@ -1323,12 +1323,12 @@ type SearchStudioProductRequest struct {
 }
 
 func (r *SearchStudioProductRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchStudioProductRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SearchStudioProductResponse struct {
@@ -1347,10 +1347,10 @@ type SearchStudioProductResponse struct {
 }
 
 func (r *SearchStudioProductResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SearchStudioProductResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

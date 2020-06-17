@@ -15,9 +15,9 @@
 package v20181225
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type AcceptOrganizationInvitationRequest struct {
@@ -28,12 +28,12 @@ type AcceptOrganizationInvitationRequest struct {
 }
 
 func (r *AcceptOrganizationInvitationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AcceptOrganizationInvitationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AcceptOrganizationInvitationResponse struct {
@@ -46,12 +46,12 @@ type AcceptOrganizationInvitationResponse struct {
 }
 
 func (r *AcceptOrganizationInvitationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AcceptOrganizationInvitationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddOrganizationNodeRequest struct {
@@ -65,12 +65,12 @@ type AddOrganizationNodeRequest struct {
 }
 
 func (r *AddOrganizationNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddOrganizationNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AddOrganizationNodeResponse struct {
@@ -86,12 +86,12 @@ type AddOrganizationNodeResponse struct {
 }
 
 func (r *AddOrganizationNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AddOrganizationNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelOrganizationInvitationRequest struct {
@@ -102,12 +102,12 @@ type CancelOrganizationInvitationRequest struct {
 }
 
 func (r *CancelOrganizationInvitationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelOrganizationInvitationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CancelOrganizationInvitationResponse struct {
@@ -120,12 +120,12 @@ type CancelOrganizationInvitationResponse struct {
 }
 
 func (r *CancelOrganizationInvitationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CancelOrganizationInvitationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateOrganizationRequest struct {
@@ -136,12 +136,12 @@ type CreateOrganizationRequest struct {
 }
 
 func (r *CreateOrganizationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateOrganizationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateOrganizationResponse struct {
@@ -166,12 +166,12 @@ type CreateOrganizationResponse struct {
 }
 
 func (r *CreateOrganizationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateOrganizationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationMemberFromNodeRequest struct {
@@ -185,12 +185,12 @@ type DeleteOrganizationMemberFromNodeRequest struct {
 }
 
 func (r *DeleteOrganizationMemberFromNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationMemberFromNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationMemberFromNodeResponse struct {
@@ -203,12 +203,12 @@ type DeleteOrganizationMemberFromNodeResponse struct {
 }
 
 func (r *DeleteOrganizationMemberFromNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationMemberFromNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationMembersRequest struct {
@@ -219,12 +219,12 @@ type DeleteOrganizationMembersRequest struct {
 }
 
 func (r *DeleteOrganizationMembersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationMembersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationMembersResponse struct {
@@ -237,12 +237,12 @@ type DeleteOrganizationMembersResponse struct {
 }
 
 func (r *DeleteOrganizationMembersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationMembersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationNodesRequest struct {
@@ -253,12 +253,12 @@ type DeleteOrganizationNodesRequest struct {
 }
 
 func (r *DeleteOrganizationNodesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationNodesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationNodesResponse struct {
@@ -271,12 +271,12 @@ type DeleteOrganizationNodesResponse struct {
 }
 
 func (r *DeleteOrganizationNodesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationNodesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationRequest struct {
@@ -284,12 +284,12 @@ type DeleteOrganizationRequest struct {
 }
 
 func (r *DeleteOrganizationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteOrganizationResponse struct {
@@ -302,12 +302,12 @@ type DeleteOrganizationResponse struct {
 }
 
 func (r *DeleteOrganizationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteOrganizationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DenyOrganizationInvitationRequest struct {
@@ -318,12 +318,12 @@ type DenyOrganizationInvitationRequest struct {
 }
 
 func (r *DenyOrganizationInvitationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DenyOrganizationInvitationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DenyOrganizationInvitationResponse struct {
@@ -336,12 +336,12 @@ type DenyOrganizationInvitationResponse struct {
 }
 
 func (r *DenyOrganizationInvitationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DenyOrganizationInvitationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetOrganizationMemberRequest struct {
@@ -352,12 +352,12 @@ type GetOrganizationMemberRequest struct {
 }
 
 func (r *GetOrganizationMemberRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetOrganizationMemberRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetOrganizationMemberResponse struct {
@@ -391,12 +391,12 @@ type GetOrganizationMemberResponse struct {
 }
 
 func (r *GetOrganizationMemberResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetOrganizationMemberResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetOrganizationRequest struct {
@@ -404,12 +404,12 @@ type GetOrganizationRequest struct {
 }
 
 func (r *GetOrganizationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetOrganizationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetOrganizationResponse struct {
@@ -440,12 +440,12 @@ type GetOrganizationResponse struct {
 }
 
 func (r *GetOrganizationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetOrganizationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationInvitationsRequest struct {
@@ -462,12 +462,12 @@ type ListOrganizationInvitationsRequest struct {
 }
 
 func (r *ListOrganizationInvitationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationInvitationsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationInvitationsResponse struct {
@@ -486,12 +486,12 @@ type ListOrganizationInvitationsResponse struct {
 }
 
 func (r *ListOrganizationInvitationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationInvitationsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationMembersRequest struct {
@@ -505,12 +505,12 @@ type ListOrganizationMembersRequest struct {
 }
 
 func (r *ListOrganizationMembersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationMembersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationMembersResponse struct {
@@ -529,12 +529,12 @@ type ListOrganizationMembersResponse struct {
 }
 
 func (r *ListOrganizationMembersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationMembersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationNodeMembersRequest struct {
@@ -551,12 +551,12 @@ type ListOrganizationNodeMembersRequest struct {
 }
 
 func (r *ListOrganizationNodeMembersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationNodeMembersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationNodeMembersResponse struct {
@@ -575,12 +575,12 @@ type ListOrganizationNodeMembersResponse struct {
 }
 
 func (r *ListOrganizationNodeMembersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationNodeMembersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationNodesRequest struct {
@@ -588,12 +588,12 @@ type ListOrganizationNodesRequest struct {
 }
 
 func (r *ListOrganizationNodesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationNodesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ListOrganizationNodesResponse struct {
@@ -609,12 +609,12 @@ type ListOrganizationNodesResponse struct {
 }
 
 func (r *ListOrganizationNodesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ListOrganizationNodesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MoveOrganizationMembersToNodeRequest struct {
@@ -628,12 +628,12 @@ type MoveOrganizationMembersToNodeRequest struct {
 }
 
 func (r *MoveOrganizationMembersToNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MoveOrganizationMembersToNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MoveOrganizationMembersToNodeResponse struct {
@@ -646,12 +646,12 @@ type MoveOrganizationMembersToNodeResponse struct {
 }
 
 func (r *MoveOrganizationMembersToNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MoveOrganizationMembersToNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OrgInvitation struct {
@@ -728,12 +728,12 @@ type QuitOrganizationRequest struct {
 }
 
 func (r *QuitOrganizationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuitOrganizationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type QuitOrganizationResponse struct {
@@ -746,12 +746,12 @@ type QuitOrganizationResponse struct {
 }
 
 func (r *QuitOrganizationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *QuitOrganizationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendOrganizationInvitationRequest struct {
@@ -768,12 +768,12 @@ type SendOrganizationInvitationRequest struct {
 }
 
 func (r *SendOrganizationInvitationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendOrganizationInvitationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendOrganizationInvitationResponse struct {
@@ -786,12 +786,12 @@ type SendOrganizationInvitationResponse struct {
 }
 
 func (r *SendOrganizationInvitationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendOrganizationInvitationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateOrganizationMemberRequest struct {
@@ -808,12 +808,12 @@ type UpdateOrganizationMemberRequest struct {
 }
 
 func (r *UpdateOrganizationMemberRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateOrganizationMemberRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateOrganizationMemberResponse struct {
@@ -826,12 +826,12 @@ type UpdateOrganizationMemberResponse struct {
 }
 
 func (r *UpdateOrganizationMemberResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateOrganizationMemberResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateOrganizationNodeRequest struct {
@@ -848,12 +848,12 @@ type UpdateOrganizationNodeRequest struct {
 }
 
 func (r *UpdateOrganizationNodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateOrganizationNodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpdateOrganizationNodeResponse struct {
@@ -866,10 +866,10 @@ type UpdateOrganizationNodeResponse struct {
 }
 
 func (r *UpdateOrganizationNodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpdateOrganizationNodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

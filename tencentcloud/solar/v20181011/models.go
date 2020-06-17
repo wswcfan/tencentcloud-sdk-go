@@ -15,9 +15,9 @@
 package v20181011
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type ActivityInfo struct {
@@ -62,12 +62,12 @@ type CheckStaffChUserRequest struct {
 }
 
 func (r *CheckStaffChUserRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckStaffChUserRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CheckStaffChUserResponse struct {
@@ -80,12 +80,12 @@ type CheckStaffChUserResponse struct {
 }
 
 func (r *CheckStaffChUserResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CheckStaffChUserResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CopyActivityChannelRequest struct {
@@ -102,12 +102,12 @@ type CopyActivityChannelRequest struct {
 }
 
 func (r *CopyActivityChannelRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyActivityChannelRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CopyActivityChannelResponse struct {
@@ -120,12 +120,12 @@ type CopyActivityChannelResponse struct {
 }
 
 func (r *CopyActivityChannelResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CopyActivityChannelResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProjectRequest struct {
@@ -148,12 +148,12 @@ type CreateProjectRequest struct {
 }
 
 func (r *CreateProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateProjectResponse struct {
@@ -169,12 +169,12 @@ type CreateProjectResponse struct {
 }
 
 func (r *CreateProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubProjectRequest struct {
@@ -188,12 +188,12 @@ type CreateSubProjectRequest struct {
 }
 
 func (r *CreateSubProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateSubProjectResponse struct {
@@ -209,12 +209,12 @@ type CreateSubProjectResponse struct {
 }
 
 func (r *CreateSubProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateSubProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CustomerInfo struct {
@@ -307,12 +307,12 @@ type DeleteProjectRequest struct {
 }
 
 func (r *DeleteProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteProjectResponse struct {
@@ -325,12 +325,12 @@ type DeleteProjectResponse struct {
 }
 
 func (r *DeleteProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCustomerRequest struct {
@@ -341,12 +341,12 @@ type DescribeCustomerRequest struct {
 }
 
 func (r *DescribeCustomerRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCustomerRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCustomerResponse struct {
@@ -354,119 +354,119 @@ type DescribeCustomerResponse struct {
 	Response *struct {
 
 		// 地址列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		AddressList []*string `json:"AddressList,omitempty" name:"AddressList" list`
 
 		// 用户id
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UserId *string `json:"UserId,omitempty" name:"UserId"`
 
 		// 头像
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Avatar *string `json:"Avatar,omitempty" name:"Avatar"`
 
 		// 生日
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Birthday *string `json:"Birthday,omitempty" name:"Birthday"`
 
 		// 城市
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		City *string `json:"City,omitempty" name:"City"`
 
 		// 创建时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		CreateTime *string `json:"CreateTime,omitempty" name:"CreateTime"`
 
 		// 设备
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Device *string `json:"Device,omitempty" name:"Device"`
 
 		// 行业
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Industrys []*string `json:"Industrys,omitempty" name:"Industrys" list`
 
 		// 上次登录时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		LastActiveTime *string `json:"LastActiveTime,omitempty" name:"LastActiveTime"`
 
 		// 是否星标 1是 0否
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		MarkFlag *string `json:"MarkFlag,omitempty" name:"MarkFlag"`
 
 		// 手机型号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Model *string `json:"Model,omitempty" name:"Model"`
 
 		// 微信openid
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		OpenId *string `json:"OpenId,omitempty" name:"OpenId"`
 
 		// 消费特点
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PayFeature *string `json:"PayFeature,omitempty" name:"PayFeature"`
 
 		// 手机号
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Phone *string `json:"Phone,omitempty" name:"Phone"`
 
 		// 手机号码列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		PhoneList *string `json:"PhoneList,omitempty" name:"PhoneList"`
 
 		// 最近记录省份
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Province *string `json:"Province,omitempty" name:"Province"`
 
 		// 姓名
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RealName *string `json:"RealName,omitempty" name:"RealName"`
 
 		// 员工标识 0：非员工 1：员工
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		RelChannelFlag *string `json:"RelChannelFlag,omitempty" name:"RelChannelFlag"`
 
 		// 备注
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Remark *string `json:"Remark,omitempty" name:"Remark"`
 
 		// 性别 1男 2女
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Sex *string `json:"Sex,omitempty" name:"Sex"`
 
 		// 最初来源
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SourceAudienceVo *string `json:"SourceAudienceVo,omitempty" name:"SourceAudienceVo"`
 
 		// 关注公众号列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubWechats []*string `json:"SubWechats,omitempty" name:"SubWechats" list`
 
 		// 微信unionid
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UnionId *string `json:"UnionId,omitempty" name:"UnionId"`
 
 		// 更新时间
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UpdateTime *string `json:"UpdateTime,omitempty" name:"UpdateTime"`
 
 		// 用户类型
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UserTypes []*string `json:"UserTypes,omitempty" name:"UserTypes" list`
 
 		// 城市
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WxCity *string `json:"WxCity,omitempty" name:"WxCity"`
 
 		// 国家
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WxCountry *string `json:"WxCountry,omitempty" name:"WxCountry"`
 
 		// 昵称
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WxNickname *string `json:"WxNickname,omitempty" name:"WxNickname"`
 
 		// 省份
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		WxProvince *string `json:"WxProvince,omitempty" name:"WxProvince"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -475,12 +475,12 @@ type DescribeCustomerResponse struct {
 }
 
 func (r *DescribeCustomerResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCustomerResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCustomersRequest struct {
@@ -527,12 +527,12 @@ type DescribeCustomersRequest struct {
 }
 
 func (r *DescribeCustomersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCustomersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeCustomersResponse struct {
@@ -543,7 +543,7 @@ type DescribeCustomersResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 数据列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		UserList []*CustomerInfo `json:"UserList,omitempty" name:"UserList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -552,12 +552,12 @@ type DescribeCustomersResponse struct {
 }
 
 func (r *DescribeCustomersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeCustomersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectRequest struct {
@@ -568,12 +568,12 @@ type DescribeProjectRequest struct {
 }
 
 func (r *DescribeProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectResponse struct {
@@ -602,7 +602,7 @@ type DescribeProjectResponse struct {
 		ProjectStatus *string `json:"ProjectStatus,omitempty" name:"ProjectStatus"`
 
 		// 项目机构Id
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProjectOrgId *string `json:"ProjectOrgId,omitempty" name:"ProjectOrgId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -611,12 +611,12 @@ type DescribeProjectResponse struct {
 }
 
 func (r *DescribeProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectStockRequest struct {
@@ -627,12 +627,12 @@ type DescribeProjectStockRequest struct {
 }
 
 func (r *DescribeProjectStockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectStockRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectStockResponse struct {
@@ -648,12 +648,12 @@ type DescribeProjectStockResponse struct {
 }
 
 func (r *DescribeProjectStockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectStockResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectsRequest struct {
@@ -676,12 +676,12 @@ type DescribeProjectsRequest struct {
 }
 
 func (r *DescribeProjectsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeProjectsResponse struct {
@@ -700,12 +700,12 @@ type DescribeProjectsResponse struct {
 }
 
 func (r *DescribeProjectsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeProjectsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeResourceTemplateHeadersRequest struct {
@@ -716,12 +716,12 @@ type DescribeResourceTemplateHeadersRequest struct {
 }
 
 func (r *DescribeResourceTemplateHeadersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeResourceTemplateHeadersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeResourceTemplateHeadersResponse struct {
@@ -732,7 +732,7 @@ type DescribeResourceTemplateHeadersResponse struct {
 		TotalCount *uint64 `json:"TotalCount,omitempty" name:"TotalCount"`
 
 		// 模板列表
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		TmplList []*ResourceTemplateHeader `json:"TmplList,omitempty" name:"TmplList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -741,12 +741,12 @@ type DescribeResourceTemplateHeadersResponse struct {
 }
 
 func (r *DescribeResourceTemplateHeadersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeResourceTemplateHeadersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubProjectRequest struct {
@@ -757,12 +757,12 @@ type DescribeSubProjectRequest struct {
 }
 
 func (r *DescribeSubProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeSubProjectResponse struct {
@@ -770,39 +770,39 @@ type DescribeSubProjectResponse struct {
 	Response *struct {
 
 		// 作品信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ProductInfo *ProductInfo `json:"ProductInfo,omitempty" name:"ProductInfo"`
 
 		// 活动信息
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ActivityInfo *ActivityInfo `json:"ActivityInfo,omitempty" name:"ActivityInfo"`
 
 		// 分享标题
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ShareTitle *string `json:"ShareTitle,omitempty" name:"ShareTitle"`
 
 		// 分享描述
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ShareDesc *string `json:"ShareDesc,omitempty" name:"ShareDesc"`
 
 		// 分享图标
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ShareImg *string `json:"ShareImg,omitempty" name:"ShareImg"`
 
 		// 是否已创建策略
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		HasStrategy *uint64 `json:"HasStrategy,omitempty" name:"HasStrategy"`
 
 		// 子项目状态
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		SubProjectStatus *string `json:"SubProjectStatus,omitempty" name:"SubProjectStatus"`
 
 		// 分享公众号的appId
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ShareAppId *string `json:"ShareAppId,omitempty" name:"ShareAppId"`
 
 		// 分享公众号的wsId
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		ShareWsId *string `json:"ShareWsId,omitempty" name:"ShareWsId"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -811,12 +811,12 @@ type DescribeSubProjectResponse struct {
 }
 
 func (r *DescribeSubProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeSubProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ExpireFlowRequest struct {
@@ -827,12 +827,12 @@ type ExpireFlowRequest struct {
 }
 
 func (r *ExpireFlowRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ExpireFlowRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ExpireFlowResponse struct {
@@ -845,12 +845,12 @@ type ExpireFlowResponse struct {
 }
 
 func (r *ExpireFlowResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ExpireFlowResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Filters struct {
@@ -888,12 +888,12 @@ type ModifyProjectRequest struct {
 }
 
 func (r *ModifyProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyProjectResponse struct {
@@ -906,12 +906,12 @@ type ModifyProjectResponse struct {
 }
 
 func (r *ModifyProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OffLineProjectRequest struct {
@@ -922,12 +922,12 @@ type OffLineProjectRequest struct {
 }
 
 func (r *OffLineProjectRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OffLineProjectRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type OffLineProjectResponse struct {
@@ -940,12 +940,12 @@ type OffLineProjectResponse struct {
 }
 
 func (r *OffLineProjectResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *OffLineProjectResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ProductInfo struct {
@@ -1051,12 +1051,12 @@ type ReplenishProjectStockRequest struct {
 }
 
 func (r *ReplenishProjectStockRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplenishProjectStockRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ReplenishProjectStockResponse struct {
@@ -1069,12 +1069,12 @@ type ReplenishProjectStockResponse struct {
 }
 
 func (r *ReplenishProjectStockResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ReplenishProjectStockResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ResourceTemplateHeader struct {
@@ -1140,12 +1140,12 @@ type SendWxTouchTaskRequest struct {
 }
 
 func (r *SendWxTouchTaskRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendWxTouchTaskRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SendWxTouchTaskResponse struct {
@@ -1158,12 +1158,12 @@ type SendWxTouchTaskResponse struct {
 }
 
 func (r *SendWxTouchTaskResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SendWxTouchTaskResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SubProjectInfo struct {

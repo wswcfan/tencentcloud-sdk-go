@@ -15,9 +15,9 @@
 package v20180301
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type BankCard2EVerificationRequest struct {
@@ -31,12 +31,12 @@ type BankCard2EVerificationRequest struct {
 }
 
 func (r *BankCard2EVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCard2EVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCard2EVerificationResponse struct {
@@ -44,25 +44,25 @@ type BankCard2EVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码
-	// 计费结果码：
-	//   '0': '认证通过'
-	//   '-1': '认证未通过'
-	//  '-4': '持卡人信息有误'
-	//   '-5': '未开通无卡支付'
-	//   '-6': '此卡被没收'
-	//   '-7': '无效卡号'
-	//   '-8': '此卡无对应发卡行'
-	//   '-9': '该卡未初始化或睡眠卡'
-	//   '-10': '作弊卡、吞卡'
-	//   '-11': '此卡已挂失'
-	//   '-12': '该卡已过期'
-	//   '-13': '受限制的卡'
-	//   '-14': '密码错误次数超限'
-	//   '-15': '发卡行不支持此交易'
-	// 不计费结果码：
-	//   '-2': '姓名校验不通过'
-	//   '-3': '银行卡号码有误'
-	//   '-16': '验证中心服务繁忙'
+		// 计费结果码：
+		//   '0': '认证通过'
+		//   '-1': '认证未通过'
+		//  '-4': '持卡人信息有误'
+		//   '-5': '未开通无卡支付'
+		//   '-6': '此卡被没收'
+		//   '-7': '无效卡号'
+		//   '-8': '此卡无对应发卡行'
+		//   '-9': '该卡未初始化或睡眠卡'
+		//   '-10': '作弊卡、吞卡'
+		//   '-11': '此卡已挂失'
+		//   '-12': '该卡已过期'
+		//   '-13': '受限制的卡'
+		//   '-14': '密码错误次数超限'
+		//   '-15': '发卡行不支持此交易'
+		// 不计费结果码：
+		//   '-2': '姓名校验不通过'
+		//   '-3': '银行卡号码有误'
+		//   '-16': '验证中心服务繁忙'
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -74,12 +74,12 @@ type BankCard2EVerificationResponse struct {
 }
 
 func (r *BankCard2EVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCard2EVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCard4EVerificationRequest struct {
@@ -103,12 +103,12 @@ type BankCard4EVerificationRequest struct {
 }
 
 func (r *BankCard4EVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCard4EVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCard4EVerificationResponse struct {
@@ -116,27 +116,27 @@ type BankCard4EVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码
-	// 收费结果码：
-	// '0': '认证通过'
-	// '-1': '认证未通过'
-	// '-6': '持卡人信息有误'
-	// '-7': '未开通无卡支付'
-	// '-8': '此卡被没收'
-	// '-9': '无效卡号'
-	// '-10': '此卡无对应发卡行'
-	// '-11': '该卡未初始化或睡眠卡'
-	// '-12': '作弊卡、吞卡'
-	// '-13': '此卡已挂失'
-	// '-14': '该卡已过期'
-	// '-15': '受限制的卡'
-	// '-16': '密码错误次数超限'
-	// '-17': '发卡行不支持此交易'
-	// 不收费结果码：
-	// '-2': '姓名校验不通过'
-	// '-3': '身份证号码有误'
-	// '-4': '银行卡号码有误'
-	// '-5': '手机号码不合法'
-	// '-18': '验证中心服务繁忙'
+		// 收费结果码：
+		// '0': '认证通过'
+		// '-1': '认证未通过'
+		// '-6': '持卡人信息有误'
+		// '-7': '未开通无卡支付'
+		// '-8': '此卡被没收'
+		// '-9': '无效卡号'
+		// '-10': '此卡无对应发卡行'
+		// '-11': '该卡未初始化或睡眠卡'
+		// '-12': '作弊卡、吞卡'
+		// '-13': '此卡已挂失'
+		// '-14': '该卡已过期'
+		// '-15': '受限制的卡'
+		// '-16': '密码错误次数超限'
+		// '-17': '发卡行不支持此交易'
+		// 不收费结果码：
+		// '-2': '姓名校验不通过'
+		// '-3': '身份证号码有误'
+		// '-4': '银行卡号码有误'
+		// '-5': '手机号码不合法'
+		// '-18': '验证中心服务繁忙'
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -148,12 +148,12 @@ type BankCard4EVerificationResponse struct {
 }
 
 func (r *BankCard4EVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCard4EVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCardVerificationRequest struct {
@@ -174,12 +174,12 @@ type BankCardVerificationRequest struct {
 }
 
 func (r *BankCardVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCardVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type BankCardVerificationResponse struct {
@@ -187,26 +187,26 @@ type BankCardVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码
-	// 收费结果码：
-	// '0': '认证通过'
-	// '-1': '认证未通过'
-	// '-5': '持卡人信息有误'
-	// '-6': '未开通无卡支付'
-	// '-7': '此卡被没收'
-	// '-8': '无效卡号'
-	// '-9': '此卡无对应发卡行'
-	// '-10': '该卡未初始化或睡眠卡'
-	// '-11': '作弊卡、吞卡'
-	// '-12': '此卡已挂失'
-	// '-13': '该卡已过期'
-	// '-14': '受限制的卡'
-	// '-15': '密码错误次数超限'
-	// '-16': '发卡行不支持此交易'
-	// 不收费结果码：
-	// '-2': '姓名校验不通过'
-	// '-3': '身份证号码有误'
-	// '-4': '银行卡号码有误'
-	// '-17': '验证中心服务繁忙'
+		// 收费结果码：
+		// '0': '认证通过'
+		// '-1': '认证未通过'
+		// '-5': '持卡人信息有误'
+		// '-6': '未开通无卡支付'
+		// '-7': '此卡被没收'
+		// '-8': '无效卡号'
+		// '-9': '此卡无对应发卡行'
+		// '-10': '该卡未初始化或睡眠卡'
+		// '-11': '作弊卡、吞卡'
+		// '-12': '此卡已挂失'
+		// '-13': '该卡已过期'
+		// '-14': '受限制的卡'
+		// '-15': '密码错误次数超限'
+		// '-16': '发卡行不支持此交易'
+		// 不收费结果码：
+		// '-2': '姓名校验不通过'
+		// '-3': '身份证号码有误'
+		// '-4': '银行卡号码有误'
+		// '-17': '验证中心服务繁忙'
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -218,12 +218,12 @@ type BankCardVerificationResponse struct {
 }
 
 func (r *BankCardVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *BankCardVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectAuthRequest struct {
@@ -254,12 +254,12 @@ type DetectAuthRequest struct {
 }
 
 func (r *DetectAuthRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectAuthRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectAuthResponse struct {
@@ -270,7 +270,7 @@ type DetectAuthResponse struct {
 		Url *string `json:"Url,omitempty" name:"Url"`
 
 		// 一次核身流程的标识，有效时间为7,200秒；
-	// 完成核身后，可用该标识获取验证结果信息。
+		// 完成核身后，可用该标识获取验证结果信息。
 		BizToken *string `json:"BizToken,omitempty" name:"BizToken"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -279,12 +279,12 @@ type DetectAuthResponse struct {
 }
 
 func (r *DetectAuthResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetectAuthResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetectDetail struct {
@@ -474,12 +474,12 @@ type GetActionSequenceRequest struct {
 }
 
 func (r *GetActionSequenceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetActionSequenceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetActionSequenceResponse struct {
@@ -495,12 +495,12 @@ type GetActionSequenceResponse struct {
 }
 
 func (r *GetActionSequenceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetActionSequenceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetDetectInfoEnhancedRequest struct {
@@ -528,12 +528,12 @@ type GetDetectInfoEnhancedRequest struct {
 }
 
 func (r *GetDetectInfoEnhancedRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDetectInfoEnhancedRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetDetectInfoEnhancedResponse struct {
@@ -541,19 +541,19 @@ type GetDetectInfoEnhancedResponse struct {
 	Response *struct {
 
 		// 文本类信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Text *DetectInfoText `json:"Text,omitempty" name:"Text"`
 
 		// 身份证照片信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		IdCardData *DetectInfoIdCardData `json:"IdCardData,omitempty" name:"IdCardData"`
 
 		// 最佳帧信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrame *DetectInfoBestFrame `json:"BestFrame,omitempty" name:"BestFrame"`
 
 		// 视频信息。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		VideoData *DetectInfoVideoData `json:"VideoData,omitempty" name:"VideoData"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -562,12 +562,12 @@ type GetDetectInfoEnhancedResponse struct {
 }
 
 func (r *GetDetectInfoEnhancedResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDetectInfoEnhancedResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetDetectInfoRequest struct {
@@ -586,12 +586,12 @@ type GetDetectInfoRequest struct {
 }
 
 func (r *GetDetectInfoRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDetectInfoRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetDetectInfoResponse struct {
@@ -599,53 +599,53 @@ type GetDetectInfoResponse struct {
 	Response *struct {
 
 		// JSON字符串。
-	// {
-	//   // 文本类信息
-	//   "Text": {
-	//     "ErrCode": null,      // 本次核身最终结果。0为成功
-	//     "ErrMsg": null,       // 本次核身最终结果信息描述。
-	//     "IdCard": "",         // 本次核身最终获得的身份证号。
-	//     "Name": "",           // 本次核身最终获得的姓名。
-	//     "OcrNation": null,    // ocr阶段获取的民族
-	//     "OcrAddress": null,   // ocr阶段获取的地址
-	//     "OcrBirth": null,     // ocr阶段获取的出生信息
-	//     "OcrAuthority": null, // ocr阶段获取的证件签发机关
-	//     "OcrValidDate": null, // ocr阶段获取的证件有效期
-	//     "OcrName": null,      // ocr阶段获取的姓名
-	//     "OcrIdCard": null,    // ocr阶段获取的身份证号
-	//     "OcrGender": null,    // ocr阶段获取的性别
-	//     "LiveStatus": null,   // 活体检测阶段的错误码。0为成功
-	//     "LiveMsg": null,      // 活体检测阶段的错误信息
-	//     "Comparestatus": null,// 一比一阶段的错误码。0为成功
-	//     "Comparemsg": null,   // 一比一阶段的错误信息
-	//     "Location": null, // 地理位置信息
-	//     "Extra": "",          // DetectAuth结果传进来的Extra信息
-	//     "Detail": {           // 活体一比一信息详情
-	//       "LivenessData": [
-	//             {
-	//               ErrCode: null, // 活体比对验证错误码
-	//               ErrMsg: null, // 活体比对验证错误描述
-	//               ReqTime: null, // 活体验证时间戳
-	//               IdCard: null, // 验证身份证号
-	//               Name: null // 验证姓名
-	//             }
-	//       ]
-	//     }
-	//   },
-	//   // 身份证正反面照片Base64
-	//   "IdCardData": {
-	//     "OcrFront": null,
-	//     "OcrBack": null
-	//   },
-	//   // 视频最佳帧截图Base64
-	//   "BestFrame": {
-	//     "BestFrame": null
-	//   },
-	//   // 活体视频Base64
-	//   "VideoData": {
-	//     "LivenessVideo": null
-	//   }
-	// }
+		// {
+		//   // 文本类信息
+		//   "Text": {
+		//     "ErrCode": null,      // 本次核身最终结果。0为成功
+		//     "ErrMsg": null,       // 本次核身最终结果信息描述。
+		//     "IdCard": "",         // 本次核身最终获得的身份证号。
+		//     "Name": "",           // 本次核身最终获得的姓名。
+		//     "OcrNation": null,    // ocr阶段获取的民族
+		//     "OcrAddress": null,   // ocr阶段获取的地址
+		//     "OcrBirth": null,     // ocr阶段获取的出生信息
+		//     "OcrAuthority": null, // ocr阶段获取的证件签发机关
+		//     "OcrValidDate": null, // ocr阶段获取的证件有效期
+		//     "OcrName": null,      // ocr阶段获取的姓名
+		//     "OcrIdCard": null,    // ocr阶段获取的身份证号
+		//     "OcrGender": null,    // ocr阶段获取的性别
+		//     "LiveStatus": null,   // 活体检测阶段的错误码。0为成功
+		//     "LiveMsg": null,      // 活体检测阶段的错误信息
+		//     "Comparestatus": null,// 一比一阶段的错误码。0为成功
+		//     "Comparemsg": null,   // 一比一阶段的错误信息
+		//     "Location": null, // 地理位置信息
+		//     "Extra": "",          // DetectAuth结果传进来的Extra信息
+		//     "Detail": {           // 活体一比一信息详情
+		//       "LivenessData": [
+		//             {
+		//               ErrCode: null, // 活体比对验证错误码
+		//               ErrMsg: null, // 活体比对验证错误描述
+		//               ReqTime: null, // 活体验证时间戳
+		//               IdCard: null, // 验证身份证号
+		//               Name: null // 验证姓名
+		//             }
+		//       ]
+		//     }
+		//   },
+		//   // 身份证正反面照片Base64
+		//   "IdCardData": {
+		//     "OcrFront": null,
+		//     "OcrBack": null
+		//   },
+		//   // 视频最佳帧截图Base64
+		//   "BestFrame": {
+		//     "BestFrame": null
+		//   },
+		//   // 活体视频Base64
+		//   "VideoData": {
+		//     "LivenessVideo": null
+		//   }
+		// }
 		DetectInfo *string `json:"DetectInfo,omitempty" name:"DetectInfo"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -654,12 +654,12 @@ type GetDetectInfoResponse struct {
 }
 
 func (r *GetDetectInfoResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetDetectInfoResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetLiveCodeRequest struct {
@@ -667,12 +667,12 @@ type GetLiveCodeRequest struct {
 }
 
 func (r *GetLiveCodeRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetLiveCodeRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type GetLiveCodeResponse struct {
@@ -688,12 +688,12 @@ type GetLiveCodeResponse struct {
 }
 
 func (r *GetLiveCodeResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *GetLiveCodeResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IdCardOCRVerificationRequest struct {
@@ -720,12 +720,12 @@ type IdCardOCRVerificationRequest struct {
 }
 
 func (r *IdCardOCRVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IdCardOCRVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IdCardOCRVerificationResponse struct {
@@ -733,14 +733,14 @@ type IdCardOCRVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码，收费情况如下。
-	// 收费结果码：
-	// 0: 姓名和身份证号一致
-	// -1: 姓名和身份证号不一致
-	// 不收费结果码：
-	// -2: 非法身份证号（长度、校验位等不正确）
-	// -3: 非法姓名（长度、格式等不正确）
-	// -4: 证件库服务异常
-	// -5: 证件库中无此身份证记录
+		// 收费结果码：
+		// 0: 姓名和身份证号一致
+		// -1: 姓名和身份证号不一致
+		// 不收费结果码：
+		// -2: 非法身份证号（长度、校验位等不正确）
+		// -3: 非法姓名（长度、格式等不正确）
+		// -4: 证件库服务异常
+		// -5: 证件库中无此身份证记录
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -753,19 +753,19 @@ type IdCardOCRVerificationResponse struct {
 		IdCard *string `json:"IdCard,omitempty" name:"IdCard"`
 
 		// OCR得到的性别
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Sex *string `json:"Sex,omitempty" name:"Sex"`
 
 		// OCR得到的民族
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Nation *string `json:"Nation,omitempty" name:"Nation"`
 
 		// OCR得到的生日
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Birth *string `json:"Birth,omitempty" name:"Birth"`
 
 		// OCR得到的地址
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		Address *string `json:"Address,omitempty" name:"Address"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -774,12 +774,12 @@ type IdCardOCRVerificationResponse struct {
 }
 
 func (r *IdCardOCRVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IdCardOCRVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IdCardVerificationRequest struct {
@@ -793,12 +793,12 @@ type IdCardVerificationRequest struct {
 }
 
 func (r *IdCardVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IdCardVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type IdCardVerificationResponse struct {
@@ -806,14 +806,14 @@ type IdCardVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码，收费情况如下。
-	// 收费结果码：
-	// 0: 姓名和身份证号一致
-	// -1: 姓名和身份证号不一致
-	// 不收费结果码：
-	// -2: 非法身份证号（长度、校验位等不正确）
-	// -3: 非法姓名（长度、格式等不正确）
-	// -4: 证件库服务异常
-	// -5: 证件库中无此身份证记录
+		// 收费结果码：
+		// 0: 姓名和身份证号一致
+		// -1: 姓名和身份证号不一致
+		// 不收费结果码：
+		// -2: 非法身份证号（长度、校验位等不正确）
+		// -3: 非法姓名（长度、格式等不正确）
+		// -4: 证件库服务异常
+		// -5: 证件库中无此身份证记录
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -825,12 +825,12 @@ type IdCardVerificationResponse struct {
 }
 
 func (r *IdCardVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *IdCardVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImageRecognitionRequest struct {
@@ -851,12 +851,12 @@ type ImageRecognitionRequest struct {
 }
 
 func (r *ImageRecognitionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImageRecognitionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ImageRecognitionResponse struct {
@@ -878,12 +878,12 @@ type ImageRecognitionResponse struct {
 }
 
 func (r *ImageRecognitionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ImageRecognitionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessCompareRequest struct {
@@ -914,12 +914,12 @@ type LivenessCompareRequest struct {
 }
 
 func (r *LivenessCompareRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessCompareRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessCompareResponse struct {
@@ -927,7 +927,7 @@ type LivenessCompareResponse struct {
 	Response *struct {
 
 		// 验证通过后的视频最佳截图照片，照片为BASE64编码后的值，jpg格式。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameBase64 *string `json:"BestFrameBase64,omitempty" name:"BestFrameBase64"`
 
 		// 相似度，取值范围 [0.00, 100.00]。推荐相似度大于等于70时可判断为同一人，可根据具体场景自行调整阈值（阈值70的误通过率为千分之一，阈值80的误通过率是万分之一）。
@@ -940,7 +940,7 @@ type LivenessCompareResponse struct {
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 最佳截图列表，仅在配置了返回多张最佳截图时返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameList []*string `json:"BestFrameList,omitempty" name:"BestFrameList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -949,12 +949,12 @@ type LivenessCompareResponse struct {
 }
 
 func (r *LivenessCompareResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessCompareResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessRecognitionRequest struct {
@@ -987,12 +987,12 @@ type LivenessRecognitionRequest struct {
 }
 
 func (r *LivenessRecognitionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessRecognitionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessRecognitionResponse struct {
@@ -1000,7 +1000,7 @@ type LivenessRecognitionResponse struct {
 	Response *struct {
 
 		// 验证通过后的视频最佳截图照片，照片为BASE64编码后的值，jpg格式。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameBase64 *string `json:"BestFrameBase64,omitempty" name:"BestFrameBase64"`
 
 		// 相似度，取值范围 [0.00, 100.00]。推荐相似度大于等于70时可判断为同一人，可根据具体场景自行调整阈值（阈值70的误通过率为千分之一，阈值80的误通过率是万分之一）
@@ -1013,7 +1013,7 @@ type LivenessRecognitionResponse struct {
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 最佳截图列表，仅在配置了返回多张最佳截图时返回。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameList []*string `json:"BestFrameList,omitempty" name:"BestFrameList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1022,12 +1022,12 @@ type LivenessRecognitionResponse struct {
 }
 
 func (r *LivenessRecognitionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessRecognitionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessRequest struct {
@@ -1054,12 +1054,12 @@ type LivenessRequest struct {
 }
 
 func (r *LivenessRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type LivenessResponse struct {
@@ -1067,7 +1067,7 @@ type LivenessResponse struct {
 	Response *struct {
 
 		// 验证通过后的视频最佳截图照片，照片为BASE64编码后的值，jpg格式。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameBase64 *string `json:"BestFrameBase64,omitempty" name:"BestFrameBase64"`
 
 		// 业务错误码，成功情况返回Success, 错误情况请参考下方错误码 列表中FailedOperation部分
@@ -1077,7 +1077,7 @@ type LivenessResponse struct {
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 最佳最佳截图列表，仅在配置了返回多张最佳截图时有效。
-	// 注意：此字段可能返回 null，表示取不到有效值。
+		// 注意：此字段可能返回 null，表示取不到有效值。
 		BestFrameList []*string `json:"BestFrameList,omitempty" name:"BestFrameList" list`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1086,12 +1086,12 @@ type LivenessResponse struct {
 }
 
 func (r *LivenessResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *LivenessResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MinorsVerificationRequest struct {
@@ -1115,12 +1115,12 @@ type MinorsVerificationRequest struct {
 }
 
 func (r *MinorsVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MinorsVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MinorsVerificationResponse struct {
@@ -1128,25 +1128,25 @@ type MinorsVerificationResponse struct {
 	Response *struct {
 
 		// 结果码，收费情况如下。
-	// 收费结果码：
-	// 0: 成年
-	// -1: 未成年
-	// -2: 未查询到手机号信息
-	// -3: 姓名和身份证号不一致
-	// 
-	// 不收费结果码：
-	// -4: 非法身份证号（长度、校验位等不正确）
-	// -5: 非法姓名（长度、格式等不正确）
-	// -6: 权威数据源服务异常
-	// -7: 未查询到身份信息
-	// -8: 权威数据源升级中，请稍后再试
+		// 收费结果码：
+		// 0: 成年
+		// -1: 未成年
+		// -2: 未查询到手机号信息
+		// -3: 姓名和身份证号不一致
+		//
+		// 不收费结果码：
+		// -4: 非法身份证号（长度、校验位等不正确）
+		// -5: 非法姓名（长度、格式等不正确）
+		// -6: 权威数据源服务异常
+		// -7: 未查询到身份信息
+		// -8: 权威数据源升级中，请稍后再试
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 当结果码为0或者-1时，该字段的值为年龄区间。
-	// 格式为[a,b)，表示年龄在a岁以上（包括a岁），b岁以下（不包括b岁）。若b为+时表示没有上限。
+		// 格式为[a,b)，表示年龄在a岁以上（包括a岁），b岁以下（不包括b岁）。若b为+时表示没有上限。
 		AgeRange *string `json:"AgeRange,omitempty" name:"AgeRange"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1155,12 +1155,12 @@ type MinorsVerificationResponse struct {
 }
 
 func (r *MinorsVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MinorsVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MobileNetworkTimeVerificationRequest struct {
@@ -1171,12 +1171,12 @@ type MobileNetworkTimeVerificationRequest struct {
 }
 
 func (r *MobileNetworkTimeVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MobileNetworkTimeVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MobileNetworkTimeVerificationResponse struct {
@@ -1184,20 +1184,20 @@ type MobileNetworkTimeVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码，收费情况如下。
-	// 收费结果码：
-	// 0: 成功
-	// -2: 手机号不存在
-	// -3: 手机号存在，但无法查询到在网时长
-	// 不收费结果码：
-	// -1: 手机号格式不正确
-	// -4: 验证中心服务繁忙
+		// 收费结果码：
+		// 0: 成功
+		// -2: 手机号不存在
+		// -3: 手机号存在，但无法查询到在网时长
+		// 不收费结果码：
+		// -1: 手机号格式不正确
+		// -4: 验证中心服务繁忙
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 在网时长区间。
-	// 格式为(a,b]，表示在网时长在a个月以上，b个月以下。若b为+时表示没有上限。
+		// 格式为(a,b]，表示在网时长在a个月以上，b个月以下。若b为+时表示没有上限。
 		Range *string `json:"Range,omitempty" name:"Range"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1206,12 +1206,12 @@ type MobileNetworkTimeVerificationResponse struct {
 }
 
 func (r *MobileNetworkTimeVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MobileNetworkTimeVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MobileStatusRequest struct {
@@ -1222,12 +1222,12 @@ type MobileStatusRequest struct {
 }
 
 func (r *MobileStatusRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MobileStatusRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type MobileStatusResponse struct {
@@ -1235,24 +1235,24 @@ type MobileStatusResponse struct {
 	Response *struct {
 
 		// 认证结果码，收费情况如下。
-	// 收费结果码：
-	// 0：成功
-	// 不收费结果码：
-	// -1：未查询到结果
-	// -2：手机号格式不正确
-	// -3：验证中心服务繁忙
+		// 收费结果码：
+		// 0：成功
+		// 不收费结果码：
+		// -1：未查询到结果
+		// -2：手机号格式不正确
+		// -3：验证中心服务繁忙
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
 		Description *string `json:"Description,omitempty" name:"Description"`
 
 		// 状态码：
-	// 0：正常
-	// 1：停机
-	// 2：销号
-	// 3：空号
-	// 4：不在网
-	// 99：未知状态
+		// 0：正常
+		// 1：停机
+		// 2：销号
+		// 3：空号
+		// 4：不在网
+		// 99：未知状态
 		StatusCode *int64 `json:"StatusCode,omitempty" name:"StatusCode"`
 
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
@@ -1261,12 +1261,12 @@ type MobileStatusResponse struct {
 }
 
 func (r *MobileStatusResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *MobileStatusResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PhoneVerificationRequest struct {
@@ -1283,12 +1283,12 @@ type PhoneVerificationRequest struct {
 }
 
 func (r *PhoneVerificationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PhoneVerificationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PhoneVerificationResponse struct {
@@ -1296,18 +1296,18 @@ type PhoneVerificationResponse struct {
 	Response *struct {
 
 		// 认证结果码:
-	// 0: 认证通过
-	// -1: 手机号已实名，但是身份证和姓名均与实名信息不一致 
-	// -2: 手机号已实名，手机号和证件号一致，姓名不一致
-	// -3: 手机号已实名，手机号和姓名一致，身份证不一致
-	// -4: 信息不一致
-	// -5: 手机号未实名
-	// -6: 手机号码不合法
-	// -7: 身份证号码有误
-	// -8: 姓名校验不通过
-	// -9: 没有记录
-	// -10: 认证未通过
-	// -11: 验证中心服务繁忙
+		// 0: 认证通过
+		// -1: 手机号已实名，但是身份证和姓名均与实名信息不一致
+		// -2: 手机号已实名，手机号和证件号一致，姓名不一致
+		// -3: 手机号已实名，手机号和姓名一致，身份证不一致
+		// -4: 信息不一致
+		// -5: 手机号未实名
+		// -6: 手机号码不合法
+		// -7: 身份证号码有误
+		// -8: 姓名校验不通过
+		// -9: 没有记录
+		// -10: 认证未通过
+		// -11: 验证中心服务繁忙
 		Result *string `json:"Result,omitempty" name:"Result"`
 
 		// 业务结果描述。
@@ -1319,10 +1319,10 @@ type PhoneVerificationResponse struct {
 }
 
 func (r *PhoneVerificationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PhoneVerificationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }

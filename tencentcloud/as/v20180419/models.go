@@ -15,9 +15,9 @@
 package v20180419
 
 import (
-    "encoding/json"
+	"encoding/json"
 
-    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
+	tchttp "github.com/wswcfan/tencentcloud-sdk-go/v3/tencentcloud/common/http"
 )
 
 type Activity struct {
@@ -95,12 +95,12 @@ type AttachInstancesRequest struct {
 }
 
 func (r *AttachInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AttachInstancesResponse struct {
@@ -116,12 +116,12 @@ type AttachInstancesResponse struct {
 }
 
 func (r *AttachInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *AttachInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type AutoScalingGroup struct {
@@ -248,12 +248,12 @@ type CompleteLifecycleActionRequest struct {
 }
 
 func (r *CompleteLifecycleActionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompleteLifecycleActionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CompleteLifecycleActionResponse struct {
@@ -266,12 +266,12 @@ type CompleteLifecycleActionResponse struct {
 }
 
 func (r *CompleteLifecycleActionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CompleteLifecycleActionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAutoScalingGroupFromInstanceRequest struct {
@@ -297,12 +297,12 @@ type CreateAutoScalingGroupFromInstanceRequest struct {
 }
 
 func (r *CreateAutoScalingGroupFromInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAutoScalingGroupFromInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAutoScalingGroupFromInstanceResponse struct {
@@ -318,12 +318,12 @@ type CreateAutoScalingGroupFromInstanceResponse struct {
 }
 
 func (r *CreateAutoScalingGroupFromInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAutoScalingGroupFromInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAutoScalingGroupRequest struct {
@@ -379,7 +379,7 @@ type CreateAutoScalingGroupRequest struct {
 	// 可用区校验策略，取值包括 ALL 和 ANY，默认取值为ANY。
 	// <br><li> ALL，所有可用区（Zone）或子网（SubnetId）都可用则通过校验，否则校验报错。
 	// <br><li> ANY，存在任何一个可用区（Zone）或子网（SubnetId）可用则通过校验，否则校验报错。
-	// 
+	//
 	// 可用区或子网不可用的常见原因包括该可用区CVM实例类型售罄、该可用区CBS云盘售罄、该可用区配额不足、该子网IP不足等。
 	// 如果 Zones/SubnetIds 中可用区或者子网不存在，则无论 ZonesCheckPolicy 采用何种取值，都会校验报错。
 	ZonesCheckPolicy *string `json:"ZonesCheckPolicy,omitempty" name:"ZonesCheckPolicy"`
@@ -396,7 +396,7 @@ type CreateAutoScalingGroupRequest struct {
 	// 多可用区/子网策略，取值包括 PRIORITY 和 EQUALITY，默认为 PRIORITY。
 	// <br><li> PRIORITY，按照可用区/子网列表的顺序，作为优先级来尝试创建实例，如果优先级最高的可用区/子网可以创建成功，则总在该可用区/子网创建。
 	// <br><li> EQUALITY：每次选择当前实例数最少的可用区/子网进行扩容，使得每个可用区/子网都有机会发生扩容，多次扩容出的实例会打散到多个可用区/子网。
-	// 
+	//
 	// 与本策略相关的注意点：
 	// <br><li> 当伸缩组为基础网络时，本策略适用于多可用区；当伸缩组为VPC网络时，本策略适用于多子网，此时不再考虑可用区因素，例如四个子网ABCD，其中ABC处于可用区1，D处于可用区2，此时考虑子网ABCD进行排序，而不考虑可用区1、2。
 	// <br><li> 本策略适用于多可用区/子网，不适用于启动配置的多机型。多机型按照优先级策略进行选择。
@@ -406,12 +406,12 @@ type CreateAutoScalingGroupRequest struct {
 }
 
 func (r *CreateAutoScalingGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAutoScalingGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateAutoScalingGroupResponse struct {
@@ -427,12 +427,12 @@ type CreateAutoScalingGroupResponse struct {
 }
 
 func (r *CreateAutoScalingGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateAutoScalingGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLaunchConfigurationRequest struct {
@@ -488,7 +488,7 @@ type CreateLaunchConfigurationRequest struct {
 	// 实例类型校验策略，取值包括 ALL 和 ANY，默认取值为ANY。
 	// <br><li> ALL，所有实例类型（InstanceType）都可用则通过校验，否则校验报错。
 	// <br><li> ANY，存在任何一个实例类型（InstanceType）可用则通过校验，否则校验报错。
-	// 
+	//
 	// 实例类型不可用的常见原因包括该实例类型售罄、对应云盘售罄等。
 	// 如果 InstanceTypes 中一款机型不存在或者已下线，则无论 InstanceTypesCheckPolicy 采用何种取值，都会校验报错。
 	InstanceTypesCheckPolicy *string `json:"InstanceTypesCheckPolicy,omitempty" name:"InstanceTypesCheckPolicy"`
@@ -510,12 +510,12 @@ type CreateLaunchConfigurationRequest struct {
 }
 
 func (r *CreateLaunchConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLaunchConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLaunchConfigurationResponse struct {
@@ -531,12 +531,12 @@ type CreateLaunchConfigurationResponse struct {
 }
 
 func (r *CreateLaunchConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLaunchConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLifecycleHookRequest struct {
@@ -568,12 +568,12 @@ type CreateLifecycleHookRequest struct {
 }
 
 func (r *CreateLifecycleHookRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLifecycleHookRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateLifecycleHookResponse struct {
@@ -589,12 +589,12 @@ type CreateLifecycleHookResponse struct {
 }
 
 func (r *CreateLifecycleHookResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateLifecycleHookResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotificationConfigurationRequest struct {
@@ -617,12 +617,12 @@ type CreateNotificationConfigurationRequest struct {
 }
 
 func (r *CreateNotificationConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotificationConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateNotificationConfigurationResponse struct {
@@ -638,12 +638,12 @@ type CreateNotificationConfigurationResponse struct {
 }
 
 func (r *CreateNotificationConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateNotificationConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePaiInstanceRequest struct {
@@ -684,12 +684,12 @@ type CreatePaiInstanceRequest struct {
 }
 
 func (r *CreatePaiInstanceRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePaiInstanceRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreatePaiInstanceResponse struct {
@@ -705,12 +705,12 @@ type CreatePaiInstanceResponse struct {
 }
 
 func (r *CreatePaiInstanceResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreatePaiInstanceResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScalingPolicyRequest struct {
@@ -739,12 +739,12 @@ type CreateScalingPolicyRequest struct {
 }
 
 func (r *CreateScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScalingPolicyResponse struct {
@@ -760,12 +760,12 @@ type CreateScalingPolicyResponse struct {
 }
 
 func (r *CreateScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScheduledActionRequest struct {
@@ -797,12 +797,12 @@ type CreateScheduledActionRequest struct {
 }
 
 func (r *CreateScheduledActionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScheduledActionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type CreateScheduledActionResponse struct {
@@ -818,12 +818,12 @@ type CreateScheduledActionResponse struct {
 }
 
 func (r *CreateScheduledActionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *CreateScheduledActionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DataDisk struct {
@@ -849,12 +849,12 @@ type DeleteAutoScalingGroupRequest struct {
 }
 
 func (r *DeleteAutoScalingGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAutoScalingGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteAutoScalingGroupResponse struct {
@@ -867,12 +867,12 @@ type DeleteAutoScalingGroupResponse struct {
 }
 
 func (r *DeleteAutoScalingGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteAutoScalingGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLaunchConfigurationRequest struct {
@@ -883,12 +883,12 @@ type DeleteLaunchConfigurationRequest struct {
 }
 
 func (r *DeleteLaunchConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLaunchConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLaunchConfigurationResponse struct {
@@ -901,12 +901,12 @@ type DeleteLaunchConfigurationResponse struct {
 }
 
 func (r *DeleteLaunchConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLaunchConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLifecycleHookRequest struct {
@@ -917,12 +917,12 @@ type DeleteLifecycleHookRequest struct {
 }
 
 func (r *DeleteLifecycleHookRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLifecycleHookRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteLifecycleHookResponse struct {
@@ -935,12 +935,12 @@ type DeleteLifecycleHookResponse struct {
 }
 
 func (r *DeleteLifecycleHookResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteLifecycleHookResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotificationConfigurationRequest struct {
@@ -951,12 +951,12 @@ type DeleteNotificationConfigurationRequest struct {
 }
 
 func (r *DeleteNotificationConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotificationConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteNotificationConfigurationResponse struct {
@@ -969,12 +969,12 @@ type DeleteNotificationConfigurationResponse struct {
 }
 
 func (r *DeleteNotificationConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteNotificationConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScalingPolicyRequest struct {
@@ -985,12 +985,12 @@ type DeleteScalingPolicyRequest struct {
 }
 
 func (r *DeleteScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScalingPolicyResponse struct {
@@ -1003,12 +1003,12 @@ type DeleteScalingPolicyResponse struct {
 }
 
 func (r *DeleteScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScheduledActionRequest struct {
@@ -1019,12 +1019,12 @@ type DeleteScheduledActionRequest struct {
 }
 
 func (r *DeleteScheduledActionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScheduledActionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DeleteScheduledActionResponse struct {
@@ -1037,12 +1037,12 @@ type DeleteScheduledActionResponse struct {
 }
 
 func (r *DeleteScheduledActionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DeleteScheduledActionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountLimitsRequest struct {
@@ -1050,12 +1050,12 @@ type DescribeAccountLimitsRequest struct {
 }
 
 func (r *DescribeAccountLimitsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountLimitsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAccountLimitsResponse struct {
@@ -1080,12 +1080,12 @@ type DescribeAccountLimitsResponse struct {
 }
 
 func (r *DescribeAccountLimitsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAccountLimitsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingActivitiesRequest struct {
@@ -1116,12 +1116,12 @@ type DescribeAutoScalingActivitiesRequest struct {
 }
 
 func (r *DescribeAutoScalingActivitiesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingActivitiesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingActivitiesResponse struct {
@@ -1140,12 +1140,12 @@ type DescribeAutoScalingActivitiesResponse struct {
 }
 
 func (r *DescribeAutoScalingActivitiesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingActivitiesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingGroupLastActivitiesRequest struct {
@@ -1156,12 +1156,12 @@ type DescribeAutoScalingGroupLastActivitiesRequest struct {
 }
 
 func (r *DescribeAutoScalingGroupLastActivitiesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingGroupLastActivitiesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingGroupLastActivitiesResponse struct {
@@ -1177,12 +1177,12 @@ type DescribeAutoScalingGroupLastActivitiesResponse struct {
 }
 
 func (r *DescribeAutoScalingGroupLastActivitiesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingGroupLastActivitiesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingGroupsRequest struct {
@@ -1210,12 +1210,12 @@ type DescribeAutoScalingGroupsRequest struct {
 }
 
 func (r *DescribeAutoScalingGroupsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingGroupsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingGroupsResponse struct {
@@ -1234,12 +1234,12 @@ type DescribeAutoScalingGroupsResponse struct {
 }
 
 func (r *DescribeAutoScalingGroupsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingGroupsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingInstancesRequest struct {
@@ -1262,12 +1262,12 @@ type DescribeAutoScalingInstancesRequest struct {
 }
 
 func (r *DescribeAutoScalingInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeAutoScalingInstancesResponse struct {
@@ -1286,12 +1286,12 @@ type DescribeAutoScalingInstancesResponse struct {
 }
 
 func (r *DescribeAutoScalingInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeAutoScalingInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLaunchConfigurationsRequest struct {
@@ -1315,12 +1315,12 @@ type DescribeLaunchConfigurationsRequest struct {
 }
 
 func (r *DescribeLaunchConfigurationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLaunchConfigurationsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLaunchConfigurationsResponse struct {
@@ -1339,12 +1339,12 @@ type DescribeLaunchConfigurationsResponse struct {
 }
 
 func (r *DescribeLaunchConfigurationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLaunchConfigurationsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLifecycleHooksRequest struct {
@@ -1372,12 +1372,12 @@ type DescribeLifecycleHooksRequest struct {
 }
 
 func (r *DescribeLifecycleHooksRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLifecycleHooksRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeLifecycleHooksResponse struct {
@@ -1396,12 +1396,12 @@ type DescribeLifecycleHooksResponse struct {
 }
 
 func (r *DescribeLifecycleHooksResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeLifecycleHooksResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotificationConfigurationsRequest struct {
@@ -1424,12 +1424,12 @@ type DescribeNotificationConfigurationsRequest struct {
 }
 
 func (r *DescribeNotificationConfigurationsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotificationConfigurationsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeNotificationConfigurationsResponse struct {
@@ -1448,12 +1448,12 @@ type DescribeNotificationConfigurationsResponse struct {
 }
 
 func (r *DescribeNotificationConfigurationsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeNotificationConfigurationsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePaiInstancesRequest struct {
@@ -1473,12 +1473,12 @@ type DescribePaiInstancesRequest struct {
 }
 
 func (r *DescribePaiInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePaiInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribePaiInstancesResponse struct {
@@ -1497,12 +1497,12 @@ type DescribePaiInstancesResponse struct {
 }
 
 func (r *DescribePaiInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribePaiInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScalingPoliciesRequest struct {
@@ -1526,12 +1526,12 @@ type DescribeScalingPoliciesRequest struct {
 }
 
 func (r *DescribeScalingPoliciesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScalingPoliciesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScalingPoliciesResponse struct {
@@ -1550,12 +1550,12 @@ type DescribeScalingPoliciesResponse struct {
 }
 
 func (r *DescribeScalingPoliciesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScalingPoliciesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScheduledActionsRequest struct {
@@ -1578,12 +1578,12 @@ type DescribeScheduledActionsRequest struct {
 }
 
 func (r *DescribeScheduledActionsRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScheduledActionsRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DescribeScheduledActionsResponse struct {
@@ -1602,12 +1602,12 @@ type DescribeScheduledActionsResponse struct {
 }
 
 func (r *DescribeScheduledActionsResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DescribeScheduledActionsResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachInstancesRequest struct {
@@ -1621,12 +1621,12 @@ type DetachInstancesRequest struct {
 }
 
 func (r *DetachInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DetachInstancesResponse struct {
@@ -1642,12 +1642,12 @@ type DetachInstancesResponse struct {
 }
 
 func (r *DetachInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DetachInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableAutoScalingGroupRequest struct {
@@ -1658,12 +1658,12 @@ type DisableAutoScalingGroupRequest struct {
 }
 
 func (r *DisableAutoScalingGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableAutoScalingGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type DisableAutoScalingGroupResponse struct {
@@ -1676,12 +1676,12 @@ type DisableAutoScalingGroupResponse struct {
 }
 
 func (r *DisableAutoScalingGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *DisableAutoScalingGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableAutoScalingGroupRequest struct {
@@ -1692,12 +1692,12 @@ type EnableAutoScalingGroupRequest struct {
 }
 
 func (r *EnableAutoScalingGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableAutoScalingGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnableAutoScalingGroupResponse struct {
@@ -1710,12 +1710,12 @@ type EnableAutoScalingGroupResponse struct {
 }
 
 func (r *EnableAutoScalingGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *EnableAutoScalingGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type EnhancedService struct {
@@ -1741,12 +1741,12 @@ type ExecuteScalingPolicyRequest struct {
 }
 
 func (r *ExecuteScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ExecuteScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ExecuteScalingPolicyResponse struct {
@@ -1762,12 +1762,12 @@ type ExecuteScalingPolicyResponse struct {
 }
 
 func (r *ExecuteScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ExecuteScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type Filter struct {
@@ -1890,17 +1890,17 @@ type InstanceMarketOptionsRequest struct {
 type InstanceNameSettings struct {
 
 	// 云服务器的实例名。
-	// 
+	//
 	// 点号（.）和短横线（-）不能作为 InstanceName 的首尾字符，不能连续使用。
-	// 
+	//
 	// 其他类型（Linux 等）实例：字符长度为[2, 40]，允许支持多个点号，点之间为一段，每段允许字母（不限制大小写）、数字和短横线（-）组成。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	InstanceName *string `json:"InstanceName,omitempty" name:"InstanceName"`
 
 	// 云服务器实例名的风格，取值范围包括 ORIGINAL 和 UNIQUE，默认为 ORIGINAL。
-	// 
+	//
 	// ORIGINAL，AS 直接将入参中所填的 InstanceName 传递给 CVM，CVM 可能会对 InstanceName 追加序列号，伸缩组中实例的 InstanceName 会出现冲突的情况。
-	// 
+	//
 	// UNIQUE，入参所填的 InstanceName 相当于实例名前缀，AS 和 CVM 会对其进行拓展，伸缩组中实例的 InstanceName 可以保证唯一。
 	// 注意：此字段可能返回 null，表示取不到有效值。
 	InstanceNameStyle *string `json:"InstanceNameStyle,omitempty" name:"InstanceNameStyle"`
@@ -2161,7 +2161,7 @@ type ModifyAutoScalingGroupRequest struct {
 	// 可用区校验策略，取值包括 ALL 和 ANY，默认取值为ANY。在伸缩组实际变更资源相关字段时（启动配置、可用区、子网）发挥作用。
 	// <br><li> ALL，所有可用区（Zone）或子网（SubnetId）都可用则通过校验，否则校验报错。
 	// <br><li> ANY，存在任何一个可用区（Zone）或子网（SubnetId）可用则通过校验，否则校验报错。
-	// 
+	//
 	// 可用区或子网不可用的常见原因包括该可用区CVM实例类型售罄、该可用区CBS云盘售罄、该可用区配额不足、该子网IP不足等。
 	// 如果 Zones/SubnetIds 中可用区或者子网不存在，则无论 ZonesCheckPolicy 采用何种取值，都会校验报错。
 	ZonesCheckPolicy *string `json:"ZonesCheckPolicy,omitempty" name:"ZonesCheckPolicy"`
@@ -2175,7 +2175,7 @@ type ModifyAutoScalingGroupRequest struct {
 	// 多可用区/子网策略，取值包括 PRIORITY 和 EQUALITY。
 	// <br><li> PRIORITY，按照可用区/子网列表的顺序，作为优先级来尝试创建实例，如果优先级最高的可用区/子网可以创建成功，则总在该可用区/子网创建。
 	// <br><li> EQUALITY：每次选择当前实例数最少的可用区/子网进行扩容，使得每个可用区/子网都有机会发生扩容，多次扩容出的实例会打散到多个可用区/子网。
-	// 
+	//
 	// 与本策略相关的注意点：
 	// <br><li> 当伸缩组为基础网络时，本策略适用于多可用区；当伸缩组为VPC网络时，本策略适用于多子网，此时不再考虑可用区因素，例如四个子网ABCD，其中ABC处于可用区1，D处于可用区2，此时考虑子网ABCD进行排序，而不考虑可用区1、2。
 	// <br><li> 本策略适用于多可用区/子网，不适用于启动配置的多机型。多机型按照优先级策略进行选择。
@@ -2185,12 +2185,12 @@ type ModifyAutoScalingGroupRequest struct {
 }
 
 func (r *ModifyAutoScalingGroupRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAutoScalingGroupRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyAutoScalingGroupResponse struct {
@@ -2203,12 +2203,12 @@ type ModifyAutoScalingGroupResponse struct {
 }
 
 func (r *ModifyAutoScalingGroupResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyAutoScalingGroupResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDesiredCapacityRequest struct {
@@ -2222,12 +2222,12 @@ type ModifyDesiredCapacityRequest struct {
 }
 
 func (r *ModifyDesiredCapacityRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDesiredCapacityRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyDesiredCapacityResponse struct {
@@ -2240,12 +2240,12 @@ type ModifyDesiredCapacityResponse struct {
 }
 
 func (r *ModifyDesiredCapacityResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyDesiredCapacityResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLaunchConfigurationAttributesRequest struct {
@@ -2264,7 +2264,7 @@ type ModifyLaunchConfigurationAttributesRequest struct {
 	// 实例类型校验策略，在实际修改 InstanceTypes 时发挥作用，取值包括 ALL 和 ANY，默认取值为ANY。
 	// <br><li> ALL，所有实例类型（InstanceType）都可用则通过校验，否则校验报错。
 	// <br><li> ANY，存在任何一个实例类型（InstanceType）可用则通过校验，否则校验报错。
-	// 
+	//
 	// 实例类型不可用的常见原因包括该实例类型售罄、对应云盘售罄等。
 	// 如果 InstanceTypes 中一款机型不存在或者已下线，则无论 InstanceTypesCheckPolicy 采用何种取值，都会校验报错。
 	InstanceTypesCheckPolicy *string `json:"InstanceTypesCheckPolicy,omitempty" name:"InstanceTypesCheckPolicy"`
@@ -2277,12 +2277,12 @@ type ModifyLaunchConfigurationAttributesRequest struct {
 }
 
 func (r *ModifyLaunchConfigurationAttributesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLaunchConfigurationAttributesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLaunchConfigurationAttributesResponse struct {
@@ -2295,12 +2295,12 @@ type ModifyLaunchConfigurationAttributesResponse struct {
 }
 
 func (r *ModifyLaunchConfigurationAttributesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLaunchConfigurationAttributesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLoadBalancersRequest struct {
@@ -2322,12 +2322,12 @@ type ModifyLoadBalancersRequest struct {
 }
 
 func (r *ModifyLoadBalancersRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLoadBalancersRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyLoadBalancersResponse struct {
@@ -2343,12 +2343,12 @@ type ModifyLoadBalancersResponse struct {
 }
 
 func (r *ModifyLoadBalancersResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyLoadBalancersResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyNotificationConfigurationRequest struct {
@@ -2371,12 +2371,12 @@ type ModifyNotificationConfigurationRequest struct {
 }
 
 func (r *ModifyNotificationConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyNotificationConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyNotificationConfigurationResponse struct {
@@ -2389,12 +2389,12 @@ type ModifyNotificationConfigurationResponse struct {
 }
 
 func (r *ModifyNotificationConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyNotificationConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyScalingPolicyRequest struct {
@@ -2424,12 +2424,12 @@ type ModifyScalingPolicyRequest struct {
 }
 
 func (r *ModifyScalingPolicyRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyScalingPolicyRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyScalingPolicyResponse struct {
@@ -2442,12 +2442,12 @@ type ModifyScalingPolicyResponse struct {
 }
 
 func (r *ModifyScalingPolicyResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyScalingPolicyResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyScheduledActionRequest struct {
@@ -2479,12 +2479,12 @@ type ModifyScheduledActionRequest struct {
 }
 
 func (r *ModifyScheduledActionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyScheduledActionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type ModifyScheduledActionResponse struct {
@@ -2497,12 +2497,12 @@ type ModifyScheduledActionResponse struct {
 }
 
 func (r *ModifyScheduledActionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *ModifyScheduledActionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type NotificationTarget struct {
@@ -2539,12 +2539,12 @@ type PreviewPaiDomainNameRequest struct {
 }
 
 func (r *PreviewPaiDomainNameRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PreviewPaiDomainNameRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type PreviewPaiDomainNameResponse struct {
@@ -2560,12 +2560,12 @@ type PreviewPaiDomainNameResponse struct {
 }
 
 func (r *PreviewPaiDomainNameResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *PreviewPaiDomainNameResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemoveInstancesRequest struct {
@@ -2579,12 +2579,12 @@ type RemoveInstancesRequest struct {
 }
 
 func (r *RemoveInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RemoveInstancesResponse struct {
@@ -2600,12 +2600,12 @@ type RemoveInstancesResponse struct {
 }
 
 func (r *RemoveInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *RemoveInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type RunMonitorServiceEnabled struct {
@@ -2687,8 +2687,8 @@ type ServiceSettings struct {
 	// 开启监控不健康替换服务。若开启则对于云监控标记为不健康的实例，弹性伸缩服务会进行替换。若不指定该参数，则默认为 False。
 	ReplaceMonitorUnhealthy *bool `json:"ReplaceMonitorUnhealthy,omitempty" name:"ReplaceMonitorUnhealthy"`
 
-	// 取值范围： 
-	// CLASSIC_SCALING：经典方式，使用创建、销毁实例来实现扩缩容； 
+	// 取值范围：
+	// CLASSIC_SCALING：经典方式，使用创建、销毁实例来实现扩缩容；
 	// WAKE_UP_STOPPED_SCALING：扩容优先开机。扩容时优先对已关机的实例执行开机操作，若开机后实例数仍低于期望实例数，则创建实例，缩容仍采用销毁实例的方式。用户可以使用StopAutoScalingInstances接口来关闭伸缩组内的实例。监控告警触发的扩容仍将创建实例
 	// 默认取值：CLASSIC_SCALING
 	ScalingMode *string `json:"ScalingMode,omitempty" name:"ScalingMode"`
@@ -2708,12 +2708,12 @@ type SetInstancesProtectionRequest struct {
 }
 
 func (r *SetInstancesProtectionRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetInstancesProtectionRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SetInstancesProtectionResponse struct {
@@ -2726,12 +2726,12 @@ type SetInstancesProtectionResponse struct {
 }
 
 func (r *SetInstancesProtectionResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *SetInstancesProtectionResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SpotMarketOptions struct {
@@ -2755,12 +2755,12 @@ type StartAutoScalingInstancesRequest struct {
 }
 
 func (r *StartAutoScalingInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartAutoScalingInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StartAutoScalingInstancesResponse struct {
@@ -2776,12 +2776,12 @@ type StartAutoScalingInstancesResponse struct {
 }
 
 func (r *StartAutoScalingInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StartAutoScalingInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopAutoScalingInstancesRequest struct {
@@ -2793,20 +2793,20 @@ type StopAutoScalingInstancesRequest struct {
 	// 待关闭的CVM实例ID列表
 	InstanceIds []*string `json:"InstanceIds,omitempty" name:"InstanceIds" list`
 
-	// 关闭的实例是否收费，取值为：  
-	// KEEP_CHARGING：关机继续收费  
+	// 关闭的实例是否收费，取值为：
+	// KEEP_CHARGING：关机继续收费
 	// STOP_CHARGING：关机停止收费
 	// 默认为 KEEP_CHARGING
 	StoppedMode *string `json:"StoppedMode,omitempty" name:"StoppedMode"`
 }
 
 func (r *StopAutoScalingInstancesRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopAutoScalingInstancesRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type StopAutoScalingInstancesResponse struct {
@@ -2822,12 +2822,12 @@ type StopAutoScalingInstancesResponse struct {
 }
 
 func (r *StopAutoScalingInstancesResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *StopAutoScalingInstancesResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type SystemDisk struct {
@@ -2895,7 +2895,7 @@ type UpgradeLaunchConfigurationRequest struct {
 	// 实例类型校验策略，取值包括 ALL 和 ANY，默认取值为ANY。
 	// <br><li> ALL，所有实例类型（InstanceType）都可用则通过校验，否则校验报错。
 	// <br><li> ANY，存在任何一个实例类型（InstanceType）可用则通过校验，否则校验报错。
-	// 
+	//
 	// 实例类型不可用的常见原因包括该实例类型售罄、对应云盘售罄等。
 	// 如果 InstanceTypes 中一款机型不存在或者已下线，则无论 InstanceTypesCheckPolicy 采用何种取值，都会校验报错。
 	InstanceTypesCheckPolicy *string `json:"InstanceTypesCheckPolicy,omitempty" name:"InstanceTypesCheckPolicy"`
@@ -2935,12 +2935,12 @@ type UpgradeLaunchConfigurationRequest struct {
 }
 
 func (r *UpgradeLaunchConfigurationRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeLaunchConfigurationRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpgradeLaunchConfigurationResponse struct {
@@ -2953,12 +2953,12 @@ type UpgradeLaunchConfigurationResponse struct {
 }
 
 func (r *UpgradeLaunchConfigurationResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeLaunchConfigurationResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpgradeLifecycleHookRequest struct {
@@ -2990,12 +2990,12 @@ type UpgradeLifecycleHookRequest struct {
 }
 
 func (r *UpgradeLifecycleHookRequest) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeLifecycleHookRequest) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
 
 type UpgradeLifecycleHookResponse struct {
@@ -3008,10 +3008,10 @@ type UpgradeLifecycleHookResponse struct {
 }
 
 func (r *UpgradeLifecycleHookResponse) ToJsonString() string {
-    b, _ := json.Marshal(r)
-    return string(b)
+	b, _ := json.Marshal(r)
+	return string(b)
 }
 
 func (r *UpgradeLifecycleHookResponse) FromJsonString(s string) error {
-    return json.Unmarshal([]byte(s), &r)
+	return json.Unmarshal([]byte(s), &r)
 }
