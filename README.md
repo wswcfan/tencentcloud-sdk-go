@@ -18,12 +18,12 @@
 
 推荐使用语言自带的工具安装 SDK ：
 
-    go get -u github.com/tencentcloud/tencentcloud-sdk-go
+    go get -u github.com/wswcfan/tencentcloud-sdk-go
 
 
 ## 通过源码安装
 
-前往 [Github 代码托管地址](https://github.com/tencentcloud/tencentcloud-sdk-go) 下载最新代码，解压后安装到 $GOPATH/src/github.com/tencentcloud 目录下。
+前往 [Github 代码托管地址](https://github.com/wswcfan/tencentcloud-sdk-go) 下载最新代码，解压后安装到 $GOPATH/src/github.com/tencentcloud 目录下。
 
 # 示例
 
@@ -38,11 +38,11 @@ import (
         "fmt"
         "os"
 
-        "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
-        "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
-        "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
-        "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/regions"
-        cvm "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/cvm/v20170312"
+        "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common"
+        "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/errors"
+        "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/profile"
+        "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/regions"
+        cvm "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/cvm/v20170312"
 )
 
 func main() {

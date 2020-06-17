@@ -17,7 +17,7 @@ package v20190819
 import (
     "encoding/json"
 
-    tchttp "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/http"
+    tchttp "github.com/wswcfan/tencentcloud-sdk-go/tencentcloud/common/http"
 )
 
 type Acl struct {
